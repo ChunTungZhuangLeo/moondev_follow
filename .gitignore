@@ -1,0 +1,32 @@
+# Environment
+.env
+*.env
+.env.*
+!.env_example
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# Data (don't track CSV outputs)
+src/data/kalshi/*.csv
+src/data/polymarket/*.csv
+
+# AWS Keys
+*.pem
+src/data/kalshi_aws/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
