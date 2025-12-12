@@ -149,6 +149,171 @@ POLYMARKET_API_BASE = "https://data-api.polymarket.com"
 WEBSOCKET_URL = "wss://ws-live-data.polymarket.com"
 
 # ==============================================================================
+# 🌙 Moon Dev - PAPER TRADING Configuration
+# ==============================================================================
+PAPER_TRADING_MODE = True  # Enable paper trading (simulated trades)
+PAPER_TRADING_BANKROLL = 1000.0  # Starting paper trading bankroll in USD
+MIN_CONSENSUS_FOR_TRADE = 5  # Minimum X out of 6 models must agree to trade
+BET_SIZE_PERCENT = 0.05  # Bet 5% of bankroll per trade
+MAX_OPEN_POSITIONS = 10  # Maximum concurrent open positions
+
+# Paper trading data paths
+PAPER_PORTFOLIO_CSV = os.path.join(DATA_FOLDER, "paper_portfolio.csv")
+PAPER_TRADES_CSV = os.path.join(DATA_FOLDER, "paper_trades.csv")
+
+
+# ==============================================================================
+# 🌙 Moon Dev - Paper Trading Functions
+# ==============================================================================
+
+def init_paper_portfolio():
+    """Initialize paper trading portfolio CSV"""
+    if not os.path.exists(PAPER_PORTFOLIO_CSV):
+        df = pd.DataFrame([{
+            'timestamp': datetime.now().isoformat(),
+            'balance': PAPER_TRADING_BANKROLL,
+            'open_positions': 0,
+            'total_trades': 0,
+            'winning_trades': 0,
+            'losing_trades': 0,
+            'realized_pnl': 0.0
+        }])
+        df.to_csv(PAPER_PORTFOLIO_CSV, index=False)
+        cprint(f"📝 Created paper portfolio with ${PAPER_TRADING_BANKROLL} starting balance", "green")
+    return pd.read_csv(PAPER_PORTFOLIO_CSV)
+
+
+def get_paper_portfolio_summary():
+    """Get current paper trading portfolio summary"""
+    if not os.path.exists(PAPER_PORTFOLIO_CSV):
+        init_paper_portfolio()
+
+    df = pd.read_csv(PAPER_PORTFOLIO_CSV)
+    latest = df.iloc[-1] if len(df) > 0 else None
+
+    if latest is None:
+        return {
+            'balance': PAPER_TRADING_BANKROLL,
+            'open_positions': 0,
+            'total_trades': 0,
+            'winning_trades': 0,
+            'losing_trades': 0,
+            'realized_pnl': 0.0,
+            'win_rate': 0.0
+        }
+
+    total = latest.get('total_trades', 0)
+    winning = latest.get('winning_trades', 0)
+
+    return {
+        'balance': latest.get('balance', PAPER_TRADING_BANKROLL),
+        'open_positions': latest.get('open_positions', 0),
+        'total_trades': total,
+        'winning_trades': winning,
+        'losing_trades': latest.get('losing_trades', 0),
+        'realized_pnl': latest.get('realized_pnl', 0.0),
+        'win_rate': (winning / total * 100) if total > 0 else 0.0
+    }
+
+
+def execute_paper_trade(pick: dict):
+    """Execute a paper trade based on AI consensus pick"""
+    if not PAPER_TRADING_MODE:
+        return
+
+    # Get current portfolio
+    portfolio = get_paper_portfolio_summary()
+    balance = portfolio['balance']
+    open_positions = portfolio['open_positions']
+
+    # Check if we can trade
+    if open_positions >= MAX_OPEN_POSITIONS:
+        cprint(f"⚠️ Max open positions ({MAX_OPEN_POSITIONS}) reached - skipping trade", "yellow")
+        return
+
+    # Calculate bet size
+    bet_size = balance * BET_SIZE_PERCENT
+    if bet_size < 1:
+        cprint(f"⚠️ Insufficient balance (${balance:.2f}) for trade", "yellow")
+        return
+
+    # Parse consensus count
+    consensus_str = pick.get('consensus', '')
+    consensus_count = pick.get('consensus_count', 0)
+
+    if consensus_count < MIN_CONSENSUS_FOR_TRADE:
+        cprint(f"⚠️ Consensus too low ({consensus_count}/{6}) - need {MIN_CONSENSUS_FOR_TRADE}", "yellow")
+        return
+
+    # Record trade
+    trade = {
+        'timestamp': datetime.now().isoformat(),
+        'market_title': pick.get('market_title', 'Unknown'),
+        'side': pick.get('side', 'Unknown'),
+        'consensus': consensus_str,
+        'consensus_count': consensus_count,
+        'bet_size_usd': bet_size,
+        'entry_price': 0.50,  # Assume 50% odds for paper trading
+        'status': 'OPEN',
+        'pnl': 0.0,
+        'link': pick.get('link', '')
+    }
+
+    # Save trade
+    if os.path.exists(PAPER_TRADES_CSV):
+        trades_df = pd.read_csv(PAPER_TRADES_CSV)
+    else:
+        trades_df = pd.DataFrame()
+
+    trades_df = pd.concat([trades_df, pd.DataFrame([trade])], ignore_index=True)
+    trades_df.to_csv(PAPER_TRADES_CSV, index=False)
+
+    # Update portfolio
+    new_balance = balance - bet_size
+    portfolio_update = {
+        'timestamp': datetime.now().isoformat(),
+        'balance': new_balance,
+        'open_positions': open_positions + 1,
+        'total_trades': portfolio['total_trades'] + 1,
+        'winning_trades': portfolio['winning_trades'],
+        'losing_trades': portfolio['losing_trades'],
+        'realized_pnl': portfolio['realized_pnl']
+    }
+
+    portfolio_df = pd.read_csv(PAPER_PORTFOLIO_CSV)
+    portfolio_df = pd.concat([portfolio_df, pd.DataFrame([portfolio_update])], ignore_index=True)
+    portfolio_df.to_csv(PAPER_PORTFOLIO_CSV, index=False)
+
+    cprint(f"\n{'='*60}", "green")
+    cprint(f"📝 PAPER TRADE EXECUTED", "green", attrs=['bold'])
+    cprint(f"{'='*60}", "green")
+    cprint(f"   Market: {pick.get('market_title', 'Unknown')[:50]}...", "white")
+    cprint(f"   Side: {pick.get('side', 'Unknown')}", "cyan")
+    cprint(f"   Consensus: {consensus_str}", "yellow")
+    cprint(f"   Bet Size: ${bet_size:.2f}", "green")
+    cprint(f"   New Balance: ${new_balance:.2f}", "white")
+    cprint(f"   Open Positions: {open_positions + 1}/{MAX_OPEN_POSITIONS}", "white")
+    cprint(f"{'='*60}\n", "green")
+
+
+def print_paper_portfolio_status():
+    """Print current paper trading portfolio status"""
+    if not PAPER_TRADING_MODE:
+        return
+
+    summary = get_paper_portfolio_summary()
+
+    cprint(f"\n{'='*60}", "cyan")
+    cprint(f"💼 PAPER TRADING PORTFOLIO", "cyan", attrs=['bold'])
+    cprint(f"{'='*60}", "cyan")
+    cprint(f"   Balance: ${summary['balance']:.2f}", "green" if summary['balance'] >= PAPER_TRADING_BANKROLL else "red")
+    cprint(f"   Open Positions: {summary['open_positions']}/{MAX_OPEN_POSITIONS}", "white")
+    cprint(f"   Total Trades: {summary['total_trades']}", "white")
+    cprint(f"   Win Rate: {summary['win_rate']:.1f}%", "green" if summary['win_rate'] >= 50 else "yellow")
+    cprint(f"   Realized P&L: ${summary['realized_pnl']:.2f}", "green" if summary['realized_pnl'] >= 0 else "red")
+    cprint(f"{'='*60}\n", "cyan")
+
+# ==============================================================================
 # Polymarket Web Search Agent
 # ==============================================================================
 
@@ -1210,6 +1375,17 @@ Provide predictions for each market in the specified format."""
             cprint(f"✅ Saved {len(records)} consensus picks to CSV", "green")
             cprint(f"📁 Consensus picks CSV: {CONSENSUS_PICKS_CSV}", "cyan", attrs=['bold'])
 
+            # 🌙 Moon Dev - Execute paper trades for high consensus picks
+            if PAPER_TRADING_MODE:
+                cprint(f"\n📝 Checking for paper trade opportunities...", "yellow")
+                for pick in picks:
+                    consensus_count = pick.get('consensus_count', 0)
+                    if consensus_count >= MIN_CONSENSUS_FOR_TRADE:
+                        execute_paper_trade(pick)
+
+                # Show portfolio status after trades
+                print_paper_portfolio_status()
+
         except Exception as e:
             cprint(f"❌ Error saving consensus picks: {e}", "red")
 
@@ -1393,6 +1569,20 @@ def main():
     cprint(f"   4. Consensus picks are generated with better info!", "cyan")
     cprint("")
     cprint(f"🤖 AI Mode: {'SWARM (7 models)' if USE_SWARM_MODE else 'Single Model'}", "yellow")
+    cprint("")
+
+    # 🌙 Moon Dev - Paper Trading Mode
+    if PAPER_TRADING_MODE:
+        cprint("💵 PAPER TRADING MODE: ENABLED", "green", attrs=['bold'])
+        cprint(f"   💰 Starting Bankroll: ${PAPER_TRADING_BANKROLL}", "green")
+        cprint(f"   📊 Bet Size: {BET_SIZE_PERCENT*100}% per trade", "green")
+        cprint(f"   🎯 Min Consensus: {MIN_CONSENSUS_FOR_TRADE}/6 models", "green")
+        cprint(f"   📈 Max Open Positions: {MAX_OPEN_POSITIONS}", "green")
+        init_paper_portfolio()
+        print_paper_portfolio_status()
+    else:
+        cprint("⚠️ PAPER TRADING MODE: DISABLED (analysis only)", "yellow")
+
     cprint("="*80 + "\n", "cyan")
 
     # Initialize agent
