@@ -152,7 +152,7 @@ WEBSOCKET_URL = "wss://ws-live-data.polymarket.com"
 # 🌙 Moon Dev - PAPER TRADING Configuration
 # ==============================================================================
 PAPER_TRADING_MODE = True  # Enable paper trading (simulated trades)
-PAPER_TRADING_BANKROLL = 1000.0  # Starting paper trading bankroll in USD
+PAPER_TRADING_BANKROLL = 5000.0  # Starting paper trading bankroll in USD
 MIN_CONSENSUS_FOR_TRADE = 5  # Minimum X out of 6 models must agree to trade
 BET_SIZE_PERCENT = 0.05  # Bet 5% of bankroll per trade
 MAX_OPEN_POSITIONS = 10  # Maximum concurrent open positions
