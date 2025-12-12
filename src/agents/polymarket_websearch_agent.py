@@ -161,6 +161,23 @@ MAX_OPEN_POSITIONS = 10  # Maximum concurrent open positions
 PAPER_PORTFOLIO_CSV = os.path.join(DATA_FOLDER, "paper_portfolio.csv")
 PAPER_TRADES_CSV = os.path.join(DATA_FOLDER, "paper_trades.csv")
 
+# 🌙 Moon Dev - Position Resolution Configuration
+CHECK_RESOLUTION_INTERVAL_HOURS = 4  # How often to check if markets resolved
+POLYMARKET_GAMMA_API = "https://gamma-api.polymarket.com"  # For market resolution data
+
+# 🌙 Moon Dev - Time Sensitivity Filters (like Kalshi agent!)
+ENABLE_TIME_FILTERS = True  # Enable time-based market filtering
+MAX_DAYS_TO_RESOLUTION = 30  # Skip markets resolving > 30 days out (capital locked too long)
+MIN_DAYS_TO_RESOLUTION = 1   # Skip markets resolving in < 24 hours (too volatile)
+PRIORITIZE_IMMINENT = True   # Boost markets resolving soon
+IMMINENT_DAYS_MIN = 3        # Start of "imminent" window
+IMMINENT_DAYS_MAX = 14       # End of "imminent" window (2 weeks)
+
+# 🌙 Moon Dev - Take Profit / Stop Loss Configuration
+TAKE_PROFIT_PERCENT = 0.15   # Sell when price rises 15% from entry (e.g., 0.50 -> 0.575)
+STOP_LOSS_PERCENT = 0.20     # Sell when price drops 20% from entry (e.g., 0.50 -> 0.40)
+CHECK_PRICES_ENABLED = True  # Enable automatic price checking for exits
+
 
 # ==============================================================================
 # 🌙 Moon Dev - Paper Trading Functions
@@ -245,7 +262,14 @@ def execute_paper_trade(pick: dict):
         cprint(f"⚠️ Consensus too low ({consensus_count}/{6}) - need {MIN_CONSENSUS_FOR_TRADE}", "yellow")
         return
 
-    # Record trade
+    # Extract condition_id from link for resolution tracking
+    link = pick.get('link', '')
+    condition_id = ''
+    if 'polymarket.com/event/' in link:
+        # Extract slug from URL like https://polymarket.com/event/slug
+        condition_id = link.split('/event/')[-1].split('/')[0].split('?')[0]
+
+    # Record trade with condition_id for resolution tracking
     trade = {
         'timestamp': datetime.now().isoformat(),
         'market_title': pick.get('market_title', 'Unknown'),
@@ -256,7 +280,10 @@ def execute_paper_trade(pick: dict):
         'entry_price': 0.50,  # Assume 50% odds for paper trading
         'status': 'OPEN',
         'pnl': 0.0,
-        'link': pick.get('link', '')
+        'link': link,
+        'condition_id': condition_id,  # For resolution lookup
+        'resolved_at': '',  # Will be filled when market resolves
+        'outcome': ''  # Will be YES or NO when resolved
     }
 
     # Save trade
@@ -312,6 +339,157 @@ def print_paper_portfolio_status():
     cprint(f"   Win Rate: {summary['win_rate']:.1f}%", "green" if summary['win_rate'] >= 50 else "yellow")
     cprint(f"   Realized P&L: ${summary['realized_pnl']:.2f}", "green" if summary['realized_pnl'] >= 0 else "red")
     cprint(f"{'='*60}\n", "cyan")
+
+
+def check_and_close_positions():
+    """
+    🌙 Moon Dev - Check open positions and close them based on:
+    1. Take profit (price rose enough)
+    2. Stop loss (price dropped too much)
+    3. Market resolution (market ended)
+
+    This simulates selling by fetching current market prices from Polymarket.
+    """
+    if not PAPER_TRADING_MODE or not CHECK_PRICES_ENABLED:
+        return
+
+    if not os.path.exists(PAPER_TRADES_CSV):
+        return
+
+    trades_df = pd.read_csv(PAPER_TRADES_CSV)
+    open_trades = trades_df[trades_df['status'] == 'OPEN']
+
+    if len(open_trades) == 0:
+        cprint("📊 No open positions to check", "white")
+        return
+
+    cprint(f"\n🔍 Checking {len(open_trades)} open positions for exit conditions...", "yellow")
+
+    positions_closed = 0
+    portfolio = get_paper_portfolio_summary()
+
+    for idx, trade in open_trades.iterrows():
+        market_title = trade.get('market_title', 'Unknown')
+        entry_price = trade.get('entry_price', 0.50)
+        bet_size = trade.get('bet_size_usd', 0)
+        side = trade.get('side', 'YES')
+        condition_id = trade.get('condition_id', '')
+
+        # Try to get current price from Polymarket
+        current_price = get_market_current_price(condition_id, side)
+
+        if current_price is None:
+            # Can't get price, skip this position
+            continue
+
+        # Calculate P&L
+        if side.upper() == 'YES':
+            price_change = current_price - entry_price
+        else:
+            price_change = entry_price - current_price  # For NO bets, we profit when price drops
+
+        pnl_percent = price_change / entry_price if entry_price > 0 else 0
+        pnl_usd = bet_size * pnl_percent
+
+        # Check exit conditions
+        exit_reason = None
+        if pnl_percent >= TAKE_PROFIT_PERCENT:
+            exit_reason = f"TAKE PROFIT (+{pnl_percent*100:.1f}%)"
+        elif pnl_percent <= -STOP_LOSS_PERCENT:
+            exit_reason = f"STOP LOSS ({pnl_percent*100:.1f}%)"
+        elif current_price >= 0.95 or current_price <= 0.05:
+            # Market is near resolution (price very close to 0 or 1)
+            exit_reason = f"NEAR RESOLUTION (price=${current_price:.2f})"
+
+        if exit_reason:
+            # Close the position
+            trades_df.loc[idx, 'status'] = 'CLOSED'
+            trades_df.loc[idx, 'pnl'] = pnl_usd
+            trades_df.loc[idx, 'exit_price'] = current_price
+            trades_df.loc[idx, 'exit_reason'] = exit_reason
+            trades_df.loc[idx, 'resolved_at'] = datetime.now().isoformat()
+
+            is_win = pnl_usd > 0
+            positions_closed += 1
+
+            # Update portfolio
+            new_balance = portfolio['balance'] + bet_size + pnl_usd  # Return bet + profit/loss
+            portfolio_update = {
+                'timestamp': datetime.now().isoformat(),
+                'balance': new_balance,
+                'open_positions': portfolio['open_positions'] - 1,
+                'total_trades': portfolio['total_trades'],
+                'winning_trades': portfolio['winning_trades'] + (1 if is_win else 0),
+                'losing_trades': portfolio['losing_trades'] + (0 if is_win else 1),
+                'realized_pnl': portfolio['realized_pnl'] + pnl_usd
+            }
+
+            portfolio_df = pd.read_csv(PAPER_PORTFOLIO_CSV)
+            portfolio_df = pd.concat([portfolio_df, pd.DataFrame([portfolio_update])], ignore_index=True)
+            portfolio_df.to_csv(PAPER_PORTFOLIO_CSV, index=False)
+
+            # Update portfolio for next iteration
+            portfolio = get_paper_portfolio_summary()
+
+            # Print exit notification
+            color = "green" if is_win else "red"
+            cprint(f"\n{'='*60}", color)
+            cprint(f"💰 POSITION CLOSED - {exit_reason}", color, attrs=['bold'])
+            cprint(f"{'='*60}", color)
+            cprint(f"   Market: {market_title[:40]}...", "white")
+            cprint(f"   Side: {side}", "cyan")
+            cprint(f"   Entry: ${entry_price:.2f} → Exit: ${current_price:.2f}", "white")
+            cprint(f"   P&L: ${pnl_usd:.2f} ({pnl_percent*100:.1f}%)", color)
+            cprint(f"   New Balance: ${new_balance:.2f}", "white")
+            cprint(f"{'='*60}\n", color)
+
+    # Save updated trades
+    trades_df.to_csv(PAPER_TRADES_CSV, index=False)
+
+    if positions_closed > 0:
+        cprint(f"\n✅ Closed {positions_closed} positions", "green")
+    else:
+        cprint(f"📊 No positions hit exit conditions", "white")
+
+
+def get_market_current_price(condition_id: str, side: str) -> float:
+    """
+    Get current market price from Polymarket for a specific market.
+    Returns the current price for YES or NO side.
+    """
+    if not condition_id:
+        return None
+
+    try:
+        # Try to get market data from Polymarket Gamma API
+        url = f"{POLYMARKET_GAMMA_API}/markets/{condition_id}"
+        response = requests.get(url, timeout=10)
+
+        if response.status_code == 200:
+            data = response.json()
+            # Get outcome prices - typically 'outcomePrices' is a list [yes_price, no_price]
+            prices = data.get('outcomePrices', [])
+            if prices and len(prices) >= 2:
+                yes_price = float(prices[0]) if prices[0] else 0.5
+                no_price = float(prices[1]) if prices[1] else 0.5
+                return yes_price if side.upper() == 'YES' else no_price
+
+        # Fallback: try CLOB API
+        clob_url = f"https://clob.polymarket.com/markets/{condition_id}"
+        response = requests.get(clob_url, timeout=10)
+        if response.status_code == 200:
+            data = response.json()
+            tokens = data.get('tokens', [])
+            for token in tokens:
+                if token.get('outcome', '').upper() == side.upper():
+                    return float(token.get('price', 0.5))
+
+    except Exception as e:
+        # Silently fail - we'll skip this position
+        pass
+
+    return None
+
 
 # ==============================================================================
 # Polymarket Web Search Agent
@@ -1539,6 +1717,10 @@ Provide predictions for each market in the specified format."""
 
         while True:
             try:
+                # 🌙 Moon Dev - Check open positions for take profit / stop loss
+                if PAPER_TRADING_MODE and CHECK_PRICES_ENABLED:
+                    check_and_close_positions()
+
                 self.analysis_cycle()
 
                 next_check = datetime.now() + timedelta(seconds=ANALYSIS_CHECK_INTERVAL_SECONDS)
@@ -1578,8 +1760,12 @@ def main():
         cprint(f"   📊 Bet Size: {BET_SIZE_PERCENT*100}% per trade", "green")
         cprint(f"   🎯 Min Consensus: {MIN_CONSENSUS_FOR_TRADE}/6 models", "green")
         cprint(f"   📈 Max Open Positions: {MAX_OPEN_POSITIONS}", "green")
+        cprint(f"   📈 Take Profit: +{TAKE_PROFIT_PERCENT*100}%", "green")
+        cprint(f"   📉 Stop Loss: -{STOP_LOSS_PERCENT*100}%", "green")
         init_paper_portfolio()
         print_paper_portfolio_status()
+        # Check existing open positions for exits
+        check_and_close_positions()
     else:
         cprint("⚠️ PAPER TRADING MODE: DISABLED (analysis only)", "yellow")
 
