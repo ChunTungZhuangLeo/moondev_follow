@@ -13,9 +13,12 @@ env/
 venv/
 .venv/
 
-# Data (don't track CSV outputs)
+# Data - ignore Kalshi CSVs but TRACK Polymarket trading data
 src/data/kalshi/*.csv
-src/data/polymarket/*.csv
+
+# Track Polymarket websearch trading data (synced from AWS)
+!src/data/polymarket_websearch/*.csv
+!src/data/polymarket_websearch_v2/*.csv
 
 # AWS Keys
 *.pem
