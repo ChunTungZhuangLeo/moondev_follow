@@ -24,12 +24,21 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 V1_DATA_DIR = os.path.join(BASE_DIR, "data", "polymarket_websearch")
 V2_DATA_DIR = os.path.join(BASE_DIR, "data", "polymarket_websearch_v2")
 
-# CSV filenames
-PORTFOLIO_CSV = "paper_portfolio.csv"
-TRADES_CSV = "paper_trades.csv"
-CONSENSUS_CSV = "consensus_picks.csv"
-PREDICTIONS_CSV = "predictions.csv"
-MARKETS_CSV = "markets.csv"
+# CSV filenames (V1 uses standard names, V2 uses _v2 suffix)
+V1_FILES = {
+    "portfolio": "paper_portfolio.csv",
+    "trades": "paper_trades.csv",
+    "consensus": "consensus_picks.csv",
+    "predictions": "predictions.csv",
+    "markets": "markets.csv",
+}
+V2_FILES = {
+    "portfolio": "paper_portfolio_v2.csv",
+    "trades": "paper_trades_v2.csv",
+    "consensus": "consensus_picks_v2.csv",
+    "predictions": "predictions_v2.csv",
+    "markets": "markets_v2.csv",
+}
 
 
 def load_csv_safe(filepath):
@@ -43,14 +52,20 @@ def load_csv_safe(filepath):
     return pd.DataFrame()
 
 
-def print_summary(version, data_dir):
+def print_summary(version, data_dir, files):
     """Print text summary of trading data"""
     cprint(f"\n{'='*60}", "cyan")
     cprint(f"📊 {version} Trading Summary", "cyan", attrs=['bold'])
+    cprint(f"📁 Data: {data_dir}", "white")
     cprint(f"{'='*60}", "cyan")
 
+    # Check if directory exists
+    if not os.path.exists(data_dir):
+        cprint(f"⚠️ Data directory not found: {data_dir}", "yellow")
+        return
+
     # Portfolio
-    portfolio_df = load_csv_safe(os.path.join(data_dir, PORTFOLIO_CSV))
+    portfolio_df = load_csv_safe(os.path.join(data_dir, files["portfolio"]))
     if not portfolio_df.empty:
         cprint("\n💼 Portfolio Status:", "yellow", attrs=['bold'])
         if 'balance' in portfolio_df.columns:
@@ -71,7 +86,7 @@ def print_summary(version, data_dir):
         cprint("\n💼 No portfolio data found", "yellow")
 
     # Trades
-    trades_df = load_csv_safe(os.path.join(data_dir, TRADES_CSV))
+    trades_df = load_csv_safe(os.path.join(data_dir, files["trades"]))
     if not trades_df.empty:
         cprint(f"\n📈 Trade History ({len(trades_df)} trades):", "yellow", attrs=['bold'])
 
@@ -106,7 +121,7 @@ def print_summary(version, data_dir):
         cprint("\n📈 No trade history found", "yellow")
 
     # Consensus Picks
-    consensus_df = load_csv_safe(os.path.join(data_dir, CONSENSUS_CSV))
+    consensus_df = load_csv_safe(os.path.join(data_dir, files["consensus"]))
     if not consensus_df.empty:
         cprint(f"\n🤖 AI Consensus Picks ({len(consensus_df)} total):", "yellow", attrs=['bold'])
 
@@ -133,7 +148,7 @@ def print_summary(version, data_dir):
         cprint("\n🤖 No consensus picks found", "yellow")
 
     # Predictions breakdown by model
-    predictions_df = load_csv_safe(os.path.join(data_dir, PREDICTIONS_CSV))
+    predictions_df = load_csv_safe(os.path.join(data_dir, files["predictions"]))
     if not predictions_df.empty:
         cprint(f"\n🧠 Model Predictions ({len(predictions_df)} analyses):", "yellow", attrs=['bold'])
 
@@ -151,7 +166,7 @@ def print_summary(version, data_dir):
                     cprint(f"   {model_name:12}: YES={yes_count:3} NO={no_count:3} SKIP={no_trade:3}", "white")
 
     # Markets tracked
-    markets_df = load_csv_safe(os.path.join(data_dir, MARKETS_CSV))
+    markets_df = load_csv_safe(os.path.join(data_dir, files["markets"]))
     if not markets_df.empty:
         cprint(f"\n📊 Markets Tracked: {len(markets_df)}", "yellow", attrs=['bold'])
 
@@ -165,13 +180,13 @@ def plot_portfolio_equity(v1_dir, v2_dir, show_v1=True, show_v2=True):
     fig, axes = plt.subplots(2, 2, figsize=(14, 10))
     fig.suptitle('🌙 Moon Dev Trading Dashboard', fontsize=14, fontweight='bold')
 
-    # Load data
-    v1_portfolio = load_csv_safe(os.path.join(v1_dir, PORTFOLIO_CSV)) if show_v1 else pd.DataFrame()
-    v2_portfolio = load_csv_safe(os.path.join(v2_dir, PORTFOLIO_CSV)) if show_v2 else pd.DataFrame()
-    v1_trades = load_csv_safe(os.path.join(v1_dir, TRADES_CSV)) if show_v1 else pd.DataFrame()
-    v2_trades = load_csv_safe(os.path.join(v2_dir, TRADES_CSV)) if show_v2 else pd.DataFrame()
-    v1_consensus = load_csv_safe(os.path.join(v1_dir, CONSENSUS_CSV)) if show_v1 else pd.DataFrame()
-    v2_consensus = load_csv_safe(os.path.join(v2_dir, CONSENSUS_CSV)) if show_v2 else pd.DataFrame()
+    # Load data using correct file mappings
+    v1_portfolio = load_csv_safe(os.path.join(v1_dir, V1_FILES["portfolio"])) if show_v1 else pd.DataFrame()
+    v2_portfolio = load_csv_safe(os.path.join(v2_dir, V2_FILES["portfolio"])) if show_v2 else pd.DataFrame()
+    v1_trades = load_csv_safe(os.path.join(v1_dir, V1_FILES["trades"])) if show_v1 else pd.DataFrame()
+    v2_trades = load_csv_safe(os.path.join(v2_dir, V2_FILES["trades"])) if show_v2 else pd.DataFrame()
+    v1_consensus = load_csv_safe(os.path.join(v1_dir, V1_FILES["consensus"])) if show_v1 else pd.DataFrame()
+    v2_consensus = load_csv_safe(os.path.join(v2_dir, V2_FILES["consensus"])) if show_v2 else pd.DataFrame()
 
     # Plot 1: Equity Curve
     ax1 = axes[0, 0]
@@ -289,10 +304,10 @@ def plot_comparison_metrics(v1_dir, v2_dir):
     fig, axes = plt.subplots(1, 3, figsize=(15, 5))
     fig.suptitle('🌙 V1 vs V2 Strategy Comparison', fontsize=14, fontweight='bold')
 
-    v1_trades = load_csv_safe(os.path.join(v1_dir, TRADES_CSV))
-    v2_trades = load_csv_safe(os.path.join(v2_dir, TRADES_CSV))
-    v1_portfolio = load_csv_safe(os.path.join(v1_dir, PORTFOLIO_CSV))
-    v2_portfolio = load_csv_safe(os.path.join(v2_dir, PORTFOLIO_CSV))
+    v1_trades = load_csv_safe(os.path.join(v1_dir, V1_FILES["trades"]))
+    v2_trades = load_csv_safe(os.path.join(v2_dir, V2_FILES["trades"]))
+    v1_portfolio = load_csv_safe(os.path.join(v1_dir, V1_FILES["portfolio"]))
+    v2_portfolio = load_csv_safe(os.path.join(v2_dir, V2_FILES["portfolio"]))
 
     # Metrics to compare
     metrics = {
@@ -363,10 +378,10 @@ def main():
 
     # Print text summaries
     if show_v1:
-        print_summary("V1 (Consensus-based)", V1_DATA_DIR)
+        print_summary("V1 (Consensus-based)", V1_DATA_DIR, V1_FILES)
 
     if show_v2:
-        print_summary("V2 (Edge-based)", V2_DATA_DIR)
+        print_summary("V2 (Edge-based)", V2_DATA_DIR, V2_FILES)
 
     # Generate plots
     if not args.no_plot:
