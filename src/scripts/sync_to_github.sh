@@ -5,11 +5,11 @@
 # SETUP:
 # 1. Make executable: chmod +x src/scripts/sync_to_github.sh
 # 2. Add to crontab: crontab -e
-#    0 */8 * * * cd ~/moon-dev-lightweight && ./src/scripts/sync_to_github.sh >> ~/sync_log.txt 2>&1
+#    0 */8 * * * cd ~/moondev_follow && ./src/scripts/sync_to_github.sh >> ~/sync_log.txt 2>&1
 #
 # Or run manually: ./src/scripts/sync_to_github.sh
 
-cd ~/moon-dev-lightweight
+cd ~/moondev_follow
 
 echo "=============================================="
 echo "🌙 Moon Dev Sync - $(date)"
