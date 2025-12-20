@@ -90,6 +90,10 @@ class ExecutorConfig:
 class ExecutedTrade:
     """
     Record of an executed trade.
+
+    Trade Types:
+    - hold_to_resolution: Short-term markets (<7 days) - hold until event resolves
+    - take_profit: Longer-term markets - actively looking to sell when edge captured
     """
     trade_id: str
     timestamp: datetime
@@ -110,6 +114,10 @@ class ExecutedTrade:
     true_prob: float = 0.5  # AI's estimated true probability for exit strategy
     consensus_count: int = 0
     notes: str = ""
+    # New fields for trade classification and edge tracking
+    trade_type: str = "take_profit"  # "hold_to_resolution" or "take_profit"
+    expected_edge_cents: int = 0  # Expected edge in cents (true_prob - entry_price) * 100
+    achieved_edge_cents: int = 0  # Achieved edge in cents (current_price - entry_price)
 
 
 @dataclass
@@ -177,13 +185,21 @@ class KalshiTradeExecutor:
         # Load trades
         if os.path.exists(self.trades_csv):
             self.trades_df = pd.read_csv(self.trades_csv)
+            # Add new columns if they don't exist (for backward compatibility)
+            if 'trade_type' not in self.trades_df.columns:
+                self.trades_df['trade_type'] = 'take_profit'
+            if 'expected_edge_cents' not in self.trades_df.columns:
+                self.trades_df['expected_edge_cents'] = 0
+            if 'achieved_edge_cents' not in self.trades_df.columns:
+                self.trades_df['achieved_edge_cents'] = 0
         else:
             self.trades_df = pd.DataFrame(columns=[
                 'trade_id', 'timestamp', 'mode', 'ticker', 'title',
                 'side', 'action', 'contracts', 'price_cents', 'cost_usd',
                 'status', 'order_id', 'exit_price_cents', 'exit_timestamp',
                 'pnl_usd', 'edge_pct', 'true_prob', 'consensus_count', 'notes',
-                'last_check', 'current_price_cents', 'unrealized_pnl'
+                'last_check', 'current_price_cents', 'unrealized_pnl',
+                'trade_type', 'expected_edge_cents', 'achieved_edge_cents'
             ])
 
         # Calculate portfolio state
@@ -374,6 +390,20 @@ class KalshiTradeExecutor:
         """Execute a paper trade (simulated)."""
         trade_id = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
 
+        # Determine trade type based on days to resolution
+        # Short-term (<7 days) = hold to resolution, longer = take profit when edge captured
+        days = signal.days_to_resolution
+        trade_type = "hold_to_resolution" if (days is not None and days <= 7) else "take_profit"
+
+        # Calculate expected edge in cents
+        # For YES bets: expected_edge = (true_prob - entry_price) * 100
+        # For NO bets: expected_edge = ((1 - true_prob) - entry_price) * 100
+        entry_price_decimal = signal.price_cents / 100.0
+        if signal.side.upper() == "YES":
+            expected_edge_cents = int((signal.true_prob - entry_price_decimal) * 100)
+        else:
+            expected_edge_cents = int(((1 - signal.true_prob) - entry_price_decimal) * 100)
+
         trade = ExecutedTrade(
             trade_id=trade_id,
             timestamp=datetime.now(),
@@ -390,7 +420,10 @@ class KalshiTradeExecutor:
             edge_pct=signal.edge_pct,
             true_prob=signal.true_prob,  # AI's probability estimate for exit strategy
             consensus_count=signal.consensus_count,
-            notes=f"Paper trade - EV={signal.expected_value*100:.1f}%"
+            notes=f"Paper trade - EV={signal.expected_value*100:.1f}%",
+            trade_type=trade_type,
+            expected_edge_cents=expected_edge_cents,
+            achieved_edge_cents=0  # Will be updated during monitoring
         )
 
         self._save_trade(trade)
@@ -410,6 +443,17 @@ class KalshiTradeExecutor:
             return None
 
         trade_id = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
+
+        # Determine trade type based on days to resolution
+        days = signal.days_to_resolution
+        trade_type = "hold_to_resolution" if (days is not None and days <= 7) else "take_profit"
+
+        # Calculate expected edge in cents
+        entry_price_decimal = signal.price_cents / 100.0
+        if signal.side.upper() == "YES":
+            expected_edge_cents = int((signal.true_prob - entry_price_decimal) * 100)
+        else:
+            expected_edge_cents = int(((1 - signal.true_prob) - entry_price_decimal) * 100)
 
         try:
             # Place order on Kalshi
@@ -442,7 +486,10 @@ class KalshiTradeExecutor:
                 edge_pct=signal.edge_pct,
                 true_prob=signal.true_prob,  # AI's probability estimate for exit strategy
                 consensus_count=signal.consensus_count,
-                notes=f"Live trade - Order ID: {order_id}"
+                notes=f"Live trade - Order ID: {order_id}",
+                trade_type=trade_type,
+                expected_edge_cents=expected_edge_cents,
+                achieved_edge_cents=0
             )
 
             self._save_trade(trade)
@@ -479,7 +526,10 @@ class KalshiTradeExecutor:
             'edge_pct': trade.edge_pct,
             'true_prob': trade.true_prob,  # AI's probability for exit strategy
             'consensus_count': trade.consensus_count,
-            'notes': trade.notes
+            'notes': trade.notes,
+            'trade_type': trade.trade_type,  # hold_to_resolution or take_profit
+            'expected_edge_cents': trade.expected_edge_cents,  # AI's predicted edge at entry
+            'achieved_edge_cents': trade.achieved_edge_cents  # Current captured edge
         }
 
         new_row = pd.DataFrame([trade_dict])
@@ -548,7 +598,7 @@ class KalshiTradeExecutor:
 
     def update_position_price(self, trade_id: str, current_price_cents: int, unrealized_pnl: float):
         """
-        Update the current price and unrealized P&L for an open position.
+        Update the current price, unrealized P&L, and achieved edge for an open position.
 
         Called during each monitoring run to track price changes in trades.csv.
 
@@ -561,9 +611,14 @@ class KalshiTradeExecutor:
         if len(trade_idx) == 0:
             return
 
+        # Calculate achieved edge (current_price - entry_price)
+        entry_price_cents = self.trades_df.loc[trade_idx, 'price_cents'].iloc[0]
+        achieved_edge_cents = current_price_cents - int(entry_price_cents)
+
         self.trades_df.loc[trade_idx, 'last_check'] = datetime.now().isoformat()
         self.trades_df.loc[trade_idx, 'current_price_cents'] = current_price_cents
         self.trades_df.loc[trade_idx, 'unrealized_pnl'] = round(unrealized_pnl, 2)
+        self.trades_df.loc[trade_idx, 'achieved_edge_cents'] = achieved_edge_cents
 
         self.trades_df.to_csv(self.trades_csv, index=False)
 
@@ -580,21 +635,33 @@ class KalshiTradeExecutor:
         return mode_trades.tail(limit)
 
     def display_open_positions(self):
-        """Display all open positions."""
+        """Display all open positions with trade type and edge tracking."""
         open_pos = self.get_open_positions()
 
         if open_pos.empty:
             cprint("\nNo open positions", "yellow")
             return
 
-        cprint(f"\n{'='*60}", "cyan")
+        cprint(f"\n{'='*70}", "cyan")
         cprint(f"OPEN POSITIONS ({len(open_pos)})", "cyan", attrs=['bold'])
-        cprint(f"{'='*60}", "cyan")
+        cprint(f"{'='*70}", "cyan")
 
         for _, pos in open_pos.iterrows():
-            cprint(f"\n  {pos['ticker']}: {pos['side'].upper()} @ ${pos['price_cents']/100:.2f}", "white")
+            # Get trade type emoji
+            trade_type = pos.get('trade_type', 'take_profit')
+            type_emoji = "⏳" if trade_type == "hold_to_resolution" else "📈"
+            type_label = "HOLD" if trade_type == "hold_to_resolution" else "TAKE_PROFIT"
+
+            # Get edge info
+            expected_edge = pos.get('expected_edge_cents', 0) or 0
+            achieved_edge = pos.get('achieved_edge_cents', 0) or 0
+            edge_captured_pct = (achieved_edge / expected_edge * 100) if expected_edge > 0 else 0
+
+            cprint(f"\n  {type_emoji} {pos['ticker']}: {pos['side'].upper()} @ ${pos['price_cents']/100:.2f} [{type_label}]", "white")
             cprint(f"    Contracts: {pos['contracts']} | Cost: ${pos['cost_usd']:.2f}", "white")
-            cprint(f"    Edge: {pos['edge_pct']*100:.1f}% | Consensus: {pos['consensus_count']}/6", "white")
+            cprint(f"    Entry Edge: {pos['edge_pct']*100:.1f}% | Consensus: {pos['consensus_count']}/6", "white")
+            cprint(f"    Expected Edge: {expected_edge}¢ | Achieved: {achieved_edge}¢ ({edge_captured_pct:.0f}% captured)",
+                   "green" if achieved_edge > 0 else "red" if achieved_edge < 0 else "white")
 
     def display_performance_summary(self):
         """Display performance summary."""

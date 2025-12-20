@@ -238,6 +238,9 @@ class TradeSignal:
     # Timestamp
     timestamp: datetime = field(default_factory=datetime.now)
 
+    # Time info for trade classification
+    days_to_resolution: Optional[int] = None  # Days until market resolves
+
 
 class ValueTradingEngine:
     """
@@ -621,7 +624,8 @@ class ValueTradingEngine:
             true_prob=analysis.ai_probability,  # Store AI's probability for exit strategy
             risk_reward_ratio=risk_reward,
             max_loss_usd=cost_usd,
-            break_even_prob=break_even
+            break_even_prob=break_even,
+            days_to_resolution=analysis.days_to_resolution  # For trade type classification
         )
 
     def rank_opportunities(

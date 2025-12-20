@@ -185,9 +185,6 @@ def get_required_edge(days_to_resolution: Optional[int]) -> float:
     - 60-180 days: 15% edge (need more edge for longer hold)
     - 180-365 days: 25% edge (significant edge for 6+ months)
 
-    The rationale: capital locked for longer periods needs higher edge to justify
-    the opportunity cost. Also, longer-term predictions are less reliable.
-
     Args:
         days_to_resolution: Days until market resolves (None defaults to standard edge)
 
@@ -357,8 +354,39 @@ Only include trades that meet ALL criteria. Quality over quantity.
 If no trades qualify, say "NO QUALIFIED VALUE TRADES THIS ROUND"
 """
 
-# Data Paths
-DATA_FOLDER = os.path.join(project_root, "src/data/kalshi_value")
+# Web-based re-evaluation prompt for existing positions
+REEVAL_PROMPT = """You are re-evaluating an EXISTING position based on NEW information.
+
+POSITION DETAILS:
+- Market: {ticker}
+- Title: {title}
+- Our Side: {our_side} (we are betting {our_side})
+- Entry Price: ${entry_price:.2f}
+- Current Price: ${current_price:.2f}
+- Unrealized P&L: {pnl_pct:+.1f}%
+- Original AI Probability: {original_prob:.0%}
+- Days to Resolution: {days_to_close}
+
+RECENT NEWS/INFORMATION:
+{web_context}
+
+TASK:
+Based on the NEW information above, re-assess whether our position thesis is still valid.
+
+Consider:
+1. Has any news changed the fundamental probability?
+2. Is the market now pricing this correctly (our edge is gone)?
+3. Should we EXIT (thesis broken) or HOLD (thesis intact)?
+
+Respond in EXACTLY this format:
+ACTION: [HOLD/EXIT]
+NEW_PROB: [your updated probability estimate 0.00-1.00]
+CONFIDENCE: [1-10]
+REASONING: [2-3 sentences explaining why to hold or exit based on new info]
+"""
+
+# Data Paths - V2 uses separate folder
+DATA_FOLDER = os.path.join(project_root, "src/data/kalshi_value_v2")
 LOGS_FOLDER = os.path.join(DATA_FOLDER, "logs")
 MARKETS_CSV = os.path.join(DATA_FOLDER, "markets.csv")
 PREDICTIONS_CSV = os.path.join(DATA_FOLDER, "predictions.csv")
@@ -366,6 +394,13 @@ VALUE_PICKS_CSV = os.path.join(DATA_FOLDER, "value_picks.csv")
 TRADE_LOG_CSV = os.path.join(DATA_FOLDER, "trade_log.csv")
 PORTFOLIO_CSV = os.path.join(DATA_FOLDER, "portfolio.csv")
 PRICE_HISTORY_CSV = os.path.join(DATA_FOLDER, "price_history.csv")  # Hourly price snapshots
+REEVAL_LOG_CSV = os.path.join(DATA_FOLDER, "reeval_log.csv")  # Re-evaluation history
+
+# Re-evaluation Configuration
+REEVAL_PRICE_MOVE_THRESHOLD = 0.20  # Re-evaluate if price moved >20% from entry
+REEVAL_LOSS_THRESHOLD = -0.15  # Re-evaluate if position is down >15%
+REEVAL_DAYS_BEFORE_RESOLUTION = 7  # Re-evaluate positions within 7 days of resolution
+REEVAL_MIN_HOURS_BETWEEN = 24  # Don't re-evaluate same position more than once per day
 
 os.makedirs(DATA_FOLDER, exist_ok=True)
 os.makedirs(LOGS_FOLDER, exist_ok=True)
@@ -422,12 +457,24 @@ class KalshiValueAgent:
         )
 
         exec_mode = ExecutionMode.LIVE if live_mode else ExecutionMode.PAPER
+
+        # V2 uses separate data folder - pass paths to executor
+        trades_csv_path = os.path.join(DATA_FOLDER, "trades.csv")
+        positions_csv_path = os.path.join(DATA_FOLDER, "positions.csv")
+        portfolio_csv_path = os.path.join(DATA_FOLDER, "portfolio.csv")
+
+        cprint(f"\n📁 V2 Data Folder: {DATA_FOLDER}", "cyan")
+        cprint(f"   Trades CSV: {trades_csv_path}", "cyan")
+
         self.executor = KalshiTradeExecutor(
             ExecutorConfig(
                 mode=exec_mode,
                 paper_starting_balance=BANKROLL_USD,
                 max_daily_trades=20,
-                max_daily_loss_usd=500.0
+                max_daily_loss_usd=500.0,
+                trades_csv_path=trades_csv_path,
+                positions_csv_path=positions_csv_path,
+                portfolio_csv_path=portfolio_csv_path
             )
         )
 
@@ -449,7 +496,7 @@ class KalshiValueAgent:
         """Print agent startup banner."""
         mode = "LIVE" if self.live_mode else "PAPER"
         cprint("\n" + "="*70, "cyan")
-        cprint(" KALSHI VALUE TRADING AGENT ", "white", "on_cyan", attrs=['bold'])
+        cprint(" KALSHI VALUE TRADING AGENT V2 (Web Re-Eval) ", "white", "on_cyan", attrs=['bold'])
         cprint("="*70, "cyan")
         cprint(f"  Mode: {mode} TRADING", "yellow" if mode == "PAPER" else "red")
         cprint(f"  Bankroll: ${BANKROLL_USD:,.0f}", "white")
@@ -460,6 +507,7 @@ class KalshiValueAgent:
         cprint(f"  Kelly Fraction: {KELLY_FRACTION*100:.0f}%", "white")
         cprint(f"  Resolution Window: {MIN_DAYS_TO_RESOLUTION}-{MAX_DAYS_TO_RESOLUTION} days", "white")
         cprint(f"  Long-Term Volume Filter: >{LONG_TERM_DAYS_THRESHOLD}d needs {LONG_TERM_MIN_VOLUME}+ vol", "yellow")
+        cprint(f"  Web Re-Evaluation: Enabled for underwater positions", "magenta")
         cprint("="*70 + "\n", "cyan")
 
     def fetch_markets(self) -> pd.DataFrame:
@@ -1610,6 +1658,32 @@ LINK: {trade['link']}
             except Exception:
                 pass
 
+        # === 5. WEB-BASED RE-EVALUATION (V2 Feature) ===
+        # Check if this position should be re-evaluated with fresh web info
+        days_to_resolution = None
+        close_time_str = market.get('close_time', '')
+        if close_time_str:
+            try:
+                close_time = datetime.fromisoformat(close_time_str.replace('Z', '+00:00'))
+                close_time = close_time.replace(tzinfo=None)
+                days_to_resolution = (close_time - datetime.now()).days
+            except:
+                pass
+
+        should_reeval, reeval_reason = self._should_reevaluate(
+            pos, current_price, pnl_pct, days_to_resolution
+        )
+
+        if should_reeval:
+            action = self._reevaluate_position(
+                pos, market, current_price, pnl_pct, days_to_resolution, reeval_reason
+            )
+
+            if action == 'EXIT':
+                exit_reason = f"AI re-evaluation: thesis invalidated ({reeval_reason})"
+                self._execute_early_exit(pos, current_price, unrealized_pnl, cost, contracts, exit_reason, won=pnl_pct > 0)
+                return
+
         # Report position status (no exit triggered)
         status_color = "green" if pnl_pct >= 0 else "yellow"
         target_info = f"Target: ${target_price:.2f}" if total_edge > 0 else ""
@@ -1661,6 +1735,254 @@ LINK: {trade['link']}
             self.executor._calculate_portfolio_state()
 
             cprint(f"    SOLD (paper): ${actual_pnl:+.2f}", color)
+
+    def _should_reevaluate(
+        self,
+        pos: pd.Series,
+        current_price: float,
+        pnl_pct: float,
+        days_to_resolution: Optional[float]
+    ) -> Tuple[bool, str]:
+        """
+        Determine if a position should be re-evaluated with web search.
+
+        Triggers:
+        1. Large price move (>20% from entry)
+        2. Significant loss (>15% underwater)
+        3. Approaching resolution (within 7 days)
+
+        Returns:
+            Tuple of (should_reeval, reason)
+        """
+        entry_price = pos['price_cents'] / 100.0
+        trade_id = pos['trade_id']
+
+        # Check if we recently re-evaluated this position
+        if os.path.exists(REEVAL_LOG_CSV):
+            try:
+                reeval_df = pd.read_csv(REEVAL_LOG_CSV)
+                last_reeval = reeval_df[reeval_df['trade_id'] == trade_id]
+                if not last_reeval.empty:
+                    last_time = datetime.fromisoformat(last_reeval.iloc[-1]['timestamp'])
+                    hours_since = (datetime.now() - last_time).total_seconds() / 3600
+                    if hours_since < REEVAL_MIN_HOURS_BETWEEN:
+                        return False, f"Re-evaluated {hours_since:.0f}h ago"
+            except Exception:
+                pass
+
+        # Trigger 1: Large price move from entry
+        price_change_pct = abs(current_price - entry_price) / entry_price if entry_price > 0 else 0
+        if price_change_pct >= REEVAL_PRICE_MOVE_THRESHOLD:
+            direction = "up" if current_price > entry_price else "down"
+            return True, f"Price moved {price_change_pct*100:.0f}% {direction} from entry"
+
+        # Trigger 2: Significant loss
+        if pnl_pct <= REEVAL_LOSS_THRESHOLD:
+            return True, f"Position is {pnl_pct*100:.1f}% underwater"
+
+        # Trigger 3: Approaching resolution
+        if days_to_resolution is not None and days_to_resolution <= REEVAL_DAYS_BEFORE_RESOLUTION:
+            return True, f"Only {days_to_resolution:.0f} days to resolution"
+
+        return False, "No trigger"
+
+    def _fetch_web_context(self, ticker: str, title: str) -> str:
+        """
+        Fetch recent news/information about a market using web search.
+
+        Returns:
+            String with relevant web context, or error message
+        """
+        try:
+            # Import web search capability
+            from src.models.model_factory import model_factory
+
+            # Create search query from title
+            # Clean up title for better search
+            search_query = title.replace("**", "").replace("?", "")
+            search_query = f"{search_query} latest news 2025"
+
+            cprint(f"    🔍 Searching: {search_query[:50]}...", "cyan")
+
+            # Use Gemini for web search (it has good search integration)
+            model = model_factory.get_model('gemini', 'gemini-2.0-flash')
+
+            if not model:
+                return "Web search unavailable - no model"
+
+            # Ask model to search and summarize recent news
+            search_prompt = f"""Search for the latest news and information about this topic:
+
+"{title}"
+
+Find and summarize:
+1. Any recent news articles (last 7 days)
+2. Expert opinions or analysis
+3. Key facts that could affect the outcome
+4. Any announcements or official statements
+
+Keep your response under 300 words. Focus on FACTS, not speculation.
+If you can't find recent news, say "No recent news found" and provide any relevant background."""
+
+            response = model.generate_response(
+                system_prompt="You are a news researcher. Find and summarize relevant recent news.",
+                user_content=search_prompt,
+                temperature=0.3,
+                max_tokens=500
+            )
+
+            if response and hasattr(response, 'content'):
+                return response.content
+            else:
+                return "No web context retrieved"
+
+        except Exception as e:
+            cprint(f"    ⚠️ Web search error: {e}", "yellow")
+            return f"Web search error: {str(e)}"
+
+    def _reevaluate_position(
+        self,
+        pos: pd.Series,
+        market: Dict,
+        current_price: float,
+        pnl_pct: float,
+        days_to_resolution: Optional[float],
+        reason: str
+    ) -> Optional[str]:
+        """
+        Re-evaluate a position using web search and AI analysis.
+
+        Returns:
+            "EXIT" if AI recommends closing, "HOLD" to keep, or None on error
+        """
+        ticker = pos['ticker']
+        title = pos['title']
+        our_side = pos['side'].lower()
+        entry_price = pos['price_cents'] / 100.0
+        true_prob = pos.get('true_prob', 0.5)
+
+        cprint(f"\n  🔄 RE-EVALUATING: {ticker}", "magenta", attrs=['bold'])
+        cprint(f"    Reason: {reason}", "magenta")
+
+        # Fetch web context
+        web_context = self._fetch_web_context(ticker, title)
+
+        if "error" in web_context.lower() or "unavailable" in web_context.lower():
+            cprint(f"    ⚠️ Could not fetch web context, skipping re-eval", "yellow")
+            return None
+
+        # Build re-evaluation prompt
+        prompt = REEVAL_PROMPT.format(
+            ticker=ticker,
+            title=title,
+            our_side=our_side.upper(),
+            entry_price=entry_price,
+            current_price=current_price,
+            pnl_pct=pnl_pct * 100,
+            original_prob=true_prob,
+            days_to_close=days_to_resolution if days_to_resolution else "Unknown",
+            web_context=web_context
+        )
+
+        # Use Claude Sonnet for re-evaluation (best reasoning)
+        try:
+            model = self.model_factory.get_model('claude', 'claude-sonnet-4-5')
+
+            if not model:
+                cprint(f"    ⚠️ No model for re-evaluation", "yellow")
+                return None
+
+            response = model.generate_response(
+                system_prompt="You are a prediction market analyst re-evaluating an existing position.",
+                user_content=prompt,
+                temperature=0.2,
+                max_tokens=500
+            )
+
+            content = response.content if hasattr(response, 'content') else str(response)
+
+            # Parse response
+            action = None
+            new_prob = None
+            confidence = None
+            reasoning = ""
+
+            for line in content.split('\n'):
+                line = line.strip().upper()
+                if line.startswith('ACTION:'):
+                    action_val = line.replace('ACTION:', '').strip()
+                    if 'EXIT' in action_val:
+                        action = 'EXIT'
+                    elif 'HOLD' in action_val:
+                        action = 'HOLD'
+                elif line.startswith('NEW_PROB:'):
+                    try:
+                        new_prob = float(line.replace('NEW_PROB:', '').strip())
+                    except:
+                        pass
+                elif line.startswith('CONFIDENCE:'):
+                    try:
+                        confidence = int(line.replace('CONFIDENCE:', '').strip().split('/')[0])
+                    except:
+                        pass
+                elif line.startswith('REASONING:'):
+                    reasoning = line.replace('REASONING:', '').strip()
+
+            # Log the re-evaluation
+            self._log_reevaluation(
+                trade_id=pos['trade_id'],
+                ticker=ticker,
+                action=action or 'UNKNOWN',
+                new_prob=new_prob,
+                confidence=confidence,
+                reasoning=reasoning,
+                web_context=web_context[:500]  # Truncate for CSV
+            )
+
+            if action == 'EXIT':
+                cprint(f"    🚨 AI RECOMMENDS EXIT: {reasoning}", "red", attrs=['bold'])
+            elif action == 'HOLD':
+                cprint(f"    ✅ AI RECOMMENDS HOLD: {reasoning}", "green")
+
+            return action
+
+        except Exception as e:
+            cprint(f"    ❌ Re-evaluation error: {e}", "red")
+            return None
+
+    def _log_reevaluation(
+        self,
+        trade_id: str,
+        ticker: str,
+        action: str,
+        new_prob: Optional[float],
+        confidence: Optional[int],
+        reasoning: str,
+        web_context: str
+    ):
+        """Log re-evaluation to CSV for tracking."""
+        record = {
+            'timestamp': datetime.now().isoformat(),
+            'trade_id': trade_id,
+            'ticker': ticker,
+            'action': action,
+            'new_prob': new_prob,
+            'confidence': confidence,
+            'reasoning': reasoning,
+            'web_context': web_context.replace('\n', ' ')[:500]
+        }
+
+        if os.path.exists(REEVAL_LOG_CSV):
+            try:
+                df = pd.read_csv(REEVAL_LOG_CSV)
+            except:
+                df = pd.DataFrame()
+        else:
+            df = pd.DataFrame()
+
+        new_df = pd.DataFrame([record])
+        combined = pd.concat([df, new_df], ignore_index=True)
+        combined.to_csv(REEVAL_LOG_CSV, index=False)
 
     def run_once(self):
         """Run a single analysis cycle."""
