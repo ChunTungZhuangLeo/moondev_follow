@@ -1,0 +1,2 @@
+trade_id,timestamp,mode,ticker,title,side,action,contracts,price_cents,cost_usd,status,order_id,exit_price_cents,exit_timestamp,pnl_usd,edge_pct,true_prob,consensus_count,notes,last_check,current_price_cents,unrealized_pnl,trade_type,expected_edge_cents,achieved_edge_cents
+20251222_202949_491849,2025-12-22T20:29:49.492645,paper,KXGDP-26JAN30-T2.5,Will **real GDP** increase by more than 2.5% in Q4 2025?,yes,buy,679,29,196.91,open,PAPER-20251222_202949_491849,,,,0.14000000000000007,0.43000000000000005,4,Paper trade - EV=14.0%,,,,take_profit,14,0

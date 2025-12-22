@@ -1,0 +1,3 @@
+timestamp,ticker,side,entry_price,current_price,unrealized_pnl,pnl_pct,status
+2025-12-22T20:46:00.820659,KXGDP-26JAN30-T2.5,yes,0.29,,,,open
+2025-12-22T20:46:00.820659,_PORTFOLIO_TOTAL,,196.91,,,,summary

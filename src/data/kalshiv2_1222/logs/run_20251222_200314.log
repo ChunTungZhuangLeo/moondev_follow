@@ -1,0 +1,191 @@
+======================================================================
+KALSHI VALUE AGENT - RUN LOG
+======================================================================
+
+Timestamp: 2025-12-22 20:03:14
+Mode: PAPER
+Bankroll: $5,000
+
+MARKETS ANALYZED: 94
+QUALIFIED TRADES: 17
+EXECUTED TRADES: 0
+
+======================================================================
+QUALIFIED TRADES DETAILS
+======================================================================
+
+#1: KXGDP-26JAN30-T1.0
+    Title: Will **real GDP** increase by more than 1.0% in Q4 2025?
+    Side: YES
+    Consensus: 3/4 models
+    Edge: 10.9%
+    Confidence: 7.3/10
+    True Prob: 0.81
+    Market Price: $0.86
+    Link: https://kalshi.com/markets/KXGDP-26JAN30-T1.0
+
+#2: KXCPICOMBO-25DEC-0129
+    Title: Will CPI be Above 0.1% AND YOYCPI be Above 2.9% for Dec 2025?
+    Side: YES
+    Consensus: 3/3 models
+    Edge: 283.3%
+    Confidence: 6.3/10
+    True Prob: 0.38
+    Market Price: $0.10
+    Link: https://kalshi.com/markets/KXCPICOMBO-25DEC-0129
+
+#3: KXCPICOMBO-25DEC-027
+    Title: Will CPI be Above 0% AND YOYCPI be Above 2.7% for Dec 2025?
+    Side: YES
+    Consensus: 4/4 models
+    Edge: 29.7%
+    Confidence: 6.0/10
+    True Prob: 0.48
+    Market Price: $0.37
+    Link: https://kalshi.com/markets/KXCPICOMBO-25DEC-027
+
+#4: KXGDP-26JAN30-T1.5
+    Title: Will **real GDP** increase by more than 1.5% in Q4 2025?
+    Side: YES
+    Consensus: 3/4 models
+    Edge: 9.5%
+    Confidence: 7.0/10
+    True Prob: 0.75
+    Market Price: $0.74
+    Link: https://kalshi.com/markets/KXGDP-26JAN30-T1.5
+
+#5: KXCPI-25DEC-T0.3
+    Title: Will CPI rise more than 0.3% in December 2025?
+    Side: YES
+    Consensus: 3/3 models
+    Edge: 66.7%
+    Confidence: 6.0/10
+    True Prob: 0.30
+    Market Price: $0.15
+    Link: https://kalshi.com/markets/KXCPI-25DEC-T0.3
+
+#6: KXCPI-25DEC-T0.2
+    Title: Will CPI rise more than 0.2% in December 2025?
+    Side: YES
+    Consensus: 3/3 models
+    Edge: 19.0%
+    Confidence: 6.7/10
+    True Prob: 0.58
+    Market Price: $0.49
+    Link: https://kalshi.com/markets/KXCPI-25DEC-T0.2
+
+#7: KXGDP-26JAN30-T1.75
+    Title: Will **real GDP** increase by more than 1.75% in Q4 2025?
+    Side: YES
+    Consensus: 4/5 models
+    Edge: 13.7%
+    Confidence: 6.8/10
+    True Prob: 0.71
+    Market Price: $0.62
+    Link: https://kalshi.com/markets/KXGDP-26JAN30-T1.75
+
+#8: KXGDP-26JAN30-T0
+    Title: Will **real GDP** increase by more than 0% in Q4 2025?
+    Side: YES
+    Consensus: 3/4 models
+    Edge: 8.9%
+    Confidence: 7.3/10
+    True Prob: 0.88
+    Market Price: $0.91
+    Link: https://kalshi.com/markets/KXGDP-26JAN30-T0
+
+#9: KXINX-25DEC22H1600-B6837
+    Title: Will the S&P 500 be between 6825 and 6849.9999 on Dec 22, 2025 at 4pm EST?
+    Side: NO
+    Consensus: 3/3 models
+    Edge: 63.2%
+    Confidence: 9.0/10
+    True Prob: 0.04
+    Market Price: $0.97
+    Link: https://kalshi.com/markets/KXINX-25DEC22H1600-B6837
+
+#10: KXJOBLESSCLAIMS-25DEC24-240000
+    Title: How many initial jobless claims will there be the week ending Dec 20, 2025?
+    Side: NO
+    Consensus: 3/3 models
+    Edge: 54.2%
+    Confidence: 7.3/10
+    True Prob: 0.43
+    Market Price: $0.80
+    Link: https://kalshi.com/markets/KXJOBLESSCLAIMS-25DEC24-240000
+
+#11: KXGDP-26JAN30-T1.25
+    Title: Will **real GDP** increase by more than 1.25% in Q4 2025?
+    Side: YES
+    Consensus: 3/4 models
+    Edge: 8.7%
+    Confidence: 7.7/10
+    True Prob: 0.80
+    Market Price: $0.79
+    Link: https://kalshi.com/markets/KXGDP-26JAN30-T1.25
+
+#12: KXHIGHCHI-25DEC23-T52
+    Title: Will the high temp in Chicago be >52° on Dec 23, 2025?
+    Side: NO
+    Consensus: 4/5 models
+    Edge: 46.2%
+    Confidence: 8.0/10
+    True Prob: 0.28
+    Market Price: $0.96
+    Link: https://kalshi.com/markets/KXHIGHCHI-25DEC23-T52
+
+#13: KXHIGHCHI-25DEC23-T45
+    Title: Will the high temp in Chicago be <45° on Dec 23, 2025?
+    Side: YES
+    Consensus: 4/5 models
+    Edge: 646.5%
+    Confidence: 6.2/10
+    True Prob: 0.24
+    Market Price: $0.02
+    Link: https://kalshi.com/markets/KXHIGHCHI-25DEC23-T45
+
+#14: KXINX-25DEC22H1600-B7112
+    Title: Will the S&P 500 be between 7100 and 7124.9999 on Dec 22, 2025 at 4pm EST?
+    Side: NO
+    Consensus: 3/3 models
+    Edge: 62.3%
+    Confidence: 9.0/10
+    True Prob: 0.04
+    Market Price: $0.97
+    Link: https://kalshi.com/markets/KXINX-25DEC22H1600-B7112
+
+#15: KXINX-25DEC22H1600-B7087
+    Title: Will the S&P 500 be between 7075 and 7099.9999 on Dec 22, 2025 at 4pm EST?
+    Side: NO
+    Consensus: 3/3 models
+    Edge: 62.3%
+    Confidence: 9.0/10
+    True Prob: 0.04
+    Market Price: $0.97
+    Link: https://kalshi.com/markets/KXINX-25DEC22H1600-B7087
+
+#16: KXINX-25DEC22H1600-B6737
+    Title: Will the S&P 500 be between 6725 and 6749.9999 on Dec 22, 2025 at 4pm EST?
+    Side: NO
+    Consensus: 3/3 models
+    Edge: 63.3%
+    Confidence: 9.0/10
+    True Prob: 0.37
+    Market Price: $0.96
+    Link: https://kalshi.com/markets/KXINX-25DEC22H1600-B6737
+
+#17: KXINX-25DEC22H1600-B6787
+    Title: Will the S&P 500 be between 6775 and 6799.9999 on Dec 22, 2025 at 4pm EST?
+    Side: NO
+    Consensus: 3/3 models
+    Edge: 61.3%
+    Confidence: 9.0/10
+    True Prob: 0.37
+    Market Price: $0.94
+    Link: https://kalshi.com/markets/KXINX-25DEC22H1600-B6787
+
+======================================================================
+CURRENT PORTFOLIO
+======================================================================
+
+  No open positions
