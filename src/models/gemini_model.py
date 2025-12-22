@@ -1,117 +1,160 @@
 """
 🌙 Moon Dev's Gemini Model Implementation
 Built with love by Moon Dev 🚀
+
+Uses direct REST API instead of SDK for better Python 3.9 compatibility.
 """
 
-import google.generativeai as genai
+import requests
 from termcolor import cprint
 from .base_model import BaseModel, ModelResponse
 
+
 class GeminiModel(BaseModel):
-    """Implementation for Google's Gemini models"""
-    
+    """Implementation for Google's Gemini models using REST API"""
+
     AVAILABLE_MODELS = {
-        "gemini-2.5-pro": "Most advanced Gemini 2.5 model with superior capabilities",
-        "gemini-2.5-flash": "Fast Gemini 2.5 model for quick responses",
-        "gemini-2.5-flash-lite": "Ultra-fast lightweight Gemini 2.5 model"
+        "gemini-2.0-flash": "Fast Gemini 2.0 model",
+        "gemini-1.5-flash": "Fast Gemini 1.5 model",
+        "gemini-1.5-pro": "Advanced Gemini 1.5 model",
+        "gemini-2.5-flash": "Fast Gemini 2.5 model (preview)",
+        "gemini-2.5-pro": "Advanced Gemini 2.5 model (preview)",
     }
-    
-    def __init__(self, api_key: str, model_name: str = "gemini-2.5-flash", **kwargs):
+
+    # API endpoint
+    BASE_URL = "https://generativelanguage.googleapis.com/v1beta/models"
+
+    def __init__(self, api_key: str, model_name: str = "gemini-2.0-flash", **kwargs):
         self.model_name = model_name
+        self.api_key = api_key
+        self._available = False
         super().__init__(api_key, **kwargs)
-    
+
     def initialize_client(self, **kwargs) -> None:
-        """Initialize the Gemini client"""
+        """Initialize the Gemini client (verify API key works)"""
         try:
-            genai.configure(api_key=self.api_key)
-            self.client = genai.GenerativeModel(self.model_name)
-            cprint(f"✨ Initialized Gemini model: {self.model_name}", "green")
+            # Test API key with a simple request
+            url = f"{self.BASE_URL}/{self.model_name}:generateContent?key={self.api_key}"
+            test_payload = {
+                "contents": [{"parts": [{"text": "Say hi"}]}],
+                "generationConfig": {"maxOutputTokens": 10}
+            }
+
+            response = requests.post(url, json=test_payload, timeout=30)
+
+            if response.status_code == 200:
+                self._available = True
+                self.client = True  # Placeholder for compatibility
+                cprint(f"✨ Initialized Gemini model: {self.model_name}", "green")
+            else:
+                error_data = response.json()
+                error_msg = error_data.get('error', {}).get('message', response.text)
+
+                # Try fallback models if primary fails
+                fallback_models = ["gemini-2.0-flash", "gemini-1.5-flash", "gemini-1.5-pro"]
+                for fallback in fallback_models:
+                    if fallback != self.model_name:
+                        fallback_url = f"{self.BASE_URL}/{fallback}:generateContent?key={self.api_key}"
+                        fallback_resp = requests.post(fallback_url, json=test_payload, timeout=30)
+                        if fallback_resp.status_code == 200:
+                            self.model_name = fallback
+                            self._available = True
+                            self.client = True
+                            cprint(f"✨ Initialized Gemini model: {self.model_name} (fallback)", "green")
+                            return
+
+                cprint(f"❌ Gemini API error: {error_msg}", "red")
+                self.client = None
+
         except Exception as e:
             cprint(f"❌ Failed to initialize Gemini model: {str(e)}", "red")
             self.client = None
-    
-    def generate_response(self,
+
+    def generate_response(
+        self,
         system_prompt: str,
         user_content: str,
         temperature: float = 0.7,
-        max_tokens: int = 2048,  # Gemini 2.5 needs 2048+ tokens minimum
+        max_tokens: int = 2048,
         **kwargs
     ) -> ModelResponse:
-        """Generate a response using Gemini"""
+        """Generate a response using Gemini REST API"""
         try:
-            # Combine system prompt and user content since Gemini doesn't have system messages
-            combined_prompt = f"{system_prompt}\n\n{user_content}"
+            url = f"{self.BASE_URL}/{self.model_name}:generateContent?key={self.api_key}"
 
-            # Configure safety settings - use BLOCK_ONLY_HIGH instead of BLOCK_NONE
-            # BLOCK_NONE requires special billing access in 2025
-            safety_settings = {
-                genai.types.HarmCategory.HARM_CATEGORY_HARASSMENT: genai.types.HarmBlockThreshold.BLOCK_ONLY_HIGH,
-                genai.types.HarmCategory.HARM_CATEGORY_HATE_SPEECH: genai.types.HarmBlockThreshold.BLOCK_ONLY_HIGH,
-                genai.types.HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT: genai.types.HarmBlockThreshold.BLOCK_ONLY_HIGH,
-                genai.types.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT: genai.types.HarmBlockThreshold.BLOCK_ONLY_HIGH,
+            # Build the request payload
+            # Gemini supports system instructions in newer models
+            payload = {
+                "contents": [
+                    {
+                        "role": "user",
+                        "parts": [{"text": f"{system_prompt}\n\n{user_content}"}]
+                    }
+                ],
+                "generationConfig": {
+                    "temperature": temperature,
+                    "maxOutputTokens": max_tokens,
+                    "topP": 0.95,
+                    "topK": 40
+                },
+                "safetySettings": [
+                    {"category": "HARM_CATEGORY_HARASSMENT", "threshold": "BLOCK_ONLY_HIGH"},
+                    {"category": "HARM_CATEGORY_HATE_SPEECH", "threshold": "BLOCK_ONLY_HIGH"},
+                    {"category": "HARM_CATEGORY_SEXUALLY_EXPLICIT", "threshold": "BLOCK_ONLY_HIGH"},
+                    {"category": "HARM_CATEGORY_DANGEROUS_CONTENT", "threshold": "BLOCK_ONLY_HIGH"},
+                ]
             }
 
-            response = self.client.generate_content(
-                combined_prompt,
-                generation_config=genai.types.GenerationConfig(
-                    temperature=temperature,
-                    max_output_tokens=max_tokens
-                ),
-                safety_settings=safety_settings
-            )
+            response = requests.post(url, json=payload, timeout=120)
 
-            # Check if response was blocked or empty
-            if not response.candidates or not response.candidates[0].content.parts:
-                # Get detailed block reason
-                block_reason = "UNSPECIFIED"
-                blocked_categories = []
+            if response.status_code != 200:
+                error_data = response.json()
+                error_msg = error_data.get('error', {}).get('message', response.text)
+                raise Exception(f"Gemini API error ({response.status_code}): {error_msg}")
 
-                if hasattr(response, 'prompt_feedback'):
-                    block_reason_value = getattr(response.prompt_feedback, 'block_reason', 0)
-                    # 0=UNSPECIFIED, 1=SAFETY, 2=OTHER, 3=BLOCKLIST, 4=PROHIBITED_CONTENT
-                    block_reason_map = {
-                        0: "UNSPECIFIED",
-                        1: "SAFETY",
-                        2: "OTHER",
-                        3: "BLOCKLIST",
-                        4: "PROHIBITED_CONTENT",
-                        5: "IMAGE_SAFETY"
-                    }
-                    block_reason = block_reason_map.get(block_reason_value, f"UNKNOWN({block_reason_value})")
+            data = response.json()
 
-                    if hasattr(response.prompt_feedback, 'safety_ratings'):
-                        for rating in response.prompt_feedback.safety_ratings:
-                            prob = getattr(rating, 'probability', None)
-                            if prob and str(prob) in ['MEDIUM', 'HIGH', '2', '3']:
-                                blocked_categories.append(f"{rating.category.name}:{prob}")
+            # Extract the response text
+            candidates = data.get('candidates', [])
+            if not candidates:
+                block_reason = data.get('promptFeedback', {}).get('blockReason', 'UNKNOWN')
+                raise Exception(f"Gemini returned no candidates - blocked: {block_reason}")
 
-                finish_reason = None
-                if response.candidates and len(response.candidates) > 0:
-                    finish_reason = getattr(response.candidates[0], 'finish_reason', None)
+            content = candidates[0].get('content', {})
+            parts = content.get('parts', [])
 
-                error_msg = f"Empty response - block_reason={block_reason}"
-                if blocked_categories:
-                    error_msg += f", triggered: {', '.join(blocked_categories)}"
-                if finish_reason:
-                    error_msg += f", finish_reason={finish_reason}"
+            if not parts:
+                finish_reason = candidates[0].get('finishReason', 'UNKNOWN')
+                raise Exception(f"Gemini returned empty response - finish_reason: {finish_reason}")
 
-                raise Exception(error_msg)
+            text = parts[0].get('text', '').strip()
+
+            # Get usage info if available
+            usage_metadata = data.get('usageMetadata', {})
+            usage = {
+                'prompt_tokens': usage_metadata.get('promptTokenCount', 0),
+                'completion_tokens': usage_metadata.get('candidatesTokenCount', 0),
+                'total_tokens': usage_metadata.get('totalTokenCount', 0)
+            }
 
             return ModelResponse(
-                content=response.text.strip(),
-                raw_response=response,
+                content=text,
+                raw_response=data,
                 model_name=self.model_name,
-                usage=None  # Gemini doesn't provide token usage info
+                usage=usage
             )
 
+        except requests.exceptions.Timeout:
+            cprint(f"❌ Gemini request timed out", "red")
+            raise Exception("Gemini API timeout")
         except Exception as e:
             cprint(f"❌ Gemini generation error: {str(e)}", "red")
             raise
-    
+
     def is_available(self) -> bool:
         """Check if Gemini is available"""
-        return self.client is not None
-    
+        return self._available and self.client is not None
+
     @property
     def model_type(self) -> str:
-        return "gemini" 
+        return "gemini"

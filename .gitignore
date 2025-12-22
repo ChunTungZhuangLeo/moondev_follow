@@ -15,6 +15,10 @@ venv/
 
 # Data - ignore Kalshi CSVs but TRACK Polymarket trading data
 src/data/kalshi/*.csv
+src/data/kalshi_value/*.csv
+src/data/kalshi_value/logs/
+src/data/kalshi_value_v2/*.csv
+src/data/kalshi_value_v2/logs/
 
 # Track Polymarket websearch trading data (synced from AWS)
 !src/data/polymarket_websearch/*.csv
