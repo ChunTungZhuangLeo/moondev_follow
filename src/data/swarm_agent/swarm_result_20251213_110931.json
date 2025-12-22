@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T11:09:31.346822",
+  "prompt": "Analyze these 3 Polymarket markets and provide your predictions.\nYou have been given RECENT NEWS AND CONTEXT from web search for each market.\nUse this information to make more informed predictions.\n\n\nMarket 1:\nTitle: Will 'Wicked: For Good' have the second best domestic opening weekend in 2025?\nRecent trade: $724.03 on Yes\nLink: https://polymarket.com/event/which-movie-has-second-biggest-opening-weekend-in-2025\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\n\"Wicked: For Good\" achieved a remarkable domestic opening weekend, grossing approximately $150 million, making it the second-highest opening of 2025, just behind \"A Minecraft Movie,\" which earned $162.7 million in April. ([forbes.com](https://www.forbes.com/sites/zacharyfolk/2025/11/23/wicked-for-good-dominates-box-office-with-150-million-opening-beating-last-years-first-installment//?utm_source=openai)) This performance surpassed projections, with some analysts estimating an opening between $125 million and $150 million. ([forbes.com](https://www.forbes.com/sites/timlammers/2025/11/19/wicked-for-good-projected-to-have-record-opening-at-box-office/?utm_source=openai))\n\nThe film's success is attributed to its strong fan base, the return of popular cast members like Cynthia Erivo and Ariana Grande, and its adaptation of the beloved Broadway musical. Despite mixed reviews from critics, the audience reception was positive, with an \"A\" CinemaScore and a 95% approval rating on Rotten Tomatoe...\n\n---\n\nMarket 2:\nTitle: Perth Glory FC vs. Sydney FC: O/U 2.5\nRecent trade: $514.25 on Over\nLink: https://polymarket.com/event/aus-per-syd-2025-12-13-more-markets\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nThe upcoming A-League match between Perth Glory FC and Sydney FC is scheduled for Saturday, December 13, 2025, at HBF Park in Perth. ([perthglory.com.au](https://perthglory.com.au/news/alm-match-preview-griffiths-relishing-biggest-challenge-against-sydney-fc/?utm_source=openai))\n\n**Recent Form and Head-to-Head Record:**\n\n- **Perth Glory FC:** The team has shown improvement, securing three consecutive wins, including a 2-0 away victory against Macarthur and a 1-0 home win over Western Sydney Wanderers. ([thetopbookies.com](https://www.thetopbookies.com/betting-tips/football/per-vs-syd-13-dec-2025?utm_source=openai))\n\n- **Sydney FC:** The league leaders have been dominant, winning five of their seven matches this season. ([perthglory.com.au](https://perthglory.com.au/news/alm-match-preview-griffiths-relishing-biggest-challenge-against-sydney-fc/?utm_source=openai))\n\nIn their last five encounters, four matches have seen over 2.5 goals, averaging 3.0 goals per game. ([betting.bc.game](http...\n\n---\n\nMarket 3:\nTitle: Will the highest temperature in London be 9\u00b0C on December 13?\nRecent trade: $622.70 on No\nLink: https://polymarket.com/event/highest-temperature-in-london-on-december-13\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nOn December 13, 2025, London is expected to experience a high temperature of approximately 9\u00b0C (48\u00b0F). The forecast indicates overcast conditions with a south-southwest wind at 11 km/h, transitioning to clear skies in the evening. ([holiday-weather.com](https://www.holiday-weather.com/london_weather_center/forecast/?utm_source=openai))\n\nHistorically, December temperatures in London average a high of 7.8\u00b0C (46\u00b0F) and a low of 3.5\u00b0C (38.3\u00b0F). ([weather-atlas.com](https://www.weather-atlas.com/en/united-kingdom/london-weather-december?utm_source=openai)) Therefore, a high of 9\u00b0C is slightly above the typical December average.\n\nIn the context of the prediction market, the highest temperature of 9\u00b0C on December 13 has a 6% chance of occurring, according to current market data. ([polymarket.com](https://polymarket.com/event/highest-temperature-in-london-on-december-13?utm_source=openai))\n\nGiven the forecasted high of 9\u00b0C and historical averages, it appears that the highest temperature in Lon...\n\n---\n\n\nProvide predictions for each market in the specified format.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\nUse this context to make more informed predictions.\n\nFor each market, provide your prediction in this exact format:\n\nMARKET [number]: [decision]\nReasoning: [brief 1-2 sentence explanation that references the news context if relevant]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES means you would bet on the \"Yes\" outcome\n- NO means you would bet on the \"No\" outcome\n- NO_TRADE means you would not take a position\n\nBe concise and focused on the most promising opportunities.",
+  "consensus_summary": "The consensus strongly agrees on \"YES\" for Markets 1 and 2, as both are supported by definitive recent data and historical trends. For Market 3, two AIs predict \"NO\" due to the low probability of an exact temperature match, while one opts for \"NO_TRADE\" citing uncertainty, showing a minor disagreement on confidence rather than direction. Overall, the predictions are highly aligned, with Markets 1 and 2 being clear and Market 3 leaning negative but with slightly less certainty.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "DEEPSEEK",
+    "AI #3": "GEMINI"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.05,
+      "success": true
+    },
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4aj5tMMrioTpiRZenw7'}",
+      "response_time": 0.08,
+      "success": false
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4aj5tbatp8ZiUdUsQUc'}",
+      "response_time": 0.08,
+      "success": false
+    },
+    "openai": {
+      "response": "MARKET 1: YES  \nReasoning: \"Wicked: For Good\" has already achieved the second-highest domestic opening weekend of 2025, grossing approximately $150 million, which is confirmed by recent reports. This makes a \"Yes\" decision a certainty given the provided context.\n\nMARKET 2: YES  \nReasoning: Historical data shows that four out of the last five encounters between Perth Glory FC and Sydney FC have resulted in more than 2.5 goals, with an average of 3.0 goals per game. Both teams are in good form, suggesting a high likelihood of a high-scoring match.\n\nMARKET 3: NO_TRADE  \nReasoning: The forecast indicates a high temperature of 9\u00b0C, but the historical average and the market data suggest variability. With only a 6% chance according to market data, the prediction lacks sufficient certainty for a confident trade decision.",
+      "response_time": 1.77,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: YES  \nReasoning: The news confirms \"Wicked: For Good\" achieved a $150 million domestic opening, making it the second-highest of 2025 behind only \"A Minecraft Movie,\" so the outcome is already known.\n\nMARKET 2: YES  \nReasoning: Recent form shows both teams scoring, and head-to-head data indicates 4 of their last 5 matches had over 2.5 goals, averaging 3.0 goals per game, supporting the over.\n\nMARKET 3: NO  \nReasoning: While the forecast predicts 9\u00b0C, the market implies only a 6% probability of it being exactly 9\u00b0C, and historical averages are lower, making a precise hit unlikely.",
+      "response_time": 6.16,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: YES\nReasoning: The news explicitly states that \"Wicked: For Good\" achieved a domestic opening weekend of approximately $150 million, making it the second-highest opening of 2025.\n\nMARKET 2: YES\nReasoning: Four of the last five head-to-head matches between Perth Glory FC and Sydney FC have seen over 2.5 goals, averaging 3.0 goals per game, despite Perth's recent lower-scoring wins.\n\nMARKET 3: NO\nReasoning: While London is forecasted to experience a high temperature of \"approximately 9\u00b0C\" on December 13, the use of \"approximately\" makes it uncertain that the highest temperature will be *exactly* 9\u00b0C.",
+      "response_time": 7.14,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 11.79
+  }
+}

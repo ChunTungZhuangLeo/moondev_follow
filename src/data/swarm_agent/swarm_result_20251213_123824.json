@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T12:38:24.076296",
+  "prompt": "Analyze these 3 Polymarket markets.\n\nFor EACH market:\n1. Estimate the TRUE PROBABILITY based on news context\n2. Calculate EDGE vs market price\n3. Only recommend trades with 10%+ edge\n\n\nMarket 1:\nTitle: Dota 2: Team Liquid vs Virtus.pro (BO3)\nCurrent Market Price: 81.0% (this is the market's implied probability)\nRecent trade: $724.38 on Team Liquid\nLink: https://polymarket.com/event/dota2-liquid-vp-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nTeam Liquid and Virtus.pro are set to face off in a Best of 3 series today, December 13, 2025, at 14:30 UTC, as part of the ESL Dota2 2025 DreamLeague Season 27 Main Event Group Stage - Round 4. ([strafe.com](https://www.strafe.com/match/team-liquid-vs-virtus-pro-round-4-main-event-2e7162/?utm_source=openai))\n\n**Team Liquid:**\n- **Current Ranking:** #7 in the Strafe Dota 2 World Rankings.\n- **Recent Performance:** Out of their last 10 matches, they have secured 7 victories.\n\n**Virtus.pro:**\n- **Current Ranking:** #17 in the Strafe Dota 2 World Rankings.\n- **Recent Performance:** Out of their last 10 matches, they have secured 3 victories.\n\n**Head-to-Head Record:**\n- In previous encounters, Team Liquid has won 19 times, while Virtus.pro has won 8 times. ([no.egamersworld.com](https://no.egamersworld.com/dota2/match/5whrjgEzh/team-liquid-vs-virtuspro-gYKkSF5Ug?utm_source=openai))\n\n**Match Prediction:**\n- The community heavily favors Team Liquid, with 100% of the votes predicting a victor\n\n---\n\nMarket 2:\nTitle: Borussia M\u00f6nchengladbach vs. VfL Wolfsburg: O/U 1.5\nCurrent Market Price: 82.0% (this is the market's implied probability)\nRecent trade: $814.26 on Over\nLink: https://polymarket.com/event/bun-moe-wol-2025-12-13-more-markets\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nThe Bundesliga match between Borussia M\u00f6nchengladbach and VfL Wolfsburg is scheduled for December 13, 2025, at 14:30 CET at Borussia-Park in M\u00f6nchengladbach. ([bundesliga.com](https://www.bundesliga.com/en/bundesliga/matchday/2025-2026/14/borussia-moenchengladbach-vs-vfl-wolfsburg?utm_source=openai))\n\n**Recent Form and Head-to-Head:**\n\n- **Borussia M\u00f6nchengladbach:** The team has been in strong form, securing 13 points from their last five Bundesliga matches, a record matched only by Bayern Munich during this period. ([bundesliga.com](https://www.bundesliga.com/en/bundesliga/matchday/2025-2026/14/borussia-moenchengladbach-vs-vfl-wolfsburg?utm_source=openai))\n\n- **VfL Wolfsburg:** Wolfsburg recently ended a four-game winless streak with a 3-1 victory over Union Berlin, moving them one point above the relegation play-off spot. ([bundesliga.com](https://www.bundesliga.com/en/bundesliga/matchday/2025-2026/14/borussia-moenchengladbach-vs-vfl-wolfsburg?utm_source=openai))\n\n**Betting Odds:**\n\n\n---\n\nMarket 3:\nTitle: Dota 2: Team Yandex vs Xtreme Gaming - Game 2 Winner\nCurrent Market Price: 80.5% (this is the market's implied probability)\nRecent trade: $950.49 on Xtreme Gaming\nLink: https://polymarket.com/event/dota2-ty-xtreme-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nIn the recent Dota 2 match between Team Yandex and Xtreme Gaming during the BLAST Slam V Play-In stage on November 30, 2025, Team Yandex secured a 2-1 victory. After losing the first game, Team Yandex regrouped to win the next two, with players watson and Chira JUNIOR leading in damage and farming, and Saksa providing reliable support play. This win advanced Team Yandex to the playoffs, where they eventually reached the Grand Finals but were defeated 3-0 by Tundra Esports. ([ggesports.com](https://www.ggesports.com/en-US/dota2/News/Detail/19769?utm_source=openai))\n\nFor a detailed view of Game 2 between Xtreme Gaming and Team Yandex, you can watch the full match here:\n\n[Full Game: Xtreme Gaming vs Team Yandex - Game 2 (BO3) | BLAST Slam V Play-In](https://www.youtube.com/watch?v=Se4ZSS4AL0Q&utm_source=openai)\n \n\n---\n\n\nProvide predictions in the exact format specified.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\n\nIMPORTANT: For each market, you MUST estimate the TRUE PROBABILITY of the outcome.\nCompare your probability estimate to the market price to find EDGE (mispricing).\n\nEdge = Your Probability - Market Probability\n- Positive edge on YES side means market undervalues YES\n- Negative edge means market overvalues YES (bet NO instead)\n\nFor each market, provide your prediction in this EXACT format:\n\nMARKET [number]: [decision]\nYour Probability: [0-100]%\nMarket Price: [shown price]%\nEdge: [+/-X]% (Your prob - Market)\nExpected Value: [calculate: Edge \u00d7 potential payout]\nReasoning: [1-2 sentences explaining your probability estimate]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES = Your probability > Market price + 10% (minimum 10% edge)\n- NO = Your probability < Market price - 10%\n- NO_TRADE = Edge < 10% (not enough value)\n\nBe contrarian when you have conviction. Look for markets where news hasn't been priced in yet.",
+  "consensus_summary": "The consensus across all models is that no market presents a clear 10%+ edge for a trade. For Markets 1 and 2, all AIs agree the true probability is high (around 85%) but that this is already accurately reflected in the market price, leaving only a minimal edge. The main disagreement is on Market 3, where AI #2 and #3 see a significant negative edge against the market price, while AI #1's incomplete analysis aligns with that negative view.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "GEMINI",
+    "AI #3": "DEEPSEEK"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.04,
+      "success": true
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4hVsWfZxuefh6DUJki7'}",
+      "response_time": 0.08,
+      "success": false
+    },
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4hVsXQWNaKZRbxjaX1r'}",
+      "response_time": 0.09,
+      "success": false
+    },
+    "openai": {
+      "response": "MARKET 1: NO_TRADE  \nYour Probability: 85%  \nMarket Price: 81.0%  \nEdge: +4% (Your prob - Market)  \nExpected Value: +2.2% (Edge \u00d7 potential payout)  \nReasoning: Team Liquid's recent form and head-to-head dominance suggest they are likely to win, but the market already heavily favors them, leaving insufficient edge for a trade.\n\nMARKET 2: NO_TRADE  \nYour Probability: 85%  \nMarket Price: 82.0%  \nEdge: +3% (Your prob - Market)  \nExpected Value: +1.8% (Edge \u00d7 potential payout)  \nReasoning: Borussia M\u00f6nchengladbach's strong form and Wolfsburg's recent win suggest a high-scoring game is probable, aligning closely with the market's probability, thus offering insufficient edge for a trade.\n\nMARKET 3: NO_TRADE  \nYour Probability: 75%  \nMarket Price: 80.5%  \nEdge: -5.5% (Your prob - Market)  \nExpected Value: -2.75% (Edge \u00d7 potential payout)  \nReasoning: Despite Team Yandex's recent victory, Xtreme Gaming's market support indicates expected resilience. Given the close nature of prior matches, the market odds reflect reasonable probability, providing no significant edge.",
+      "response_time": 2.86,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: Dota 2: Team Liquid vs Virtus.pro (BO3)\nYour Probability: 92%\nMarket Price: 81.0%\nEdge: +11% (Your prob - Market)\nExpected Value: +11% x potential payout\nReasoning: Team Liquid has significantly better rankings, recent form (7/10 wins vs",
+      "response_time": 9.75,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO_TRADE\nYour Probability: 85%\nMarket Price: 81.0%\nEdge: +4.0% (Your prob - Market)\nExpected Value: 4.0% \u00d7 potential payout\nReasoning: Team Liquid is clearly favored based on ranking, recent form (7/10 wins vs. 3/10), and head-to-head history (19-8), but the market price of 81% already reflects this significant advantage, leaving only a modest edge.\n\nMARKET 2: NO_TRADE\nYour Probability: 85%\nMarket Price: 82.0%\nEdge: +3.0% (Your prob - Market)\nExpected Value: 3.0% \u00d7 potential payout\nReasoning: Gladbach's strong recent form (13 points in 5 games) and Wolfsburg's defensive vulnerabilities suggest a high probability of over 1.5 goals, but the market price is already elevated at 82%, accurately pricing in this expectation.\n\nMARKET 3: NO\nYour Probability: 55%\nMarket Price: 80.5%\nEdge: -25.5% (Your prob - Market)\nExpected Value: 25.5% \u00d7 potential payout (on NO side)\nReasoning: The context describes a past match where Team Yandex won the series 2-1, and while Xtreme Gaming may be favored, an 80.5% implied probability for a single game in a volatile esports match is excessive, indicating strong value on the NO side.",
+      "response_time": 11.38,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 16.02
+  }
+}

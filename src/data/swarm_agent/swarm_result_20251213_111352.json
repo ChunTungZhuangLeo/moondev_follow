@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T11:13:52.934940",
+  "prompt": "Analyze these 3 Polymarket markets.\n\nFor EACH market:\n1. Estimate the TRUE PROBABILITY based on news context\n2. Calculate EDGE vs market price\n3. Only recommend trades with 10%+ edge\n\n\nMarket 1:\nTitle: Perth Glory FC vs. Sydney FC: O/U 2.5\nCurrent Market Price: 68.0% (this is the market's implied probability)\nRecent trade: $514.25 on Over\nLink: https://polymarket.com/event/aus-per-syd-2025-12-13-more-markets\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nPerth Glory FC is set to face Sydney FC on Saturday, December 13, 2025, at HBF Park in Perth. The match is scheduled to kick off at 6:45 PM local time. ([perthglory.com.au](https://perthglory.com.au/news/alm-match-preview-griffiths-relishing-biggest-challenge-against-sydney-fc/?utm_source=openai))\n\n**Recent Form:**\n\n- **Perth Glory FC:** The team has achieved three consecutive wins, including two away clean sheets, boosting their confidence ahead of this fixture. ([betting.bc.game](https://betting.bc.game/predictions/perth-glory-vs-sydney-fc-prediction-a-league-13-12-2025/?utm_source=openai))\n\n- **Sydney FC:** Sydney FC has secured four victories in their last five matches, showcasing their attacking depth with 11 goals scored. ([betting.bc.game](https://betting.bc.game/predictions/perth-glory-vs-sydney-fc-prediction-a-league-13-12-2025/?utm_source=openai))\n\n**Head-to-Head Record:**\n\nIn their previous encounters, Sydney FC has dominated, winning 12 out of 18 matches against Perth Glory\n\n---\n\nMarket 2:\nTitle: Will the highest temperature in London be 9\u00b0C on December 13?\nCurrent Market Price: 90.0% (this is the market's implied probability)\nRecent trade: $622.70 on No\nLink: https://polymarket.com/event/highest-temperature-in-london-on-december-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nOn December 13, 2025, London is expected to experience a high temperature of approximately 9\u00b0C (48\u00b0F), with a low of around 5\u00b0C (41\u00b0F). ([datetimeonline.com](https://www.datetimeonline.com/weather/uk/london?utm_source=openai)) This forecast aligns with historical data, as the highest temperature recorded in London on this date is 13.3\u00b0C (56\u00b0F), observed in 1901. ([extremeweatherwatch.com](https://www.extremeweatherwatch.com/cities/london-on/record-high-by-day?utm_source=openai)) Additionally, a recent forecast indicates that on Saturday, December 13, 2025, London will have a high of 9\u00b0C (48\u00b0F) and a low of 5\u00b0C (41\u00b0F), with clear skies. ([weather33.com](https://weather33.com/weather-London/month?utm_source=openai))\n\nIn the context of prediction markets, the Polymarket platform has a market titled \"Highest temperature in London on December 13?\" with a volume of $7,732. The market's probabilities are as follows:\n\n- 11\u00b0C: 42%\n- 10\u00b0C: 41%\n- 12\u00b0C: 17%\n- 9\u00b0C: 6%\n\nThis suggests that participan\n\n---\n\nMarket 3:\nTitle: Dota 2: Team Tidebound vs Yakutou Brothers - Game 1 Winner\nCurrent Market Price: 54.0% (this is the market's implied probability)\nRecent trade: $540.00 on Team Tidebound\nLink: https://polymarket.com/event/dota2-tt2-yb1-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nAs of December 13, 2025, there is no publicly available information regarding the outcome of Game 1 between Team Tidebound and Yakult's Brothers in the ESL Dota2 2025 DreamLeague Season 27 Main Event. The match is scheduled to begin at 11:00 AM UTC, and live updates will be provided during the game. ([strafe.com](https://www.strafe.com/match/team-tidebound-vs-yakult-s-brothers-round-4-main-event-2ef0bd/?utm_source=openai))\n\nIn their most recent encounter on November 28, 2025, during the BLAST Slam Group Stage, Team Tidebound secured a 1-0 victory over Yakult's Brothers. ([sofascore.com](https://www.sofascore.com/sl/esports/match/team-tidebound-yakult-brothers/njyhsxDui?utm_source=openai))\n\nHistorically, Team Tidebound has maintained a strong record against Yakult's Brothers, winning four out of five previous matches. The most recent of these was on May 2, 2025, where Yakult's Brothers achieved a 2-0 victory, indicating a potential shift in momentum. ([bo3.gg](https://bo3.gg/dota2/predi\n\n---\n\n\nProvide predictions in the exact format specified.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\n\nIMPORTANT: For each market, you MUST estimate the TRUE PROBABILITY of the outcome.\nCompare your probability estimate to the market price to find EDGE (mispricing).\n\nEdge = Your Probability - Market Probability\n- Positive edge on YES side means market undervalues YES\n- Negative edge means market overvalues YES (bet NO instead)\n\nFor each market, provide your prediction in this EXACT format:\n\nMARKET [number]: [decision]\nYour Probability: [0-100]%\nMarket Price: [shown price]%\nEdge: [+/-X]% (Your prob - Market)\nExpected Value: [calculate: Edge \u00d7 potential payout]\nReasoning: [1-2 sentences explaining your probability estimate]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES = Your probability > Market price + 10% (minimum 10% edge)\n- NO = Your probability < Market price - 10%\n- NO_TRADE = Edge < 10% (not enough value)\n\nBe contrarian when you have conviction. Look for markets where news hasn't been priced in yet.",
+  "consensus_summary": "The consensus identifies no actionable edge for Market 1, strongly agrees the \"Yes\" in Market 2 is overpriced favoring a \"No\" trade, and shows a split on Market 3 with one model recommending a \"Yes\" trade based on a significant calculated edge while others are more cautious. Overall, Market 2 presents the clearest collective opportunity based on perceived market mispricing against forecast uncertainty.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "GEMINI",
+    "AI #3": "DEEPSEEK"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.05,
+      "success": true
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4b46KfuivQLeRGLJW5f'}",
+      "response_time": 0.08,
+      "success": false
+    },
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4b46LfjqWJPYrjE3kBS'}",
+      "response_time": 0.09,
+      "success": false
+    },
+    "openai": {
+      "response": "MARKET 1: NO_TRADE  \nYour Probability: 70%  \nMarket Price: 68.0%  \nEdge: +2% (Your prob - Market)  \nExpected Value: +0.06 (Edge \u00d7 potential payout)  \nReasoning: Both teams have shown strong recent form, with high scoring capabilities especially from Sydney FC. However, the market already prices in a high likelihood of over 2.5 goals, and my analysis aligns closely with this, offering insufficient edge for a trade.\n\nMARKET 2: NO  \nYour Probability: 75%  \nMarket Price: 90.0%  \nEdge: -15% (Your prob - Market)  \nExpected Value: -0.15 (Edge \u00d7 potential payout)  \nReasoning: Although forecasts predict a high of 9\u00b0C, historical variability and the prediction market's broader temperature forecasts suggest potential for deviation. The market is overvaluing the certainty of 9\u00b0C specifically, presenting a strong case for a NO bet.\n\nMARKET 3: NO_TRADE  \nYour Probability: 60%  \nMarket Price: 54.0%  \nEdge: +6% (Your prob - Market)  \nExpected Value: +0.06 (Edge \u00d7 potential payout)  \nReasoning: Team Tidebound has a strong historical record against Yakult's Brothers, which supports a slight edge. However, the market's close pricing and lack of decisive current information yield insufficient edge to justify a trade.",
+      "response_time": 3.31,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: NO_TRADE\nYour Probability: 75%\nMarket Price: 68.0%\nEdge: +7% (Your prob - Market)\nExpected Value: 0.07 * Payout\nReasoning: Sydney FC's strong attacking form (11 goals in 5 matches) and historical dominance over Perth Glory suggest a high",
+      "response_time": 10.13,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO_TRADE\nYour Probability: 70%\nMarket Price: 68.0%\nEdge: +2.0% (Your prob - Market)\nExpected Value: 0.02 \u00d7 (100/68 - 1) \u2248 +0.94%\nReasoning: Both teams are in strong attacking form, with Sydney scoring 11 in 5 and Perth on a winning streak, supporting a higher-scoring game, but the market price already reflects this likelihood well.\n\nMARKET 2: NO\nYour Probability: 65%\nMarket Price: 90.0%\nEdge: -25.0% (Your prob - Market)\nExpected Value: -0.25 \u00d7 (100/10 - 1) \u2248 -2.25% (betting NO at 10% price)\nReasoning: While forecasts predict 9\u00b0C, temperature forecasts are uncertain and the broader Polymarket probability for 9\u00b0C is only 6%, indicating the binary market at 90% for \"Will be 9\u00b0C\" is severely overpriced.\n\nMARKET 3: YES\nYour Probability: 70%\nMarket Price: 54.0%\nEdge: +16.0% (Your prob - Market)\nExpected Value: 0.16 \u00d7 (100/54 - 1) \u2248 +13.6%\nReasoning: Team Tidebound has a dominant 4-1 historical record against this opponent and won their most recent match in November, giving them a significant psychological and skill edge that isn't fully priced in.",
+      "response_time": 11.42,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 15.53
+  }
+}

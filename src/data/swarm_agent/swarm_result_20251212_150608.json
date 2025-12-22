@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-12T15:06:08.009994",
+  "prompt": "Analyze these 3 Polymarket markets and provide your predictions.\nYou have been given RECENT NEWS AND CONTEXT from web search for each market.\nUse this information to make more informed predictions.\n\n\nMarket 1:\nTitle: Will Fulham FC win on 2025-12-13?\nRecent trade: $1,000.00 on Yes\nLink: https://polymarket.com/event/epl-bur-ful-2025-12-13\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nFulham FC is set to face Burnley FC on Saturday, December 13, 2025, at 9:30 AM PST. \n## EPL Schedule\n- Fulham FC @ Burnley FC on Saturday, Dec 13, 2025 at 09:30 AM PST\n\n\n**Recent Performance:**\n\n- **Fulham FC:** In their most recent match on December 7, 2025, Fulham suffered a 2-1 defeat to Crystal Palace. Despite a strong performance, including a stunning equalizer from Harry Wilson, Fulham conceded a late goal in the 87th minute, resulting in their second consecutive loss. ([standard.co.uk](https://www.standard.co.uk/sport/football/fulham-crystal-palace-premier-league-guehi-b1261531.html?utm_source=openai))\n\n- **Burnley FC:** Burnley also faced a loss in their latest fixture, falling 2-1 to Newcastle United. ([betdecider.com](https://betdecider.com/picks/fulham-vs-burnley-fc-soccer-betting-preview-odds-offensive-leaders-12-13-2025/?utm_source=openai))\n\n**Betting Odds:**\n\nFulham enters the match as the favorite, with odds of -105, while Burnley is listed at +286. This suggests a 51.2%...\n\n---\n\nMarket 2:\nTitle: Weed rescheduled in 2025?\nRecent trade: $2,000.00 on No\nLink: https://polymarket.com/event/weed-rescheduled-in-2025\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nAs of December 12, 2025, there have been no official announcements or significant developments regarding the rescheduling of cannabis (weed) at the federal level in the United States. The Drug Enforcement Administration (DEA) continues to classify cannabis as a Schedule I substance under the Controlled Substances Act, indicating a high potential for abuse and no accepted medical use.\n\n**Recent News Articles:**\n\n- *\"Congress Considers Cannabis Rescheduling Amid Growing Support\"* (Published December 5, 2025): This article discusses ongoing legislative efforts to reschedule cannabis, highlighting bipartisan support and the influence of public opinion on policymakers.\n\n- *\"DEA Maintains Cannabis as Schedule I Substance Despite Calls for Change\"* (Published December 1, 2025): This piece reports on the DEA's recent decision to uphold cannabis's Schedule I status, citing concerns over potential health risks and the need for more research.\n\n**Official Announcements:**\n\n- The White House Office...\n\n---\n\nMarket 3:\nTitle: Spread: US Lecce (-1.5)\nRecent trade: $1,200.20 on Pisa SC\nLink: https://polymarket.com/event/sea-lec-pis-2025-12-12-more-markets\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nUS Lecce is currently positioned 17th in Serie A with a record of 3 wins, 4 draws, and 7 losses. ([foxsports.com](https://www.foxsports.com/soccer/us-lecce-team-standings?utm_source=openai)) Their recent form includes a 2-1 victory over Torino FC on November 30, 2025, and a 0-0 draw against Hellas Verona FC on November 8, 2025. ([matchday.africa](https://matchday.africa/index.php/teams/78?utm_source=openai))\n\nDefender Kialonda Gaspar, who missed over three months due to a torn medial ligament, has returned to full training. His recovery is a significant boost for Lecce's defensive lineup. ([africasoccer.com](https://africasoccer.com/angolan-defender-kialonda-gaspar-returns-to-us-lecce-training-after-injury-layoff/?utm_source=openai))\n\nIn their most recent match on November 30, 2025, Lecce secured a 2-1 win against Torino FC. The team's next fixture is scheduled against US Cremonese on December 7, 2025. ([matchday.africa](https://matchday.africa/index.php/teams/78?utm_source=openai))\n\nC...\n\n---\n\n\nProvide predictions for each market in the specified format.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\nUse this context to make more informed predictions.\n\nFor each market, provide your prediction in this exact format:\n\nMARKET [number]: [decision]\nReasoning: [brief 1-2 sentence explanation that references the news context if relevant]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES means you would bet on the \"Yes\" outcome\n- NO means you would bet on the \"No\" outcome\n- NO_TRADE means you would not take a position\n\nBe concise and focused on the most promising opportunities.",
+  "consensus_summary": "The consensus shows clear agreement on Market 2 (NO) due to the lack of time and official action in 2025, and on Market 3 (NO/NO_TRADE) given US Lecce's poor league position making a 1.5-goal win unlikely. For Market 1, opinions are split between YES (favoring Fulham's betting odds) and NO/NO_TRADE (citing recent poor form), indicating high uncertainty. Overall, the predictions are most confident against cannabis rescheduling and Lecce covering the spread, while the football match is seen as a toss-up.",
+  "model_mapping": {
+    "AI #1": "DEEPSEEK",
+    "AI #2": "GEMINI",
+    "AI #3": "OPENAI",
+    "AI #4": "OPUS",
+    "AI #5": "CLAUDE"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.05,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO  \nReasoning: Fulham is favored but is on a two-game losing streak with a recent pattern of conceding late goals, and Burnley at home could exploit this vulnerability, making the favorite's win less certain than the odds suggest.\n\nMARKET 2: NO_TRADE  \nReasoning: While there is legislative discussion, the DEA recently upheld cannabis as Schedule I, and with no definitive announcement expected imminently in 2025, the outcome remains highly uncertain with insufficient edge.\n\nMARKET 3: NO  \nReasoning: US Lecce, despite a key defender returning, is 17th in Serie A and inconsistent, making a win by a 1.5-goal margin against Pisa SC unlikely given their overall poor standing and form.",
+      "response_time": 6.95,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: YES\nReasoning: Fulham FC is listed as the betting favorite with implied odds of 51.2%, suggesting a slight edge over Burnley despite both teams coming off recent losses.\n\nMARKET 2: NO\nReasoning: As of December 12, 2025, there have been no official announcements or significant developments regarding federal cannabis rescheduling, and the DEA continues to classify it as a Schedule I substance.\n\nMARKET 3: NO\nReasoning: US Lecce is 17th in Serie A, making it challenging for them to win by a margin of 2 goals or more to cover the -1.5 spread, despite a recent 2-1 victory and a defender returning.",
+      "response_time": 7.21,
+      "success": true
+    },
+    "openai": {
+      "response": "MARKET 1: NO_TRADE  \nReasoning: While Fulham FC is the favorite against Burnley FC, both teams have recently suffered losses. The betting odds slightly favor Fulham, but the recent performance of both teams suggests an unpredictable match outcome. Therefore, the uncertainty makes it difficult to confidently predict a win for Fulham.\n\nMARKET 2: NO  \nReasoning: As of December 12, 2025, there have been no official announcements or significant developments regarding the rescheduling of cannabis. The DEA still classifies cannabis as a Schedule I substance, and although there is ongoing legislative discussion, no concrete changes have been made. This makes it unlikely that rescheduling will occur in 2025.\n\nMARKET 3: NO  \nReasoning: US Lecce's position in Serie A and their recent performance, including only a narrow victory over Torino FC, suggest that they may struggle to cover a -1.5 spread against Pisa SC. Given their current standing and recent match outcomes, they are unlikely to win by more than 1.5 goals.",
+      "response_time": 7.46,
+      "success": true
+    },
+    "opus": {
+      "response": "MARKET 1: YES\nReasoning: Fulham enters as favorites (-105, ~51.2% implied probability) against Burnley, and despite recent losses, this is likely a Premier League vs Championship matchup where Fulham's quality should prevail. The $1,000 trade on Yes aligns with the betting market sentiment.\n\nMARKET 2: NO\nReasoning: With only ~3 weeks left in 2025 and recent news confirming the DEA maintains cannabis as Schedule I with no official rescheduling announcements, there's insufficient time for the complex regulatory process to complete this year. The $2,000 trade on No reflects this reality.\n\nMARKET 3: NO_TRADE\nReasoning: The market title references \"US Lecce (-1.5)\" but Lecce is a struggling Serie A team (17th place, 3-4-7 record) unlikely to cover a 1.5 goal spread against most opponents. The context is unclear about the specific matchup, making this too risky to trade.",
+      "response_time": 7.56,
+      "success": true
+    },
+    "claude": {
+      "response": "MARKET 1: NO_TRADE\nReasoning: While Fulham is favored (-105 odds), they've suffered two consecutive losses including a late collapse against Crystal Palace. Burnley at home presents uncertainty, and the odds don't offer compelling value either way.\n\nMARKET 2: NO\nReasoning: With only weeks remaining in 2025 and the DEA maintaining cannabis as Schedule I as of December 1st, there's insufficient time for the rescheduling process to complete. The recent $2,000 No trade aligns with this timeline reality.\n\nMARKET 3: NO_TRADE\nReasoning: Lecce sits 17th in Serie A (relegation zone) with a poor 3-4-7 record. A -1.5 spread requires them to win by 2+ goals, which seems unlikely given their position and form. The recent $1,200 bet on Pisa SC (taking the spread) appears more rational.",
+      "response_time": 8.96,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 6,
+    "failed_responses": 0,
+    "total_time": 14.54
+  }
+}

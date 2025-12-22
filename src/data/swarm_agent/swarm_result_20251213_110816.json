@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T11:08:16.803137",
+  "prompt": "Analyze these 3 Polymarket markets.\n\nFor EACH market:\n1. Estimate the TRUE PROBABILITY based on news context\n2. Calculate EDGE vs market price\n3. Only recommend trades with 10%+ edge\n\n\nMarket 1:\nTitle: Eintracht Frankfurt vs. FC Augsburg: O/U 2.5\nCurrent Market Price: 56.0% (this is the market's implied probability)\nRecent trade: $932.96 on Over\nLink: https://polymarket.com/event/bun-ein-aug-2025-12-13-more-markets\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nEintracht Frankfurt is set to host FC Augsburg on December 13, 2025, at Deutsche Bank Park. Recent betting odds indicate a slight favor towards Frankfurt, with odds around 1.75 for a home win and 4.33 for an Augsburg victory. ([footbally.net](https://footbally.net/fixtures/2709/odds?utm_source=openai))\n\nRegarding the Over/Under 2.5 goals market, the odds are as follows:\n\n- **Over 2.5 Goals**: 1.58\n- **Under 2.5 Goals**: 2.45\n\n([betbrain.com](https://www.betbrain.com/uk/football-betting-odds/germany/bundesliga/eintracht-frankfurt-vs-fc-augsburg-13-12-2025?utm_source=openai))\n\nThese odds suggest a higher probability of the match featuring more than 2.5 goals.\n\n**Recent Team Performances:**\n\n- **Eintracht Frankfurt**: The team has been inconsistent, with a recent 6-0 defeat to RB Leipzig. ([as.com](https://as.com/futbol/internacional/el-eintracht-llega-herido-al-camp-nou-f202512-n/?utm_source=openai)) However, they have shown resilience, securing a 3-1 victory over Augsburg in April 2024.\n\n---\n\nMarket 2:\nTitle: Will Everton FC win on 2025-12-13?\nCurrent Market Price: 80.6% (this is the market's implied probability)\nRecent trade: $1,023.62 on No\nLink: https://polymarket.com/event/epl-che-eve-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nEverton FC is set to face Chelsea FC on Saturday, December 13, 2025, at Stamford Bridge in a Premier League match. \n## EPL Schedule\n- Everton FC @ Chelsea FC on Saturday, Dec 13, 2025 at 07:00 AM PST\n\n\n**Recent Form:**\n\n- **Everton FC:** The Toffees have been in strong form, winning four of their last five Premier League matches, all with clean sheets. Their most recent victory was a 3-0 win over Nottingham Forest on December 6, 2025. ([foxsports.com](https://www.foxsports.com/articles/soccer/chelsea-fc-vs-everton-fc-prediction-odds-picks-dec-13?utm_source=openai))\n\n- **Chelsea FC:** The Blues have struggled recently, going winless in their last four matches across all competitions. Their most recent outing was a 2-1 loss to Atalanta in the Champions League on December 9, 2025. ([reuters.com](https://www.reuters.com/sports/soccer/palmer-fofana-available-everton-clash-chelsea-look-consistency-2025-12-12/?utm_source=openai))\n\n**Team News:**\n\n- **Chelsea FC:** Manager Enzo Maresca has con\n\n---\n\nMarket 3:\nTitle: Perth Glory FC vs. Sydney FC: O/U 2.5\nCurrent Market Price: 68.0% (this is the market's implied probability)\nRecent trade: $514.25 on Over\nLink: https://polymarket.com/event/aus-per-syd-2025-12-13-more-markets\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nThe upcoming A-League match between Perth Glory FC and Sydney FC is scheduled for Saturday, December 13, 2025, at HBF Park in Perth. Kick-off is at 6:45 PM local time. ([perthglory.com.au](https://perthglory.com.au/news/alm-match-preview-griffiths-relishing-biggest-challenge-against-sydney-fc/?utm_source=openai))\n\n**Recent Form:**\n\n- **Perth Glory FC:** The team has secured three consecutive victories, including two away wins and a 1-0 home win against Western Sydney Wanderers. ([betonvalue.com](https://www.betonvalue.com/predictions/perth-glory-vs-sydney-fc-predictions-betting-tips-match-preview-2025-12-13?utm_source=openai))\n\n- **Sydney FC:** Sydney FC has won four of their last five A-League matches, demonstrating strong attacking capabilities with 11 goals scored in those games. ([betonvalue.com](https://www.betonvalue.com/predictions/perth-glory-vs-sydney-fc-predictions-betting-tips-match-preview-2025-12-13?utm_source=openai))\n\n**Head-to-Head Record:**\n\nIn their previous six encou\n\n---\n\n\nProvide predictions in the exact format specified.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\n\nIMPORTANT: For each market, you MUST estimate the TRUE PROBABILITY of the outcome.\nCompare your probability estimate to the market price to find EDGE (mispricing).\n\nEdge = Your Probability - Market Probability\n- Positive edge on YES side means market undervalues YES\n- Negative edge means market overvalues YES (bet NO instead)\n\nFor each market, provide your prediction in this EXACT format:\n\nMARKET [number]: [decision]\nYour Probability: [0-100]%\nMarket Price: [shown price]%\nEdge: [+/-X]% (Your prob - Market)\nExpected Value: [calculate: Edge \u00d7 potential payout]\nReasoning: [1-2 sentences explaining your probability estimate]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES = Your probability > Market price + 10% (minimum 10% edge)\n- NO = Your probability < Market price - 10%\n- NO_TRADE = Edge < 10% (not enough value)\n\nBe contrarian when you have conviction. Look for markets where news hasn't been priced in yet.",
+  "consensus_summary": "The consensus identifies a clear 10%+ edge only for Market 3 (Perth vs. Sydney Over), with AI #2 recommending a \"YES\" trade. For Market 1, all models agree on a ~63% true probability but disagree on trading it due to the 7% edge being below the required threshold. There is major disagreement on Market 2, where AI #2's extremely low probability estimate conflicts with the other models, indicating high uncertainty.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "DEEPSEEK",
+    "AI #3": "GEMINI"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.04,
+      "success": true
+    },
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4adHuzLKNTmm6D34wDp'}",
+      "response_time": 0.08,
+      "success": false
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4adHuzAU5PXrSFzifj5'}",
+      "response_time": 0.11,
+      "success": false
+    },
+    "openai": {
+      "response": "MARKET 1: YES  \nYour Probability: 63%  \nMarket Price: 56.0%  \nEdge: +7% (Your prob - Market)  \nExpected Value: +7% \u00d7 potential payout  \nReasoning: The betting odds from [betbrain.com](https://www.betbrain.com/uk/football-betting-odds/germany/bundesliga/eintracht-frankfurt-vs-fc-augsburg-13-12-2025?utm_source=openai) imply a higher probability for Over 2.5 goals at 1.58, suggesting a probability of approximately 63%. The recent high-scoring match history and betting odds support the likelihood of more than 2.5 goals.\n\nMARKET 2: NO_TRADE  \nYour Probability: 75%  \nMarket Price: 80.6%  \nEdge: -5.6% (Your prob - Market)  \nExpected Value: -5.6% \u00d7 potential payout  \nReasoning: While Everton FC is in strong form, Chelsea's home advantage and looking to rebound from recent poor form make the match outcome uncertain. The current market price reflects confidence in Everton, but not enough edge is present for a strong trade recommendation.\n\nMARKET 3: NO_TRADE  \nYour Probability: 70%  \nMarket Price: 68.0%  \nEdge: +2% (Your prob - Market)  \nExpected Value: +2% \u00d7 potential payout  \nReasoning: Both teams have been scoring well, especially Sydney FC, who have shown strong attacking capabilities. However, the slight edge is not sufficient for a trade recommendation, as the market price closely aligns with the estimated probability.",
+      "response_time": 3.7,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO_TRADE\nYour Probability: 63.3%\nMarket Price: 56.0%\nEdge: +7.3% (Your prob - Market)\nExpected Value: 7.3% edge \u00d7 potential payout\nReasoning: Betting odds of 1.58 for Over imply a 63.3% probability, which is slightly above the market price, but the edge is below the 10% threshold required for a trade.\n\nMARKET 2: NO\nYour Probability: 25.0%\nMarket Price: 80.6%\nEdge: -55.6% (Your prob - Market)\nExpected Value: -55.6% edge \u00d7 potential payout\nReasoning: Everton is away at Chelsea, and while their form is strong, an 80.6% implied probability for an away win is vastly overpriced; a more realistic chance is around 25% based on the difficulty of the fixture.\n\nMARKET 3: YES\nYour Probability: 80.0%\nMarket Price: 68.0%\nEdge: +12.0% (Your prob - Market)\nExpected Value: 12.0% edge \u00d7 potential payout\nReasoning: Both teams are in strong attacking form, with Sydney scoring 11 goals in 5 games and Perth on a winning streak, making a high-scoring match (Over 2.5 goals) highly probable.",
+      "response_time": 10.83,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: Eintracht Frankfurt vs. FC Augsburg: O/U 2.5\nYour Probability: 63%\nMarket Price: 56.0%\nEdge: +7% (Your prob - Market)\nExpected Value: 0.07 * potential payout\nReasoning: The betting odds provided directly imply a 63.29%",
+      "response_time": 11.33,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 15.83
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-12T18:51:13.795872",
+  "prompt": "Analyze these 3 Polymarket markets and provide your predictions.\nYou have been given RECENT NEWS AND CONTEXT from web search for each market.\nUse this information to make more informed predictions.\n\n\nMarket 1:\nTitle: Dota 2: Tundra Esports vs Aurora - Game 1 Winner\nRecent trade: $972.75 on Tundra Esports\nLink: https://polymarket.com/event/dota2-tundra-aur1-2025-12-12\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nAs of December 12, 2025, Tundra Esports and Aurora Gaming are set to face each other in a Best of 3 series at the ESL Dota2 2025 DreamLeague Season 27 Main Event. ([strafe.com](https://www.strafe.com/match/tundra-esports-vs-aurora-gaming-round-3-main-event-f408a5/?utm_source=openai))\n\n**Recent Performance:**\n\n- **Tundra Esports:** They have demonstrated strong form, securing victories in four of their last five matches. Notably, they clinched the championship at BLAST Slam V by defeating Team Yandex 3-0 in the Grand Finals. ([esportsinsider.com](https://esportsinsider.com/2025/12/tundra-esports-wins-blast-slam-v?utm_source=openai))\n\n- **Aurora Gaming:** In contrast, Aurora Gaming has faced challenges, winning only one of their last five matches. Their most recent victory was a 2-1 win against 1win Team on December 11, 2025. ([strafe.com](https://www.strafe.com/match/aurora-gaming-vs-1win-team-round-2-main-event-2d1ef1/?utm_source=openai))\n\n**Head-to-Head Record:**\n\nIn 2025, Tundra Espo...\n\n---\n\nMarket 2:\nTitle: Spread: Navy (-6.5)\nRecent trade: $510.00 on Navy\nLink: https://polymarket.com/event/cfb-army-navy-2025-12-13\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nThe Navy Midshipmen football team has demonstrated strong performance throughout the 2025 season, achieving a 9\u20132 record with a 7\u20131 conference standing. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2025_Navy_Midshipmen_football_team?utm_source=openai)) Their offense, led by quarterback Blake Horvath, has been particularly impressive. Horvath has accumulated 1,353 passing yards with 13 touchdowns and four interceptions, and added 1,246 rushing yards on 175 attempts for 17 touchdowns, averaging 7.1 yards per carry. ([si.com](https://www.si.com/onsi/armed-forces-sports/news/navy-midshipmen-football-team-will-have-massive-continuity-edge-next-season?utm_source=openai))\n\nIn their most recent game on November 15, 2025, Navy secured a 41\u201338 victory over No. 24 South Florida. Horvath contributed significantly, throwing for 141 yards and a touchdown, and rushing for 155 yards and two scores, including a decisive 51-yard touchdown run late in the fourth quarter. ([foxsports.com](https://www...\n\n---\n\nMarket 3:\nTitle: Barcelona vs. Olympiacos B.C.\nRecent trade: $525.81 on Barcelona\nLink: https://polymarket.com/event/euroleague-barcelon-olympiac-2025-12-12\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nFC Barcelona and Olympiacos B.C. are set to face off in a EuroLeague basketball game on December 12, 2025, at the Palau Blaugrana in Barcelona. ([as.com](https://as.com/baloncesto/euroliga/barcelona-olympiacos-horario-tv-como-y-donde-ver-la-euroliga-2025-26-f202512-n/?utm_source=openai))\n\n**Recent Developments:**\n\n- **FC Barcelona:** After a challenging start to the season, Barcelona appointed Xavi Pascual as head coach, replacing Joan Pe\u00f1arroya. Under Pascual's leadership, the team has shown significant improvement, securing seven wins in eight games across all competitions. ([as.com](https://as.com/baloncesto/acb/el-barcelona-sale-de-la-tumba-f202512-n/?utm_source=openai))\n\n- **Olympiacos B.C.:** The Greek team has bolstered its roster with the addition of American guard Monte Morris, aiming to address inconsistencies in their EuroLeague performance and compensate for the recent injury of Keenan Evans. ([as.com](https://as.com/baloncesto/euroliga/el-olympiacos-mete-mas-miedo-llega-mo...\n\n---\n\n\nProvide predictions for each market in the specified format.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\nUse this context to make more informed predictions.\n\nFor each market, provide your prediction in this exact format:\n\nMARKET [number]: [decision]\nReasoning: [brief 1-2 sentence explanation that references the news context if relevant]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES means you would bet on the \"Yes\" outcome\n- NO means you would bet on the \"No\" outcome\n- NO_TRADE means you would not take a position\n\nBe concise and focused on the most promising opportunities.",
+  "consensus_summary": "The consensus strongly favors Tundra Esports and FC Barcelona to win their respective matches, citing superior recent form and specific contextual advantages. For the Navy spread market, opinions are split between confidence in Navy's strong season and caution due to the rivalry game's unpredictability. Overall, the predictions show high agreement on Markets 1 and 3, but a notable divide on Market 2 between confident \"YES\" and cautious \"NO_TRADE\" positions.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "GEMINI",
+    "AI #3": "DEEPSEEK",
+    "AI #4": "OPUS",
+    "AI #5": "CLAUDE"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.04,
+      "success": true
+    },
+    "openai": {
+      "response": "MARKET 1: YES  \nReasoning: Tundra Esports is in strong form, having won four of their last five matches and a recent championship, while Aurora Gaming has struggled with only one win in the same period. This suggests a higher likelihood of Tundra Esports winning Game 1.\n\nMARKET 2: NO_TRADE  \nReasoning: While the Navy Midshipmen have had a strong season and are favored by the spread, the recent close game against a ranked opponent indicates potential volatility. Without specific information about Army's performance, the uncertainty makes it advisable to avoid a trade.\n\nMARKET 3: YES  \nReasoning: FC Barcelona has significantly improved under new coach Xavi Pascual, winning seven of their last eight games. Despite Olympiacos strengthening their roster, Barcelona's home advantage and recent form make them likely to win this matchup.",
+      "response_time": 4.08,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: YES\nReasoning: Tundra Esports has shown significantly stronger recent performance, winning four of their last five matches and securing a championship, while Aurora Gaming has struggled with only one win in their last five.\n\nMARKET 2: YES\nReasoning: Navy has had a strong 9-2 season, and their quarterback Blake Horvath leads an impressive offense, demonstrated by their recent 41-38 victory over a ranked opponent.\n\nMARKET 3: YES\nReasoning: FC Barcelona has significantly improved under new coach Xavi Pascual, securing seven wins in their last eight games across all competitions, and will have home-court advantage.",
+      "response_time": 5.08,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: YES  \nReasoning: Tundra Esports is in strong recent form with four wins in their last five matches, including a tournament championship, while Aurora Gaming has struggled with only one win in five, making Tundra the clear favorite for Game 1.\n\nMARKET 2: YES  \nReasoning: Navy has a strong 9\u20132 season record and a dynamic quarterback in Blake Horvath, who recently led a comeback victory; their offensive power suggests they can cover a -6.5 point spread against Army.\n\nMARKET 3: YES  \nReasoning: Barcelona has shown marked improvement under new coach Xavi Pascual, winning seven of their last eight games, and they play at home, giving them an edge over an Olympiacos team integrating a new player and dealing with injuries.",
+      "response_time": 6.04,
+      "success": true
+    },
+    "opus": {
+      "response": "MARKET 1: YES\nReasoning: Tundra Esports has been in excellent form, winning 4 of their last 5 matches including a 3-0 championship victory at BLAST Slam V, while Aurora Gaming has struggled with only 1 win in their last 5 matches. The head-to-head and form strongly favor Tundra.\n\nMARKET 2: NO_TRADE\nReasoning: While Navy has impressive offensive stats with QB Horvath and a 9-2 record, the Army-Navy game is historically competitive and unpredictable regardless of regular season records. A 6.5 point spread in a rivalry game is risky without more context on Army's performance.\n\nMARKET 3: YES\nReasoning: Barcelona playing at home in Palau Blaugrana with strong recent form under new coach Xavi Pascual (7 wins in 8 games) gives them a significant edge, especially against an Olympiacos team still integrating new players like Monte Morris to address roster inconsistencies.",
+      "response_time": 6.38,
+      "success": true
+    },
+    "claude": {
+      "response": "MARKET 1: YES\nReasoning: Tundra Esports has won 4 of their last 5 matches and recently won the BLAST Slam V championship, while Aurora Gaming has only won 1 of their last 5 matches. The recent $972.75 bet on Tundra reflects strong confidence in their superior current form.\n\nMARKET 2: NO_TRADE\nReasoning: While Navy has a strong 9-2 record and Blake Horvath has been excellent, covering a 6.5-point spread in the Army-Navy rivalry game is challenging given the historical competitiveness and emotional intensity of this matchup, making the outcome too uncertain for confident prediction.\n\nMARKET 3: YES\nReasoning: Barcelona has won 7 of 8 games under new coach Xavi Pascual and has home court advantage at Palau Blaugrana. While Olympiacos added Monte Morris, they're dealing with Keenan Evans' injury and have shown inconsistency in EuroLeague play.",
+      "response_time": 7.33,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 6,
+    "failed_responses": 0,
+    "total_time": 11.1
+  }
+}

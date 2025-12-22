@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T09:56:05.672677",
+  "prompt": "Analyze these 3 Polymarket markets and provide your predictions.\nYou have been given RECENT NEWS AND CONTEXT from web search for each market.\nUse this information to make more informed predictions.\n\n\nMarket 1:\nTitle: Will PSV win on 2025-12-13?\nRecent trade: $1,452.12 on Yes\nLink: https://polymarket.com/event/ere-psv-her-2025-12-13\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nPSV Eindhoven is set to face Heracles Almelo on Saturday, December 13, 2025, at Philips Stadion in an Eredivisie match. PSV currently leads the league with 40 points from 15 matches, boasting 13 wins, 1 draw, and 1 loss. In contrast, Heracles Almelo is 16th with 14 points, having secured 4 wins, 2 draws, and 9 losses. ([futbol24.com](https://www.futbol24.com/betting-tips/preview/13-12-2025-psv-eindhoven-heracles-almelo-betting-tip/?utm_source=openai))\n\nRecent betting odds heavily favor PSV, with a 65.4% chance of winning, while Heracles has a 19.28% chance. ([wincomparator.com](https://www.wincomparator.com/predictions/psv-eindhoven-heracles-7666599/?utm_source=openai)) Additionally, PSV has won their last nine Eredivisie matches, scoring an average of 3.2 goals per game. ([copybet.com](https://www.copybet.com/football-tips/Football-Netherlands-Eredivisie-PSV-Eindhoven-Heracles-Almelo-13-12-2025/28552057/?utm_source=openai))\n\nHowever, PSV's recent form includes a 3-2 loss to Atl\u00e9tico M...\n\n---\n\nMarket 2:\nTitle: Will Brighton & Hove Albion FC win on 2025-12-13?\nRecent trade: $704.33 on No\nLink: https://polymarket.com/event/epl-liv-bri-2025-12-13\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nBrighton & Hove Albion FC is set to face Liverpool FC at Anfield on Saturday, December 13, 2025, at 10:00 AM ET. ([foxsports.com](https://www.foxsports.com/articles/soccer/liverpool-fc-vs-brighton-hove-albion-prediction-odds-picks-dec-13?utm_source=openai))\n\n**Recent Performance:**\n\n- **Brighton & Hove Albion:**\n  - In their last match on December 7, 2025, Brighton secured a 1-1 draw against West Ham United, with Georginio Rutter scoring a stoppage-time equalizer. ([espn.com](https://www.espn.com/soccer/match/_/gameId/740740?utm_source=openai))\n  - Overall, Brighton has achieved 6 wins, 5 draws, and 4 losses in the Premier League this season, placing them 8th in the standings. ([thescore.com](https://www.thescore.com/epl/events/88976?utm_source=openai))\n\n- **Liverpool FC:**\n  - Liverpool also drew 3-3 against Leeds United on December 6, 2025. ([foxsports.com](https://www.foxsports.com/articles/soccer/liverpool-fc-vs-brighton-hove-albion-prediction-odds-picks-dec-13?utm_source=openai))\n...\n\n---\n\nMarket 3:\nTitle: Theo FDV above $700M one day after launch?\nRecent trade: $653.56 on No\nLink: https://polymarket.com/event/theo-fdv-above-one-day-after-launch\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nAs of December 13, 2025, there is no publicly available information regarding a cryptocurrency or token named \"Theo\" (THEO) achieving a Fully Diluted Valuation (FDV) exceeding $700 million one day after its launch. The Polymarket prediction market, which allows users to speculate on such events, lists a market titled \"Theo FDV above ___ one day after launch?\" with various FDV thresholds, including $700 million. However, this market is set to resolve on January 1, 2027, indicating that the event in question has not yet occurred. ([polymarket.com](https://polymarket.com/event/theo-fdv-above-one-day-after-launch?utm_source=openai))\n\nCurrently, the price of Theopetra (THEO) is $0.00288249 USD. Without additional data on the total token supply, calculating the FDV is not feasible.\n\nIn the absence of specific information about Theo's launch and market performance, it's challenging to predict the likelihood of its FDV surpassing $700 million one day after launch. Generally, achieving such a h...\n\n---\n\n\nProvide predictions for each market in the specified format.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\nUse this context to make more informed predictions.\n\nFor each market, provide your prediction in this exact format:\n\nMARKET [number]: [decision]\nReasoning: [brief 1-2 sentence explanation that references the news context if relevant]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES means you would bet on the \"Yes\" outcome\n- NO means you would bet on the \"No\" outcome\n- NO_TRADE means you would not take a position\n\nBe concise and focused on the most promising opportunities.",
+  "consensus_summary": "All three AI models unanimously predict YES for PSV winning and NO for Brighton winning, citing PSV's dominant league position and Liverpool's home advantage as key reasons. They also all agree on NO_TRADE for the Theo market due to insufficient information and the distant resolution date. There is complete consensus across all responses with no disagreements.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "GEMINI",
+    "AI #3": "DEEPSEEK"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.05,
+      "success": true
+    },
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4V8TbWTNrxkagUQaBBD'}",
+      "response_time": 0.08,
+      "success": false
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4V8Tb1u8nRSPxcz6RUS'}",
+      "response_time": 0.08,
+      "success": false
+    },
+    "openai": {
+      "response": "MARKET 1: YES  \nReasoning: PSV Eindhoven is significantly stronger than Heracles Almelo, leading the league and having a strong winning streak, with recent betting odds heavily favoring PSV at a 65.4% chance of winning. This makes a PSV victory highly probable.\n\nMARKET 2: NO  \nReasoning: Brighton & Hove Albion FC is facing Liverpool at Anfield, a notoriously difficult venue for visitors. Despite Brighton's solid performance this season, Liverpool, likely being the stronger team at home, makes a Brighton win less likely.\n\nMARKET 3: NO_TRADE  \nReasoning: There is insufficient information on the cryptocurrency \"Theo\" and its market conditions to make a confident prediction about its FDV exceeding $700 million. The lack of details about its launch and market performance makes taking a position speculative.",
+      "response_time": 1.99,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: YES\nReasoning: PSV is the league leader with a strong home record and has won their last nine Eredivisie matches, while Heracles is near the bottom of the league, making PSV a heavy favorite.\n\nMARKET 2: NO\nReasoning: Brighton is facing Liverpool at Anfield, historically a very difficult venue for visiting teams, and achieving a win against Liverpool at their home ground is a significant challenge for an 8th-place team.\n\nMARKET 3: NO_TRADE\nReasoning: There is no publicly available information or data regarding \"Theo\" (THEO) or its potential launch and FDV, making it impossible to form an informed prediction at this time.",
+      "response_time": 4.86,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: YES  \nReasoning: PSV is the clear favorite, leading the league with dominant form (9 straight wins) and facing a struggling Heracles side, making a home victory the most likely outcome despite a recent unrelated loss.\n\nMARKET 2: NO  \nReasoning: Brighton is playing away at Anfield against a strong Liverpool side; while both teams drew recently, Liverpool's home advantage and superior historical performance make a Brighton win unlikely.\n\nMARKET 3: NO_TRADE  \nReasoning: The event resolves far in the future (Jan 1, 2027) and there is insufficient current data on the token's launch dynamics or demand to make a confident prediction on it reaching a $700M FDV.",
+      "response_time": 6.9,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 9.96
+  }
+}

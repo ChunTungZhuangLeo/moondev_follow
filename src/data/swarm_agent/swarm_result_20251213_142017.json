@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T14:20:17.273110",
+  "prompt": "Analyze these 3 Polymarket markets.\n\nFor EACH market:\n1. Estimate the TRUE PROBABILITY based on news context\n2. Calculate EDGE vs market price\n3. Only recommend trades with 10%+ edge\n\n\nMarket 1:\nTitle: Eintracht Frankfurt vs. FC Augsburg: O/U 3.5\nCurrent Market Price: 69.0% (this is the market's implied probability)\nRecent trade: $790.74 on Under\nLink: https://polymarket.com/event/bun-ein-aug-2025-12-13-more-markets\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nThe upcoming Bundesliga match between Eintracht Frankfurt and FC Augsburg is scheduled for December 13, 2025, at 14:30 GMT at Deutsche Bank Park in Frankfurt. ([mybets.today](https://www.mybets.today/soccer-predictions/match-prediction-analysis-eintracht-frankfurt-vs-augsburg-betting-tip-dii26527i/?utm_source=openai))\n\n**Recent Form and Team News:**\n\n- **Eintracht Frankfurt:** The team has been struggling defensively, conceding 29 goals in the Bundesliga, the highest in the league. ([as.com](https://as.com/futbol/internacional/el-eintracht-llega-herido-al-camp-nou-f202512-n/?utm_source=openai)) They are also dealing with several key injuries, including Michy Batshuayi, Jonathan Burkardt, and Ansgar Knauff. ([as.com](https://as.com/futbol/toppmoller-lo-tiene-claro-aqui-se-viene-a-sufrir-y-a-correr-f202512-n/?utm_source=openai))\n\n- **FC Augsburg:** Augsburg has been inconsistent, with two wins and three losses in their last five Bundesliga matches. ([bettingexpert.com](https://www.bettin\n\n---\n\nMarket 2:\nTitle: Dota 2: Heroic vs Aurora (BO3)\nCurrent Market Price: 47.0% (this is the market's implied probability)\nRecent trade: $1,256.59 on Heroic\nLink: https://polymarket.com/event/dota2-heroic-aur1-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nAs of December 13, 2025, Heroic and Aurora Gaming are set to face each other in a Best-of-3 series during the ESL Dota2 2025 DreamLeague Season 27 Main Event Group Stage - Round 4. ([strafe.com](https://www.strafe.com/match/heroic-vs-aurora-gaming-round-4-main-event-4ddd3c/?utm_source=openai))\n\n**Recent Performance:**\n\n- **Heroic:** Over the past month, Heroic has maintained a 67% win rate, with a 55% win rate over the last six months. ([bo3.gg](https://bo3.gg/dota2/news/aurora-gaming-vs-heroic-match-prediction-and-analysis-blast-slam-iv-group-stage?utm_source=openai))\n\n- **Aurora Gaming:** In the past month, Aurora has achieved a 56% win rate, with a 49% win rate over the last six months. ([bo3.gg](https://bo3.gg/dota2/news/aurora-gaming-vs-heroic-match-prediction-and-analysis-blast-slam-iv-group-stage?utm_source=openai))\n\n**Head-to-Head Record:**\n\nIn their last five encounters, Heroic has won three times, including a 2-0 victory on November 7, 2025. ([tips.gg](https://tips.gg/archive\n\n---\n\nMarket 3:\nTitle: Army vs. Navy: O/U 39.5\nCurrent Market Price: 53.0% (this is the market's implied probability)\nRecent trade: $631.00 on Under\nLink: https://polymarket.com/event/cfb-army-navy-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nThe 2025 Army-Navy football game is scheduled for Saturday, December 13, at 3 p.m. ET at M&T Bank Stadium in Baltimore, Maryland. As of December 12, 2025, the over/under (O/U) for the game is set at 38.5 points, reflecting a slight decrease from the opening line of 39.5 points. ([sportsbookreview.com](https://www.sportsbookreview.com/picks/college-football/army-vs-navy-game-total-trends-under-bet-history-2025/?utm_source=openai))\n\n**Recent Developments:**\n\n- **Betting Trends:** The under has been a popular bet in recent Army-Navy games, with 17 of the last 19 matchups going under the projected total. ([sportsbookreview.com](https://www.sportsbookreview.com/picks/college-football/army-vs-navy-game-total-trends-under-bet-history-2025/?utm_source=openai)) This historical trend has influenced the current O/U line.\n\n- **Team Performance:** Navy enters the game with a 9-2 record, boasting a potent offense led by senior quarterback Blake Horvath, who has accumulated 1,040 rushing yards and 14\n\n---\n\n\nProvide predictions in the exact format specified.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\n\nIMPORTANT: For each market, you MUST estimate the TRUE PROBABILITY of the outcome.\nCompare your probability estimate to the market price to find EDGE (mispricing).\n\nEdge = Your Probability - Market Probability\n- Positive edge on YES side means market undervalues YES\n- Negative edge means market overvalues YES (bet NO instead)\n\nFor each market, provide your prediction in this EXACT format:\n\nMARKET [number]: [decision]\nYour Probability: [0-100]%\nMarket Price: [shown price]%\nEdge: [+/-X]% (Your prob - Market)\nExpected Value: [calculate: Edge \u00d7 potential payout]\nReasoning: [1-2 sentences explaining your probability estimate]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES = Your probability > Market price + 10% (minimum 10% edge)\n- NO = Your probability < Market price - 10%\n- NO_TRADE = Edge < 10% (not enough value)\n\nBe contrarian when you have conviction. Look for markets where news hasn't been priced in yet.",
+  "consensus_summary": "The consensus identifies a strong 13% edge favoring Heroic in Market 2, making it the only clear trade recommendation. Analysts disagree significantly on Markets 1 and 3, showing no reliable edge for the Over/Under bets in those football matches. Therefore, the only actionable trade with a 10%+ edge is a YES bet on Heroic.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "DEEPSEEK",
+    "AI #3": "GEMINI"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.07,
+      "success": true
+    },
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4qGg1BpULS6Ei39jiqS'}",
+      "response_time": 0.07,
+      "success": false
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4qGg2B4QbX8CWaMXbEY'}",
+      "response_time": 0.09,
+      "success": false
+    },
+    "openai": {
+      "response": "MARKET 1: NO_TRADE  \nYour Probability: 70%  \nMarket Price: 69.0%  \nEdge: +1%  \nExpected Value: $0.01 per dollar bet  \nReasoning: Given Eintracht Frankfurt's struggling defense and Augsburg's inconsistency, the probability of over 3.5 goals is slightly higher than the market price. However, the edge is not significant enough to warrant a trade.\n\nMARKET 2: YES  \nYour Probability: 60%  \nMarket Price: 47.0%  \nEdge: +13%  \nExpected Value: $0.13 per dollar bet  \nReasoning: Heroic has a better win rate over the past month and a favorable head-to-head record against Aurora, making them more likely to win the series. The market underestimates Heroic's chances, providing a good opportunity for a YES bet.\n\nMARKET 3: NO  \nYour Probability: 45%  \nMarket Price: 53.0%  \nEdge: -8%  \nExpected Value: -$0.08 per dollar bet  \nReasoning: The historical trend of Army-Navy games going under the total, combined with betting trends and a decrease in the line, suggests a lower probability of the score exceeding 39.5 points. The market overvalues the probability of over 39.5, but the edge is not large enough to recommend a NO trade.",
+      "response_time": 3.41,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO_TRADE\nYour Probability: 75%\nMarket Price: 69.0%\nEdge: +6.0% (Your prob - Market)\nExpected Value: 6.0% \u00d7 potential payout\nReasoning: Frankfurt's league-worst defense and key injuries increase the likelihood of a high-scoring game, but the market price already reflects significant risk for the Under.\n\nMARKET 2: YES\nYour Probability: 60%\nMarket Price: 47.0%\nEdge: +13.0% (Your prob - Market)\nExpected Value: 13.0% \u00d7 potential payout\nReasoning: Heroic's superior recent win rate (67% vs 56%) and positive head-to-head record against Aurora justify a clear favorite status not fully priced in.\n\nMARKET 3: YES\nYour Probability: 70%\nMarket Price: 53.0%\nEdge: +17.0% (Your prob - Market)\nExpected Value: 17.0% \u00d7 potential payout\nReasoning: The strong historical trend of the Under (17 of last 19) and Navy's potent offense facing a rival known for low-scoring games make Over 39.5 appear significantly overvalued.",
+      "response_time": 9.27,
+      "success": true
+    },
+    "gemini": {
+      "response": "Here are the predictions for the Polymarket markets:\n\nMARKET 1: Eintracht Frankfurt vs. FC Augsburg: O/U 3.5\nDecision: NO\nYour Probability: 55%\nMarket Price: 69.0%\nEdge: -14% (55% - 69%)\nExpected Value: -0.14 * $1",
+      "response_time": 9.76,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 13.7
+  }
+}

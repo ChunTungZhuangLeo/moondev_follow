@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T10:56:59.382014",
+  "prompt": "Analyze these 3 Polymarket markets.\n\nFor EACH market:\n1. Estimate the TRUE PROBABILITY based on news context\n2. Calculate EDGE vs market price\n3. Only recommend trades with 10%+ edge\n\n\nMarket 1:\nTitle: Dota 2: Nigma Galaxy vs 1win (BO3)\nCurrent Market Price: 45.0% (this is the market's implied probability)\nRecent trade: $628.20 on 1win\nLink: https://polymarket.com/event/dota2-ngx-1win-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nNigma Galaxy and 1win are set to face off in a Best of 3 (BO3) match today, December 13, 2025, at 18:00 UTC, as part of the DreamLeague Season 27 Group Stage. ([strafe.com](https://www.strafe.com/match/nigma-galaxy-vs-1win-team-round-4-main-event-2eb08c/?utm_source=openai))\n\n**Recent Performance:**\n\n- **Nigma Galaxy:** Over the past month, Nigma Galaxy has struggled, securing only a 29% win rate with three losses in their last five matches. ([bo3.gg](https://bo3.gg/dota2/matches/nigma-galaxy-dota2-vs-1win-dota2-13-12-2025?utm_source=openai))\n\n- **1win:** In contrast, 1win has demonstrated consistent form, achieving a 57% win rate in the same period. ([bo3.gg](https://bo3.gg/dota2/matches/nigma-galaxy-dota2-vs-1win-dota2-13-12-2025?utm_source=openai))\n\n**Head-to-Head Record:**\n\nThe teams have faced each other once in the past year, with Nigma Galaxy securing a 2-0 victory over 1win on October 11, 2025. ([tips.gg](https://tips.gg/archive/1win-dota2-vs-nigma-galaxy-dota2/?utm_source=opena\n\n---\n\nMarket 2:\nTitle: Will Trump pardon Steve Bannon in 2025?\nCurrent Market Price: 97.8% (this is the market's implied probability)\nRecent trade: $611.25 on No\nLink: https://polymarket.com/event/who-will-trump-pardon-in-2025\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nAs of December 13, 2025, there have been no official announcements regarding a pardon for Steve Bannon by President Donald Trump. Bannon, who served as a senior advisor to Trump, was pardoned in January 2021 for federal charges related to the \"We Build the Wall\" fundraising campaign. ([cbsnews.com](https://www.cbsnews.com/news/trump-pardons-former-chief-strategist-steve-bannon/?utm_source=openai)) However, in February 2025, Bannon pleaded guilty to a state felony charge in New York for defrauding donors in the same campaign, resulting in a three-year conditional discharge. ([cnbc.com](https://www.cnbc.com/2025/02/11/steve-bannon-trump-guilty-build-the-wall.html?utm_source=openai))\n\nIn the aftermath of the 2024 presidential election, speculation about potential pardons has intensified. Following the pardon of Rudy Giuliani, Bannon's odds of receiving a pardon nearly doubled on prediction markets, rising from about 6% to 11%. ([news.kalshi.com](https://news.kalshi.com/p/steve-bannon-pard\n\n---\n\nMarket 3:\nTitle: Dota 2: BetBoom Team vs Tundra Esports (BO3)\nCurrent Market Price: 33.0% (this is the market's implied probability)\nRecent trade: $844.94 on BetBoom Team\nLink: https://polymarket.com/event/dota2-bb4-tundra-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nAs of December 13, 2025, there are no upcoming matches scheduled between BetBoom Team and Tundra Esports in Dota 2. Their most recent encounter occurred on July 17, 2025, during the Esports World Cup 2025 quarterfinals, where Tundra Esports secured a 2-1 victory over BetBoom Team. ([dltv.org](https://dltv.org/matches/421342/betboom-team-vs-tundra-esports-esports-world-cup-2025?utm_source=openai))\n\nHistorically, Tundra Esports has maintained a favorable record against BetBoom Team, winning 60% of their head-to-head matchups. ([bo3.gg](https://bo3.gg/dota2/matches/betboom-team-dota2-vs-tundra-esports-dota2-13-12-2025?utm_source=openai)) In their July 2025 match, Tundra Esports demonstrated strategic prowess, with standout performances from players like bzm and Crystallis. ([dltv.org](https://dltv.org/matches/421342/betboom-team-vs-tundra-esports-esports-world-cup-2025?utm_source=openai))\n\nBetBoom Team has shown resilience in previous encounters, notably securing a 2-1 victory over Tundra\n\n---\n\n\nProvide predictions in the exact format specified.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\n\nIMPORTANT: For each market, you MUST estimate the TRUE PROBABILITY of the outcome.\nCompare your probability estimate to the market price to find EDGE (mispricing).\n\nEdge = Your Probability - Market Probability\n- Positive edge on YES side means market undervalues YES\n- Negative edge means market overvalues YES (bet NO instead)\n\nFor each market, provide your prediction in this EXACT format:\n\nMARKET [number]: [decision]\nYour Probability: [0-100]%\nMarket Price: [shown price]%\nEdge: [+/-X]% (Your prob - Market)\nExpected Value: [calculate: Edge \u00d7 potential payout]\nReasoning: [1-2 sentences explaining your probability estimate]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES = Your probability > Market price + 10% (minimum 10% edge)\n- NO = Your probability < Market price - 10%\n- NO_TRADE = Edge < 10% (not enough value)\n\nBe contrarian when you have conviction. Look for markets where news hasn't been priced in yet.",
+  "consensus_summary": "The consensus identifies a clear edge only for Market 3, where two models see BetBoom as undervalued versus Tundra, recommending a \"YES\" trade. For Market 1, all agree 1win is the true favorite, but they disagree on whether the edge is large enough to warrant a trade against Nigma. Regarding Market 2, all models agree the \"YES\" price is overvalued, but none recommend a \"NO\" trade due to insufficient edge or liquidity concerns.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "GEMINI",
+    "AI #3": "DEEPSEEK"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.05,
+      "success": true
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4ZmG9BjFL3jG8ReEX1y'}",
+      "response_time": 0.08,
+      "success": false
+    },
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4ZmG9gV2P4u1d324wzG'}",
+      "response_time": 0.09,
+      "success": false
+    },
+    "openai": {
+      "response": "MARKET 1: NO\nYour Probability: 60%\nMarket Price: 45.0%\nEdge: -15% (Your prob - Market)\nExpected Value: -15% \u00d7 potential payout\nReasoning: Despite Nigma Galaxy's prior head-to-head win, their recent poor form (29% win rate) compared to 1win's consistent performance (57% win rate) suggests 1win is more likely to win the match. Market underestimates 1win's chances.\n\nMARKET 2: NO_TRADE\nYour Probability: 90%\nMarket Price: 97.8%\nEdge: -7.8% (Your prob - Market)\nExpected Value: -7.8% \u00d7 potential payout\nReasoning: While there is speculation around pardons, the lack of official announcements and Bannon's recent legal issues reduce the likelihood of a pardon to below the market price. However, the edge is not sufficient for a trade.\n\nMARKET 3: NO\nYour Probability: 40%\nMarket Price: 33.0%\nEdge: -7% (Your prob - Market)\nExpected Value: -7% \u00d7 potential payout\nReasoning: Tundra Esports' historical advantage and recent victory against BetBoom suggest they are more likely to win, though not by a wide margin. The market slightly undervalues Tundra, but not enough for a substantial edge.",
+      "response_time": 3.55,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: NO_TRADE\nYour Probability: 38%\nMarket Price: 45.0%\nEdge: -7% (38% - 45%)\nExpected Value: -0.07 * potential payout\nReasoning: 1win has a significantly better recent win rate (57% vs 29%), making them the",
+      "response_time": 9.57,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO\nYour Probability: 35%\nMarket Price: 45.0%\nEdge: -10.0% (Your prob - Market)\nExpected Value: +10.0% (Betting NO at 55.0% price implies a 61.1% true probability for a 10% edge)\nReasoning: 1win's significantly better recent form (57% win rate vs. 29%) outweighs the single head-to-head loss, making them clear favorites in a BO3.\n\nMARKET 2: NO_TRADE\nYour Probability: 85%\nMarket Price: 97.8%\nEdge: -12.8% (Your prob - Market)\nExpected Value: N/A (Edge magnitude >10% but direction is NO; however, market liquidity on NO side is likely poor given 97.8% price, making a profitable NO trade execution unlikely in practice.)\nReasoning: While a pardon is plausible, the 97.8% price implies near certainty, which is excessive given Bannon's recent state guilty plea and the conditional nature of his discharge.\n\nMARKET 3: YES\nYour Probability: 50%\nMarket Price: 33.0%\nEdge: +17.0% (Your prob - Market)\nExpected Value: +25.8% (Edge of 17% on a 33% price yields ~51.5% ROI)\nReasoning: The market price heavily favors Tundra based on historical record, but the lack of a scheduled match and BetBoom's proven capability to win sets make the current 33% probability for a BetBoom win significantly undervalued.",
+      "response_time": 12.38,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 17.12
+  }
+}

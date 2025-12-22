@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T09:32:33.534141",
+  "prompt": "Analyze these 3 Polymarket markets.\n\nFor EACH market:\n1. Estimate the TRUE PROBABILITY based on news context\n2. Calculate EDGE vs market price\n3. Only recommend trades with 10%+ edge\n\n\nMarket 1:\nTitle: Spread: Liverpool FC (-1.5)\nCurrent Market Price: 68.0% (this is the market's implied probability)\nRecent trade: $900.00 on Brighton & Hove Albion FC\nLink: https://polymarket.com/event/epl-liv-bri-2025-12-13-more-markets\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nLiverpool FC is set to face Brighton & Hove Albion at Anfield on Saturday, December 13, 2025. In their previous match on December 6, Liverpool drew 3-3 against Leeds United, with forward Hugo Ekitike scoring twice. ([espn.com](https://www.espn.com/soccer/report/_/gameId/740742?utm_source=openai))\n\nThe team has been grappling with internal tensions, notably between manager Arne Slot and star forward Mohamed Salah. Salah publicly criticized the club and Slot after being benched during the Leeds match, expressing feelings of being scapegoated for the team's poor start to the season. ([reuters.com](https://www.reuters.com/sports/soccer/salah-slams-liverpool-throwing-him-under-bus-2025-12-06/?utm_source=openai))\n\nDespite these challenges, Liverpool has a strong record in December fixtures, having won 37 and drawn 14 of their last 52 matches in the month. ([thisisanfield.com](https://www.thisisanfield.com/2025/12/liverpool-52-december-games/?utm_source=openai))\n\nIn the betting market, Liverp\n\n---\n\nMarket 2:\nTitle: Spread: Lightning (-1.5)\nCurrent Market Price: 68.6% (this is the market's implied probability)\nRecent trade: $1,000.00 on Islanders\nLink: https://polymarket.com/event/nhl-tb-nyi-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\n\n## NHL Schedule\n- Lightning @ Islanders on Saturday, Dec 13, 2025 at 12:30 PM PST\n\n\nThe Tampa Bay Lightning are set to face the New York Islanders today at 12:30 PM PST. The current betting line favors the Lightning with a -1.5 spread, indicating they are expected to win by at least two goals. ([sportsbookreview.com](https://www.sportsbookreview.com/scores/nhl-hockey/matchup/360993?utm_source=openai))\n\n**Recent Performance:**\n\n- **Tampa Bay Lightning:** The Lightning have shown resilience, securing consecutive victories after a four-game losing streak. Notably, they defeated the New Jersey Devils 8-4 on December 11, with Oliver Bjorkstrand contributing two goals and an assist, and Nikita Kucherov adding four assists. ([nhl.com](https://www.nhl.com/news/tampa-bay-lightning-new-jersey-devils-game-recap-december-11-2025?utm_source=openai))\n\n- **New York Islanders:** The Islanders have been consistent, maintaining a strong record of 18 wins, 11 losses, and 3 overtime losses. Their recent \n\n---\n\nMarket 3:\nTitle: Will Melbourne Victory FC win on 2025-12-13?\nCurrent Market Price: 68.0% (this is the market's implied probability)\nRecent trade: $680.00 on Yes\nLink: https://polymarket.com/event/aus-vic-ade-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nMelbourne Victory FC is set to face Adelaide United on Saturday, December 13, 2025, at AAMI Park in Melbourne. ([melbournevictory.com.au](https://melbournevictory.com.au/news/victory-men-host-reds-in-original-rivalry/?utm_source=openai))\n\n**Recent Performance:**\n\n- **Melbourne Victory FC:** The team has struggled in recent matches, with a 3-0 defeat to Sydney FC on November 22, 2025. ([espn.com](https://www.espn.com/soccer/match/_/gameId/758442/melbourne-victory-sydney-fc?utm_source=openai))\n\n- **Adelaide United:** Adelaide United has had a mixed performance, with a 2-1 loss to Canberra United on December 5, 2025. ([hint.bet](https://www.hint.bet/football/match/758595?utm_source=openai))\n\n**Match Details:**\n\n- **Date and Time:** December 13, 2025, at 7:35 PM AEDT for the A-League Men\u2019s match. ([melbournevictory.com.au](https://melbournevictory.com.au/news/victory-men-host-reds-in-original-rivalry/?utm_source=openai))\n\n- **Venue:** AAMI Park, Melbourne. ([aamipark.com.au](https://aamipa\n\n---\n\n\nProvide predictions in the exact format specified.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\n\nIMPORTANT: For each market, you MUST estimate the TRUE PROBABILITY of the outcome.\nCompare your probability estimate to the market price to find EDGE (mispricing).\n\nEdge = Your Probability - Market Probability\n- Positive edge on YES side means market undervalues YES\n- Negative edge means market overvalues YES (bet NO instead)\n\nFor each market, provide your prediction in this EXACT format:\n\nMARKET [number]: [decision]\nYour Probability: [0-100]%\nMarket Price: [shown price]%\nEdge: [+/-X]% (Your prob - Market)\nExpected Value: [calculate: Edge \u00d7 potential payout]\nReasoning: [1-2 sentences explaining your probability estimate]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES = Your probability > Market price + 10% (minimum 10% edge)\n- NO = Your probability < Market price - 10%\n- NO_TRADE = Edge < 10% (not enough value)\n\nBe contrarian when you have conviction. Look for markets where news hasn't been priced in yet.",
+  "consensus_summary": "The consensus across all three AI models is that the current market prices are overestimating the true probabilities for all three events, with no model identifying a trade with a 10%+ positive edge. There is notable agreement that Liverpool's internal tensions and Melbourne Victory's poor form justify \"NO\" positions, while assessments of the NHL game vary from a close \"NO_TRADE\" to a firm \"NO.\" Overall, the synthesized view finds no recommended trades, as each market's implied odds appear inflated compared to the analysts' collective probability estimates.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "DEEPSEEK",
+    "AI #3": "GEMINI"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.04,
+      "success": true
+    },
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4TKwGEJCTNfrsyQYVzF'}",
+      "response_time": 0.07,
+      "success": false
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4TKwFUztfCUXPzBqSRN'}",
+      "response_time": 0.08,
+      "success": false
+    },
+    "openai": {
+      "response": "MARKET 1: NO\nYour Probability: 55%\nMarket Price: 68.0%\nEdge: -13% (Your prob - Market)\nExpected Value: -13% \u00d7 payout\nReasoning: Liverpool's internal tensions, especially involving key player Mohamed Salah, may impact their performance negatively. Despite their strong historical record in December, the recent draw against Leeds and reported disputes suggest they may not cover the -1.5 spread against a solid Brighton side.\n\nMARKET 2: NO_TRADE\nYour Probability: 65%\nMarket Price: 68.6%\nEdge: -3.6% (Your prob - Market)\nExpected Value: -3.6% \u00d7 payout\nReasoning: Tampa Bay Lightning have shown recent improvement, but the Islanders' consistent performance makes this a closer match-up than the spread suggests. The probability is close to the market price, leading to insufficient edge for a confident trade.\n\nMARKET 3: NO\nYour Probability: 55%\nMarket Price: 68.0%\nEdge: -13% (Your prob - Market)\nExpected Value: -13% \u00d7 payout\nReasoning: Melbourne Victory's recent poor form, including a significant loss to Sydney FC, reduces their likelihood of winning against Adelaide United. Adelaide's mixed results still suggest they could challenge Victory effectively, making the market price too high.",
+      "response_time": 3.6,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO_TRADE\nYour Probability: 60%\nMarket Price: 68.0%\nEdge: -8.0% (Your prob - Market)\nExpected Value: -8.0%\nReasoning: Liverpool's internal strife with Salah and a recent 3-3 draw against Leeds significantly undermine confidence in a comfortable win, despite their strong historical December record.\n\nMARKET 2: NO\nYour Probability: 55%\nMarket Price: 68.6%\nEdge: -13.6% (Your prob - Market)\nExpected Value: -13.6%\nReasoning: While the Lightning are favored and coming off a big win, the -1.5 spread is a high bar against a consistent Islanders team (18-11-3), making a win by 2+ goals less likely than the market implies.\n\nMARKET 3: NO\nYour Probability: 55%\nMarket Price: 68.0%\nEdge: -13.0% (Your prob - Market)\nExpected Value: -13.0%\nReasoning: Melbourne Victory's recent 3-0 loss and general struggle, combined with Adelaide's mixed but not dominant form, make a straight win probability significantly lower than the current market price.",
+      "response_time": 9.33,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: NO\nYour Probability: 45%\nMarket Price: 68.0%\nEdge: -23% (45 - 68)\nExpected Value: -23\nReasoning: Liverpool faces significant internal tensions with Salah's public criticism and recent benching, which can severely impact team morale and performance, making a dominant win (-1",
+      "response_time": 10.94,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 15.76
+  }
+}

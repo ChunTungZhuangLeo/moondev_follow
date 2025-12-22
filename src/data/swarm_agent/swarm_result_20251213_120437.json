@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T12:04:37.229855",
+  "prompt": "Analyze these 3 Polymarket markets.\n\nFor EACH market:\n1. Estimate the TRUE PROBABILITY based on news context\n2. Calculate EDGE vs market price\n3. Only recommend trades with 10%+ edge\n\n\nMarket 1:\nTitle: Will Chelsea FC vs. Everton FC end in a draw?\nCurrent Market Price: 76.0% (this is the market's implied probability)\nRecent trade: $2,280.00 on No\nLink: https://polymarket.com/event/epl-che-eve-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nChelsea FC is set to face Everton FC at Stamford Bridge on Saturday, December 13, 2025, at 16:00 GMT. ([as.com](https://as.com/futbol/internacional/chelsea-everton-tv-horario-y-como-ver-la-premier-league-online-f202512-n/?utm_source=openai))\n\n**Recent Form:**\n\n- **Chelsea FC:** The Blues have struggled recently, going winless in their last four matches. Manager Enzo Maresca emphasized the need for consistency as the team aims to stay competitive, currently sitting fifth in the league standings. ([reuters.com](https://www.reuters.com/sports/soccer/palmer-fofana-available-everton-clash-chelsea-look-consistency-2025-12-12/?utm_source=openai))\n\n- **Everton FC:** The Toffees have shown resilience, securing victories against Bournemouth and Nottingham Forest. Currently, they occupy the sixth position in the league and could surpass Chelsea with a win. ([as.com](https://as.com/futbol/internacional/chelsea-everton-tv-horario-y-como-ver-la-premier-league-online-f202512-n/?utm_source=openai))\n\n*\n\n---\n\nMarket 2:\nTitle: Capitals vs. Jets\nCurrent Market Price: 46.0% (this is the market's implied probability)\nRecent trade: $2,948.60 on Jets\nLink: https://polymarket.com/event/nhl-wsh-wpg-2025-12-14\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\n\n## NHL Schedule\n- Capitals @ Jets on Saturday, Dec 13, 2025 at 04:00 PM PST\n\n\nThe Washington Capitals are set to face the Winnipeg Jets today, December 13, 2025, at 7:00 p.m. EST in Winnipeg. This matchup marks the second meeting between the two teams this season; the Capitals secured a 4-3 victory in the first encounter on November 26, 2025. ([espn.com](https://www.espn.com/nhl/recap/_/gameId/401802718?utm_source=openai))\n\n**Recent Performance:**\n\n- **Washington Capitals:** The Capitals have been on a strong run, earning at least a point in 13 of their last 14 games (10-1-3). They've also been effective on the road, with points in each of their last five away games (4-0-1). ([nhl.com](https://www.nhl.com/capitals/news/caps-start-two-game-trip-in-winnipeg?utm_source=openai))\n\n- **Winnipeg Jets:** The Jets are currently on a three-game losing streak, with a 2-7-1 record in their last 10 games. They've been averaging 2.4 goals per game during this stretch. ([washingtonpost.com](https://\n\n---\n\nMarket 3:\nTitle: Dota 2: Runa Team vs Amaru Gaming - Game 2 Winner\nCurrent Market Price: 87.4% (this is the market's implied probability)\nRecent trade: $2,000.00 on Runa Team\nLink: https://polymarket.com/event/dota2-runa-amaru-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nAs of December 13, 2025, at 12:04 PM, the match between Runa Team and Amaru Gaming in the ESL Dota 2 2025 DreamLeague Season 27 Main Event is scheduled to begin at 11:00 AM. ([strafe.com](https://www.strafe.com/match/runa-team-vs-amaru-gaming-round-4-main-event-ecf4c6/?utm_source=openai)) Therefore, the outcome of Game 2 is not yet available.\n\n**Pre-Match Analysis:**\n\n- **Team Rankings and Recent Performance:**\n  - *Runa Team*: Ranked #21 in the Strafe Dota 2 World Rankings, with a recent record of 2 wins and 3 losses in their last 5 matches. ([strafe.com](https://www.strafe.com/match/runa-team-vs-amaru-gaming-round-4-main-event-ecf4c6/?utm_source=openai))\n  - *Amaru Gaming*: Currently unranked in the Strafe Dota 2 World Rankings, with 1 win and 2 losses in their last 3 matches. ([strafe.com](https://www.strafe.com/match/runa-team-vs-amaru-gaming-round-4-main-event-ecf4c6/?utm_source=openai))\n\n- **Match Format and Betting Odds:**\n  - The match is a Best of 3 series.\n  - Betting odds fa\n\n---\n\n\nProvide predictions in the exact format specified.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\n\nIMPORTANT: For each market, you MUST estimate the TRUE PROBABILITY of the outcome.\nCompare your probability estimate to the market price to find EDGE (mispricing).\n\nEdge = Your Probability - Market Probability\n- Positive edge on YES side means market undervalues YES\n- Negative edge means market overvalues YES (bet NO instead)\n\nFor each market, provide your prediction in this EXACT format:\n\nMARKET [number]: [decision]\nYour Probability: [0-100]%\nMarket Price: [shown price]%\nEdge: [+/-X]% (Your prob - Market)\nExpected Value: [calculate: Edge \u00d7 potential payout]\nReasoning: [1-2 sentences explaining your probability estimate]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES = Your probability > Market price + 10% (minimum 10% edge)\n- NO = Your probability < Market price - 10%\n- NO_TRADE = Edge < 10% (not enough value)\n\nBe contrarian when you have conviction. Look for markets where news hasn't been priced in yet.",
+  "consensus_summary": "The consensus identifies a strong agreement on Market 2, recommending a \"YES\" trade on the Capitals due to a significant positive edge from their superior form versus the struggling Jets. For Markets 1 and 3, all models agree on \"NO_TRADE,\" judging the market prices as overvalued with negative edges, though there is notable disagreement on the true probability for the Chelsea-Everton draw. The actionable summary is to only consider a trade on Market 2, as it is the sole opportunity meeting the 10%+ edge threshold.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "GEMINI",
+    "AI #3": "DEEPSEEK"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.04,
+      "success": true
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4evQ7z19TrZudt8EoDn'}",
+      "response_time": 0.07,
+      "success": false
+    },
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4evQ8jEC753sk5QweEw'}",
+      "response_time": 0.08,
+      "success": false
+    },
+    "openai": {
+      "response": "MARKET 1: NO_TRADE  \nYour Probability: 65%  \nMarket Price: 76.0%  \nEdge: -11% (Your prob - Market)  \nExpected Value: -$11 per $100 bet  \nReasoning: Despite Chelsea's recent struggles, they have a strong home advantage and Everton's recent form suggests they might push for a win. The market seems slightly overvalued on a draw, but not enough to recommend a trade.\n\n---\n\nMARKET 2: YES  \nYour Probability: 60%  \nMarket Price: 46.0%  \nEdge: +14% (Your prob - Market)  \nExpected Value: $14 per $100 bet  \nReasoning: The Washington Capitals are in excellent form with a strong away record, whereas the Winnipeg Jets are struggling with a losing streak. The Capitals' recent performances suggest they are more likely to win this matchup.\n\n---\n\nMARKET 3: NO_TRADE  \nYour Probability: 80%  \nMarket Price: 87.4%  \nEdge: -7.4% (Your prob - Market)  \nExpected Value: -$7.40 per $100 bet  \nReasoning: While Runa Team is ranked and generally favored against an unranked Amaru Gaming, the probability is slightly lower than the market price. However, the edge is not significant enough to justify a trade.",
+      "response_time": 3.7,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: NO\nYour Probability: 30%\nMarket Price: 76.0%\nEdge: -46% (30% - 76%)\nExpected Value: -0.1104\nReasoning: A 76% probability for a draw in a football match is exceptionally high and highly unlikely, even with Chelsea's recent struggles",
+      "response_time": 9.67,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO_TRADE\nYour Probability: 65%\nMarket Price: 76.0%\nEdge: -11.0% (Your prob - Market)\nExpected Value: -0.1447 (Edge \u00d7 potential payout)\nReasoning: Chelsea's poor form and Everton's resilience make a draw plausible, but a 76% implied probability is excessive for any single Premier League match outcome, especially with both teams closely ranked.\n\nMARKET 2: YES\nYour Probability: 65%\nMarket Price: 46.0%\nEdge: +19.0% (Your prob - Market)\nExpected Value: +0.4130 (Edge \u00d7 potential payout)\nReasoning: The Capitals' exceptional recent form (points in 13 of 14 games) and strong road record, contrasted with the Jets' significant slump (2-7-1 in last 10), creates a substantial edge on Washington.\n\nMARKET 3: NO_TRADE\nYour Probability: 85%\nMarket Price: 87.4%\nEdge: -2.4% (Your prob - Market)\nExpected Value: -0.0189 (Edge \u00d7 potential payout)\nReasoning: While Runa Team is favored based on rankings and recent records, the market price at 87.4% already reflects this heavy favorite status, leaving no actionable edge for a bet on either side.",
+      "response_time": 11.23,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 16.9
+  }
+}

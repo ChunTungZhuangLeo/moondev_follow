@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T07:11:25.662694",
+  "prompt": "Analyze these 3 Polymarket markets.\n\nFor EACH market:\n1. Estimate the TRUE PROBABILITY based on news context\n2. Calculate EDGE vs market price\n3. Only recommend trades with 10%+ edge\n\n\nMarket 1:\nTitle: Will Fernando Mendoza win the Heisman Trophy?\nCurrent Market Price: 98.0% (this is the market's implied probability)\nRecent trade: $13,205.35 on Yes\nLink: https://polymarket.com/event/heisman-trophy-winner\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nAs of December 13, 2025, Fernando Mendoza, quarterback for the Indiana Hoosiers, is a finalist for the Heisman Trophy, alongside Notre Dame running back Jeremiyah Love, Vanderbilt quarterback Diego Pavia, and Ohio State quarterback Julian Sayin. ([heisman.com](https://www.heisman.com/articles/love-mendoza-pavia-sayin-named-2025-heisman-trophy-finalists/?utm_source=openai))\n\n**Recent Achievements:**\n\n- **Maxwell and Davey O'Brien Awards:** Mendoza was honored with the Maxwell Award for the nation's top player and the Davey O'Brien Award for best quarterback at the 2025 College Football Awards. ([reuters.com](https://www.reuters.com/sports/indianas-fernando-mendoza-headlines-college-football-award-winners--flm-2025-12-13/?utm_source=openai))\n\n- **AP Player of the Year:** He was named the Associated Press Player of the Year after leading Indiana to a perfect 13-0 season, a Big Ten championship, and the No. 1 seed in the College Football Playoff. ([apnews.com](https://apnews.com/article/c7\n\n---\n\nMarket 2:\nTitle: Arsenal FC vs. Wolverhampton Wanderers FC: O/U 2.5\nCurrent Market Price: 65.0% (this is the market's implied probability)\nRecent trade: $943.15 on Over\nLink: https://polymarket.com/event/epl-ars-wol-2025-12-13-more-markets\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\n\n## [Emirates Stadium](https://www.google.com/maps/search/Emirates+Stadium?utm_source=openai)\n\n\n## Weather for London, Greater London, United Kingdom:\nCurrent Conditions: Mostly clear, 41\u00b0F (5\u00b0C)\n\nDaily Forecast:\n* Saturday, December 13: Low: 44\u00b0F (7\u00b0C), High: 50\u00b0F (10\u00b0C), Description: Intervals of clouds and sunshine\n* Sunday, December 14: Low: 48\u00b0F (9\u00b0C), High: 53\u00b0F (11\u00b0C), Description: Some sun, then turning cloudy\n* Monday, December 15: Low: 47\u00b0F (8\u00b0C), High: 54\u00b0F (12\u00b0C), Description: Low clouds\n* Tuesday, December 16: Low: 39\u00b0F (4\u00b0C), High: 51\u00b0F (11\u00b0C), Description: Periods of rain in the morning; otherwise, cloudy\n* Wednesday, December 17: Low: 47\u00b0F (8\u00b0C), High: 50\u00b0F (10\u00b0C), Description: Low clouds with a shower in spots in the afternoon\n* Thursday, December 18: Low: 47\u00b0F (8\u00b0C), High: 53\u00b0F (12\u00b0C), Description: Cloudy with periods of rain in the afternoon\n* Friday, December 19: Low: 43\u00b0F (6\u00b0C), High: 52\u00b0F (11\u00b0C), Description: Partial sunshine\n\n\nArsenal FC is set to host Wolverhamp\n\n---\n\nMarket 3:\nTitle: Liverpool FC vs. Brighton & Hove Albion FC: O/U 2.5\nCurrent Market Price: 63.0% (this is the market's implied probability)\nRecent trade: $999.81 on Over\nLink: https://polymarket.com/event/epl-liv-bri-2025-12-13-more-markets\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nLiverpool FC is set to face Brighton & Hove Albion FC at Anfield on Saturday, December 13, 2025, at 16:00 GMT. ([as.com](https://as.com/futbol/internacional/liverpool-brighton-tv-a-que-hora-es-donde-y-como-ver-la-premier-league-online-hoy-f202512-n/?utm_source=openai))\n\n**Recent Developments:**\n\n- **Mohamed Salah's Situation:** Liverpool manager Arne Slot plans to meet with Mohamed Salah to address tensions following the forward's public criticism of the club after a 3-3 draw with Leeds United. Salah's involvement in the upcoming match against Brighton is uncertain. ([reuters.com](https://www.reuters.com/sports/soccer/liverpool-boss-slot-meet-salah-amid-tension-2025-12-12/?utm_source=openai))\n\n- **Injury Concerns:** Forward Alexander Isak is a doubt for Saturday after sustaining a knock, with his availability pending evaluation. ([reuters.com](https://www.reuters.com/sports/soccer/liverpool-boss-slot-meet-salah-amid-tension-2025-12-12/?utm_source=openai))\n\n**Betting Insights:**\n\n- **Ov\n\n---\n\n\nProvide predictions in the exact format specified.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\n\nIMPORTANT: For each market, you MUST estimate the TRUE PROBABILITY of the outcome.\nCompare your probability estimate to the market price to find EDGE (mispricing).\n\nEdge = Your Probability - Market Probability\n- Positive edge on YES side means market undervalues YES\n- Negative edge means market overvalues YES (bet NO instead)\n\nFor each market, provide your prediction in this EXACT format:\n\nMARKET [number]: [decision]\nYour Probability: [0-100]%\nMarket Price: [shown price]%\nEdge: [+/-X]% (Your prob - Market)\nExpected Value: [calculate: Edge \u00d7 potential payout]\nReasoning: [1-2 sentences explaining your probability estimate]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES = Your probability > Market price + 10% (minimum 10% edge)\n- NO = Your probability < Market price - 10%\n- NO_TRADE = Edge < 10% (not enough value)\n\nBe contrarian when you have conviction. Look for markets where news hasn't been priced in yet.",
+  "consensus_summary": "The consensus across all three AI models is that no trades meet the 10% edge threshold, with agreement that Market 1 is accurately priced as a near-certainty. There is notable disagreement on the true probabilities for the soccer matches, particularly for Market 3 where assessments range from 45% to 60%. Overall, the analysis suggests all current market prices are efficient, providing no clear high-edge trading opportunities.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "GEMINI",
+    "AI #3": "DEEPSEEK"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.06,
+      "success": true
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4GZqChyRrXDjQVrpGny'}",
+      "response_time": 0.08,
+      "success": false
+    },
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4GZqDCo2NCCiW7mEwMH'}",
+      "response_time": 0.11,
+      "success": false
+    },
+    "openai": {
+      "response": "MARKET 1: NO_TRADE  \nYour Probability: 95%  \nMarket Price: 98.0%  \nEdge: -3% (Your prob - Market)  \nExpected Value: -3% \u00d7 potential payout  \nReasoning: Fernando Mendoza's impressive achievements, including winning major awards and leading Indiana to an undefeated season, strongly support his Heisman candidacy. However, the market price is already extremely high, reflecting these factors, leaving minimal edge for a profitable trade.\n\nMARKET 2: NO_TRADE  \nYour Probability: 70%  \nMarket Price: 65.0%  \nEdge: +5% (Your prob - Market)  \nExpected Value: +5% \u00d7 potential payout  \nReasoning: Arsenal has been a strong attacking side, and the clear weather conditions are conducive to scoring. However, the edge is not sufficient to justify a trade, as it falls below the 10% threshold.\n\nMARKET 3: NO_TRADE  \nYour Probability: 60%  \nMarket Price: 63.0%  \nEdge: -3% (Your prob - Market)  \nExpected Value: -3% \u00d7 potential payout  \nReasoning: With uncertainties surrounding key players like Salah and Isak, Liverpool's attacking potential might be affected. The market slightly overprices the over 2.5 goals scenario, but not enough to warrant a trade.",
+      "response_time": 3.16,
+      "success": true
+    },
+    "gemini": {
+      "response": "Here are the predictions for the Polymarket markets:\n\nMARKET 1: Will Fernando Mendoza win the Heisman Trophy?\nYour Probability: 99.5%\nMarket Price: 98.0%\nEdge: +1.5% (Your prob - Market)\nExpected Value: $0.015\nReasoning: Fernando Mendoza's unparalleled achievements, including",
+      "response_time": 10.42,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO_TRADE\nYour Probability: 95%\nMarket Price: 98%\nEdge: -3% (Your prob - Market)\nExpected Value: -3% (on YES side)\nReasoning: While Mendoza is the clear favorite after sweeping major awards, the 98% price leaves almost no room for an upset by another finalist, making it overvalued, but the edge is insufficient for a NO trade.\n\nMARKET 2: NO_TRADE\nYour Probability: 60%\nMarket Price: 65%\nEdge: -5% (Your prob - Market)\nExpected Value: -5% (on OVER side)\nReasoning: The market price for Over 2.5 goals is slightly elevated given Arsenal's strong attack, but Wolverhampton's defensive approach and lack of specific high-scoring context limit my confidence to a 60% true probability.\n\nMARKET 3: NO\nYour Probability: 45%\nMarket Price: 63%\nEdge: -18% (Your prob - Market)\nExpected Value: +18% (on NO/UNDER side, as market overvalues YES/OVER)\nReasoning: Significant uncertainty around Salah's involvement and a key injury doubt for Isak, combined with Brighton's potential to frustrate, makes the Over 2.5 goals market significantly overpriced.",
+      "response_time": 10.45,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 14.42
+  }
+}

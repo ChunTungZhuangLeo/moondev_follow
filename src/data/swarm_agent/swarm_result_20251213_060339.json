@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T06:03:39.672110",
+  "prompt": "Analyze these 3 Polymarket markets.\n\nFor EACH market:\n1. Estimate the TRUE PROBABILITY based on news context\n2. Calculate EDGE vs market price\n3. Only recommend trades with 10%+ edge\n\n\nMarket 1:\nTitle: Panthers vs. Stars\nCurrent Market Price: 57.0% (this is the market's implied probability)\nRecent trade: $1,766.56 on Stars\nLink: https://polymarket.com/event/nhl-fla-dal-2025-12-14\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\n\n## NHL Schedule\n- Panthers @ Stars on Saturday, Dec 13, 2025 at 05:00 PM PST\n\n\nThe Florida Panthers and Dallas Stars are set to face off today, December 13, 2025, at 5:00 PM PST in Dallas.\n\n**Recent Performances:**\n\n- **Dallas Stars:** The Stars are on a four-game home winning streak, with their most recent victory being a 4-3 shootout win against the Winnipeg Jets on December 10. Mikko Rantanen led with three assists, and Jason Robertson scored his 20th goal of the season. ([reuters.com](https://www.reuters.com/sports/nhl/stars-forge-3-goal-lead-hold-off-jets--flm-2025-12-10/?utm_source=openai))\n\n- **Florida Panthers:** The Panthers have had a mixed performance recently, with a 6-2 loss to the Colorado Avalanche on December 12. Gavin Brindley, returning from injury, scored a goal and an assist. ([reuters.com](https://www.reuters.com/sports/nhl/avalanche-score-3-goals-second-period-top-panthers--flm-2025-12-12/?utm_source=openai))\n\n**Season Series:**\n\nIn their previous encounter on No\n\n---\n\nMarket 2:\nTitle: Will Brisbane Roar FC win on 2025-12-13?\nCurrent Market Price: 31.0% (this is the market's implied probability)\nRecent trade: $1,804.20 on Yes\nLink: https://polymarket.com/event/aus-wsw-bri-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nBrisbane Roar FC is set to face Western Sydney Wanderers FC on December 13, 2025, at CommBank Stadium. ([wswanderersfc.com.au](https://wswanderersfc.com.au/news/wanderers-ready-to-take-on-brisbane-roar-at-commbank-stadium/?utm_source=openai))\n\n**Recent Form:**\n\n- **Brisbane Roar FC:** The team has demonstrated strong consistency, remaining unbeaten in their last five league matches. Their recent performances include a 1-0 away victory against Adelaide United and a 3-0 home win over Newcastle Jets. Defensively, they have been impressive, conceding only three goals in seven matches, the best defensive record in the league. ([thetopbookies.com](https://www.thetopbookies.com/betting-tips/football/wsw-vs-bri-13-dec-2025?utm_source=openai))\n\n- **Western Sydney Wanderers FC:** The Wanderers have shown resilience, with a recent 1-0 away defeat to Perth Glory. Despite the loss, they remain undefeated at home this season, indicating strong home performance. ([wswanderersfc.com.au](https://wswand\n\n---\n\nMarket 3:\nTitle: Spread: Paris Saint-Germain FC (-2.5)\nCurrent Market Price: 66.0% (this is the market's implied probability)\nRecent trade: $541.60 on FC Metz\nLink: https://polymarket.com/event/fl1-met-psg-2025-12-13-more-markets\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nAs of December 13, 2025, there is no specific betting line available for Paris Saint-Germain FC (PSG) with a -2.5 goal spread. However, recent performances provide context for such a line:\n\n- **December 6, 2025**: PSG secured a dominant 5-0 victory over Rennes in Ligue 1, with Khvicha Kvaratskhelia scoring twice. ([outlookindia.com](https://www.outlookindia.com/sports/football/paris-saint-germain-vs-rennes-match-report-ligue-1-2025-26-matchweek-15-updates?utm_source=openai))\n\n- **December 10, 2025**: PSG faced a goalless draw against Athletic Bilbao in the Champions League, despite controlling over 70% possession. ([reuters.com](https://www.reuters.com/sports/soccer/psg-held-goalless-draw-athletic-bilbaos-simon-shines-between-posts-2025-12-10/?utm_source=openai))\n\nThese results suggest PSG's strong offensive capabilities, particularly in domestic matches. However, their recent Champions League performance indicates challenges in converting possession into goals against competitive Euro\n\n---\n\n\nProvide predictions in the exact format specified.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\n\nIMPORTANT: For each market, you MUST estimate the TRUE PROBABILITY of the outcome.\nCompare your probability estimate to the market price to find EDGE (mispricing).\n\nEdge = Your Probability - Market Probability\n- Positive edge on YES side means market undervalues YES\n- Negative edge means market overvalues YES (bet NO instead)\n\nFor each market, provide your prediction in this EXACT format:\n\nMARKET [number]: [decision]\nYour Probability: [0-100]%\nMarket Price: [shown price]%\nEdge: [+/-X]% (Your prob - Market)\nExpected Value: [calculate: Edge \u00d7 potential payout]\nReasoning: [1-2 sentences explaining your probability estimate]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES = Your probability > Market price + 10% (minimum 10% edge)\n- NO = Your probability < Market price - 10%\n- NO_TRADE = Edge < 10% (not enough value)\n\nBe contrarian when you have conviction. Look for markets where news hasn't been priced in yet.",
+  "consensus_summary": "The consensus identifies a strong, actionable edge for Brisbane Roar FC (Market 2), with two models recommending a \"YES\" trade based on their form versus the market price. For the NHL (Market 1), models agree the Stars have an edge but disagree on whether it meets the 10% threshold for a trade. Regarding PSG (Market 3), assessments vary widely, showing no clear agreement on value against the spread.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "GEMINI",
+    "AI #3": "DEEPSEEK"
+  },
+  "responses": {
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4BQ3hvhwGrBfnRCKu7Q'}",
+      "response_time": 0.09,
+      "success": false
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4BQ3iRL1fUkV2V1j9dJ'}",
+      "response_time": 0.09,
+      "success": false
+    },
+    "groq": {
+      "response": "None",
+      "response_time": 0.14,
+      "success": true
+    },
+    "openai": {
+      "response": "MARKET 1: NO_TRADE  \nYour Probability: 60%  \nMarket Price: 57.0%  \nEdge: +3% (Your prob - Market)  \nExpected Value: +3% \u00d7 potential payout  \nReasoning: The Dallas Stars have a strong home winning streak and recent robust performances, giving them a slight edge. However, the Panthers have shown some resilience, and the market price already reflects the Stars' advantage closely, leaving insufficient edge for a trade.  \n\nMARKET 2: YES  \nYour Probability: 45%  \nMarket Price: 31.0%  \nEdge: +14% (Your prob - Market)  \nExpected Value: +14% \u00d7 potential payout  \nReasoning: Brisbane Roar FC's strong unbeaten streak and excellent defensive record provide a higher chance of success than the market suggests, despite the Wanderers' solid home performance. This discrepancy presents a significant edge for betting YES.  \n\nMARKET 3: NO_TRADE  \nYour Probability: 65%  \nMarket Price: 66.0%  \nEdge: -1% (Your prob - Market)  \nExpected Value: -1% \u00d7 potential payout  \nReasoning: PSG's offensive capabilities are strong, as shown in their recent 5-0 win, but their inability to convert possession into goals against tougher defenses like Bilbao suggests some volatility. The market price appropriately reflects these factors, resulting in minimal edge.",
+      "response_time": 8.0,
+      "success": true
+    },
+    "gemini": {
+      "response": "Here are my predictions and analysis for the given Polymarket markets:\n\nMARKET 1: Panthers vs. Stars\nYour Probability: 68%\nMarket Price: 57.0%\nEdge: +11% (Your prob - Market)\nExpected Value: 4.73 (assuming payout is profit percentage)\nReasoning: The Dallas Stars are on a strong",
+      "response_time": 9.8,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO_TRADE\nYour Probability: 60%\nMarket Price: 57.0%\nEdge: +3.0% (Your prob - Market)\nExpected Value: 0.03 \u00d7 (1/0.57 - 1) \u2248 +0.02\nReasoning: The Stars have strong home form and a recent win, while the Panthers are coming off a loss, giving Dallas a slight edge, but not enough for a 10%+ mispricing.\n\nMARKET 2: YES\nYour Probability: 45%\nMarket Price: 31.0%\nEdge: +14.0% (Your prob - Market)\nExpected Value: 0.14 \u00d7 (1/0.31 - 1) \u2248 +0.31\nReasoning: Brisbane Roar is in strong form with a league-best defense and is unbeaten in five, while the Wanderers' home record may be overvalued, creating significant positive edge.\n\nMARKET 3: NO\nYour Probability: 50%\nMarket Price: 66.0%\nEdge: -16.0% (Your prob - Market)\nExpected Value: 0.16 \u00d7 (1/(1-0.66) - 1) \u2248 +0.47 (on NO side)\nReasoning: PSG's dominant domestic win is priced in, but a -2.5 spread is large and their recent UCL goalless draw shows potential offensive inconsistency, making NO valuable.",
+      "response_time": 11.02,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 15.29
+  }
+}

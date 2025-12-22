@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T11:02:37.680755",
+  "prompt": "Analyze these 3 Polymarket markets.\n\nFor EACH market:\n1. Estimate the TRUE PROBABILITY based on news context\n2. Calculate EDGE vs market price\n3. Only recommend trades with 10%+ edge\n\n\nMarket 1:\nTitle: Will Deportivo Alav\u00e9s win on 2025-12-14?\nCurrent Market Price: 83.0% (this is the market's implied probability)\nRecent trade: $519.58 on No\nLink: https://polymarket.com/event/lal-ala-rea-2025-12-14\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nDeportivo Alav\u00e9s is set to face Real Madrid on December 14, 2025, at the Estadio de Mendizorroza in Vitoria-Gasteiz. The match is scheduled to kick off at 8:00 PM local time. ([sportsbook.dexwin.bet](https://sportsbook.dexwin.bet/sportsbook/football/spain/laliga/deportivo-alaves-real-madrid-1006000000000073610608?utm_source=openai))\n\n**Recent Form:**\n\n- **Deportivo Alav\u00e9s:** The team has shown resilience, securing a 1-0 victory over Real Sociedad in their previous match. This win ended a three-match losing streak and moved them up to ninth place in the La Liga standings. ([cadenaser.com](https://cadenaser.com/nacional/2025/12/06/deportivo-alaves-1-0-real-sociedad-resumen-resultado-y-goles-del-partido-de-la-jornada-15-de-laliga-cadena-ser/?utm_source=openai))\n\n- **Real Madrid:** The club is under pressure following consecutive defeats to Celta Vigo in La Liga and Manchester City in the Champions League. Manager Xabi Alonso's position has been scrutinized due to these results. ([reuters.\n\n---\n\nMarket 2:\nTitle: Dota 2: Runa Team vs Amaru Gaming (BO3)\nCurrent Market Price: 81.0% (this is the market's implied probability)\nRecent trade: $805.95 on Runa Team\nLink: https://polymarket.com/event/dota2-runa-amaru-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nRuna Team and Amaru Gaming are set to face off in a Best of 3 series today, December 13, 2025, at 11:00 AM UTC, as part of the ESL Dota2 2025 DreamLeague Season 27 Main Event Group Stage - Round 4. ([strafe.com](https://www.strafe.com/match/runa-team-vs-amaru-gaming-round-4-main-event-ecf4c6/?utm_source=openai))\n\n**Team Performances:**\n\n- **Runa Team:** Currently ranked 21st in the Strafe Dota 2 World Rankings, Runa Team has secured 2 wins in their last 5 matches. ([strafe.com](https://www.strafe.com/match/runa-team-vs-amaru-gaming-round-4-main-event-ecf4c6/?utm_source=openai))\n\n- **Amaru Gaming:** Holding an unranked position in the Strafe Dota 2 World Rankings, Amaru Gaming has achieved 1 win in their last 3 matches. ([strafe.com](https://www.strafe.com/match/runa-team-vs-amaru-gaming-round-4-main-event-ecf4c6/?utm_source=openai))\n\n**Match Predictions:**\n\nThe community heavily favors Runa Team, with 83% of Strafe users predicting a victory for them. ([strafe.com](https://www.strafe.c\n\n---\n\nMarket 3:\nTitle: Eintracht Frankfurt vs. FC Augsburg: O/U 2.5\nCurrent Market Price: 56.0% (this is the market's implied probability)\nRecent trade: $932.96 on Over\nLink: https://polymarket.com/event/bun-ein-aug-2025-12-13-more-markets\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nThe upcoming Bundesliga match between Eintracht Frankfurt and FC Augsburg is scheduled for December 13, 2025, at Deutsche Bank Park in Frankfurt. Recent analyses and betting odds suggest a high likelihood of over 2.5 goals in this fixture.\n\n**Match Predictions and Betting Odds:**\n\n- **Over/Under 2.5 Goals:** Multiple sources indicate a strong probability of over 2.5 goals. For instance, BetClan's algorithm predicts a 63% chance for over 2.5 goals, while SportPesaJackpot estimates a 70% probability for over 2.5 goals. ([betclan.com](https://www.betclan.com/predictionsdetails/football/185693136/eintracht-frankfurt-v-augsburg-prediction-h2h-tip-and-match-preview/?utm_source=openai))\n\n- **Match Outcome:** Eintracht Frankfurt is favored to win, with probabilities ranging from 53.3% to 69% across various analyses. ([betclever.com](https://betclever.com/h2h/eintracht-frankfurt-vs-fc-augsburg/?utm_source=openai))\n\n**Team Form and Context:**\n\n- **Eintracht Frankfurt:** The team is experiencing \n\n---\n\n\nProvide predictions in the exact format specified.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\n\nIMPORTANT: For each market, you MUST estimate the TRUE PROBABILITY of the outcome.\nCompare your probability estimate to the market price to find EDGE (mispricing).\n\nEdge = Your Probability - Market Probability\n- Positive edge on YES side means market undervalues YES\n- Negative edge means market overvalues YES (bet NO instead)\n\nFor each market, provide your prediction in this EXACT format:\n\nMARKET [number]: [decision]\nYour Probability: [0-100]%\nMarket Price: [shown price]%\nEdge: [+/-X]% (Your prob - Market)\nExpected Value: [calculate: Edge \u00d7 potential payout]\nReasoning: [1-2 sentences explaining your probability estimate]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES = Your probability > Market price + 10% (minimum 10% edge)\n- NO = Your probability < Market price - 10%\n- NO_TRADE = Edge < 10% (not enough value)\n\nBe contrarian when you have conviction. Look for markets where news hasn't been priced in yet.",
+  "consensus_summary": "The consensus strongly recommends betting \"NO\" on Market 1, as all models agree the 83% price for an Alav\u00e9s win is a severe overvaluation against Real Madrid. For Market 3, there is unanimous agreement to bet \"YES\" on Over 2.5 goals, with all analysts calculating a significant edge above the 10% threshold. Market 2 is the only point of full agreement, with all models advising \"NO_TRADE\" due to insufficient edge.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "GEMINI",
+    "AI #3": "DEEPSEEK"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.05,
+      "success": true
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4aCG6QDLU6TguD1PAdN'}",
+      "response_time": 0.08,
+      "success": false
+    },
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4aCG79C6mA1JC5g9GRv'}",
+      "response_time": 0.09,
+      "success": false
+    },
+    "openai": {
+      "response": "MARKET 1: NO\nYour Probability: 30%\nMarket Price: 83.0%\nEdge: -53% (Your prob - Market)\nExpected Value: -$53 (negative edge)\nReasoning: Deportivo Alav\u00e9s, despite a recent win, is facing Real Madrid, a significantly stronger team historically and in terms of squad depth, even if Real Madrid is facing managerial pressure and recent losses. The market overvalues the likelihood of an Alav\u00e9s win given the context.\n\nMARKET 2: NO_TRADE\nYour Probability: 85%\nMarket Price: 81.0%\nEdge: +4% (Your prob - Market)\nExpected Value: $4 (positive edge, but not enough)\nReasoning: Runa Team is favored both by community predictions and their higher rank. However, the edge is not sufficient to warrant a trade given the close alignment with the market's probability.\n\nMARKET 3: YES\nYour Probability: 70%\nMarket Price: 56.0%\nEdge: +14% (Your prob - Market)\nExpected Value: $14 (positive edge)\nReasoning: Multiple sources predict a strong likelihood of over 2.5 goals, with probabilities ranging from 63% to 70%. The market underestimates this probability, presenting a favorable opportunity to bet on the over with a sufficient edge.",
+      "response_time": 3.11,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: NO\nYour Probability: 25%\nMarket Price: 83.0%\nEdge: -58% (25% - 83%)\nExpected Value: -0.58 * Payout (on YES) OR +0.58 * Payout (on NO)\nReasoning: An 83% chance for",
+      "response_time": 9.91,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO\nYour Probability: 20%\nMarket Price: 83.0%\nEdge: -63.0% (Your prob - Market)\nExpected Value: +75.9% (Betting NO at 17\u00a2 returns ~$1 if correct; EV = |Edge| \u00d7 Payout \u2248 0.63 \u00d7 1.2)\nReasoning: Real Madrid, despite recent poor form, has vastly superior talent and is facing a mid-table Alav\u00e9s; an 83% market price for an Alav\u00e9s win is a massive overvaluation.\n\nMARKET 2: NO_TRADE\nYour Probability: 75%\nMarket Price: 81.0%\nEdge: -6.0% (Your prob - Market)\nExpected Value: -7.2%\nReasoning: While Runa Team is favored and higher-ranked, their recent form (2 wins in last 5) and the nature of Dota 2 Bo3 upsets mean the market price of 81% is slightly rich but not enough for a high-conviction NO bet.\n\nMARKET 3: YES\nYour Probability: 75%\nMarket Price: 56.0%\nEdge: +19.0% (Your prob - Market)\nExpected Value: +33.9% (Betting YES at 56\u00a2 returns ~$1 if correct; EV = Edge \u00d7 Payout \u2248 0.19 \u00d7 1.79)\nReasoning: Multiple betting models and analyses strongly indicate a high probability (63-70%) for Over 2.5 goals, which the market at 56% has not fully priced in.",
+      "response_time": 11.85,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 16.28
+  }
+}

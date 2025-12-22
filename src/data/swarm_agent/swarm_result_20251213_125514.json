@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T12:55:14.664145",
+  "prompt": "Analyze these 3 Polymarket markets.\n\nFor EACH market:\n1. Estimate the TRUE PROBABILITY based on news context\n2. Calculate EDGE vs market price\n3. Only recommend trades with 10%+ edge\n\n\nMarket 1:\nTitle: Spurs vs. Thunder: O/U 229.5\nCurrent Market Price: 52.0% (this is the market's implied probability)\nRecent trade: $1,127.08 on Over\nLink: https://polymarket.com/event/nba-sas-okc-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nThe San Antonio Spurs are set to face the Oklahoma City Thunder in an NBA Cup semifinal game on Saturday, December 13, 2025, at 6:00 PM PST in Las Vegas. The over/under for this matchup is set at 229.5 points.\n\n**Recent Developments:**\n\n- **Victor Wembanyama's Return:** Spurs center Victor Wembanyama is expected to return after missing 12 games due to a left calf strain. Coach Mitch Johnson confirmed Wembanyama's participation, noting a minutes restriction and early substitutions. Wembanyama expressed confidence in his recovery, stating he feels great and is ready to play. ([reuters.com](https://www.reuters.com/sports/spurs-star-c-victor-wembanyama-calf-could-return-vs-thunder--flm-2025-12-12/?utm_source=openai))\n\n**Team Performance and Betting Insights:**\n\n- **Oklahoma City Thunder:** The Thunder lead the league in points allowed per game (106.2) and opponent shooting percentage (42.7%). They have a strong home record, with 20 wins against conference opponents. ([espn.com](https://www\n\n---\n\nMarket 2:\nTitle: Will Norwich City FC win on 2025-12-13?\nCurrent Market Price: 71.0% (this is the market's implied probability)\nRecent trade: $1,769.20 on No\nLink: https://polymarket.com/event/elc-nor-sot-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nNorwich City FC is set to face Southampton FC today, December 13, 2025, at Carrow Road in an EFL Championship match. ([foxsports.com](https://www.foxsports.com/soccer/english-championship-norwich-city-vs-southampton-dec-13-2025-game-boxscore-629247?utm_source=openai))\n\n**Recent Form:**\n\n- **Norwich City:** Currently 23rd in the league with 14 points, Norwich has struggled this season, recording 3 wins, 5 draws, and 12 losses. ([online-bookmakers.com](https://online-bookmakers.com/sports-betting/norwich-v-southampton-2025-12-13/?utm_source=openai))\n\n- **Southampton FC:** Positioned 11th with 27 points, Southampton has shown better form, achieving 8 wins, 6 draws, and 6 losses. ([online-bookmakers.com](https://online-bookmakers.com/sports-betting/norwich-v-southampton-2025-12-13/?utm_source=openai))\n\n**Head-to-Head Record:**\n\n- In their last five encounters, Norwich has secured one win, two draws, and suffered two losses against Southampton. ([welcome.bet](https://welcome.bet/norwich-cit\n\n---\n\nMarket 3:\nTitle: Will US Lusitanos de Saint-Maur vs. Lille OSC end in a draw?\nCurrent Market Price: 93.0% (this is the market's implied probability)\nRecent trade: $4,071.54 on No\nLink: https://polymarket.com/event/cde-sml-lil-2025-12-20\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nUS Lusitanos de Saint-Maur is set to face Lille OSC in the Coupe de France on December 20, 2025, at Stade Dominique Duvauchelle. ([matips.net](https://matips.net/france/coupe-de-france/2025-12-20/prediction/1488844?utm_source=openai)) This match marks the first encounter between the two teams.\n\n**Team Form and Context:**\n\n- **US Lusitanos de Saint-Maur:** Competing in the National 2, Groupe C, they are currently in second place with 24 points from 12 matches, boasting a record of 12 wins, 7 draws, and 3 losses. ([betimate.com](https://betimate.com/en/football-predictions/goal-fc-vs-us-lusitanos-saint-maur/2025-12-06/game?utm_source=openai))\n\n- **Lille OSC:** Playing in Ligue 1, Lille is positioned fifth in the league standings. ([sportsbook.dexwin.bet](https://sportsbook.dexwin.bet/sportsbook/football/france/ligue-1/lille-osc-paris-fc-1006000000000074678291?utm_source=openai))\n\n**Match Prediction:**\n\nGiven the disparity in league standings and the experience of Lille in top-tier footba\n\n---\n\n\nProvide predictions in the exact format specified.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\n\nIMPORTANT: For each market, you MUST estimate the TRUE PROBABILITY of the outcome.\nCompare your probability estimate to the market price to find EDGE (mispricing).\n\nEdge = Your Probability - Market Probability\n- Positive edge on YES side means market undervalues YES\n- Negative edge means market overvalues YES (bet NO instead)\n\nFor each market, provide your prediction in this EXACT format:\n\nMARKET [number]: [decision]\nYour Probability: [0-100]%\nMarket Price: [shown price]%\nEdge: [+/-X]% (Your prob - Market)\nExpected Value: [calculate: Edge \u00d7 potential payout]\nReasoning: [1-2 sentences explaining your probability estimate]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES = Your probability > Market price + 10% (minimum 10% edge)\n- NO = Your probability < Market price - 10%\n- NO_TRADE = Edge < 10% (not enough value)\n\nBe contrarian when you have conviction. Look for markets where news hasn't been priced in yet.",
+  "consensus_summary": "The consensus identifies no trades with a 10%+ edge, as all three AI models agree the market prices are either accurate or offer negative expected value. There is strong agreement that Markets 2 and 3 are significantly mispriced against the \"No\" side, but no model finds a positive edge trade to recommend. The only minor disagreement is on Market 1's true probability, but all conclude it does not meet the threshold for a recommended bet.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "GEMINI",
+    "AI #3": "DEEPSEEK"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.04,
+      "success": true
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4inVgbUyNcmHXSeVpQ3'}",
+      "response_time": 0.08,
+      "success": false
+    },
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4inVfMMChi4n3FeFt9Z'}",
+      "response_time": 0.08,
+      "success": false
+    },
+    "openai": {
+      "response": "MARKET 1: NO_TRADE  \nYour Probability: 55%  \nMarket Price: 52.0%  \nEdge: +3% (Your prob - Market)  \nExpected Value: +$0.03 per $1 bet  \nReasoning: Wembanyama's return with a minutes restriction may slightly increase scoring potential, but the Thunder's strong defensive stats suggest a close match to the current over/under line, offering insufficient edge.\n\nMARKET 2: NO  \nYour Probability: 45%  \nMarket Price: 71.0%  \nEdge: -26% (Your prob - Market)  \nExpected Value: -$0.26 per $1 bet  \nReasoning: Norwich City has been struggling significantly this season, with poor league standing and performance. Southampton's better form makes Norwich's implied probability of winning too high.\n\nMARKET 3: NO  \nYour Probability: 5%  \nMarket Price: 93.0%  \nEdge: -88% (Your prob - Market)  \nExpected Value: -$0.88 per $1 bet  \nReasoning: Given the vast difference in quality and league level between the teams, a draw is highly unlikely, making the market's high implied probability of a draw significantly overvalued.",
+      "response_time": 3.6,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: NO\nYour Probability: 42%\nMarket Price: 52.0%\nEdge: -10% (42% - 52%)\nExpected Value: -0.10\nReasoning: The Thunder's league-leading defense and Victor Wembanyama's minutes restriction make a high-scoring game (Over",
+      "response_time": 9.74,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO_TRADE\nYour Probability: 48%\nMarket Price: 52.0%\nEdge: -4.0% (Your prob - Market)\nExpected Value: -4.0%\nReasoning: Wembanyama's return boosts Spurs' offense, but the Thunder's league-best defense and his minutes restriction limit the upside, making the true probability close to a coin flip.\n\nMARKET 2: NO\nYour Probability: 40%\nMarket Price: 71.0%\nEdge: -31.0% (Your prob - Market)\nExpected Value: -31.0%\nReasoning: Norwich is 23rd with poor form, while Southampton is 11th and significantly stronger; the market's 71% implied probability for a Norwich win is a severe overvaluation.\n\nMARKET 3: NO\nYour Probability: 10%\nMarket Price: 93.0%\nEdge: -83.0% (Your prob - Market)\nExpected Value: -83.0%\nReasoning: This is a massive mismatch between a Ligue 1 side and a National 2 team; a draw is extremely unlikely, making the \"No\" side (the match does NOT end in a draw) heavily undervalued.",
+      "response_time": 10.13,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 14.28
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T16:07:26.653954",
+  "prompt": "Analyze these 3 Polymarket markets.\n\nFor EACH market:\n1. Estimate the TRUE PROBABILITY based on news context\n2. Calculate EDGE vs market price\n3. Only recommend trades with 10%+ edge\n\n\nMarket 1:\nTitle: Will Brandon Royval win by KO or TKO?\nCurrent Market Price: 92.0% (this is the market's implied probability)\nRecent trade: $4,600.00 on No\nLink: https://polymarket.com/event/ufc-man1-bra6-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nAs of December 13, 2025, Brandon Royval is scheduled to face Manel Kape in the main event of UFC on ESPN 73. The fight is set to take place at the UFC Apex in Las Vegas, Nevada. ([ufc.com](https://www.ufc.com/news/brandon-royval-knows-how-good-he-is-now-ufc-fight-night-royval-vs-kape-vegas-112?utm_source=openai))\n\n**Recent Developments:**\n\n- **Fight Rescheduling:** This matchup has been rescheduled multiple times. Initially set for March 1, 2025, Royval withdrew due to multiple concussions. The bout was then moved to June 28, 2025, at UFC 317, but Kape withdrew due to a foot injury, leading to a replacement opponent, Joshua Van. Royval lost that fight by unanimous decision. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Brandon_Royval?utm_source=openai))\n\n- **Royval's Recent Performance:** Prior to the loss to Van, Royval secured victories over Brandon Moreno and Tatsuro Taira, both by split decision. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Brandon_Royval?utm_source=openai\n\n---\n\nMarket 2:\nTitle: Will Kanye visit Israel by December 31?\nCurrent Market Price: 97.8% (this is the market's implied probability)\nRecent trade: $573.40 on No\nLink: https://polymarket.com/event/will-kanye-visit-israel-by-december-31\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nAs of December 13, 2025, there is no confirmed information indicating that Kanye West plans to visit Israel by December 31, 2025. A prediction market on Polymarket, created on November 6, 2025, offers a 2% chance of this event occurring, with a volume of $28,318. ([polymarket.com](https://polymarket.com/event/will-kanye-visit-israel-by-december-31?utm_source=openai))\n\nIn recent months, West has taken steps to address his past antisemitic remarks. On May 22, 2025, he declared on social media, \"I am done with antisemitism,\" and apologized for the pain he caused. ([israelhayom.com](https://www.israelhayom.com/2025/05/23/kanye-west-declares-i-am-done-with-antisemitism/?utm_source=openai)) In November 2025, he met with Rabbi Yoshiyahu Yosef Pinto, where he attributed his previous statements to struggles with bipolar disorder and sought forgiveness. ([theyeshivaworld.com](https://www.theyeshivaworld.com/news/israel-news/2469002?utm_source=openai))\n\nDespite these efforts, West's recent action\n\n---\n\nMarket 3:\nTitle: Northern Arizona Lumberjacks vs. San Diego Toreros\nCurrent Market Price: 66.0% (this is the market's implied probability)\nRecent trade: $1,650.00 on San Diego Toreros\nLink: https://polymarket.com/event/cbb-narz-sd-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nThe Northern Arizona Lumberjacks (4-5) are set to face the San Diego Toreros (3-6) today, December 13, 2025, at 6 p.m. EST in San Diego's Jenny Craig Pavilion. ([nauathletics.com](https://nauathletics.com/news/2025/12/11/lumberjack-mens-basketball-concludes-road-stretch-at-san-diego.aspx?utm_source=openai))\n\n**Recent Performances:**\n\n- **Northern Arizona Lumberjacks:** In their previous game on December 9, 2025, the Lumberjacks suffered a 73-48 loss to the Arizona State Sun Devils. Isaiah Shaw led the team with 21 points in that matchup. ([nauathletics.com](https://nauathletics.com/news/2025/12/11/lumberjack-mens-basketball-concludes-road-stretch-at-san-diego.aspx?utm_source=openai))\n\n- **San Diego Toreros:** The Toreros are coming off a 94-81 home defeat to the USC Trojans on December 9, 2025. Dominique Ford was the standout player, scoring 22 points in that game. ([wtop.com](https://wtop.com/ncaa-basketball/2025/12/northern-arizona-visits-san-diego-after-fords-22-point-game/?utm_sour\n\n---\n\n\nProvide predictions in the exact format specified.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\n\nIMPORTANT: For each market, you MUST estimate the TRUE PROBABILITY of the outcome.\nCompare your probability estimate to the market price to find EDGE (mispricing).\n\nEdge = Your Probability - Market Probability\n- Positive edge on YES side means market undervalues YES\n- Negative edge means market overvalues YES (bet NO instead)\n\nFor each market, provide your prediction in this EXACT format:\n\nMARKET [number]: [decision]\nYour Probability: [0-100]%\nMarket Price: [shown price]%\nEdge: [+/-X]% (Your prob - Market)\nExpected Value: [calculate: Edge \u00d7 potential payout]\nReasoning: [1-2 sentences explaining your probability estimate]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES = Your probability > Market price + 10% (minimum 10% edge)\n- NO = Your probability < Market price - 10%\n- NO_TRADE = Edge < 10% (not enough value)\n\nBe contrarian when you have conviction. Look for markets where news hasn't been priced in yet.",
+  "consensus_summary": "The consensus identifies significant negative edges against the market prices in the first two markets, with all AIs agreeing \"No\" trades on Kanye's visit due to a lack of evidence. There is disagreement on Market 1, as one AI recommends \"No Trade\" while others recommend \"No,\" but all agree the market's ~92% price is overvalued. No trades meet the 10%+ edge threshold for a positive recommendation, as even the agreed-upon \"No\" positions reflect the market's implied probability being higher than the analysts' true estimates.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "GEMINI",
+    "AI #3": "DEEPSEEK"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.04,
+      "success": true
+    },
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4ySSyZo4tpJLwPgFyj7'}",
+      "response_time": 0.08,
+      "success": false
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4ySSz4VvpZLpgyuzRJw'}",
+      "response_time": 0.08,
+      "success": false
+    },
+    "openai": {
+      "response": "MARKET 1: NO\nYour Probability: 75%\nMarket Price: 92.0%\nEdge: -17% (Your prob - Market)\nExpected Value: -$17 (Edge \u00d7 $100 potential payout)\nReasoning: Brandon Royval's recent history of injuries and a loss by decision in his last fight suggest a lower probability of winning by KO or TKO. The market likely overestimates his chances given his current form and health concerns.\n\nMARKET 2: NO\nYour Probability: 20%\nMarket Price: 97.8%\nEdge: -77.8% (Your prob - Market)\nExpected Value: -$77.80 (Edge \u00d7 $100 potential payout)\nReasoning: There is no current confirmed plan for Kanye West to visit Israel by December 31, and his past controversial statements make such a visit unlikely without significant public relations planning. The market price seems highly inflated compared to the available evidence.\n\nMARKET 3: NO_TRADE\nYour Probability: 60%\nMarket Price: 66.0%\nEdge: -6% (Your prob - Market)\nExpected Value: -$6 (Edge \u00d7 $100 potential payout)\nReasoning: Both teams have similar records and recent performance, with no significant edge for either side. The market price is fairly aligned with the estimated probability, offering insufficient edge for a strong recommendation.",
+      "response_time": 4.7,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: NO\nYour Probability: 15%\nMarket Price: 92.0%\nEdge: -77% (Your prob - Market)\nExpected Value: 0.77 * 0.92 = 0.7084 (per $1 of potential profit if NO wins)\nReasoning: The market price of 92",
+      "response_time": 9.9,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO_TRADE\nYour Probability: 85%\nMarket Price: 92.0%\nEdge: -7.0% (Your prob - Market)\nExpected Value: -7.0% (on YES side; NO side edge is +7.0%)\nReasoning: Royval's recent fights have been decisions (split decision wins, unanimous decision loss), and while a KO is possible, a 92% market price for a finish is extremely high given his recent pattern and the fight's volatility.\n\nMARKET 2: NO\nYour Probability: 5%\nMarket Price: 97.8%\nEdge: -92.8% (Your prob - Market)\nExpected Value: +92.8% (on NO side; betting NO at 2.2% implies a 97.8% chance it doesn't happen)\nReasoning: There is no confirmed plan or itinerary for Kanye to visit Israel by year-end; his recent outreach and apologies do not equate to a scheduled trip, making the true probability very low.\n\nMARKET 3: NO_TRADE\nYour Probability: 60%\nMarket Price: 66.0%\nEdge: -6.0% (Your prob - Market)\nExpected Value: -6.0% (on YES side for San Diego; NO side edge is +6.0%)\nReasoning: San Diego is at home and slightly favored, but both teams have losing records and are coming off double-digit losses, making the game close to a coin flip with insufficient edge versus the market price.",
+      "response_time": 10.9,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 15.89
+  }
+}

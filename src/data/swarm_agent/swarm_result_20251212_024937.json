@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-12T02:49:37.688212",
+  "prompt": "Analyze these 3 Polymarket markets and provide your predictions.\nYou have been given RECENT NEWS AND CONTEXT from web search for each market.\nUse this information to make more informed predictions.\n\n\nMarket 1:\nTitle: North Dakota State Bison vs. Bakersfield Roadrunners\nRecent trade: $1,560.00 on Bakersfield Roadrunners\nLink: https://polymarket.com/event/cbb-ndkst-csu-2025-12-11\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nThe North Dakota State Bison men's basketball team is set to face the CSU Bakersfield Roadrunners on December 11, 2025, at 9:30 p.m. EST in Bakersfield, California. ([espn.com](https://www.espn.com/mens-college-basketball/preview/_/gameId/401823738?utm_source=openai))\n\n**Team Performance:**\n\n- **North Dakota State Bison (7-3):** The Bison have demonstrated strong offensive capabilities, averaging 79.4 points per game and outscoring opponents by 12.1 points per game. However, they have faced challenges on the road, with a 1-3 record in away games. ([espn.com](https://www.espn.com/mens-college-basketball/preview/_/gameId/401823738?utm_source=openai))\n\n- **CSU Bakersfield Roadrunners (4-6):** The Roadrunners have a solid home record of 3-0. Despite this, they have struggled defensively, allowing an average of 80.7 points per game and being outscored by 7.9 points per game. ([espn.com](https://www.espn.com/mens-college-basketball/preview/_/gameId/401823738?utm_source=openai))\n\n**Key Player...\n\n---\n\nMarket 2:\nTitle: Pacers vs. 76ers\nRecent trade: $1,428.57 on 76ers\nLink: https://polymarket.com/event/nba-ind-phi-2025-12-12\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\n\n## NBA Schedule\n- Pacers @ 76ers on Friday, Dec 12, 2025 at 04:00 PM PST\n\n\nThe Indiana Pacers (6-18) are set to face the Philadelphia 76ers (13-10) on Friday, December 12, 2025, at 7 p.m. ET at Xfinity Mobile Arena in Philadelphia. ([abcnews.go.com](https://abcnews.go.com/Sports/wireStory/maxey-76ers-host-siakam-pacers-128303884?utm_source=openai))\n\n**Recent Performances:**\n\n- **Philadelphia 76ers:** The 76ers are seeking to regain their rhythm after a 112-108 loss to the Los Angeles Lakers on December 7. Joel Embiid struggled with a 4-of-21 shooting performance, while Tyrese Maxey led the team with 28 points. ([reuters.com](https://www.reuters.com/sports/nba-roundup-luka-doncic-lebron-james-lead-lakers-past-76ers-return--flm-2025-12-08/?utm_source=openai)) In their previous game on December 5, VJ Edgecombe's late putback secured a 99-98 victory over the Golden State Warriors. ([reuters.com](https://www.reuters.com/sports/basketball/vj-edgecombes-late-putback-lifts-76ers-over-warriors...\n\n---\n\nMarket 3:\nTitle: Will Daniel Day-Lewis win Best Actor at the 98th Academy Awards?\nRecent trade: $1,142.76 on No\nLink: https://polymarket.com/event/oscars-2026-best-actor-winner\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nAs of December 12, 2025, Daniel Day-Lewis is considered a long shot to win Best Actor at the 98th Academy Awards. His performance in \"Anemone\" has not generated significant buzz, and he is currently listed at +3300 odds, reflecting a 2.94% chance of winning. ([oddspedia.com](https://oddspedia.com/us/awards/world-awards/oscars/best-actor?utm_source=openai))\n\nIn contrast, Timoth\u00e9e Chalamet leads the Best Actor race with -200 odds (implied probability of 66.67%), followed by Leonardo DiCaprio at +350 (22.22%). ([oddspedia.com](https://oddspedia.com/us/awards/world-awards/oscars/best-actor?utm_source=openai)) Chalamet's role in \"Marty Supreme\" has been particularly acclaimed, with early reviews praising his performance as a career-best. ([betus.com.pa](https://www.betus.com.pa/entertainment/odds-2025-academy-awards-betting-lines-early-favorites-for-best-actor-aubo/?utm_source=openai))\n\nDaniel Day-Lewis's previous Oscar wins for \"My Left Foot\" (1989), \"There Will Be Blood\" (2007), and \"Linc...\n\n---\n\n\nProvide predictions for each market in the specified format.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\nUse this context to make more informed predictions.\n\nFor each market, provide your prediction in this exact format:\n\nMARKET [number]: [decision]\nReasoning: [brief 1-2 sentence explanation that references the news context if relevant]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES means you would bet on the \"Yes\" outcome\n- NO means you would bet on the \"No\" outcome\n- NO_TRADE means you would not take a position\n\nBe concise and focused on the most promising opportunities.",
+  "consensus_summary": "The consensus strongly predicts \"No\" for Daniel Day-Lewis winning Best Actor, while opinions are split on the sports markets due to differing interpretations of the available data. For the basketball games, AI models that made a choice favored the 76ers over the Pacers, but were divided on the college game between NDSU's offensive strength and Bakersfield's home-court advantage. Overall, the Oscars market has the clearest agreement, whereas the sports predictions are more speculative and lack a unified view.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "DEEPSEEK",
+    "AI #3": "OPUS",
+    "AI #4": "GEMINI"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.05,
+      "success": true
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 500 - {'type': 'error', 'error': {'type': 'api_error', 'message': 'Internal server error'}, 'request_id': None}",
+      "response_time": 2.74,
+      "success": false
+    },
+    "openai": {
+      "response": "MARKET 1: YES  \nReasoning: The North Dakota State Bison have a strong offensive game and generally outperform their opponents by a significant margin. Despite their struggles on the road, the Bakersfield Roadrunners' poor defensive record makes them vulnerable, and this context supports a bet on the Bison winning.\n\nMARKET 2: YES  \nReasoning: The Philadelphia 76ers, despite a recent loss, are a stronger team compared to the struggling Indiana Pacers. The Pacers' poor record (6-18) and the 76ers playing at home provide a favorable setup for betting on a 76ers victory.\n\nMARKET 3: NO  \nReasoning: Daniel Day-Lewis is seen as a long shot with odds reflecting only a 2.94% chance of winning, while Timoth\u00e9e Chalamet is the clear favorite with significant acclaim and a high implied probability of winning. This context supports a bet against Day-Lewis winning Best Actor.",
+      "response_time": 2.85,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO_TRADE  \nReasoning: The market is for a specific college basketball game, but the provided context lacks the actual market question (e.g., which team to win or a point spread), making a definitive prediction impossible without knowing the exact proposition.\n\nMARKET 2: NO_TRADE  \nReasoning: The market is for a specific NBA game, but the provided context lacks the actual market question (e.g., which team to win or a point spread), making a definitive prediction impossible without knowing the exact proposition.\n\nMARKET 3: NO  \nReasoning: Daniel Day-Lewis is a long shot with very low odds (+3300), while Timoth\u00e9e Chalamet is the heavy favorite, making \"No\" the strongly supported position based on the current awards buzz and betting markets.",
+      "response_time": 7.4,
+      "success": true
+    },
+    "opus": {
+      "response": "MARKET 1: NO\nReasoning: Despite NDSU's better overall record (7-3) and stronger offensive stats, CSU Bakersfield is undefeated at home (3-0) and NDSU has struggled on the road (1-3). The recent $1,560 trade on Bakersfield and home court advantage favor the Roadrunners.\n\nMARKET 2: YES\nReasoning: The 76ers (13-10) are significantly better than the Pacers (6-18), playing at home in Philadelphia. Despite their recent loss to the Lakers, Philly has the talent advantage with Maxey and should handle a struggling Indiana team.\n\nMARKET 3: NO\nReasoning: Daniel Day-Lewis has only a 2.94% implied probability (+3300 odds) to win, with his \"Anemone\" performance generating minimal buzz. Timoth\u00e9e Chalamet is the heavy favorite at -200 odds for \"Marty Supreme.\"",
+      "response_time": 7.91,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: YES\nReasoning: Despite their road struggles, North Dakota State Bison are a stronger offensive team (79.4 PPG) with a positive point differential (+12.1), poised to exploit Bakersfield's defensive weaknesses (allowing 80.7 PPG), making them the likely winner.\n\nMARKET 2: YES\nReasoning: The Philadelphia 76",
+      "response_time": 10.01,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 5,
+    "failed_responses": 1,
+    "total_time": 15.22
+  }
+}

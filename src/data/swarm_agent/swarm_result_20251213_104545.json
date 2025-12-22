@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T10:45:45.028897",
+  "prompt": "Analyze these 3 Polymarket markets.\n\nFor EACH market:\n1. Estimate the TRUE PROBABILITY based on news context\n2. Calculate EDGE vs market price\n3. Only recommend trades with 10%+ edge\n\n\nMarket 1:\nTitle: Will Hyperliquid reach $54 by December 31, 2026?\nCurrent Market Price: 65.0% (this is the market's implied probability)\nRecent trade: $650.00 on No\nLink: https://polymarket.com/event/what-price-will-hyperliquid-hit-before-2027\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nHyperliquid's native token, HYPE, is currently trading at approximately $0.00001301, significantly below the $54 target for December 31, 2026. \n\nIn June 2025, Tony G Co-Investment Holdings Ltd. purchased 10,387.685 HYPE tokens at an average price of $42.24 per token, totaling $438,828.46. ([newsfilecorp.com](https://www.newsfilecorp.com/release/255352/Tony-G-CoInvestment-Holdings-Announces-Purchase-of-10000-Hyperliquid-Tokens?utm_source=openai)) Subsequently, in September 2025, the company acquired an additional 5,000 HYPE tokens at an average price of $53.748 per token, amounting to $268,740. ([newsfilecorp.com](https://www.newsfilecorp.com/release/265813/HYLQ-Strategy-Announces-Purchase-of-Additional-Hyperliquid-Tokens?utm_source=openai))\n\nDespite these investments, HYPE's price has experienced significant volatility. In March 2025, a major Ethereum whale liquidation resulted in a $4 million loss for Hyperliquid, leading to a $166 million outflow from the platform. ([ccn.com](https:/\n\n---\n\nMarket 2:\nTitle: Will Borussia M\u00f6nchengladbach win on 2025-12-13?\nCurrent Market Price: 52.0% (this is the market's implied probability)\nRecent trade: $616.42 on No\nLink: https://polymarket.com/event/bun-moe-wol-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nBorussia M\u00f6nchengladbach is set to face VfL Wolfsburg on December 13, 2025, at Borussia-Park in M\u00f6nchengladbach. The match is scheduled to kick off at 2:30 PM local time. ([video.thescore.com](https://video.thescore.com/bund/events/89322?utm_source=openai))\n\n**Team Form and Recent Performances:**\n\n- **Borussia M\u00f6nchengladbach:** The team has been on an impressive five-game unbeaten run in the Bundesliga, scoring 11 goals during this period. ([footballwhispers.com](https://footballwhispers.com/blog/borussia-monchengladbach-vs-wolfsburg-prediction-13-12-2025/?utm_source=openai))\n\n- **VfL Wolfsburg:** Wolfsburg has struggled this season, currently sitting 15th in the Bundesliga table. They have not secured an away win since October. ([footballwhispers.com](https://footballwhispers.com/blog/borussia-monchengladbach-vs-wolfsburg-prediction-13-12-2025/?utm_source=openai))\n\n**Head-to-Head Record:**\n\nIn their last two encounters, Wolfsburg has emerged victorious, including a significant 5-1 wi\n\n---\n\nMarket 3:\nTitle: Will US Cremonese win on 2025-12-13?\nCurrent Market Price: 77.0% (this is the market's implied probability)\nRecent trade: $1,321.32 on No\nLink: https://polymarket.com/event/sea-tor-cre-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nUS Cremonese is set to face Torino FC on December 13, 2025, at the Stadio Olimpico Grande Torino in Turin, Italy. ([video.thescore.com](https://video.thescore.com/seri/events/90551?utm_source=openai))\n\n**Recent Performance:**\n\n- **US Cremonese:** In their latest match on December 7, 2025, they secured a 2-0 victory over Lecce, with goals from Federico Bonazzoli and Antonio Sanabria. ([sports.yahoo.com](https://sports.yahoo.com/articles/serie-cremonese-2-0-lecce-133500790.html?utm_source=openai))\n\n- **Torino FC:** Their most recent game was a 1-2 loss to Juventus on November 1, 2025, where they conceded early and late goals, with Che Adams scoring their only goal. ([espn.com](https://www.espn.com/soccer/match/_/gameId/736880/juventus-cremonese?utm_source=openai))\n\n**Betting Odds:**\n\n- Torino FC is favored to win at -110, while US Cremonese is listed at +320. ([betdecider.com](https://betdecider.com/picks/torino-fc-vs-us-cremonese-soccer-betting-preview-odds-offensive-leaders-12-13-2025/\n\n---\n\n\nProvide predictions in the exact format specified.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\n\nIMPORTANT: For each market, you MUST estimate the TRUE PROBABILITY of the outcome.\nCompare your probability estimate to the market price to find EDGE (mispricing).\n\nEdge = Your Probability - Market Probability\n- Positive edge on YES side means market undervalues YES\n- Negative edge means market overvalues YES (bet NO instead)\n\nFor each market, provide your prediction in this EXACT format:\n\nMARKET [number]: [decision]\nYour Probability: [0-100]%\nMarket Price: [shown price]%\nEdge: [+/-X]% (Your prob - Market)\nExpected Value: [calculate: Edge \u00d7 potential payout]\nReasoning: [1-2 sentences explaining your probability estimate]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES = Your probability > Market price + 10% (minimum 10% edge)\n- NO = Your probability < Market price - 10%\n- NO_TRADE = Edge < 10% (not enough value)\n\nBe contrarian when you have conviction. Look for markets where news hasn't been priced in yet.",
+  "consensus_summary": "The consensus strongly recommends betting YES on Borussia M\u00f6nchengladbach, as all models agree on a ~70% true probability, giving an 18% edge over the market price. For the Hyperliquid market, opinions are sharply divided between extreme bullish and bearish views, indicating high uncertainty and no clear trade. Regarding US Cremonese, the consensus is bearish but finds no actionable trade, as the market price already heavily favors Torino.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "GEMINI",
+    "AI #3": "DEEPSEEK"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.06,
+      "success": true
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4Yugksye1udWzufDG5U'}",
+      "response_time": 0.07,
+      "success": false
+    },
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4Yugncf9utCPNu2VXTu'}",
+      "response_time": 0.07,
+      "success": false
+    },
+    "openai": {
+      "response": "MARKET 1: NO\nYour Probability: 30%\nMarket Price: 65.0%\nEdge: -35% (30% - 65%)\nExpected Value: -$455 (Edge \u00d7 potential payout)\nReasoning: Despite recent investments at high prices, the current price of HYPE is far below the $54 target. The volatility and negative events, such as the major liquidation, suggest significant challenges in reaching the target price by the deadline.\n\nMARKET 2: YES\nYour Probability: 70%\nMarket Price: 52.0%\nEdge: +18% (70% - 52%)\nExpected Value: $372.00 (Edge \u00d7 potential payout)\nReasoning: Borussia M\u00f6nchengladbach is in excellent form with a five-game unbeaten streak, scoring consistently, whereas Wolfsburg is struggling and hasn't won an away game since October. These factors strongly favor M\u00f6nchengladbach's chances of winning.\n\nMARKET 3: NO\nYour Probability: 40%\nMarket Price: 77.0%\nEdge: -37% (40% - 77%)\nExpected Value: -$488.70 (Edge \u00d7 potential payout)\nReasoning: Betting odds favor Torino, indicating market skepticism about Cremonese's chances. Despite Cremonese's recent victory, playing away at Torino, who are favored, significantly reduces their likelihood of winning.",
+      "response_time": 4.57,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: YES\nYour Probability: 95%\nMarket Price: 65.0%\nEdge: +30% (Your prob - Market)\nExpected Value: +30% \u00d7 $1 = $0.30 (per $1 invested in YES)\nReasoning: The token was trading at $53.748 in September",
+      "response_time": 10.46,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO\nYour Probability: 0.1%\nMarket Price: 65.0%\nEdge: -64.9% (Your prob - Market)\nExpected Value: +64.9% (Betting NO at 35% price implies a 185.7% return if correct)\nReasoning: The token price is ~$0.000013, requiring astronomical growth to reach $54; recent large private purchases at high prices do not reflect public market viability or probability.\n\nMARKET 2: YES\nYour Probability: 70.0%\nMarket Price: 52.0%\nEdge: +18.0% (Your prob - Market)\nExpected Value: +34.6% (Betting YES at 52% price)\nReasoning: Gladbach is on a 5-game unbeaten run at home, while Wolfsburg is 15th and has no away win since October, creating a significant performance gap favoring Gladbach.\n\nMARKET 3: NO_TRADE\nYour Probability: 30.0%\nMarket Price: 77.0%\nEdge: -47.0% (Your prob - Market)\nExpected Value: N/A (Edge magnitude >10% but direction is NO, yet market price for NO is only 23%, offering poor risk/reward for the required stake)\nReasoning: Cremonese is a clear underdog playing away at Torino, with betting odds heavily favoring Torino (-110 vs. Cremonese +320), making a 77% market-implied probability for a Cremonese win irrational.",
+      "response_time": 11.3,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 15.3
+  }
+}

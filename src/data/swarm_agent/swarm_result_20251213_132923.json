@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T13:29:23.796384",
+  "prompt": "Analyze these 3 Polymarket markets.\n\nFor EACH market:\n1. Estimate the TRUE PROBABILITY based on news context\n2. Calculate EDGE vs market price\n3. Only recommend trades with 10%+ edge\n\n\nMarket 1:\nTitle: Will Union Progressiste pour le Renouveau (UPR) win the most seats in the 2026 Benin parliamentary election?\nCurrent Market Price: 91.0% (this is the market's implied probability)\nRecent trade: $636.09 on Yes\nLink: https://polymarket.com/event/benin-parliamentary-election-winner\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nL'Union Progressiste le Renouveau (UPR) est actuellement le principal parti politique au B\u00e9nin, d\u00e9tenant 53 des 109 si\u00e8ges \u00e0 l'Assembl\u00e9e nationale. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2026_Beninese_parliamentary_election?utm_source=openai)) Pour les \u00e9lections l\u00e9gislatives pr\u00e9vues le 11 janvier 2026, l'UPR a annonc\u00e9 l'organisation de primaires internes visant \u00e0 d\u00e9signer pr\u00e8s de 3 000 candidats, hommes et femmes, refl\u00e9tant la diversit\u00e9 de la soci\u00e9t\u00e9 b\u00e9ninoise. ([mediapartbenin.com](https://mediapartbenin.com/article/4410/elections-generales-2026-l-union-progressiste-renouveau-se-prepare-large-representativite/?utm_source=openai))\n\nPar ailleurs, l'UPR a sign\u00e9 des accords de partenariat avec la Force Cauris pour un B\u00e9nin \u00c9mergent (FCBE) et le Bloc R\u00e9publicain (BR), visant \u00e0 renforcer le dialogue politique et \u00e0 consolider le syst\u00e8me partisan en vue des \u00e9lections g\u00e9n\u00e9rales de 2026. ([kaweru.com](https://www.kaweru.com/politique-societe/2025/09/18/elections-generales-de-2026-au-\n\n---\n\nMarket 2:\nTitle: Will NVIDIA (NVDA) hit $145 before 2026??\nCurrent Market Price: 95.6% (this is the market's implied probability)\nRecent trade: $664.17 on No\nLink: https://polymarket.com/event/what-will-nvda-hit-before-2026\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nAs of December 13, 2025, NVIDIA's (NVDA) stock price is $175.02.\n\n## Stock market information for NVIDIA Corp (NVDA)\n- NVIDIA Corp is a equity in the USA market.\n- The price is 175.02 USD currently with a change of -5.88 USD (-0.03%) from the previous close.\n- The latest open price was 181.08 USD and the intraday volume is 204274918.\n- The intraday high is 183.23 USD and the intraday low is 174.66 USD.\n- The latest trade time is Friday, December 12, 17:15:00 PST.\n\n\nAnalyst forecasts for NVDA's stock price by the end of 2025 vary, with estimates ranging from $160 to $190. ([investorsobserver.com](https://investorsobserver.com/news/nvidia-nvda-stock-prediction-for-2025-heres-what-wall-street-expects-next-year/?utm_source=openai)) Given these projections, reaching $145 before 2026 appears unlikely.\n\nRecent market dynamics, including shifts in investor sentiment toward AI companies, have influenced NVDA's stock performance. ([axios.com](https://www.axios.com/2025/12/12/ai-nvidia-oracle-bro\n\n---\n\nMarket 3:\nTitle: O/U 38.5\nCurrent Market Price: 50.0% (this is the market's implied probability)\nRecent trade: $1,324.00 on Under\nLink: https://polymarket.com/event/cfb-army-navy-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nThe \"O/U 38.5\" prediction market has recently been active on Polymarket, reflecting the collective sentiment of traders regarding specific sports events. As of December 13, 2025, the market is trading at 49.0%, indicating a near-even split between the \"Over\" and \"Under\" positions. This market has attracted 15 active participants and has generated a total trading volume of $8.6K, with a liquidity of $41.6K, making it accessible for retail-sized positions. ([monitor.polymarketspro.com](https://monitor.polymarketspro.com/market/cfb-army-navy-2025-12-13-total-38pt5?utm_source=openai))\n\nIn the NFL, the \"O/U 38.5\" line has been applied to various games, such as the matchup between the Cincinnati Bengals and the Baltimore Ravens on November 27, 2025. In this market, traders were asked to predict whether the Ravens would score over or under 38.5 points in the game. ([predictsights.com](https://predictsights.com/polymarket/market/nfl-cin-bal-2025-11-27-team-total-bal-38pt5?utm_source=openai))\n\n\n\n---\n\n\nProvide predictions in the exact format specified.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\n\nIMPORTANT: For each market, you MUST estimate the TRUE PROBABILITY of the outcome.\nCompare your probability estimate to the market price to find EDGE (mispricing).\n\nEdge = Your Probability - Market Probability\n- Positive edge on YES side means market undervalues YES\n- Negative edge means market overvalues YES (bet NO instead)\n\nFor each market, provide your prediction in this EXACT format:\n\nMARKET [number]: [decision]\nYour Probability: [0-100]%\nMarket Price: [shown price]%\nEdge: [+/-X]% (Your prob - Market)\nExpected Value: [calculate: Edge \u00d7 potential payout]\nReasoning: [1-2 sentences explaining your probability estimate]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES = Your probability > Market price + 10% (minimum 10% edge)\n- NO = Your probability < Market price - 10%\n- NO_TRADE = Edge < 10% (not enough value)\n\nBe contrarian when you have conviction. Look for markets where news hasn't been priced in yet.",
+  "consensus_summary": "The consensus finds no actionable trades, as all three markets lack a clear 10%+ edge. Analysts agree the Benin election is likely but priced fairly, and the sports market is a 50/50 guess, while they strongly disagree on NVIDIA's probability despite concurring a trade is not recommended. Overall, the analyses suggest passing on these specific markets due to insufficient or negative expected value.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "GEMINI",
+    "AI #3": "DEEPSEEK"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.05,
+      "success": true
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4mPasr3VGxG2tciXU2M'}",
+      "response_time": 0.11,
+      "success": false
+    },
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4mPau5X5BCVcLPyEyZn'}",
+      "response_time": 0.13,
+      "success": false
+    },
+    "openai": {
+      "response": "MARKET 1: NO_TRADE  \nYour Probability: 95%  \nMarket Price: 91.0%  \nEdge: +4% (Your prob - Market)  \nExpected Value: +4% \u00d7 potential payout  \nReasoning: UPR is the dominant party in Benin with strategic alliances and a significant number of seats, making them highly likely to win the most seats, but the edge is not large enough for a trade.\n\nMARKET 2: NO  \nYour Probability: 99%  \nMarket Price: 95.6%  \nEdge: -3.4% (Your prob - Market)  \nExpected Value: -3.4% \u00d7 potential payout  \nReasoning: NVIDIA's current stock price and analyst predictions indicate it is unlikely to fall below $145 by 2026, aligning closely with the market's high probability, leaving insufficient edge for a trade.\n\nMARKET 3: NO_TRADE  \nYour Probability: 50%  \nMarket Price: 50.0%  \nEdge: 0% (Your prob - Market)  \nExpected Value: 0% \u00d7 potential payout  \nReasoning: The market is evenly split, and without additional information specific to the sports event, the probability of over or under 38.5 points remains balanced, providing no actionable edge.",
+      "response_time": 2.49,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: NO_TRADE\nYour Probability: 95%\nMarket Price: 91.0%\nEdge: +4% (Your prob - Market)\nExpected Value: 0.04\nReasoning: The UPR is currently the dominant party, actively preparing for the 2026 elections through primaries, and has strategically formed partnerships to consolidate its position",
+      "response_time": 9.41,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO_TRADE\nYour Probability: 85%\nMarket Price: 91.0%\nEdge: -6.0% (Your prob - Market)\nExpected Value: -6.0%\nReasoning: The UPR is the incumbent with a majority and is actively preparing, but a 91% price for an election over a year away leaves little margin for unexpected political shifts or coalition changes.\n\nMARKET 2: NO\nYour Probability: 5%\nMarket Price: 95.6%\nEdge: -90.6% (Your prob - Market)\nExpected Value: -90.6%\nReasoning: With NVDA's current price at $175.02, the stock would need to drop over 17% to hit $145 before 2026, which contradicts bullish analyst forecasts and makes the \"Yes\" outcome extremely unlikely.\n\nMARKET 3: NO_TRADE\nYour Probability: 50%\nMarket Price: 50.0%\nEdge: 0.0% (Your prob - Market)\nExpected Value: 0.0%\nReasoning: The provided context is generic and does not specify the teams or conditions for this \"O/U 38.5\" market, making any probability estimate a pure guess with no informational edge.",
+      "response_time": 9.62,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 13.75
+  }
+}

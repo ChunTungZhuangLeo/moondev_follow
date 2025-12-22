@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T15:27:59.676332",
+  "prompt": "Analyze these 3 Polymarket markets.\n\nFor EACH market:\n1. Estimate the TRUE PROBABILITY based on news context\n2. Calculate EDGE vs market price\n3. Only recommend trades with 10%+ edge\n\n\nMarket 1:\nTitle: Golden Knights vs. Blue Jackets\nCurrent Market Price: 58.0% (this is the market's implied probability)\nRecent trade: $7,828.17 on Golden Knights\nLink: https://polymarket.com/event/nhl-las-cbj-2025-12-14\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nThe Vegas Golden Knights are set to face the Columbus Blue Jackets today, Saturday, December 13, 2025, at 4:00 PM PST. \n\n**Recent Performances:**\n\n- **Vegas Golden Knights:** The Golden Knights have been on a strong run, extending their point streak to six games (5-0-1) with a 3-2 overtime victory against the Philadelphia Flyers on December 12. Mark Stone led the team with two goals, including the game-winner in overtime. ([reuters.com](https://www.reuters.com/sports/nhl/mark-stone-scores-pair-golden-knights-edge-flyers-ot--flm-2025-12-12/?utm_source=openai))\n\n- **Columbus Blue Jackets:** The Blue Jackets are currently on a four-game losing streak, most recently falling 6-3 to the Ottawa Senators on December 12. Tim Stutzle scored twice for the Senators, while Boone Jenner returned from injury to contribute a goal and an assist for Columbus. ([reuters.com](https://www.reuters.com/sports/nhl/tim-stutzles-2-goals-propel-senators-past-blue-jackets--flm-2025-12-12/?utm_source=openai))\n\n**T\n\n---\n\nMarket 2:\nTitle: Miami (OH) RedHawks vs. Eastern Kentucky Colonels: O/U 160.5\nCurrent Market Price: 46.6% (this is the market's implied probability)\nRecent trade: $752.58 on Over\nLink: https://polymarket.com/event/cbb-miaoh-ekent-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nThe upcoming basketball game between the Miami (OH) RedHawks and the Eastern Kentucky Colonels is scheduled for Saturday, December 13, 2025, at 3 p.m. EST in Richmond, Kentucky. ([espn.com](https://www.espn.com/mens-college-basketball/preview/_/gameId/401828548?utm_source=openai))\n\n**Team Performance and Betting Context:**\n\n- **Miami (OH) RedHawks:**\n  - **Record:** 9-0, leading the Mid-American Conference.\n  - **Scoring:** Averaging 94.8 points per game, ranking 7th nationally.\n  - **Field Goal Percentage:** 52.49%, 6th in the nation.\n  - **Recent Performance:** Secured a 90-87 overtime victory against the UNC Asheville Bulldogs, with Evan Ipsaro contributing 27 points. ([ekusports.com](https://ekusports.com/news/2025/12/11/mens-basketball-colonels-host-undefeated-no-4-ranked-mid-major-miami-on-saturday.aspx?utm_source=openai))\n\n- **Eastern Kentucky Colonels:**\n  - **Record:** 3-7, with a 2-3 home record.\n  - **Scoring:** Averaging 79.8 points per game, 10.3 more than the 69.5 points \n\n---\n\nMarket 3:\nTitle: Torino FC vs. US Cremonese: Both Teams to Score\nCurrent Market Price: 51.7% (this is the market's implied probability)\nRecent trade: $663.00 on Yes\nLink: https://polymarket.com/event/sea-tor-cre-2025-12-13-more-markets\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nThe upcoming Serie A match between Torino FC and US Cremonese is scheduled for December 13, 2025, at the Stadio Olimpico Grande Torino. ([foxsports.com](https://www.foxsports.com/soccer/serie-a-torino-vs-us-cremonese-dec-13-2025-game-boxscore-625347?utm_source=openai))\n\n**Recent Form and Head-to-Head Record:**\n\n- **Torino FC:** The team has struggled recently, losing three consecutive matches and conceding at least one goal in each. ([statips.com](https://statips.com/football/serie-a-predictions/torino-fc-vs-us-cremonese-2025-12-13?utm_source=openai))\n\n- **US Cremonese:** They have shown resilience, securing two wins in their last two matches, including a 2-0 victory over US Lecce. ([statips.com](https://statips.com/football/serie-a-predictions/torino-fc-vs-us-cremonese-2025-12-13?utm_source=openai))\n\n- **Head-to-Head:** In their most recent encounter, Torino FC defeated US Cremonese 4-1 in a friendly match on July 26, 2025. ([sportytrader.com](https://www.sportytrader.com/en/results-l\n\n---\n\n\nProvide predictions in the exact format specified.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\n\nIMPORTANT: For each market, you MUST estimate the TRUE PROBABILITY of the outcome.\nCompare your probability estimate to the market price to find EDGE (mispricing).\n\nEdge = Your Probability - Market Probability\n- Positive edge on YES side means market undervalues YES\n- Negative edge means market overvalues YES (bet NO instead)\n\nFor each market, provide your prediction in this EXACT format:\n\nMARKET [number]: [decision]\nYour Probability: [0-100]%\nMarket Price: [shown price]%\nEdge: [+/-X]% (Your prob - Market)\nExpected Value: [calculate: Edge \u00d7 potential payout]\nReasoning: [1-2 sentences explaining your probability estimate]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES = Your probability > Market price + 10% (minimum 10% edge)\n- NO = Your probability < Market price - 10%\n- NO_TRADE = Edge < 10% (not enough value)\n\nBe contrarian when you have conviction. Look for markets where news hasn't been priced in yet.",
+  "consensus_summary": "The consensus identifies a strong edge for Market 2 (Miami OH Over), with all analysts agreeing on a \"YES\" trade due to Miami's elite scoring. For Market 1 (Golden Knights), most recommend a \"YES\" trade, though one analyst disagrees, citing insufficient edge. Analysts are split on Market 3 (Both Teams to Score), resulting in no clear consensus for a recommended trade.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "DEEPSEEK",
+    "AI #3": "GEMINI"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.04,
+      "success": true
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4vS4a5TfwkRjB5oJWUf'}",
+      "response_time": 0.08,
+      "success": false
+    },
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4vS4eJ7gUTNr2zvyKCk'}",
+      "response_time": 0.13,
+      "success": false
+    },
+    "openai": {
+      "response": "MARKET 1: YES  \nYour Probability: 70%  \nMarket Price: 58.0%  \nEdge: +12% (Your prob - Market)  \nExpected Value: +12% \u00d7 potential payout  \nReasoning: Given the Golden Knights' strong performance streak and the Blue Jackets' recent losses, the Knights are likely to win. Their current form and recent win in overtime suggest a higher probability than the market estimates.\n\nMARKET 2: YES  \nYour Probability: 60%  \nMarket Price: 46.6%  \nEdge: +13.4% (Your prob - Market)  \nExpected Value: +13.4% \u00d7 potential payout  \nReasoning: Miami (OH) has been scoring at a high rate, averaging nearly 95 points per game, and Eastern Kentucky allows an average of nearly 80 points. This suggests a high-scoring game that is likely to go over the 160.5 total.\n\nMARKET 3: NO_TRADE  \nYour Probability: 55%  \nMarket Price: 51.7%  \nEdge: +3.3% (Your prob - Market)  \nExpected Value: +3.3% \u00d7 potential payout  \nReasoning: Although Torino has been conceding goals, Cremonese's recent form suggests they could score. However, the edge is not significant enough to recommend a trade.",
+      "response_time": 3.4,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO_TRADE\nYour Probability: 65%\nMarket Price: 58.0%\nEdge: +7.0% (Your prob - Market)\nExpected Value: 7.0% edge \u00d7 potential payout\nReasoning: Vegas is on a 6-game point streak and Columbus is on a 4-game losing streak, giving Vegas a clear advantage, but home/away and goaltending factors not detailed limit edge to below the 10% threshold.\n\nMARKET 2: YES\nYour Probability: 65%\nMarket Price: 46.6%\nEdge: +18.4% (Your prob - Market)\nExpected Value: 18.4% edge \u00d7 potential payout\nReasoning: Miami (OH) averages 94.8 PPG (7th nationally) and Eastern Kentucky allows 10+ PPG more than their average offense scores, creating a high likelihood the total exceeds 160.5.\n\nMARKET 3: YES\nYour Probability: 70%\nMarket Price: 51.7%\nEdge: +18.3% (Your prob - Market)\nExpected Value: 18.3% edge \u00d7 potential payout\nReasoning: Torino has conceded in at least 3 straight matches and Cremonese is in good form with 2 consecutive wins, making it probable both teams score.",
+      "response_time": 9.71,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: YES\nYour Probability: 75%\nMarket Price: 58.0%\nEdge: +17% (Your prob - Market)\nExpected Value: 7.14\nReasoning: The Golden Knights are on a strong 6-game point streak (5-0-1), while the Blue Jackets are on a 4-game",
+      "response_time": 10.84,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 14.62
+  }
+}

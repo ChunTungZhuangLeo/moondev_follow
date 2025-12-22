@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-12T20:30:58.739120",
+  "prompt": "Analyze these 3 Polymarket markets and provide your predictions.\nYou have been given RECENT NEWS AND CONTEXT from web search for each market.\nUse this information to make more informed predictions.\n\n\nMarket 1:\nTitle: Will John Cornyn win the 2026 Texas Republican Primary?\nRecent trade: $945.80 on No\nLink: https://polymarket.com/event/texas-republican-senate-primary-winner\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nAs of December 12, 2025, Senator John Cornyn's prospects in the 2026 Texas Republican Primary are facing significant challenges. Recent developments indicate a decline in his support among Republican voters, with Attorney General Ken Paxton emerging as a formidable challenger.\n\n**Recent Polling Data:**\n\n- **November 2025 Stratus Intelligence Poll:** A survey conducted by Stratus Intelligence from November 21\u201322, 2025, revealed that among likely Republican primary voters, Paxton leads with 36%, followed by U.S. Representative Wesley Hunt at 26%, and Cornyn at 25%. Additionally, Cornyn's favorability rating has declined to 35% favorable and 51% unfavorable, with 28% of respondents holding a \"very unfavorable\" view. ([texasscorecard.com](https://texasscorecard.com/federal/poll-shows-cornyn-slipping-to-third-in-gop-senate-primary/?utm_source=openai))\n\n- **October 2025 University of Houston/Texas Southern University Survey:** This survey showed Paxton and Cornyn effectively tied, with Paxto...\n\n---\n\nMarket 2:\nTitle: Will Ken Paxton win the 2026 Texas Republican Primary?\nRecent trade: $535.32 on No\nLink: https://polymarket.com/event/texas-republican-senate-primary-winner\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nAs of December 12, 2025, the Texas Republican primary for the U.S. Senate seat is shaping up to be a competitive race between incumbent Senator John Cornyn and Attorney General Ken Paxton. Recent polls indicate a tight contest, with Paxton leading Cornyn by a narrow margin.\n\n**Recent Polling Data:**\n\n- A University of Houston survey conducted between September 19 and October 1, 2025, shows Paxton leading Cornyn 34% to 33%, with 22% support for U.S. Representative Wesley Hunt. ([uh.edu](https://www.uh.edu/news-events/stories/2025/october/10092025-texas-trends-survey-primary-2025.php?utm_source=openai))\n\n- An October 2025 poll by Decision Desk HQ reports Paxton at 30.6%, Cornyn at 28.1%, and Hunt at 21.2%. ([polls.decisiondeskhq.com](https://polls.decisiondeskhq.com/averages/primary-ballot-test/2026-tx-us-senate-gop/texas/republicans?utm_source=openai))\n\n**Official Announcements:**\n\n- Ken Paxton officially entered the Senate race on November 12, 2025, positioning himself as a conservativ...\n\n---\n\nMarket 3:\nTitle: Spread: Giants (-2.5)\nRecent trade: $8,617.91 on Commanders\nLink: https://polymarket.com/event/nfl-was-nyg-2025-12-14\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nThe New York Giants are set to host the Washington Commanders on Sunday, December 14, 2025, at MetLife Stadium. The Giants are favored by 2.5 points in this matchup. ([foxsportsradionewjersey.com](https://foxsportsradionewjersey.com/2025/12/12/washington-commanders-vs-new-york-giants-odds-spread-and-total/?utm_source=openai))\n\n**Recent News and Updates:**\n\n- **Injuries:**\n  - *Kayvon Thibodeaux:* The Giants' edge defender will miss his fourth consecutive game due to a shoulder injury. ([bigblueview.com](https://www.bigblueview.com/new-york-giants-injuries/148136/kayvon-thibodeaux-out-nic-jones-surgery-gunner-olszewski-jamie-gillan?utm_source=openai))\n  - *Nic Jones:* The backup cornerback is out for the season after undergoing shoulder surgery. ([bigblueview.com](https://www.bigblueview.com/new-york-giants-injuries/148136/kayvon-thibodeaux-out-nic-jones-surgery-gunner-olszewski-jamie-gillan?utm_source=openai))\n\n- **Team Performance:**\n  - The Giants have lost seven straight games, brin...\n\n---\n\n\nProvide predictions for each market in the specified format.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\nUse this context to make more informed predictions.\n\nFor each market, provide your prediction in this exact format:\n\nMARKET [number]: [decision]\nReasoning: [brief 1-2 sentence explanation that references the news context if relevant]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES means you would bet on the \"Yes\" outcome\n- NO means you would bet on the \"No\" outcome\n- NO_TRADE means you would not take a position\n\nBe concise and focused on the most promising opportunities.",
+  "consensus_summary": "The consensus strongly predicts Cornyn will not win the primary, while Paxton is favored to win it, based on consistent polling showing his lead and Cornyn's decline. There is unanimous agreement that the Giants, despite being favored, are unlikely to cover the -2.5 spread due to their losing streak and key injuries. The only minor disagreement is one model's \"NO_TRADE\" on the NFL game, while all others confidently pick against the Giants.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "GEMINI",
+    "AI #3": "OPUS",
+    "AI #4": "DEEPSEEK",
+    "AI #5": "CLAUDE"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.05,
+      "success": true
+    },
+    "openai": {
+      "response": "MARKET 1: NO  \nReasoning: Recent polling data shows John Cornyn trailing behind Ken Paxton and Wesley Hunt in the Texas Republican Primary. Cornyn's unfavorable ratings are also high, suggesting significant challenges in his campaign. Given the trade activity and polling trends, betting on Cornyn not winning seems reasonable.\n\nMARKET 2: YES  \nReasoning: Ken Paxton is currently leading in multiple polls against his primary competitors, including John Cornyn, and has officially entered the race with a strong conservative positioning. The close race dynamics and recent favorable polling indicate a good chance that Paxton might win the primary.\n\nMARKET 3: NO  \nReasoning: The Giants are on a seven-game losing streak and have significant injuries, including key defensive players like Kayvon Thibodeaux. Despite being favored by 2.5 points, the circumstances suggest betting against them covering the spread is prudent, especially given the heavy trade volume on the Commanders.",
+      "response_time": 3.87,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: NO\nReasoning: Recent polling data from November 2025 shows John Cornyn trailing in third place with 25% support, significantly behind Ken Paxton and Wesley Hunt, and his favorability rating has declined.\n\nMARKET 2: YES\nReasoning: Ken Paxton consistently leads or is tied for the lead in recent polls, including a November 2025 poll showing him at 36%, and he has officially entered the Senate race.\n\nMARKET 3: NO\nReasoning: The Giants are on a seven-game losing streak and are missing key defensive players, including edge defender Kayvon Thibodeaux for his fourth consecutive game, making it unlikely they will cover the -2.5 spread.",
+      "response_time": 4.71,
+      "success": true
+    },
+    "opus": {
+      "response": "MARKET 1: NO\nReasoning: Recent polling shows Cornyn slipping to third place at 25% behind Paxton (36%) and Wesley Hunt (26%), with a 51% unfavorable rating among Republican voters. His position has deteriorated significantly, making a primary win unlikely.\n\nMARKET 2: YES\nReasoning: Ken Paxton leads in multiple recent polls (36% in November Stratus poll, 34% in UH survey) and has positioned himself as the conservative alternative to Cornyn. His momentum and lead among likely Republican primary voters make him the favorite.\n\nMARKET 3: NO\nReasoning: Despite the Giants being favored by 2.5 points, they've lost seven straight games and have key injuries including Kayvon Thibodeaux. The Commanders at 9-4 are fighting for playoff positioning while the Giants at 2-11 have little motivation, making the spread questionable.",
+      "response_time": 6.17,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO  \nReasoning: Recent polling shows Cornyn slipping to third place among likely GOP primary voters with high unfavorability, making a win unlikely.\n\nMARKET 2: YES  \nReasoning: Paxton leads in recent polls, has officially entered the race as a strong conservative challenger, and is positioned ahead of Cornyn in a tight contest.\n\nMARKET 3: NO_TRADE  \nReasoning: While the Giants are favored, their seven-game losing streak and key defensive injuries create too much uncertainty against the spread for a confident bet.",
+      "response_time": 6.91,
+      "success": true
+    },
+    "claude": {
+      "response": "MARKET 1: NO\nReasoning: Recent polling shows Cornyn slipping to third place (25%) behind Paxton (36%) and Hunt (26%) as of November 2025, with a concerning 51% unfavorable rating. The momentum is clearly against the incumbent.\n\nMARKET 2: YES\nReasoning: Paxton leads in recent polls (36% in November 2025 Stratus poll, 34% in UH survey) and officially entered the race on November 12, 2025. He has momentum as the conservative challenger with the highest support among likely GOP primary voters.\n\nMARKET 3: NO\nReasoning: The recent $8,617.91 bet on Commanders aligns with reality - the Giants have lost seven straight games and are missing key defensive player Thibodeaux. A 2.5-point favorite line seems too generous for a struggling Giants team, making Commanders the value play.",
+      "response_time": 7.19,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 6,
+    "failed_responses": 0,
+    "total_time": 11.34
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T10:11:50.587192",
+  "prompt": "Analyze these 3 Polymarket markets.\n\nFor EACH market:\n1. Estimate the TRUE PROBABILITY based on news context\n2. Calculate EDGE vs market price\n3. Only recommend trades with 10%+ edge\n\n\nMarket 1:\nTitle: 76ers vs. Hawks\nCurrent Market Price: 46.0% (this is the market's implied probability)\nRecent trade: $1,000.00 on 76ers\nLink: https://polymarket.com/event/nba-phi-atl-2025-12-14\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\n\n## NBA Schedule\n- 76ers @ Hawks on Sunday, Dec 14, 2025 at 03:00 PM PST\n\n\nThe Philadelphia 76ers are set to face the Atlanta Hawks on Sunday, December 14, 2025, at 3:00 PM PST in Atlanta. The 76ers are aiming to extend their three-game road win streak, while the Hawks are looking to improve their 14-11 record. ([wtop.com](https://wtop.com/sports/2025/12/philadelphia-takes-on-atlanta-seeks-4th-straight-road-win/?utm_source=openai))\n\n**Recent Performances:**\n\n- **76ers:** In their latest game on December 13, Joel Embiid led the team with a season-high 39 points in a 115-105 victory over the Indiana Pacers. Paul George added 23 points, and rookie VJ Edgecombe contributed 22 points. Tyrese Maxey was sidelined due to illness but is expected to return for the upcoming game. ([reuters.com](https://www.reuters.com/sports/basketball/breakout-games-by-joel-embiid-paul-george-leads-76ers-past-pacers--flm-2025-12-13/?utm_source=openai))\n\n- **Hawks:** On December 7, Jalen Johnson recorded his seco\n\n---\n\nMarket 2:\nTitle: Getafe CF vs. RCD Espanyol de Barcelona: Both Teams to Score\nCurrent Market Price: 67.0% (this is the market's implied probability)\nRecent trade: $716.90 on No\nLink: https://polymarket.com/event/lal-get-esp-2025-12-13-more-markets\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nEl partido entre Getafe CF y RCD Espanyol de Barcelona, programado para el 13 de diciembre de 2025, promete ser un enfrentamiento re\u00f1ido en LaLiga. Ambos equipos se encuentran en la mitad superior de la tabla, con el Espanyol ocupando el quinto lugar con 27 puntos y el Getafe en el octavo puesto con 20 puntos. ([futbol24.com](https://www.futbol24.com/betting-tips/preview/13-12-2025-getafe-cf-espanyol-barcelona-betting-tip/?utm_source=openai))\n\n**Forma reciente:**\n\n- **Getafe CF:** En sus \u00faltimos cinco partidos, el Getafe ha obtenido dos victorias y tres derrotas, incluyendo una reciente derrota 0-2 contra el Villarreal CF. En casa, han mostrado una mejora significativa, acumulando 11 de los 21 puntos disputados en el Coliseum Alfonso P\u00e9rez. ([as.com](https://as.com/futbol/primera/el-getafe-recupera-el-coliseum-f202512-n/?utm_source=openai))\n\n- **RCD Espanyol de Barcelona:** El Espanyol llega en excelente forma, con tres victorias consecutivas y sin perder en m\u00e1s de un mes. Su \u00faltimo pa\n\n---\n\nMarket 3:\nTitle: Will Adelaide United FC win on 2025-12-13?\nCurrent Market Price: 96.0% (this is the market's implied probability)\nRecent trade: $528.00 on No\nLink: https://polymarket.com/event/aus-vic-ade-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nAdelaide United FC is set to face Melbourne Victory on December 13, 2025, in an Australian A-League match. The game will take place at Melbourne Victory's home ground.\n\n**Recent Form:**\n\n- **Melbourne Victory:** Currently at the bottom of the table with one win from seven matches, Melbourne Victory has struggled offensively, scoring only four goals this season. ([dailysports.net](https://dailysports.net/predictions/melbourne-victory-vs-adelaide-united-prediction-h2h-and-probable-lineups-december-13-2025/?utm_source=openai))\n\n- **Adelaide United:** Sitting mid-table with three wins and four defeats from seven matches, Adelaide United has shown a more balanced performance, netting 11 goals in the same period. ([dailysports.net](https://dailysports.net/predictions/melbourne-victory-vs-adelaide-united-prediction-h2h-and-probable-lineups-december-13-2025/?utm_source=openai))\n\n**Head-to-Head Record:**\n\nIn their last five encounters, Melbourne Victory has secured three wins against Adelaide U\n\n---\n\n\nProvide predictions in the exact format specified.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\n\nIMPORTANT: For each market, you MUST estimate the TRUE PROBABILITY of the outcome.\nCompare your probability estimate to the market price to find EDGE (mispricing).\n\nEdge = Your Probability - Market Probability\n- Positive edge on YES side means market undervalues YES\n- Negative edge means market overvalues YES (bet NO instead)\n\nFor each market, provide your prediction in this EXACT format:\n\nMARKET [number]: [decision]\nYour Probability: [0-100]%\nMarket Price: [shown price]%\nEdge: [+/-X]% (Your prob - Market)\nExpected Value: [calculate: Edge \u00d7 potential payout]\nReasoning: [1-2 sentences explaining your probability estimate]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES = Your probability > Market price + 10% (minimum 10% edge)\n- NO = Your probability < Market price - 10%\n- NO_TRADE = Edge < 10% (not enough value)\n\nBe contrarian when you have conviction. Look for markets where news hasn't been priced in yet.",
+  "consensus_summary": "The consensus identifies no high-edge buy trades, with Markets 2 and 3 showing unanimous agreement that the \"No\" side offers value as the market prices are overestimating the probabilities. Analysts disagree on the true probability for Market 1, leading to no strong trade recommendation, but agree Markets 2 and 3 present sell opportunities against inflated prices.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "GEMINI",
+    "AI #3": "DEEPSEEK"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.04,
+      "success": true
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4WKe8wMrNTF89STrTwE'}",
+      "response_time": 0.09,
+      "success": false
+    },
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4WKeHcyR3Jd8TpoQafd'}",
+      "response_time": 0.11,
+      "success": false
+    },
+    "openai": {
+      "response": "MARKET 1: NO_TRADE  \nYour Probability: 50%  \nMarket Price: 46.0%  \nEdge: +4% (50% - 46%)  \nExpected Value: +$0.04 per dollar wagered  \nReasoning: Both teams have shown competitive performances with the 76ers currently on a winning streak. The Hawks, however, have a solid record and the game being in Atlanta adds an advantage for them. The probability is close to 50%, suggesting no strong advantage on either side.\n\nMARKET 2: NO  \nYour Probability: 55%  \nMarket Price: 67.0%  \nEdge: -12% (55% - 67%)  \nExpected Value: -$0.12 per dollar wagered  \nReasoning: Despite both teams being in good form, Getafe's recent inconsistency and Espanyol's strong defense make it less likely both teams will score. The market seems overly optimistic about both teams scoring, providing a good opportunity to bet on NO.\n\nMARKET 3: NO  \nYour Probability: 85%  \nMarket Price: 96.0%  \nEdge: -11% (85% - 96%)  \nExpected Value: -$0.11 per dollar wagered  \nReasoning: While Adelaide United is facing a weaker Melbourne Victory, the high market probability doesn't fully account for the variability in soccer and Adelaide's mid-table standing. The market overestimates Adelaide's chances, making a NO bet more favorable.",
+      "response_time": 3.58,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: 76ers vs. Hawks\nYour Probability: 40%\nMarket Price: 46.0%\nEdge: -6% (Your prob - Market)\nExpected Value: -0.06 \u00d7 potential payout\nReasoning: While the 76ers are on a road win streak and Maxey is expected back, playing on",
+      "response_time": 10.03,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO_TRADE\nYour Probability: 50%\nMarket Price: 46.0%\nEdge: +4.0% (Your prob - Market)\nExpected Value: 0.04 \u00d7 (1/0.46 - 1) \u2248 0.087 or 8.7%\nReasoning: With Joel Embiid in dominant form and Tyrese Maxey expected back, the 76ers have a strong chance, but the Hawks are solid at home (14-11 record), making this a near-coin flip. The market price is reasonably efficient.\n\nMARKET 2: NO\nYour Probability: 50%\nMarket Price: 67.0%\nEdge: -17.0% (Your prob - Market)\nExpected Value: -0.17 \u00d7 (1/0.33 - 1) \u2248 -0.344 or -34.4% (Positive EV on NO side)\nReasoning: While Espanyol is in excellent form, Getafe has improved defensively at home, and the market overvalues \"Both Teams to Score\" based on recent streaks without considering tactical matchups.\n\nMARKET 3: NO\nYour Probability: 80%\nMarket Price: 96.0%\nEdge: -16.0% (Your prob - Market)\nExpected Value: -0.16 \u00d7 (1/0.04 - 1) \u2248 -3.84 or -384% (Positive EV on NO side)\nReasoning: Although Adelaide is favored against the bottom team, a 96% implied win probability is extreme for any soccer match, especially given Melbourne's historical head-to-head advantage (3 wins in last 5).",
+      "response_time": 12.37,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 16.36
+  }
+}

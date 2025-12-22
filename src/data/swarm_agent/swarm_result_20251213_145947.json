@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T14:59:47.533099",
+  "prompt": "Analyze these 3 Polymarket markets.\n\nFor EACH market:\n1. Estimate the TRUE PROBABILITY based on news context\n2. Calculate EDGE vs market price\n3. Only recommend trades with 10%+ edge\n\n\nMarket 1:\nTitle: Fight to Go the Distance?\nCurrent Market Price: 52.0% (this is the market's implied probability)\nRecent trade: $1,201.00 on No\nLink: https://polymarket.com/event/ufc-gil-ama3-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nAs of December 13, 2025, there is no specific information available regarding a prediction market titled \"Fight to Go the Distance.\" This could be due to the market being relatively new, niche, or not widely covered in mainstream news sources.\n\nHowever, the concept of prediction markets, particularly in the realm of sports events like Mixed Martial Arts (MMA), has been gaining traction. For instance, a study titled \"FightTracker: Real-time predictive analytics for Mixed Martial Arts bouts\" developed a data-driven solution that delivers real-time predictions for UFC fights. This system achieved 80% accuracy in predicting fight outcomes and demonstrated a 90.17% return on investment over an 8-week period against a bookmaker. ([arxiv.org](https://arxiv.org/abs/2312.11067?utm_source=openai))\n\nAdditionally, the integration of artificial intelligence (AI) into prediction markets is a growing trend. AI models are increasingly being used to analyze financial news and predict market movements. \n\n---\n\nMarket 2:\nTitle: Will FC Groningen win on 2025-12-13?\nCurrent Market Price: 31.0% (this is the market's implied probability)\nRecent trade: $4,635.64 on No\nLink: https://polymarket.com/event/ere-gro-vol-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nFC Groningen is set to face FC Volendam in an Eredivisie match on December 13, 2025, at Euroborg in Groningen. Recent analyses and betting odds suggest that FC Groningen is favored to win.\n\n**Recent Form:**\n- FC Groningen has struggled recently, failing to secure a win in their last five matches. ([welcome.bet](https://welcome.bet/groningen-vs-volendam-predictions-dec-13-2025/?utm_source=openai))\n- FC Volendam has managed to secure victories in two of their last five games. ([welcome.bet](https://welcome.bet/groningen-vs-volendam-predictions-dec-13-2025/?utm_source=openai))\n\n**Betting Odds:**\n- Bookmakers have favored FC Groningen to come out on top with odds of 1.5, while FC Volendam has odds of 6.25 for an away victory. ([welcome.bet](https://welcome.bet/groningen-vs-volendam-predictions-dec-13-2025/?utm_source=openai))\n- Other sources indicate odds of 1.42 for a Groningen win, 4.7 for a draw, and 7.0 for a Volendam victory. ([soccerdino.com](https://www.soccerdino.com/fc-groningen-v\n\n---\n\nMarket 3:\nTitle: Spurs vs. Thunder: O/U 231.5\nCurrent Market Price: 49.0% (this is the market's implied probability)\nRecent trade: $997.00 on Under\nLink: https://polymarket.com/event/nba-sas-okc-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nThe San Antonio Spurs are set to face the Oklahoma City Thunder in the NBA Cup semifinal on Saturday, December 13, 2025, at 9:00 PM ET in Las Vegas. The over/under for the game is set at 230.5 points.\n\n**Recent Team Performances:**\n\n- **Oklahoma City Thunder:** The Thunder are on a historic 16-game winning streak, matching the best 25-game start in NBA history with a 24-1 record. In their most recent game, they dominated the Phoenix Suns 138-89, with Shai Gilgeous-Alexander leading with 28 points and eight assists. ([reuters.com](https://www.reuters.com/sports/basketball/thunders-record-16th-straight-win-is-suns-worst-loss-ever--flm-2025-12-11/?utm_source=openai))\n\n- **San Antonio Spurs:** The Spurs have been performing well, achieving a 9-3 record during Victor Wembanyama's absence due to a left calf strain. Wembanyama is expected to return for this game, though he will be on a minutes restriction. ([reuters.com](https://www.reuters.com/sports/spurs-star-c-victor-wembanyama-calf-could\n\n---\n\n\nProvide predictions in the exact format specified.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\n\nIMPORTANT: For each market, you MUST estimate the TRUE PROBABILITY of the outcome.\nCompare your probability estimate to the market price to find EDGE (mispricing).\n\nEdge = Your Probability - Market Probability\n- Positive edge on YES side means market undervalues YES\n- Negative edge means market overvalues YES (bet NO instead)\n\nFor each market, provide your prediction in this EXACT format:\n\nMARKET [number]: [decision]\nYour Probability: [0-100]%\nMarket Price: [shown price]%\nEdge: [+/-X]% (Your prob - Market)\nExpected Value: [calculate: Edge \u00d7 potential payout]\nReasoning: [1-2 sentences explaining your probability estimate]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES = Your probability > Market price + 10% (minimum 10% edge)\n- NO = Your probability < Market price - 10%\n- NO_TRADE = Edge < 10% (not enough value)\n\nBe contrarian when you have conviction. Look for markets where news hasn't been priced in yet.",
+  "consensus_summary": "The consensus shows no actionable edge for Market 1 due to a lack of specific information. For Market 2, there is significant disagreement on interpreting the bookmaker odds versus recent form, leading to conflicting trade recommendations. Regarding Market 3, while most see reasons to favor the Under, the estimated edges vary and do not consistently meet the 10% threshold for a clear trade.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "DEEPSEEK",
+    "AI #3": "GEMINI"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.06,
+      "success": true
+    },
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4tHKsbTppjd7mLsbazs'}",
+      "response_time": 0.09,
+      "success": false
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4tHLBCmwWVCtRxXUYNF'}",
+      "response_time": 0.21,
+      "success": false
+    },
+    "openai": {
+      "response": "MARKET 1: NO_TRADE  \nYour Probability: 55%  \nMarket Price: 52.0%  \nEdge: +3% (Your prob - Market)  \nExpected Value: +$0.03 per $1 bet  \nReasoning: Without specific information about the fight, this estimate is based on general trends and predictive analytics in MMA, suggesting a moderate chance of the fight going the distance. However, the edge is not sufficient to recommend a trade.\n\nMARKET 2: NO  \nYour Probability: 40%  \nMarket Price: 31.0%  \nEdge: +9% (Your prob - Market)  \nExpected Value: +$0.09 per $1 bet  \nReasoning: Despite being favored by bookmakers, FC Groningen's recent poor form tempers confidence in their ability to secure a win. The market may be underestimating the difficulty they face, but the edge is slightly below the threshold for a trade.\n\nMARKET 3: NO_TRADE  \nYour Probability: 50%  \nMarket Price: 49.0%  \nEdge: +1% (Your prob - Market)  \nExpected Value: +$0.01 per $1 bet  \nReasoning: The Thunder's strong offensive performance suggests a potential for a high-scoring game, but with Wembanyama's return on a minutes restriction, the outcome remains uncertain. The market price reflects this balance, resulting in insufficient edge for a trade.",
+      "response_time": 4.93,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO_TRADE\nYour Probability: 50%\nMarket Price: 52.0%\nEdge: -2.0% (Your prob - Market)\nExpected Value: -2.0% (Edge \u00d7 potential payout)\nReasoning: No specific news or data is available for this fight, making any probability estimate a pure 50/50 guess with no informational edge over the market.\n\nMARKET 2: YES\nYour Probability: 65%\nMarket Price: 31.0%\nEdge: +34.0% (Your prob - Market)\nExpected Value: +34.0% (Edge \u00d7 potential payout)\nReasoning: Despite Groningen's poor recent form, bookmaker odds (~1.42-1.5) imply a win probability of 63-70%, which is significantly higher than the market's 31%, indicating a major mispricing.\n\nMARKET 3: NO\nYour Probability: 35%\nMarket Price: 49.0%\nEdge: -14.0% (Your prob - Market)\nExpected Value: +14.0% (Edge \u00d7 potential payout for NO side)\nReasoning: Wembanyama's return on a minutes restriction and the high-stakes, potentially defensive nature of an NBA Cup semifinal make the Under more likely than the market price suggests.",
+      "response_time": 9.61,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: NO_TRADE\nYour Probability: 50%\nMarket Price: 52.0%\nEdge: -2% (Your prob - Market)\nExpected Value: -0.02 * potential payout\nReasoning: Without specific fight details (fighters, weight class, promotion), it is impossible to accurately estimate the probability of a fight going the distance.",
+      "response_time": 9.95,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 14.64
+  }
+}

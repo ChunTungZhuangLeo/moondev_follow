@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T12:49:39.307123",
+  "prompt": "Analyze these 3 Polymarket markets.\n\nFor EACH market:\n1. Estimate the TRUE PROBABILITY based on news context\n2. Calculate EDGE vs market price\n3. Only recommend trades with 10%+ edge\n\n\nMarket 1:\nTitle: Will C\u00f3rdoba CF win on 2025-12-13?\nCurrent Market Price: 43.0% (this is the market's implied probability)\nRecent trade: $3,305.41 on Yes\nLink: https://polymarket.com/event/es2-cor-eib-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nC\u00f3rdoba CF is set to face SD Eibar today, December 13, 2025, at 14:00 CET in a crucial LaLiga Hypermotion match at the Nuevo Arc\u00e1ngel Stadium. Both teams are in need of points to improve their standings, with C\u00f3rdoba CF currently in 12th place with 22 points, and Eibar at the bottom of the table with 17 points. ([futbol24.com](https://www.futbol24.com/betting-tips/preview/13-12-2025-cordoba-cf-sd-eibar-betting-tip/?utm_source=openai))\n\nC\u00f3rdoba CF has been struggling recently, failing to secure a victory in their last five matches. However, coach Iv\u00e1n Ania expressed confidence, stating, \"La victoria est\u00e1 m\u00e1s cerca que nunca,\" emphasizing the team's commitment to ending the year on a positive note. ([as.com](https://as.com/futbol/segunda/ania-la-victoria-esta-mas-cerca-que-nunca-f202512-n/?utm_source=openai))\n\nBetting odds indicate a slight advantage for C\u00f3rdoba CF, with odds of 2.02 for a home win, compared to 3.64 for an away victory by Eibar. ([oddsfan.com](https://oddsfan.com/footbal\n\n---\n\nMarket 2:\nTitle: Spread: Arsenal FC (-1.5)\nCurrent Market Price: 34.0% (this is the market's implied probability)\nRecent trade: $918.34 on Wolverhampton Wanderers FC\nLink: https://polymarket.com/event/epl-ars-wol-2025-12-13-more-markets\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nArsenal FC's recent performance has been a mix of triumph and setback, influencing betting markets, particularly the spread of Arsenal (-1.5).\n\n**Recent Match Results:**\n\n- **December 6, 2025:** Arsenal suffered a 2-1 defeat to Aston Villa, ending their 18-match unbeaten streak. ([reuters.com](https://www.reuters.com/sports/soccer/aston-villa-stun-arsenal-with-buendias-last-gasp-winner-2025-12-06/?utm_source=openai))\n\n- **December 10, 2025:** The team bounced back with a 3-0 victory over Club Brugge in the Champions League, maintaining a perfect record in the group stage. ([reuters.com](https://www.reuters.com/sports/soccer/arsenal-make-it-six-out-six-with-easy-win-over-club-brugge-2025-12-10/?utm_source=openai))\n\n**Injury Updates:**\n\n- **Max Dowman:** The promising 15-year-old forward is expected to be sidelined for approximately eight weeks due to an ankle ligament injury. ([fourfourtwo.com](https://www.fourfourtwo.com/person/player/arsenal-dealt-fresh-injury-blow-as-another-player-s\n\n---\n\nMarket 3:\nTitle: Counter-Strike: CYBERSHOKE Esports vs 500 (BO3)\nCurrent Market Price: 85.4% (this is the market's implied probability)\nRecent trade: $3,220.75 on 500\nLink: https://polymarket.com/event/cs2-cs1-500-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nAs of December 13, 2025, there are no recent matches scheduled between CYBERSHOKE Esports and 500 in Counter-Strike: Global Offensive (CS:GO). Their most recent encounter occurred on November 12, 2025, during the Galaxy Battle 2025 Phase 5 tournament, where CYBERSHOKE Esports secured a 2-1 victory over 500. ([egamersworld.com](https://egamersworld.com/counterstrike/match/v6AbJvina/cybershoke-vs-team-500-3sJH4KbbQ?utm_source=openai))\n\nHistorically, 500 has dominated their head-to-head matchups, winning five out of seven encounters, with CYBERSHOKE Esports winning two. ([ensigame.com](https://ensigame.com/matches/cs-2/1577134-cybershoke-esports-cs-vs-500-500-gb-12-11-25?utm_source=openai))\n\nLooking ahead, a match between the two teams is scheduled for December 13, 2025, at 7:00 AM UTC, as part of the CCT Season 3 European Series #12. Betting odds indicate a slight favor towards 500, with odds of 1.82 compared to CYBERSHOKE's 1.87. ([tr.egamersworld.com](https://tr.egamersworld.com/counte\n\n---\n\n\nProvide predictions in the exact format specified.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\n\nIMPORTANT: For each market, you MUST estimate the TRUE PROBABILITY of the outcome.\nCompare your probability estimate to the market price to find EDGE (mispricing).\n\nEdge = Your Probability - Market Probability\n- Positive edge on YES side means market undervalues YES\n- Negative edge means market overvalues YES (bet NO instead)\n\nFor each market, provide your prediction in this EXACT format:\n\nMARKET [number]: [decision]\nYour Probability: [0-100]%\nMarket Price: [shown price]%\nEdge: [+/-X]% (Your prob - Market)\nExpected Value: [calculate: Edge \u00d7 potential payout]\nReasoning: [1-2 sentences explaining your probability estimate]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES = Your probability > Market price + 10% (minimum 10% edge)\n- NO = Your probability < Market price - 10%\n- NO_TRADE = Edge < 10% (not enough value)\n\nBe contrarian when you have conviction. Look for markets where news hasn't been priced in yet.",
+  "consensus_summary": "The consensus identifies no high-confidence trades, with all models agreeing Market 1 lacks a sufficient edge. For Market 2, there is sharp disagreement on Arsenal's capability, creating no clear signal. Regarding Market 3, all models agree the market price is overvalued, but none recommend a short trade due to a negative edge.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "GEMINI",
+    "AI #3": "DEEPSEEK"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.05,
+      "success": true
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4iMdkaMMhCiRL4uii8P'}",
+      "response_time": 0.08,
+      "success": false
+    },
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4iMdjqFbXJTPo4Ex6BU'}",
+      "response_time": 0.09,
+      "success": false
+    },
+    "openai": {
+      "response": "MARKET 1: NO_TRADE  \nYour Probability: 50%  \nMarket Price: 43.0%  \nEdge: +7%  \nExpected Value: +$0.07 per dollar bet  \nReasoning: Despite C\u00f3rdoba CF's recent struggles, they are playing at home against the bottom team, and the betting odds slightly favor them. However, the edge is not significant enough to recommend a trade.\n\nMARKET 2: YES  \nYour Probability: 50%  \nMarket Price: 34.0%  \nEdge: +16%  \nExpected Value: +$0.16 per dollar bet  \nReasoning: Arsenal's recent strong performance, including a decisive Champions League victory, suggests they have the capability to cover a -1.5 spread against Wolverhampton, especially given the market's lower implied probability.\n\nMARKET 3: NO  \nYour Probability: 75%  \nMarket Price: 85.4%  \nEdge: -10.4%  \nExpected Value: -$0.10 per dollar bet  \nReasoning: Although 500 has historically dominated matchups, the recent victory by CYBERSHOKE and the closely matched betting odds suggest that the probability of 500 winning is lower than the market implies.",
+      "response_time": 3.0,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: NO_TRADE\nYour Probability: 45.7%\nMarket Price: 43.0%\nEdge: +2.7% (Your prob - Market)\nExpected Value: +2.7%\nReasoning: Betting odds, when normalized to remove vigorish, indicate a 45.7% chance for C\u00f3rdoba CF to win at",
+      "response_time": 11.04,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO_TRADE\nYour Probability: 48%\nMarket Price: 43.0%\nEdge: +5.0% (Your prob - Market)\nExpected Value: 5.0% \u00d7 potential payout\nReasoning: C\u00f3rdoba is at home against the bottom team and betting odds imply ~49.5% win probability, but their 5-match winless streak and general inconsistency limit confidence for a strong edge.\n\nMARKET 2: NO\nYour Probability: 20%\nMarket Price: 34.0%\nEdge: -14.0% (Your prob - Market)\nExpected Value: 14.0% \u00d7 potential payout\nReasoning: Arsenal's -1.5 spread is ambitious after a recent league loss and key injuries; their bounce-back win was in the Champions League, and the Premier League is more competitive, making a win by 2+ goals less likely than the market suggests.\n\nMARKET 3: NO\nYour Probability: 65%\nMarket Price: 85.4%\nEdge: -20.4% (Your prob - Market)\nExpected Value: 20.4% \u00d7 potential payout\nReasoning: While 500 is favored, the head-to-head is competitive (5-2) and current betting odds are nearly even (1.82 vs 1.87), making an 85% implied probability for 500 a significant overvaluation in a volatile esports BO3.",
+      "response_time": 12.48,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 16.19
+  }
+}

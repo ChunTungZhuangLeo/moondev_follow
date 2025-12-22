@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-12T16:04:54.832365",
+  "prompt": "Analyze these 3 Polymarket markets and provide your predictions.\nYou have been given RECENT NEWS AND CONTEXT from web search for each market.\nUse this information to make more informed predictions.\n\n\nMarket 1:\nTitle: Games Total: O/U 2.5\nRecent trade: $1,403.16 on Over\nLink: https://polymarket.com/event/cs2-mouz-faze-2025-12-12\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nThe Over/Under (O/U) 2.5 goals market in football betting involves predicting whether the total number of goals scored in a match will be over or under 2.5. A bet on \"Over 2.5\" wins if three or more goals are scored, while \"Under 2.5\" wins if fewer than three goals are scored. ([spin-pal.com](https://spin-pal.com/over-under/?utm_source=openai))\n\n**Recent Match Insights:**\n\n- **UEFA Europa League Matches on November 6, 2025:**\n  - *SK Sturm Graz vs. Nottingham Forest:* The O/U line was set at 2.5 goals, with a slight lean towards the Under (52.4%). ([patreon.com](https://www.patreon.com/posts/november-6-2025-142988860?utm_source=openai))\n  - *Dinamo Zagreb vs. Celta Vigo:* The O/U line was also set at 2.5 goals, with a lean towards the Over (54%). ([patreon.com](https://www.patreon.com/posts/november-6-2025-142985954?l=fr&utm_source=openai))\n\n**Betting Strategies:**\n\n- **Live Betting Strategy:** In live betting, if one team scores in the first half, consider placing additional bets on b...\n\n---\n\nMarket 2:\nTitle: Dota 2: Heroic vs  Pipsqueak+4 (BO3)\nRecent trade: $925.00 on Heroic\nLink: https://polymarket.com/event/dota2-heroic-pi-2025-12-12\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nThe upcoming Dota 2 match between Heroic and Pipsqueak+4 is scheduled for December 12, 2025, at 18:00 UTC, as part of the ESL Dota2 2025 DreamLeague Season 27 Main Event Group Stage - Round 3. ([strafe.com](https://www.strafe.com/match/heroic-vs-pipsqueak-4-round-3-main-event-83cfb0/?utm_source=openai))\n\n**Team Overview:**\n\n- **Heroic**: Ranked #9 in the Strafe Dota 2 World Rankings, Heroic has secured 6 wins in their last 10 matches, indicating a solid performance. ([strafe.com](https://www.strafe.com/match/heroic-vs-pipsqueak-4-round-3-main-event-83cfb0/?utm_source=openai))\n\n- **Pipsqueak+4**: Ranked #25, Pipsqueak+4 has also achieved 6 wins in their last 10 matches, showcasing comparable recent form. ([strafe.com](https://www.strafe.com/match/heroic-vs-pipsqueak-4-round-3-main-event-83cfb0/?utm_source=openai))\n\n**Recent Performances:**\n\n- **Heroic**: In their most recent match on December 10, 2025, Heroic faced MOUZ in the DreamLeague Season 27 Main Event, where they were defeated 2...\n\n---\n\nMarket 3:\nTitle: Will FC Bayern M\u00fcnchen win on 2025-12-14?\nRecent trade: $30,570.21 on Yes\nLink: https://polymarket.com/event/bun-bay-mai-2025-12-14\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nFC Bayern M\u00fcnchen is set to face 1. FSV Mainz 05 on Sunday, December 14, 2025, at 16:30 CET in a Bundesliga match at the Allianz Arena. ([bundesliga.com](https://www.bundesliga.com/en/bundesliga/matchday/2025-2026/14/fc-bayern-muenchen-vs-1-fsv-mainz-05?utm_source=openai))\n\n**Recent Performance:**\n\n- **Bayern Munich:** The team is in exceptional form, leading the Bundesliga with 37 points and a goal difference of +40 after 13 matches. ([bundesliga.com](https://www.bundesliga.com/en/bundesliga/matchday/2025-2026/14/fc-bayern-muenchen-vs-1-fsv-mainz-05?utm_source=openai)) In their most recent match on December 9, 2025, Bayern secured a dramatic 3-1 comeback victory over Sporting Lisbon in the Champions League, scoring three goals in a 12-minute span during the second half. ([reuters.com](https://www.reuters.com/sports/soccer/bayern-stage-three-goal-comeback-12-minutes-beat-sporting-3-1-2025-12-09/?utm_source=openai))\n\n- **Mainz 05:** The team is struggling, sitting at the bottom of the B...\n\n---\n\n\nProvide predictions for each market in the specified format.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\nUse this context to make more informed predictions.\n\nFor each market, provide your prediction in this exact format:\n\nMARKET [number]: [decision]\nReasoning: [brief 1-2 sentence explanation that references the news context if relevant]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES means you would bet on the \"Yes\" outcome\n- NO means you would bet on the \"No\" outcome\n- NO_TRADE means you would not take a position\n\nBe concise and focused on the most promising opportunities.",
+  "consensus_summary": "Consensus strongly favors Bayern Munich to win given their dominant form versus Mainz's struggles. For the Dota 2 match, opinions are split between favoring the higher-ranked Heroic and calling it too close to predict. Analysts overwhelmingly agree the CS2 market lacks relevant news, making a prediction inadvisable.",
+  "model_mapping": {
+    "AI #1": "GEMINI",
+    "AI #2": "OPENAI",
+    "AI #3": "OPUS",
+    "AI #4": "CLAUDE",
+    "AI #5": "DEEPSEEK"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.06,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: NO_TRADE\nReasoning: The market is for a CS2 match, but the provided news context exclusively discusses football betting strategies and goal statistics, which is irrelevant to the event. Therefore, an informed prediction cannot be made.\n\nMARKET 2: YES\nReasoning: Heroic is ranked significantly higher (#9 vs #25) than Pipsqueak+4 in the Strafe Dota 2 World Rankings, indicating they are the stronger team despite both having similar recent win records.\n\nMARKET 3: YES\nReasoning: FC Bayern M\u00fcnchen is in exceptional form, leading the Bundesliga and recently securing a dramatic comeback victory, while their opponent 1. FSV Mainz 05 is struggling at the bottom of the league.",
+      "response_time": 4.71,
+      "success": true
+    },
+    "openai": {
+      "response": "MARKET 1: NO_TRADE  \nReasoning: The context provided does not directly relate to the specific match between MOUZ and FaZe in CS2, and instead discusses football betting. Without specific insights into the teams' form or recent performances in CS2, it is difficult to make an informed prediction on the Over/Under 2.5 games market.\n\nMARKET 2: NO_TRADE  \nReasoning: Both Heroic and Pipsqueak+4 have similar recent performance records, with each winning 6 out of their last 10 matches. Although Heroic is ranked higher, the recent defeat to MOUZ suggests some vulnerability. The match seems evenly matched, making it challenging to confidently predict an outcome.\n\nMARKET 3: YES  \nReasoning: Bayern Munich is in exceptional form, leading the Bundesliga with a significant goal difference and a recent impressive comeback victory against Sporting Lisbon. Mainz 05, on the other hand, is struggling at the bottom of the league. Given Bayern's current performance, betting on them to win seems highly favorable.",
+      "response_time": 6.75,
+      "success": true
+    },
+    "opus": {
+      "response": "MARKET 1: YES\nReasoning: This appears to be a CS2 esports match (MOUZ vs FaZe), and competitive CS2 matches frequently go to 3+ maps in best-of-3 series between evenly matched teams. The recent trade volume favors Over, suggesting market sentiment aligns with this expectation.\n\nMARKET 2: YES\nReasoning: Despite both teams having similar recent records (6-10), Heroic is ranked significantly higher (#9 vs #25) and has more experience at top-tier events. In a BO3 format, the higher-ranked team with better overall pedigree typically has the edge.\n\nMARKET 3: YES\nReasoning: Bayern Munich is in exceptional form, leading Bundesliga with 37 points and a +40 goal difference, playing at home at Allianz Arena against struggling Mainz 05 who sit at the bottom of the table. This is a strong favorite situation with high probability of Bayern winning.",
+      "response_time": 7.93,
+      "success": true
+    },
+    "claude": {
+      "response": "MARKET 1: NO_TRADE\nReasoning: This is a CS:GO match (not football), and the news context provided is about football betting strategies which is irrelevant. Without proper context about MOUZ vs FaZe's typical map counts and recent BO3 performances, I cannot make an informed prediction.\n\nMARKET 2: Heroic\nReasoning: Heroic holds a significant ranking advantage (#9 vs #25) and recently competed closely against top-tier team MOUZ, suggesting they're facing stronger opposition and maintaining competitive form. Both teams have identical 6-4 recent records, but Heroic's higher caliber of competition gives them the edge in this BO3.\n\nMARKET 3: YES\nReasoning: Bayern M\u00fcnchen is in dominant form, leading the Bundesliga with 37 points and +40 goal difference, while Mainz sits at the bottom of the table. Playing at home in the Allianz Arena after a strong comeback win against Sporting, Bayern has overwhelming momentum and quality advantage.",
+      "response_time": 8.81,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO_TRADE  \nReasoning: The provided news context is generic betting strategy and unrelated examples from football/UEFA Europa League, offering no specific insight into the CS2 match between mouz and FaZe.\n\nMARKET 2: NO_TRADE  \nReasoning: While Heroic is ranked higher (#9 vs. #25), both teams have identical recent form (6 wins in last 10), and the context cuts off before detailing Heroic's recent loss, indicating insufficient decisive information to confidently bet against the underdog.\n\nMARKET 3: YES  \nReasoning: Bayern Munich is in exceptional form, leading the Bundesliga, while Mainz 05 is struggling at the bottom, making a Bayern home victory the strongly supported outcome.",
+      "response_time": 11.63,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 6,
+    "failed_responses": 0,
+    "total_time": 23.76
+  }
+}

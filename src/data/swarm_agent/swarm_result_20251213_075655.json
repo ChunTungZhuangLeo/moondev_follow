@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T07:56:55.824813",
+  "prompt": "Analyze these 3 Polymarket markets.\n\nFor EACH market:\n1. Estimate the TRUE PROBABILITY based on news context\n2. Calculate EDGE vs market price\n3. Only recommend trades with 10%+ edge\n\n\nMarket 1:\nTitle: Will Fernando Mendoza win the Heisman Trophy?\nCurrent Market Price: 98.0% (this is the market's implied probability)\nRecent trade: $13,205.35 on Yes\nLink: https://polymarket.com/event/heisman-trophy-winner\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nAs of December 13, 2025, Fernando Mendoza, quarterback for the Indiana Hoosiers, is a finalist for the Heisman Trophy, alongside Vanderbilt's Diego Pavia, Notre Dame's Jeremiyah Love, and Ohio State's Julian Sayin. ([heisman.com](https://www.heisman.com/articles/love-mendoza-pavia-sayin-named-2025-heisman-trophy-finalists/?utm_source=openai))\n\n**Recent Achievements:**\n\n- **Maxwell and Davey O'Brien Awards:** Mendoza was honored with both the Maxwell Award for the nation's top player and the Davey O'Brien Award for best quarterback. ([reuters.com](https://www.reuters.com/sports/indianas-fernando-mendoza-headlines-college-football-award-winners--flm-2025-12-13/?utm_source=openai))\n\n- **Associated Press Player of the Year:** He was named the AP Player of the Year after leading Indiana to a perfect 13-0 season, a Big Ten championship, and the No. 1 seed in the College Football Playoff. ([apnews.com](https://apnews.com/article/c74829567a6d158eb90a821e512ad281?utm_source=openai))\n\n**Heisman \n\n---\n\nMarket 2:\nTitle: Arsenal FC vs. Wolverhampton Wanderers FC: O/U 2.5\nCurrent Market Price: 65.0% (this is the market's implied probability)\nRecent trade: $943.15 on Over\nLink: https://polymarket.com/event/epl-ars-wol-2025-12-13-more-markets\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\n\n## EPL Schedule\n- Wolverhampton Wanderers @ Arsenal FC on Saturday, Dec 13, 2025 at 12:00 PM PST\n\n\nArsenal FC is set to host Wolverhampton Wanderers FC at the Emirates Stadium on Saturday, December 13, 2025. Arsenal leads the Premier League with 33 points from 15 matches, while Wolverhampton sits at the bottom of the table with only 2 points from 15 games. ([forebet.com](https://www.forebet.com/en/football-match-previews/24470-arsenal-set-for-statement-performance-against-struggling-wolverhampton?utm_source=openai))\n\n**Recent Form:**\n\n- **Arsenal:** Despite a recent 2-1 defeat to Aston Villa, ending their 18-match unbeaten run, Arsenal remains at the top of the league. ([reuters.com](https://www.reuters.com/sports/soccer/gyokeres-urges-arsenal-bounce-back-after-villa-end-unbeaten-run-2025-12-07/?utm_source=openai)) In their most recent match, they secured a 3-0 victory over Club Brugge in the Champions League, with winger Noni Madueke scoring twice. ([reuters.com](https://www.reuters.\n\n---\n\nMarket 3:\nTitle: Liverpool FC vs. Brighton & Hove Albion FC: O/U 2.5\nCurrent Market Price: 63.0% (this is the market's implied probability)\nRecent trade: $999.81 on Over\nLink: https://polymarket.com/event/epl-liv-bri-2025-12-13-more-markets\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nLiverpool FC is set to face Brighton & Hove Albion FC on December 13, 2025, at Anfield. Recent developments have intensified interest in the Over/Under 2.5 goals market for this match.\n\n**Recent News and Context:**\n\n- **Mohamed Salah's Situation:** Liverpool manager Arne Slot is scheduled to meet with Mohamed Salah to address tensions following the forward's public criticism of the club after a 3-3 draw with Leeds United. Salah's involvement in the upcoming match against Brighton is uncertain, and his future at the club remains under scrutiny. ([reuters.com](https://www.reuters.com/sports/soccer/liverpool-boss-slot-meet-salah-amid-tension-2025-12-12/?utm_source=openai))\n\n- **Team Form:** Liverpool is currently 10th in the Premier League, with 23 points from 15 matches. They are on a four-game unbeaten run across all competitions, including a 1-0 Champions League victory over Inter Milan. Brighton, on the other hand, drew 1-1 at home against West Ham United in their last match on Decemb\n\n---\n\n\nProvide predictions in the exact format specified.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\n\nIMPORTANT: For each market, you MUST estimate the TRUE PROBABILITY of the outcome.\nCompare your probability estimate to the market price to find EDGE (mispricing).\n\nEdge = Your Probability - Market Probability\n- Positive edge on YES side means market undervalues YES\n- Negative edge means market overvalues YES (bet NO instead)\n\nFor each market, provide your prediction in this EXACT format:\n\nMARKET [number]: [decision]\nYour Probability: [0-100]%\nMarket Price: [shown price]%\nEdge: [+/-X]% (Your prob - Market)\nExpected Value: [calculate: Edge \u00d7 potential payout]\nReasoning: [1-2 sentences explaining your probability estimate]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES = Your probability > Market price + 10% (minimum 10% edge)\n- NO = Your probability < Market price - 10%\n- NO_TRADE = Edge < 10% (not enough value)\n\nBe contrarian when you have conviction. Look for markets where news hasn't been priced in yet.",
+  "consensus_summary": "The consensus identifies a strong edge only in Market 2 (Arsenal/Wolves Over), with multiple AIs agreeing its true probability significantly exceeds the 65% market price. For Market 1 (Mendoza), all models agree he is the heavy favorite but see no actionable edge as the market price at 98% is already efficient. Opinions diverge on Market 3 (Liverpool/Brighton Over), ranging from a slight positive edge to a strong negative one, indicating high uncertainty and no clear trade.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "GEMINI",
+    "AI #3": "DEEPSEEK"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.05,
+      "success": true
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4L2xsRysQCqjaR67eLQ'}",
+      "response_time": 0.08,
+      "success": false
+    },
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4L2xrS9ZgbVsgtDNqw7'}",
+      "response_time": 0.08,
+      "success": false
+    },
+    "openai": {
+      "response": "MARKET 1: NO_TRADE  \nYour Probability: 95%  \nMarket Price: 98.0%  \nEdge: -3% (Your prob - Market)  \nExpected Value: -$0.03 per $1 bet  \nReasoning: Mendoza's recent accolades and Indiana's perfect season position him as the favorite, but at 98%, the market is already pricing in near certainty, leaving little room for a profitable trade.\n\nMARKET 2: YES  \nYour Probability: 80%  \nMarket Price: 65.0%  \nEdge: +15% (Your prob - Market)  \nExpected Value: $0.15 per $1 bet  \nReasoning: Arsenal's dominant form and Wolverhampton's poor performance suggest a high-scoring game is likely, especially given Arsenal's recent attacking displays.\n\nMARKET 3: NO_TRADE  \nYour Probability: 70%  \nMarket Price: 63.0%  \nEdge: +7% (Your prob - Market)  \nExpected Value: $0.07 per $1 bet  \nReasoning: Despite Liverpool's potential attacking issues with Salah, their recent form and Brighton's moderate defensive record point towards a slightly higher chance of over 2.5 goals, but not enough edge for a trade.",
+      "response_time": 2.83,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: NO_TRADE\nYour Probability: 99.5%\nMarket Price: 98.0%\nEdge: +1.5% (Your prob - Market)\nExpected Value: 0.015 \u00d7 potential payout\nReasoning: Fernando Mendoza's sweep of major awards (Maxwell, Davey O'Brien, AP Player of the Year",
+      "response_time": 10.22,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO_TRADE\nYour Probability: 99.5%\nMarket Price: 98.0%\nEdge: +1.5% (Your prob - Market)\nExpected Value: 1.5% \u00d7 (100/98 - 1) \u2248 0.03%\nReasoning: Mendoza has won every major player of the year award and led his team to a perfect season, making him the overwhelming favorite, but the 98% market price already reflects this near-certainty, leaving minimal edge.\n\nMARKET 2: YES\nYour Probability: 85.0%\nMarket Price: 65.0%\nEdge: +20.0% (Your prob - Market)\nExpected Value: 20% \u00d7 (100/65 - 1) \u2248 10.8%\nReasoning: Arsenal, the league leader, is facing the last-place team with a massive gap in quality and form; even considering a potential let-down, the probability of 3+ total goals is significantly higher than the market implies.\n\nMARKET 3: NO\nYour Probability: 45.0%\nMarket Price: 63.0%\nEdge: -18.0% (Your prob - Market)\nExpected Value: 18% \u00d7 (100/37 - 1) \u2248 48.6% (on NO side)\nReasoning: Internal team tension surrounding Salah creates significant offensive uncertainty for Liverpool, and Brighton's recent low-scoring draw suggests a tighter match is more likely than the market expects.",
+      "response_time": 11.15,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 16.05
+  }
+}

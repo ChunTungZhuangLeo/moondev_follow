@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T05:03:06.751915",
+  "prompt": "Analyze these 3 Polymarket markets and provide your predictions.\nYou have been given RECENT NEWS AND CONTEXT from web search for each market.\nUse this information to make more informed predictions.\n\n\nMarket 1:\nTitle: Arsenal FC vs. Wolverhampton Wanderers FC: O/U 1.5\nRecent trade: $1,300.14 on Over\nLink: https://polymarket.com/event/epl-ars-wol-2025-12-13-more-markets\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nArsenal FC is set to host Wolverhampton Wanderers FC at the Emirates Stadium on Saturday, December 13, 2025, at 12:00 PM PST. \n\n**Recent Form and Team News:**\n\n- **Arsenal FC:** The Gunners lead the Premier League with 33 points from 15 matches, boasting 10 wins, 3 draws, and 2 losses. They have scored 28 goals and conceded 9, indicating a strong offensive and defensive record. In their last six league games, Arsenal secured 3 wins and 2 draws, with only 1 loss. At home, they have won their last three Premier League matches, averaging 3 goals scored and conceding less than 1 goal per game. ([forebet.com](https://www.forebet.com/en/football-match-previews/24470-arsenal-set-for-statement-performance-against-struggling-wolverhampton?utm_source=openai))\n\n- **Wolverhampton Wanderers FC:** Wolves are at the bottom of the Premier League table with just 2 points from 15 matches, having yet to record a win. They have scored only 8 goals and conceded 33, resulting in a -25 goal difference. In th...\n\n---\n\nMarket 2:\nTitle: Chelsea FC vs. Everton FC: O/U 1.5\nRecent trade: $2,226.20 on Over\nLink: https://polymarket.com/event/epl-che-eve-2025-12-13-more-markets\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nChelsea FC is set to host Everton FC at Stamford Bridge on Saturday, December 13, 2025, in a Premier League fixture. The current betting odds for the Over/Under 1.5 goals market are:\n\n- **Over 1.5 Goals**: 1.25\n- **Under 1.5 Goals**: 3.50\n\n([pokerstars.com](https://www.pokerstars.com/sports/soccer/1/english-premier-league/10932509/chelsea-v-everton/35027430/?utm_source=openai))\n\n**Recent Team News and Form:**\n\n- **Chelsea FC**: Manager Enzo Maresca has confirmed that Cole Palmer and Wesley Fofana are available for selection after recovering from injuries. However, striker Liam Delap is sidelined for two to four weeks due to a shoulder injury sustained in the recent goalless draw against Bournemouth. ([reuters.com](https://www.reuters.com/sports/soccer/palmer-fofana-available-everton-clash-chelsea-look-consistency-2025-12-12/?utm_source=openai)) Chelsea is aiming to regain form after going winless in their last four matches. ([reuters.com](https://www.reuters.com/sports/soccer/palmer-fo...\n\n---\n\nMarket 3:\nTitle: FC Barcelona vs. CA Osasuna: O/U 1.5\nRecent trade: $2,006.14 on Over\nLink: https://polymarket.com/event/lal-bar-osa-2025-12-13-more-markets\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nFC Barcelona is set to face CA Osasuna on December 13, 2025, at Camp Nou. Barcelona enters the match as strong favorites, with betting odds of 1.17 for a win, 7.50 for a draw, and 12.00 for an Osasuna victory. ([pokerstars.com](https://www.pokerstars.com/sports/soccer/1/spanish-la-liga/117/barcelona-v-osasuna/35016374/?utm_source=openai))\n\n**Recent Form and Team News:**\n\n- **FC Barcelona:** Under manager Hansi Flick, Barcelona has demonstrated impressive form, securing six consecutive league victories and leading La Liga with 40 points from 16 matches. The team boasts the league's best attack, scoring 47 goals, and has maintained an unbeaten home record in their last seven league matches. ([footballtips.com](https://www.footballtips.com/previews/barcelona-vs-osasuna-predictions-betting-tips-13-december-2025/?utm_source=openai)) Key players Raphinha and Pedri have returned from injury, contributing to recent successes, including a 2-1 Champions League win over Eintracht Frankfurt. ([reu...\n\n---\n\n\nProvide predictions for each market in the specified format.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\nUse this context to make more informed predictions.\n\nFor each market, provide your prediction in this exact format:\n\nMARKET [number]: [decision]\nReasoning: [brief 1-2 sentence explanation that references the news context if relevant]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES means you would bet on the \"Yes\" outcome\n- NO means you would bet on the \"No\" outcome\n- NO_TRADE means you would not take a position\n\nBe concise and focused on the most promising opportunities.",
+  "consensus_summary": "The consensus strongly predicts \"YES\" for Over 1.5 goals in the Arsenal and Barcelona matches, citing both teams' dominant home form and their opponents' defensive weaknesses. There is near-unanimous agreement on these two markets, with no dissenting opinions among the AIs. For the Chelsea match, while most models also predict \"YES\" based on favorable betting odds and returning players, one notable dissenting response advises \"NO_TRADE\" due to Chelsea's recent poor form and injury concerns, indicating slightly less certainty.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "GEMINI",
+    "AI #3": "OPUS",
+    "AI #4": "DEEPSEEK",
+    "AI #5": "CLAUDE"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.05,
+      "success": true
+    },
+    "openai": {
+      "response": "MARKET 1: YES  \nReasoning: Arsenal's strong offensive form and Wolverhampton's poor defensive record suggest a high likelihood of more than 1.5 goals being scored. Arsenal's recent home matches have averaged 3 goals, and Wolverhampton's -25 goal difference indicates vulnerability to conceding multiple goals.\n\nMARKET 2: YES  \nReasoning: Despite Chelsea's recent struggles, the availability of key players like Cole Palmer and Wesley Fofana boosts their attacking potential. Everton's inconsistent form and the low odds for over 1.5 goals further imply a likelihood of multiple goals in the match.\n\nMARKET 3: YES  \nReasoning: FC Barcelona's potent attack, with 47 goals in 16 matches, and their unbeaten home record make it highly likely they will score more than 1.5 goals against Osasuna, who are significant underdogs. The return of key offensive players enhances Barcelona's scoring chances.",
+      "response_time": 3.06,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: YES\nReasoning: Arsenal, leading the Premier League with a strong offense and home record, faces bottom-of-the-table Wolverhampton, who have a poor defensive record and have yet to win, making it very likely more than 1.5 goals will be scored.\n\nMARKET 2: YES\nReasoning: Betting odds strongly favor Over 1.5 goals at 1.25, and key attacking player Cole Palmer is available for Chelsea, indicating a higher likelihood of goals despite their recent form.\n\nMARKET 3: YES\nReasoning: FC Barcelona is in dominant form, leading La Liga with the best attack (47 goals in 16 matches) and has key players returning from injury, making it highly probable they will score multiple goals against Osasuna at home.",
+      "response_time": 4.33,
+      "success": true
+    },
+    "opus": {
+      "response": "MARKET 1: YES\nReasoning: Arsenal at home against bottom-of-the-table Wolves (0 wins, -25 goal difference) makes Over 1.5 goals extremely likely. Arsenal averages 3 goals at home in recent matches and Wolves have conceded 33 goals in 15 games.\n\nMARKET 2: YES\nReasoning: Chelsea hosting Everton with odds of 1.25 for Over 1.5 suggests high confidence in at least 2 goals. Even with Chelsea's recent winless streak, Palmer and Fofana returning should boost their attack against an inconsistent Everton side.\n\nMARKET 3: YES\nReasoning: Barcelona at Camp Nou with the league's best attack (47 goals in 16 matches) and an unbeaten home record in their last 7 league matches makes Over 1.5 goals highly probable against Osasuna. Barca has been scoring freely under Flick.",
+      "response_time": 5.69,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: YES  \nReasoning: Arsenal is in dominant form, averaging 3 goals per game at home, while Wolves are bottom of the league with a porous defense, making Over 1.5 goals highly probable.\n\nMARKET 2: NO_TRADE  \nReasoning: Chelsea is winless in four and missing a striker, while Everton could play defensively; the context is insufficient to confidently bet against the heavy Over money despite the low odds.\n\nMARKET 3: YES  \nReasoning: Barcelona is the league leader with the best attack, on a six-game winning streak and unbeaten at home, facing an Osasuna side they are heavily favored to score multiple goals against.",
+      "response_time": 6.4,
+      "success": true
+    },
+    "claude": {
+      "response": "MARKET 1: YES\nReasoning: Arsenal is in excellent home form (3 straight wins, averaging 3 goals scored) facing bottom-placed Wolves who have conceded 33 goals in 15 matches with zero wins. The odds heavily favor over 1.5 goals given Arsenal's 28 goals scored this season and Wolves' defensive struggles.\n\nMARKET 2: YES\nReasoning: The betting odds strongly favor Over 1.5 at 1.25 vs 3.50 for Under. Chelsea has key players Palmer and Fofana returning from injury and will be motivated to end their four-match winless streak at home against an Everton side they should dominate offensively.\n\nMARKET 3: YES\nReasoning: Barcelona leads La Liga with 47 goals scored (best attack in the league), has won 6 consecutive league matches, and maintains an unbeaten 7-match home record. With Raphinha and Pedri back from injury and facing mid-table Osasuna, over 1.5 goals is highly probable given their offensive firepower.",
+      "response_time": 7.39,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 6,
+    "failed_responses": 0,
+    "total_time": 12.31
+  }
+}

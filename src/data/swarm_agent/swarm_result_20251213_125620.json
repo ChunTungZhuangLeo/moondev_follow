@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T12:56:20.409167",
+  "prompt": "Analyze these 3 Polymarket markets and provide your predictions.\nYou have been given RECENT NEWS AND CONTEXT from web search for each market.\nUse this information to make more informed predictions.\n\n\nMarket 1:\nTitle: Will Norwich City FC win on 2025-12-13?\nRecent trade: $1,769.20 on No\nLink: https://polymarket.com/event/elc-nor-sot-2025-12-13\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nNorwich City FC is set to face Southampton FC today, December 13, 2025, at Carrow Road in an English League Championship match. ([foxsports.com](https://www.foxsports.com/soccer/english-championship-norwich-city-vs-southampton-dec-13-2025-game-boxscore-629247?utm_source=openai))\n\n**Recent Performance:**\n\n- **Norwich City:** The team has struggled this season, currently sitting 23rd in the league with 14 points from 20 matches. ([espn.com](https://www.espn.com/soccer/match/_/gameId/744830?utm_source=openai)) Their recent form includes a 1-1 draw against Sheffield United on December 9, 2025. ([espn.com](https://www.espn.com/soccer/match/_/gameId/744830?utm_source=openai))\n\n- **Southampton FC:** In contrast, Southampton is in strong form, having secured six wins in their last seven league matches. ([dailysports.net](https://dailysports.net/predictions/norwich-city-vs-southampton-prediction-h2h-and-probable-lineups-december-13-2025/?utm_source=openai)) They are positioned 8th in the league...\n\n---\n\nMarket 2:\nTitle: Will US Lusitanos de Saint-Maur vs. Lille OSC end in a draw?\nRecent trade: $4,071.54 on No\nLink: https://polymarket.com/event/cde-sml-lil-2025-12-20\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nUS Lusitanos de Saint-Maur is set to face Lille OSC in a Coupe de France match on December 20, 2025, at Stade Dominique Duvauchelle. ([sofascore.com](https://www.sofascore.com/fr/football/match/us-lusitanos-saint-maur-lille/THsaK?utm_source=openai))\n\n**Recent Performances:**\n\n- **US Lusitanos de Saint-Maur:** In their latest match on December 6, 2025, they drew 1-1 against Chasselay MDA. ([kingscore.pt](https://kingscore.pt/jogo/st-maur-lusitanos-vs-lille?utm_source=openai))\n\n- **Lille OSC:** On December 5, 2025, Lille secured a 1-0 victory over Olympique Marseille. ([kingscore.pt](https://kingscore.pt/jogo/st-maur-lusitanos-vs-lille?utm_source=openai))\n\n**Head-to-Head Record:**\n\nThis will be the first encounter between US Lusitanos de Saint-Maur and Lille OSC, making it challenging to predict the outcome based on previous matchups. ([nostrabet.com](https://nostrabet.com/pt-br/palpites/st-maur-lusitanos-lille/?utm_source=openai))\n\n**Expert Opinions:**\n\nAnalysts suggest that Lille OSC, ...\n\n---\n\nMarket 3:\nTitle: Counter-Strike: CYBERSHOKE Esports vs 500 - Map 2 Winner\nRecent trade: $1,100.00 on 500\nLink: https://polymarket.com/event/cs2-cs1-500-2025-12-13\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nAs of December 13, 2025, CYBERSHOKE Esports and 500 are set to face off in a Best of 3 series during the CCT Season 3 European Series #12 Quarterfinals. ([strafe.com](https://www.strafe.com/match/500-vs-cybershoke-esports-quarterfinal-2025-cct-season-3-european-series-12-6449d8/?utm_source=openai))\n\n**Recent Head-to-Head Record:**\n\n- **November 12, 2025:** CYBERSHOKE Esports defeated 500 with a 2-1 scoreline. ([gosugamers.net](https://www.gosugamers.net/counterstrike/tournaments/62403-galaxy-battle-2025-phase-5/matches/634088-cybershoke-esports-vs-500?utm_source=openai))\n\n- **August 15, 2025:** 500 secured a 2-0 victory over CYBERSHOKE Esports. ([dust2.us](https://www.dust2.us/matches/2384506/500-vs-cybershoke?utm_source=openai))\n\n**Current Form:**\n\n- **500:** Over the past 30 days, 500 has achieved a 52% win rate, with 12 wins and 11 losses. ([tips.gg](https://tips.gg/archive/cybershoke-esports-csgo-vs-ex-skade-csgo/?utm_source=openai))\n\n- **CYBERSHOKE Esports:** In the same period, C...\n\n---\n\n\nProvide predictions for each market in the specified format.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\nUse this context to make more informed predictions.\n\nFor each market, provide your prediction in this exact format:\n\nMARKET [number]: [decision]\nReasoning: [brief 1-2 sentence explanation that references the news context if relevant]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES means you would bet on the \"Yes\" outcome\n- NO means you would bet on the \"No\" outcome\n- NO_TRADE means you would not take a position\n\nBe concise and focused on the most promising opportunities.",
+  "consensus_summary": "All three AI models unanimously predict \"NO\" for Markets 1 and 2, citing Norwich City's poor form versus Southampton's strength and Lille OSC's superiority over the lower-division US Lusitanos. They also share a consensus of \"NO_TRADE\" for Market 3, agreeing the split head-to-head record and incomplete form data make the Map 2 winner too uncertain. There are no disagreements among the responses, providing clear and aligned predictions for each market.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "GEMINI",
+    "AI #3": "DEEPSEEK"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.05,
+      "success": true
+    },
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4isb3wPjgKSeZsNPdmM'}",
+      "response_time": 0.08,
+      "success": false
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4isb5vXkAWdUxLXWSwW'}",
+      "response_time": 0.09,
+      "success": false
+    },
+    "openai": {
+      "response": "MARKET 1: NO  \nReasoning: Norwich City FC is currently struggling in the league, sitting at 23rd place with only 14 points from 20 matches, while Southampton FC is in strong form, having won six out of their last seven league matches. This disparity in performance makes it unlikely for Norwich City to win.\n\nMARKET 2: NO  \nReasoning: Lille OSC is coming off a victory against a strong team like Olympique Marseille and is generally a higher-tier team compared to US Lusitanos de Saint-Maur. Given their recent form and the level difference, it is unlikely that the match will end in a draw.\n\nMARKET 3: NO_TRADE  \nReasoning: The head-to-head record between CYBERSHOKE Esports and 500 is mixed, with each team having recently won against the other. The win rates are close as well, making the outcome of their Map 2 encounter uncertain. Therefore, taking a position in this market presents a high level of risk.",
+      "response_time": 2.53,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: NO\nReasoning: Norwich City FC is struggling at 23rd in the league, while Southampton FC is in strong form with six wins in their last seven matches, making a Norwich win unlikely.\n\nMARKET 2: NO\nReasoning: Lille OSC is considered the stronger team, having recently secured a victory against Olympique Marseille, suggesting they are more likely to win outright rather than draw against US Lusitanos de Saint-Maur.\n\nMARKET 3: NO_TRADE\nReasoning: The head-to-head record is split, and the provided context for CYBERSHOKE Esports' current form is incomplete, making it difficult to confidently predict the Map 2 winner.",
+      "response_time": 5.08,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO  \nReasoning: Norwich is in 23rd place with poor form, while Southampton has won six of its last seven matches, making a Norwich victory highly unlikely based on the provided context.\n\nMARKET 2: NO  \nReasoning: Lille OSC is a top-tier Ligue 1 club coming off a win against Marseille, while US Lusitanos is a much lower-division side, so a draw in this Coupe de France match is improbable.\n\nMARKET 3: NO_TRADE  \nReasoning: The head-to-head record is split and recent form data for CYBERSHOKE is incomplete in the context, making the Map 2 winner too uncertain to confidently bet on either side.",
+      "response_time": 6.0,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 10.94
+  }
+}

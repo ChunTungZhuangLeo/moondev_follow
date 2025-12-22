@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T09:54:55.016413",
+  "prompt": "Analyze these 3 Polymarket markets.\n\nFor EACH market:\n1. Estimate the TRUE PROBABILITY based on news context\n2. Calculate EDGE vs market price\n3. Only recommend trades with 10%+ edge\n\n\nMarket 1:\nTitle: Parma Calcio 1913 vs. SS Lazio: O/U 2.5\nCurrent Market Price: 61.0% (this is the market's implied probability)\nRecent trade: $900.00 on Under\nLink: https://polymarket.com/event/sea-par-laz-2025-12-13-more-markets\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nThe upcoming Serie A match between Parma Calcio 1913 and SS Lazio is scheduled for Saturday, December 13, 2025, at 12:00 PM GMT at Stadio Ennio Tardini in Parma. ([pokerstars.com](https://www.pokerstars.com/sports/soccer/1/italian-serie-a/81/parma-v-lazio/35016412/?utm_source=openai))\n\n**Recent Form and Head-to-Head:**\n\n- **Parma Calcio 1913:** Inconsistent performances have seen Parma secure two wins, one draw, and three losses in their last six matches. At home, they've struggled, with only one win in seven games. ([futbol24.com](https://www.futbol24.com/betting-tips/preview/13-12-2025-parma-calcio-1913-s-s-lazio-betting-tip/?utm_source=openai))\n\n- **SS Lazio:** Lazio has shown a more balanced form, with three wins, one draw, and two losses in their recent six matches. However, their away record is modest, with just one win from seven games. ([futbol24.com](https://www.futbol24.com/betting-tips/preview/13-12-2025-parma-calcio-1913-s-s-lazio-betting-tip/?utm_source=openai))\n\n**Over/Un\n\n---\n\nMarket 2:\nTitle: Will Perth Glory FC win on 2025-12-13?\nCurrent Market Price: 68.5% (this is the market's implied probability)\nRecent trade: $1,000.00 on No\nLink: https://polymarket.com/event/aus-per-syd-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nPerth Glory FC is set to face Sydney FC on December 13, 2025, at HBF Park in Perth. Sydney FC enters the match as the favorite, with betting odds around 1.90 to 2.10, reflecting their strong form and higher league position. ([tribuna.com](https://tribuna.com/en/news/2025-12-10-perth-glory-sydney-fc-match-prediction-and-bet-on-the-aleague-game-december-13-2025/?utm_source=openai))\n\nPerth Glory has shown recent improvement, securing three consecutive victories. However, their overall record against Sydney FC is unfavorable, with Sydney FC winning seven of the last ten encounters and remaining unbeaten in the last eight meetings. ([tribuna.com](https://tribuna.com/en/news/2025-12-10-perth-glory-sydney-fc-match-prediction-and-bet-on-the-aleague-game-december-13-2025/?utm_source=openai))\n\nExpert analyses suggest that Sydney FC's consistency and attacking prowess make them the likely winners, with predictions favoring an away victory. ([dailysports.net](https://dailysports.net/predictions/pe\n\n---\n\nMarket 3:\nTitle: Will PSV win on 2025-12-13?\nCurrent Market Price: 89.0% (this is the market's implied probability)\nRecent trade: $1,452.12 on Yes\nLink: https://polymarket.com/event/ere-psv-her-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nPSV Eindhoven is set to face Heracles Almelo on Saturday, December 13, 2025, at Philips Stadion in an Eredivisie match. PSV currently leads the league with 40 points from 15 matches, boasting 13 wins, 1 draw, and 1 loss. In contrast, Heracles Almelo is 16th with 14 points, having secured 4 wins, 2 draws, and 9 losses. ([futbol24.com](https://www.futbol24.com/betting-tips/preview/13-12-2025-psv-eindhoven-heracles-almelo-betting-tip/?utm_source=openai))\n\nRecent analyses suggest a strong likelihood of a PSV victory. Wincomparator's algorithm indicates a 65.4% chance of a PSV win, with best odds of 1.13 at Shangrila. Futbol24 also recommends a home win for PSV Eindhoven, citing their impressive form. ([wincomparator.com](https://www.wincomparator.com/predictions/psv-eindhoven-heracles-7666599/?utm_source=openai))\n\nPSV's recent performance has been strong, despite a narrow 3-2 loss to Atl\u00e9tico Madrid on December 9, 2025. Prior to that, they secured a 2-0 victory against Heerenveen on Decemb\n\n---\n\n\nProvide predictions in the exact format specified.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\n\nIMPORTANT: For each market, you MUST estimate the TRUE PROBABILITY of the outcome.\nCompare your probability estimate to the market price to find EDGE (mispricing).\n\nEdge = Your Probability - Market Probability\n- Positive edge on YES side means market undervalues YES\n- Negative edge means market overvalues YES (bet NO instead)\n\nFor each market, provide your prediction in this EXACT format:\n\nMARKET [number]: [decision]\nYour Probability: [0-100]%\nMarket Price: [shown price]%\nEdge: [+/-X]% (Your prob - Market)\nExpected Value: [calculate: Edge \u00d7 potential payout]\nReasoning: [1-2 sentences explaining your probability estimate]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES = Your probability > Market price + 10% (minimum 10% edge)\n- NO = Your probability < Market price - 10%\n- NO_TRADE = Edge < 10% (not enough value)\n\nBe contrarian when you have conviction. Look for markets where news hasn't been priced in yet.",
+  "consensus_summary": "The consensus across all three AI models is that no trades meet the 10%+ edge threshold, with unanimous agreement that Markets 2 and 3 are overpriced. There is notable alignment that Market 1 is also unfavorable, though with slight variance in the estimated true probabilities. Overall, the analysis recommends against placing any bets based on the provided edges.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "DEEPSEEK",
+    "AI #3": "GEMINI"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.05,
+      "success": true
+    },
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4V318APVUGHzH4cNJFm'}",
+      "response_time": 0.07,
+      "success": false
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4V317fcXcouwokbahmr'}",
+      "response_time": 0.08,
+      "success": false
+    },
+    "openai": {
+      "response": "MARKET 1: NO_TRADE  \nYour Probability: 55%  \nMarket Price: 61.0%  \nEdge: -6% (Your prob - Market)  \nExpected Value: -$0.06 per $1 bet  \nReasoning: Parma's inconsistent home form and Lazio's modest away record suggest a balanced match, but not enough to confidently predict fewer than 2.5 goals without a significant edge.\n\nMARKET 2: NO  \nYour Probability: 40%  \nMarket Price: 68.5%  \nEdge: -28.5% (Your prob - Market)  \nExpected Value: -$0.285 per $1 bet  \nReasoning: Despite Perth Glory's recent form, Sydney FC's historical dominance and current status as favorites make a Perth win less likely than the market suggests.\n\nMARKET 3: NO_TRADE  \nYour Probability: 85%  \nMarket Price: 89.0%  \nEdge: -4% (Your prob - Market)  \nExpected Value: -$0.04 per $1 bet  \nReasoning: While PSV is likely to win given their strong form and league position, the market price already reflects this high probability, leaving little edge for betting.",
+      "response_time": 2.77,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO_TRADE\nYour Probability: 55%\nMarket Price: 61.0%\nEdge: -6.0% (Your prob - Market)\nExpected Value: -6.0% (Edge \u00d7 potential payout)\nReasoning: Both teams have poor home/away records, with Parma struggling at home and Lazio weak on the road, making a low-scoring match plausible, but the market price already reflects this uncertainty well.\n\nMARKET 2: NO\nYour Probability: 30%\nMarket Price: 68.5%\nEdge: -38.5% (Your prob - Market)\nExpected Value: -38.5% (Edge \u00d7 potential payout)\nReasoning: Sydney FC is the favorite with strong form and a dominant historical record against Perth Glory, making a Perth win unlikely despite their recent improvement.\n\nMARKET 3: NO_TRADE\nYour Probability: 85%\nMarket Price: 89.0%\nEdge: -4.0% (Your prob - Market)\nExpected Value: -4.0% (Edge \u00d7 potential payout)\nReasoning: PSV is a heavy favorite at home against a lower-table team, but the market price at 89% is extremely efficient, leaving no significant edge despite the high likelihood of a PSV win.",
+      "response_time": 9.62,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: Parma Calcio 1913 vs. SS Lazio: O/U 2.5\nYour Probability: 50%\nMarket Price: 61.0%\nEdge: -11% (Your prob - Market)\nExpected Value: -4.29 (if betting YES, 11% * (100-",
+      "response_time": 9.66,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 13.32
+  }
+}

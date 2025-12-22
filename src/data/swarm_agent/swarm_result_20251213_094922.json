@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T09:49:22.179581",
+  "prompt": "Analyze these 3 Polymarket markets.\n\nFor EACH market:\n1. Estimate the TRUE PROBABILITY based on news context\n2. Calculate EDGE vs market price\n3. Only recommend trades with 10%+ edge\n\n\nMarket 1:\nTitle: Spread: Stoke City FC (-1.5)\nCurrent Market Price: 74.0% (this is the market's implied probability)\nRecent trade: $618.64 on Swansea City AFC\nLink: https://polymarket.com/event/elc-sto-swa-2025-12-13-more-markets\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nStoke City FC has experienced a series of mixed results in recent matches, which may influence betting markets, including the -1.5 spread.\n\n**Recent Match Outcomes:**\n\n- **December 10, 2025:** Stoke City suffered a 1-0 defeat to Ipswich Town, with Jaden Philogene scoring the decisive goal in the 2nd minute. ([espn.com](https://www.espn.com/football/match/_/gameId/744839/stoke-city-ipswich-town?utm_source=openai))\n\n- **December 6, 2025:** The team faced a 4-0 loss against Sheffield United, with Patrick Bamford contributing to the scoreline. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2025%E2%80%9326_Stoke_City_F.C._season?utm_source=openai))\n\n- **November 29, 2025:** Stoke City narrowly lost 2-1 to Hull City, with Joe Gelhardt scoring the winning goal for Hull. ([skysports.com](https://www.skysports.com/stoke-city-results.?utm_source=openai))\n\n**Upcoming Fixture:**\n\n- **December 13, 2025:** Stoke City is set to host Swansea City at the bet365 Stadium. The match is scheduled to kic\n\n---\n\nMarket 2:\nTitle: Will J.B. Pritzker win the 2028 Democratic presidential nomination?\nCurrent Market Price: 2.6% (this is the market's implied probability)\nRecent trade: $593.64 on Yes\nLink: https://polymarket.com/event/democratic-presidential-nominee-2028\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nAs of December 13, 2025, Illinois Governor J.B. Pritzker has not officially declared his candidacy for the 2028 Democratic presidential nomination. However, recent developments suggest he is positioning himself as a potential contender:\n\n- **Re-election Announcement**: In June 2025, Pritzker announced his intention to seek a third term as Illinois governor in the 2026 election. ([amp.cnn.com](https://amp.cnn.com/cnn/2025/06/26/politics/jb-pritzker-illinois-governor-reelection?utm_source=openai))\n\n- **National Engagements**: Pritzker has been actively participating in national events, including headlining the New Hampshire Democratic Party\u2019s McIntyre-Shaheen 100 Club Dinner in April 2025. ([concordmonitor.com](https://www.concordmonitor.com/2025/03/10/gov-j-b-pritzker-will-headline-nh-democratic-party-s-largest-fundraiser-59933629/?utm_source=openai)) In July 2025, he delivered a speech to North Carolina Democrats, emphasizing the need to \"fight\" against current political challenges. ([\n\n---\n\nMarket 3:\nTitle: Parma Calcio 1913 vs. SS Lazio: O/U 2.5\nCurrent Market Price: 61.0% (this is the market's implied probability)\nRecent trade: $900.00 on Under\nLink: https://polymarket.com/event/sea-par-laz-2025-12-13-more-markets\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nThe Serie A match between Parma Calcio 1913 and SS Lazio is scheduled for Saturday, December 13, 2025, at 12:00 PM GMT at Stadio Ennio Tardini in Parma. ([pokerstars.com](https://www.pokerstars.com/sports/soccer/1/italian-serie-a/81/parma-v-lazio/35016412/?utm_source=openai))\n\n**Recent Form and Head-to-Head:**\n\n- **Parma Calcio 1913:** Inconsistent performances have seen them secure two wins, one draw, and three losses in their last six matches. They've averaged 1.17 goals scored and 1.67 goals conceded per game during this period. ([forebet.com](https://www.forebet.com/en/football-match-previews/24489-parma-face-lazio-defensive-solidity-meets-home-struggles-in-serie-a-mid-table-battle?utm_source=openai))\n\n- **SS Lazio:** Slightly more stable, Lazio has achieved three wins, one draw, and two losses in their recent six matches, conceding an average of 0.67 goals per game. ([forebet.com](https://www.forebet.com/en/football-match-previews/24489-parma-face-lazio-defensive-solidity-meets-ho\n\n---\n\n\nProvide predictions in the exact format specified.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\n\nIMPORTANT: For each market, you MUST estimate the TRUE PROBABILITY of the outcome.\nCompare your probability estimate to the market price to find EDGE (mispricing).\n\nEdge = Your Probability - Market Probability\n- Positive edge on YES side means market undervalues YES\n- Negative edge means market overvalues YES (bet NO instead)\n\nFor each market, provide your prediction in this EXACT format:\n\nMARKET [number]: [decision]\nYour Probability: [0-100]%\nMarket Price: [shown price]%\nEdge: [+/-X]% (Your prob - Market)\nExpected Value: [calculate: Edge \u00d7 potential payout]\nReasoning: [1-2 sentences explaining your probability estimate]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES = Your probability > Market price + 10% (minimum 10% edge)\n- NO = Your probability < Market price - 10%\n- NO_TRADE = Edge < 10% (not enough value)\n\nBe contrarian when you have conviction. Look for markets where news hasn't been priced in yet.",
+  "consensus_summary": "The consensus finds no actionable edge (10%+) on Market 1, agreeing Stoke's poor form makes the \"NO\" position logical but disagreeing on the exact probability. For Market 2, there is sharp disagreement on whether Pritzker's activity justifies a \"YES\" trade, indicating high uncertainty. On Market 3, the models conflict on direction, but none identify a clear 10%+ edge, resulting in a neutral summary.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "DEEPSEEK",
+    "AI #3": "GEMINI"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.04,
+      "success": true
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4UcNMf4s3QfMjwtDYuY'}",
+      "response_time": 0.09,
+      "success": false
+    },
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4UcNLAkGBih9bukVb95'}",
+      "response_time": 0.1,
+      "success": false
+    },
+    "openai": {
+      "response": "MARKET 1: NO\nYour Probability: 60%\nMarket Price: 74.0%\nEdge: -14% (Your prob - Market)\nExpected Value: -14 \u00d7 potential payout\nReasoning: Stoke City FC has been struggling with recent defeats, including a significant 4-0 loss to Sheffield United and a narrow 1-0 defeat to Ipswich Town, indicating their current form is not strong enough to justify a -1.5 spread win against Swansea City.\n\nMARKET 2: NO_TRADE\nYour Probability: 5%\nMarket Price: 2.6%\nEdge: +2.4% (Your prob - Market)\nExpected Value: +2.4 \u00d7 potential payout\nReasoning: While J.B. Pritzker is showing signs of national interest, he hasn't declared a candidacy, and other prominent Democrats have stronger positioning; however, the market already reflects a very low probability, leaving insufficient edge for a trade.\n\nMARKET 3: NO_TRADE\nYour Probability: 65%\nMarket Price: 61.0%\nEdge: +4% (Your prob - Market)\nExpected Value: +4 \u00d7 potential payout\nReasoning: Parma Calcio's defensive struggles and Lazio's relatively solid form suggest a higher likelihood of over 2.5 goals, but the market price is close enough to the estimated probability that the edge is not significant enough for a trade.",
+      "response_time": 3.64,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO_TRADE\nYour Probability: 65%\nMarket Price: 74%\nEdge: -9% (Your prob - Market)\nExpected Value: -9% (Insufficient for trade)\nReasoning: Stoke is in poor form with three consecutive losses, making a win by 2+ goals against Swansea unlikely, but the market price already reflects this weakness.\n\nMARKET 2: YES\nYour Probability: 15%\nMarket Price: 2.6%\nEdge: +12.4% (Your prob - Market)\nExpected Value: High (Edge \u00d7 payout)\nReasoning: Pritzker is actively building a national profile and is a credible dark horse for 2028, making the current market price far too low for a non-declared candidate this early.\n\nMARKET 3: NO\nYour Probability: 45%\nMarket Price: 61%\nEdge: -16% (Your prob - Market)\nExpected Value: -16% (Bet NO/Under)\nReasoning: Lazio's strong defense (0.67 GA avg) and Parma's low scoring (1.17 GF avg) suggest a lower-scoring match, making Over 2.5 goals less likely than the market implies.",
+      "response_time": 9.93,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: Spread: Stoke City FC (-1.5)\nYour Probability: 25%\nMarket Price: 74.0%\nEdge: -49% (25% - 74%)\nExpected Value: -49\nDecision: NO\nReasoning: Stoke City has lost their last three matches, including a 4-0 defeat,",
+      "response_time": 10.37,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 14.67
+  }
+}

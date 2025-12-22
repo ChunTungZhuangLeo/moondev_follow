@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T00:24:32.974322",
+  "prompt": "Analyze these 3 Polymarket markets and provide your predictions.\nYou have been given RECENT NEWS AND CONTEXT from web search for each market.\nUse this information to make more informed predictions.\n\n\nMarket 1:\nTitle: Army Black Knights vs. UMBC Retrievers\nRecent trade: $800.00 on Army Black Knights\nLink: https://polymarket.com/event/cbb-army-umbc-2025-12-12\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nThe Army Black Knights (4-7) are set to face the UMBC Retrievers (6-4) in a men's basketball game on Friday, December 12, 2025, at 6 p.m. EST in Baltimore, Maryland. ([goarmywestpoint.com](https://goarmywestpoint.com/news/2025/12/11/mens-basketball-heads-to-charm-city-for-game-at-umbc?utm_source=openai))\n\n**Recent Performance:**\n\n- **UMBC Retrievers:** The Retrievers have a strong home record of 4-1 and are second in the America East Conference with 24.7 defensive rebounds per game, led by Jah'Likai King, who averages 4.2 defensive rebounds per game. ([goarmywestpoint.com](https://goarmywestpoint.com/news/2025/12/11/mens-basketball-heads-to-charm-city-for-game-at-umbc?utm_source=openai))\n\n- **Army Black Knights:** Army has struggled on the road with a 1-3 record. However, they have shown resilience in close games, holding a 1-0 record in one-possession games. ([goarmywestpoint.com](https://goarmywestpoint.com/news/2025/12/11/mens-basketball-heads-to-charm-city-for-game-at-umbc?utm_sour...\n\n---\n\nMarket 2:\nTitle: Maryland Eastern Shore Hawks vs. North Carolina A&T Aggies\nRecent trade: $1,451.37 on North Carolina A&T Aggies\nLink: https://polymarket.com/event/cbb-mdes-ncat-2025-12-12\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nThe Maryland Eastern Shore Hawks (4-9) are set to face the North Carolina A&T Aggies (4-4) on December 12, 2025, at 7 p.m. EST in Greensboro, North Carolina. ([espn.com](https://www.espn.com/mens-college-basketball/preview/_/gameId/401823042?utm_source=openai))\n\n**Recent Performance:**\n\n- **Maryland Eastern Shore Hawks:** The Hawks are on a three-game losing streak, with a 1-8 record on the road this season. ([espn.com](https://www.espn.com/mens-college-basketball/preview/_/gameId/401823042?utm_source=openai))\n\n- **North Carolina A&T Aggies:** The Aggies have a 2-0 record at home and are coming off a loss, making them 4-4 overall. ([espn.com](https://www.espn.com/mens-college-basketball/preview/_/gameId/401823042?utm_source=openai))\n\n**Key Players:**\n\n- **Lewis Walker (N.C. A&T):** Averaging 18.8 points and 6.1 rebounds per game. ([espn.com](https://www.espn.com/mens-college-basketball/preview/_/gameId/401823042?utm_source=openai))\n\n- **Joseph Locandro (Maryland Eastern Shore):** Avera...\n\n---\n\nMarket 3:\nTitle: LoL: Dplus KIA vs T1 (BO5)\nRecent trade: $715.80 on T1\nLink: https://polymarket.com/event/lol-dk-t1-2025-12-13\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nAs of December 13, 2025, Dplus KIA and T1 are set to face off in a Best-of-5 series at 8:00 AM KST as part of the 2025 LoL KeSPA Cup Playoffs. ([egamersworld.com](https://egamersworld.com/lol/match/4iRa74SEv/dplus-kia-vs-t1-TJQNBr8C8?utm_source=openai))\n\n**Recent Performance:**\n\n- **T1:** T1 has demonstrated strong performance in recent matches, securing victories in four out of their last five games, including a decisive 3-1 win over BNK FEARX on September 17. ([bo3.gg](https://bo3.gg/lol/predictions/t1-vs-dplus-kia-match-prediction-and-analysis-lck-2025-season?utm_source=openai))\n\n- **Dplus KIA:** Dplus KIA has also been competitive, with a notable 3-0 victory over Nongshim RedForce and a 3-1 win against OKSavingsBank BRION. ([bo3.gg](https://bo3.gg/lol/predictions/t1-vs-dplus-kia-match-prediction-and-analysis-lck-2025-season?utm_source=openai))\n\n**Head-to-Head Record:**\n\nIn their recent encounters, T1 has had the upper hand, winning four out of the last five matches against Dplus KI...\n\n---\n\n\nProvide predictions for each market in the specified format.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\nUse this context to make more informed predictions.\n\nFor each market, provide your prediction in this exact format:\n\nMARKET [number]: [decision]\nReasoning: [brief 1-2 sentence explanation that references the news context if relevant]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES means you would bet on the \"Yes\" outcome\n- NO means you would bet on the \"No\" outcome\n- NO_TRADE means you would not take a position\n\nBe concise and focused on the most promising opportunities.",
+  "consensus_summary": "The consensus strongly favors UMBC (Market 1: NO) and T1 (Market 3: YES), with unanimous or near-unanimous agreement based on home advantage and recent performance. For Market 2, there is overwhelming but not total agreement on North Carolina A&T (YES), with only one dissenting prediction. The analysis consistently relies on team records, home/away performance, and key player impact.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "GEMINI",
+    "AI #3": "OPUS",
+    "AI #4": "DEEPSEEK",
+    "AI #5": "CLAUDE"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.32,
+      "success": true
+    },
+    "openai": {
+      "response": "MARKET 1: NO\nReasoning: Despite recent trades favoring Army Black Knights, UMBC has a strong home record (4-1) and is performing well in their conference, led by key player Jah'Likai King. Army's struggles on the road (1-3 record) further tilt the odds in favor of UMBC, making a \"No\" bet on Army more appealing.\n\nMARKET 2: YES\nReasoning: North Carolina A&T Aggies have a perfect home record (2-0) and face a Maryland Eastern Shore team struggling on the road (1-8) and on a three-game losing streak. With strong performance from key player Lewis Walker, betting \"Yes\" on North Carolina A&T to win seems advantageous.\n\nMARKET 3: YES\nReasoning: T1 has shown strong recent performance, winning four out of their last five games and maintaining a favorable head-to-head record against Dplus KIA. These factors, along with recent trades favoring T1, support a \"Yes\" bet on T1 to win the series.",
+      "response_time": 3.21,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: NO\nReasoning: UMBC has a strong 4-1 home record and better overall performance (6-4), while Army struggles on the road with a 1-3 record.\n\nMARKET 2: YES\nReasoning: North Carolina A&T has a perfect 2-0 home record and a stronger overall performance (4-4), while Maryland Eastern Shore is on a three-game losing streak and has a poor 1-8 road record.\n\nMARKET 3: YES\nReasoning: T1 has a strong recent performance, winning four out of their last five games, and holds a dominant 4-1 head-to-head record against Dplus KIA.",
+      "response_time": 5.47,
+      "success": true
+    },
+    "opus": {
+      "response": "MARKET 1: NO\nReasoning: UMBC (6-4) has a strong 4-1 home record while Army (4-7) has struggled on the road at 1-3. The home court advantage and better overall record favor UMBC in this matchup.\n\nMARKET 2: YES\nReasoning: North Carolina A&T (4-4) is 2-0 at home with a strong scorer in Lewis Walker (18.8 ppg), while Maryland Eastern Shore (4-9) is on a three-game losing streak with a dismal 1-8 road record. NC A&T should win at home.\n\nMARKET 3: YES\nReasoning: T1 has won 4 of their last 5 matches overall and holds a dominant 4-1 head-to-head record against Dplus KIA in recent encounters. T1's superior form makes them the favorite in this BO5 series.",
+      "response_time": 5.74,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO_TRADE  \nReasoning: UMBC has a strong home record (4-1) and defensive rebounding advantage, while Army struggles on the road (1-3), making the outcome uncertain despite Army's recent large trade.\n\nMARKET 2: YES  \nReasoning: North Carolina A&T is strong at home (2-0) and faces a Maryland Eastern Shore team on a three-game losing streak with a poor 1-8 road record, supporting the recent large trade on A&T.\n\nMARKET 3: YES  \nReasoning: T1 has won four of their last five matches against Dplus KIA and is coming off strong recent form, making them the favored pick in this Best-of-5 series.",
+      "response_time": 6.07,
+      "success": true
+    },
+    "claude": {
+      "response": "MARKET 1: NO\nReasoning: UMBC has a strong 4-1 home record and better overall record (6-4 vs 4-7), while Army struggles on the road (1-3). The home advantage and superior form favor UMBC, making the Army bet unfavorable.\n\nMARKET 2: NO\nReasoning: NC A&T has home court advantage (2-0 at home), a better record (4-4 vs 4-9), and a strong player in Lewis Walker averaging 18.8 PPG. Maryland Eastern Shore is on a three-game losing streak with a terrible 1-8 road record.\n\nMARKET 3: YES\nReasoning: T1 has won 4 of their last 5 matches and holds a 4-1 head-to-head advantage in recent encounters against Dplus KIA. Their recent form and historical dominance in this matchup support betting on T1.",
+      "response_time": 8.12,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 6,
+    "failed_responses": 0,
+    "total_time": 12.13
+  }
+}

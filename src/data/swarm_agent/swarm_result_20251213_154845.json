@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T15:48:45.113865",
+  "prompt": "Analyze these 3 Polymarket markets and provide your predictions.\nYou have been given RECENT NEWS AND CONTEXT from web search for each market.\nUse this information to make more informed predictions.\n\n\nMarket 1:\nTitle: FC St. Pauli 1910 vs. 1. FC Heidenheim 1846: O/U 3.5\nRecent trade: $502.35 on Under\nLink: https://polymarket.com/event/bun-pau-hei-2025-12-13-more-markets\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nFC St. Pauli and 1. FC Heidenheim are set to face each other on December 13, 2025, at Millerntor-Stadion in Hamburg. The over/under for this match is set at 3.5 goals.\n\n**Recent Form and Statistics:**\n\n- **FC St. Pauli:**\n  - The team has struggled offensively, scoring only 11 goals in 13 matches this season, averaging 0.85 goals per game. ([betdecider.com](https://betdecider.com/picks/fc-st-pauli-vs-1-fc-heidenheim-1846-soccer-betting-preview-odds-offensive-leaders-12-13-2025/?utm_source=openai))\n  - At home, they've failed to win in their last three Bundesliga matches, scoring just one goal and conceding six. ([forebet.com](https://www.forebet.com/en/football-match-previews/24361-st-pauli-v-heidenheim-bottom-tier-battle-at-the-millerntor-promises-high-stakes?utm_source=openai))\n\n- **1. FC Heidenheim:**\n  - Heidenheim has scored 12 goals in 13 matches, averaging 0.92 goals per game. ([betdecider.com](https://betdecider.com/picks/fc-st-pauli-vs-1-fc-heidenheim-1846-soccer-betting-previ...\n\n---\n\nMarket 2:\nTitle: Will Venezia FC win on 2025-12-13?\nRecent trade: $1,349.84 on Yes\nLink: https://polymarket.com/event/itsb-ven-mon-2025-12-13\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nVenezia FC is set to face AC Monza in a Serie B match on Saturday, December 13, 2025, at 14:00 CET (8:00 AM EST) at the Stadio Pierluigi Penzo in Venice. ([futbol24.com](https://www.futbol24.com/betting-tips/preview/13-12-2025-venezia-fc-ac-monza-betting-tip/?utm_source=openai))\n\n**Recent Form:**\n\n- **Venezia FC:** In their last five matches, Venezia has secured three wins, one draw, and one loss, averaging 2.0 goals scored and 1.4 conceded per game. ([betmines.com](https://betmines.com/match-preview/venezia-vs-monza-prediction-match-preview-and-analysis-serie-b-13-12-2025?utm_source=openai))\n\n- **AC Monza:** Monza has been in strong form, winning four of their last five games, indicating a solid offensive and defensive performance. ([welcome.bet](https://welcome.bet/venezia-vs-monza-predictions-dec-13-2025/?utm_source=openai))\n\n**Head-to-Head Record:**\n\nHistorically, Venezia and Monza have had closely contested encounters, with three of their last six matches staying under 2.5 goals a...\n\n---\n\nMarket 3:\nTitle: US strikes Nigeria by December 31?\nRecent trade: $622.92 on No\nLink: https://polymarket.com/event/us-strikes-nigeria-by\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nAs of December 13, 2025, there is no evidence to suggest that the United States has conducted military strikes in Nigeria or plans to do so by December 31. Recent developments indicate a focus on diplomatic and security cooperation between the U.S. and Nigeria.\n\n**Recent Developments:**\n\n- **U.S.-Nigeria Security Cooperation:** In November 2025, the Nigerian government and the United States agreed on a non-binding cooperation framework to address Nigeria's security challenges. This includes establishing a Joint Working Group to coordinate efforts, with the U.S. offering enhanced intelligence support and potential humanitarian assistance. ([vanguardngr.com](https://www.vanguardngr.com/2025/11/insecurity-us-nigeria-agree-on-terms-presidency/?utm_source=openai))\n\n- **U.S. Visa Restrictions:** On December 3, 2025, the U.S. State Department announced increased visa restrictions on Nigerians involved in violations of religious freedom, particularly targeting violence against Christians. This...\n\n---\n\n\nProvide predictions for each market in the specified format.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\nUse this context to make more informed predictions.\n\nFor each market, provide your prediction in this exact format:\n\nMARKET [number]: [decision]\nReasoning: [brief 1-2 sentence explanation that references the news context if relevant]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES means you would bet on the \"Yes\" outcome\n- NO means you would bet on the \"No\" outcome\n- NO_TRADE means you would not take a position\n\nBe concise and focused on the most promising opportunities.",
+  "consensus_summary": "The consensus strongly predicts \"NO\" for Market 1 (Under 3.5 goals) and Market 3 (no US strike), with unanimous agreement on both. For Market 2 (Venezia win), two AIs find it too uncertain to call (NO_TRADE), while a third predicts \"NO,\" indicating a clear lack of consensus for a \"Yes\" prediction. Overall, the AIs align closely, using the provided news on poor team offense and diplomatic cooperation to inform their shared negative predictions for Markets 1 and 3.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "GEMINI",
+    "AI #3": "DEEPSEEK"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.04,
+      "success": true
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4x2AKfpv8zNZdDa3G6C'}",
+      "response_time": 0.08,
+      "success": false
+    },
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4x2ALAZLHUCUqAAGuVo'}",
+      "response_time": 0.45,
+      "success": false
+    },
+    "openai": {
+      "response": "MARKET 1: NO\nReasoning: Both FC St. Pauli and 1. FC Heidenheim have low goal-scoring averages (0.85 and 0.92 goals per game, respectively). Their recent form suggests a lack of offensive prowess, making it unlikely that the total goals scored will exceed 3.5.\n\nMARKET 2: NO_TRADE\nReasoning: Venezia FC and AC Monza both have strong recent performances, with Monza winning four out of five recent matches. The match appears balanced with historical contests being closely contested, making the outcome uncertain.\n\nMARKET 3: NO\nReasoning: There is no current evidence or indications that the U.S. plans to conduct military strikes in Nigeria. Recent agreements focus on diplomatic cooperation and intelligence support, further diminishing the likelihood of military action by the end of the year.",
+      "response_time": 2.92,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: NO\nReasoning: Both FC St. Pauli and 1. FC Heidenheim have poor offensive records, averaging less than one goal per game, and St. Pauli has struggled to score at home, strongly suggesting a low-scoring match under 3.5 goals.\n\nMARKET 2: NO_TRADE\nReasoning: Both Venezia FC and AC Monza are in strong recent form, with Monza winning four of their last five games and Venezia securing three wins in their last five, making a definitive prediction for Venezia's win too uncertain.\n\nMARKET 3: NO\nReasoning: The recent news indicates no evidence or plans for US military strikes in Nigeria by December 31, 2025; instead, the focus is on diplomatic and security cooperation.",
+      "response_time": 4.02,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: YES  \nReasoning: The context shows both teams have poor offensive records (averaging under 1 goal per game each) and St. Pauli has struggled to score at home, making a high-scoring game unlikely and favoring Under 3.5 goals.\n\nMARKET 2: NO  \nReasoning: While Venezia has decent form, Monza is in stronger form with four wins in their last five games, making a Venezia win less probable despite the recent large trade on \"Yes.\"\n\nMARKET 3: NO  \nReasoning: Recent news indicates the U.S. is focused on diplomatic and security cooperation with Nigeria, including a joint working group, with no evidence of planned military strikes by the deadline.",
+      "response_time": 5.73,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 10.65
+  }
+}

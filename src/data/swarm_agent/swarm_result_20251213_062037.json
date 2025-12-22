@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T06:20:37.596792",
+  "prompt": "Analyze these 3 Polymarket markets.\n\nFor EACH market:\n1. Estimate the TRUE PROBABILITY based on news context\n2. Calculate EDGE vs market price\n3. Only recommend trades with 10%+ edge\n\n\nMarket 1:\nTitle: Will Valencia CF win on 2025-12-13?\nCurrent Market Price: 92.0% (this is the market's implied probability)\nRecent trade: $4,738.92 on No\nLink: https://polymarket.com/event/lal-mad-val-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nValencia CF is set to face Atl\u00e9tico Madrid on Saturday, December 13, 2025, at the Riyadh Air Metropolitano Stadium in Madrid. The match is scheduled to kick off at 8:00 AM ET (2:00 PM local time). ([bleachernation.com](https://www.bleachernation.com/how-to-watch/2025/12/12/where-to-watch-atletico-madrid-vs-valencia-cf-tv-channel-start-time-and-live-stream-2/?utm_source=openai))\n\n**Team Form and Performance:**\n\n- **Atl\u00e9tico Madrid:** Currently 4th in La Liga with 31 points, Atl\u00e9tico has a strong home record of 7 wins and 1 draw in 8 home league matches this season. ([futbol24.com](https://www.futbol24.com/betting-tips/preview/13-12-2025-atletico-madrid-valencia-cf-betting-tip/?utm_source=openai))\n\n- **Valencia CF:** Sitting 16th in the league with 15 points, Valencia has yet to secure an away win this season, with a record of 0 wins, 6 draws, and 1 loss in away matches. ([futbol24.com](https://www.futbol24.com/betting-tips/preview/13-12-2025-atletico-madrid-valencia-cf-betting-tip/?utm_\n\n---\n\nMarket 2:\nTitle: Will Fernando Mendoza win the Heisman Trophy?\nCurrent Market Price: 98.0% (this is the market's implied probability)\nRecent trade: $13,205.35 on Yes\nLink: https://polymarket.com/event/heisman-trophy-winner\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nAs of December 13, 2025, Fernando Mendoza, quarterback for the Indiana Hoosiers, is a finalist for the Heisman Trophy, alongside Vanderbilt's Diego Pavia, Notre Dame's Jeremiyah Love, and Ohio State's Julian Sayin. ([heisman.com](https://www.heisman.com/articles/love-mendoza-pavia-sayin-named-2025-heisman-trophy-finalists/?utm_source=openai))\n\n**Recent Achievements:**\n\n- **Maxwell and Davey O'Brien Awards:** Mendoza was honored with the Maxwell Award for the nation's top player and the Davey O'Brien Award for best quarterback, leading Indiana to a perfect 13-0 season and a Big Ten championship. ([reuters.com](https://www.reuters.com/sports/indianas-fernando-mendoza-headlines-college-football-award-winners--flm-2025-12-13/?utm_source=openai))\n\n- **Associated Press Player of the Year:** He was named the AP Player of the Year after accounting for a school-record 39 touchdowns (33 passing, 6 rushing) and leading the Hoosiers to the No. 1 seed in the College Football Playoff. ([apnews.com](\n\n---\n\nMarket 3:\nTitle: Arsenal FC vs. Wolverhampton Wanderers FC: O/U 2.5\nCurrent Market Price: 65.0% (this is the market's implied probability)\nRecent trade: $943.15 on Over\nLink: https://polymarket.com/event/epl-ars-wol-2025-12-13-more-markets\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nArsenal FC is set to host Wolverhampton Wanderers FC at Emirates Stadium on Saturday, December 13, 2025, at 12:00 PM PST. \n\n**Recent Form and Team News:**\n\n- **Arsenal FC:** Leading the Premier League with 33 points from 15 matches, Arsenal has demonstrated strong offensive and defensive performances, scoring 28 goals and conceding only 9. ([forebet.com](https://www.forebet.com/en/football-match-previews/24470-arsenal-set-for-statement-performance-against-struggling-wolverhampton?utm_source=openai)) Manager Mikel Arteta remains confident in striker Viktor Gy\u00f6keres, who has scored six goals in 18 appearances since his \u00a364 million move. Arteta attributes Gy\u00f6keres' slow start to the lack of a pre-season and emphasizes the importance of team dynamics and support. He believes Gy\u00f6keres will soon return to form. ([reuters.com](https://www.reuters.com/sports/soccer/goals-will-come-soon-gyokeres-says-arsenal-boss-arteta-2025-12-12/?utm_source=openai))\n\n- **Wolverhampton Wanderers FC:** Struggli\n\n---\n\n\nProvide predictions in the exact format specified.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\n\nIMPORTANT: For each market, you MUST estimate the TRUE PROBABILITY of the outcome.\nCompare your probability estimate to the market price to find EDGE (mispricing).\n\nEdge = Your Probability - Market Probability\n- Positive edge on YES side means market undervalues YES\n- Negative edge means market overvalues YES (bet NO instead)\n\nFor each market, provide your prediction in this EXACT format:\n\nMARKET [number]: [decision]\nYour Probability: [0-100]%\nMarket Price: [shown price]%\nEdge: [+/-X]% (Your prob - Market)\nExpected Value: [calculate: Edge \u00d7 potential payout]\nReasoning: [1-2 sentences explaining your probability estimate]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES = Your probability > Market price + 10% (minimum 10% edge)\n- NO = Your probability < Market price - 10%\n- NO_TRADE = Edge < 10% (not enough value)\n\nBe contrarian when you have conviction. Look for markets where news hasn't been priced in yet.",
+  "consensus_summary": "The consensus strongly agrees that Valencia winning is highly improbable, with all models recommending a \"NO\" trade due to the massive edge against the market's 92% price. For the Heisman market, opinions vary on the exact probability, leading to a split between a \"NO\" trade and \"NO_TRADE\" due to insufficient edge. There is clear disagreement on the Arsenal match, with one model identifying a strong \"YES\" edge for Over 2.5 goals while another sees no actionable opportunity.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "GEMINI",
+    "AI #3": "DEEPSEEK"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.06,
+      "success": true
+    },
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4CgzcEL1KLLgdhUS7Df'}",
+      "response_time": 0.08,
+      "success": false
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4CgzcUraeerC9ZcS1oL'}",
+      "response_time": 0.09,
+      "success": false
+    },
+    "openai": {
+      "response": "MARKET 1: NO  \nYour Probability: 5%  \nMarket Price: 92.0%  \nEdge: -87% (Your prob - Market)  \nExpected Value: -87%  \nReasoning: Valencia CF is struggling this season, especially in away matches with no wins, and is facing a strong Atl\u00e9tico Madrid team with an excellent home record. The probability of Valencia winning is extremely low.\n\nMARKET 2: NO  \nYour Probability: 85%  \nMarket Price: 98.0%  \nEdge: -13% (Your prob - Market)  \nExpected Value: -13%  \nReasoning: Although Fernando Mendoza has won major awards and led his team to an undefeated season, he is still competing against other strong finalists. The market price overestimates his chances of winning the Heisman Trophy.\n\nMARKET 3: NO_TRADE  \nYour Probability: 60%  \nMarket Price: 65.0%  \nEdge: -5% (Your prob - Market)  \nExpected Value: -5%  \nReasoning: Arsenal's strong offensive record suggests a possibility of scoring over 2.5 goals, but Wolverhampton's current form could mean a tighter game. The market price is reasonably close to the true probability, providing insufficient edge for a trade.",
+      "response_time": 2.89,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: NO\nYour Probability: 8%\nMarket Price: 92.0%\nEdge: -84% (Your prob - Market)\nExpected Value: -0.84\nReasoning: Valencia CF is 16th in the league with 0 away wins, playing against Atl\u00e9tico Madrid (4th) who have a strong home record of",
+      "response_time": 10.12,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO\nYour Probability: 15%\nMarket Price: 92.0%\nEdge: -77.0% (Your prob - Market)\nExpected Value: +83.7% (Edge \u00d7 potential payout for NO at 8% price)\nReasoning: Atl\u00e9tico Madrid is a top-4 team with a perfect home record (7W, 1D), while Valencia is 16th with zero away wins this season, making a Valencia win extremely unlikely.\n\nMARKET 2: NO_TRADE\nYour Probability: 99%\nMarket Price: 98.0%\nEdge: +1.0% (Your prob - Market)\nExpected Value: +1.0%\nReasoning: While Mendoza is the overwhelming favorite after winning the Maxwell, Davey O'Brien, and AP Player of the Year awards, the market price at 98% already reflects this near-certainty, leaving minimal edge.\n\nMARKET 3: YES\nYour Probability: 85%\nMarket Price: 65.0%\nEdge: +20.0% (Your prob - Market)\nExpected Value: +57.1% (Edge \u00d7 potential payout for YES at 65% price)\nReasoning: League-leading Arsenal's strong offense (28 goals) against a struggling Wolves defense, combined with home advantage and Arteta's confidence in his attack, makes over 2.5 total goals highly probable.",
+      "response_time": 11.31,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 16.49
+  }
+}

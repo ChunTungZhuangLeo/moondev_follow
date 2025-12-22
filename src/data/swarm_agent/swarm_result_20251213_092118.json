@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T09:21:18.427519",
+  "prompt": "Analyze these 3 Polymarket markets.\n\nFor EACH market:\n1. Estimate the TRUE PROBABILITY based on news context\n2. Calculate EDGE vs market price\n3. Only recommend trades with 10%+ edge\n\n\nMarket 1:\nTitle: TSG 1899 Hoffenheim vs. Hamburger SV: O/U 2.5\nCurrent Market Price: 65.0% (this is the market's implied probability)\nRecent trade: $900.00 on Over\nLink: https://polymarket.com/event/bun-hof-hsv-2025-12-13-more-markets\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nThe Bundesliga match between TSG 1899 Hoffenheim and Hamburger SV is scheduled for December 13, 2025, at 14:30 GMT at the PreZero Arena in Sinsheim. ([stake.com](https://stake.com/sports/soccer/germany/bundesliga/46059351-tsg-hoffenheim-hamburger-sv?utm_source=openai))\n\n**Recent Form and Head-to-Head:**\n\n- **TSG 1899 Hoffenheim:** Currently 5th in the Bundesliga with 23 points from 13 games, Hoffenheim have won three of their last five matches. ([betonvalue.com](https://www.betonvalue.com/predictions/tsg-1899-hoffenheim-vs-hamburger-sv-predictions-betting-tips-match-preview-2025-12-13?utm_source=openai)) They have a strong home record, winning all of their last three home games in the Bundesliga. ([news.7msport.com](https://news.7msport.com/news/newsdata/20251212/245078.shtml?utm_source=openai))\n\n- **Hamburger SV:** Sitting 13th in the league, Hamburger SV have won two, drawn one, and lost two of their last five matches. ([betonvalue.com](https://www.betonvalue.com/predictions/tsg-1899\n\n---\n\nMarket 2:\nTitle: FC St. Pauli 1910 vs. 1. FC Heidenheim 1846: Both Teams to Score\nCurrent Market Price: 49.4% (this is the market's implied probability)\nRecent trade: $900.00 on Yes\nLink: https://polymarket.com/event/bun-pau-hei-2025-12-13-more-markets\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nFC St. Pauli and 1. FC Heidenheim 1846 are set to face each other today, December 13, 2025, at the Millerntor-Stadion in Hamburg. Both teams are struggling near the bottom of the Bundesliga table, with St. Pauli in 17th place with 8 points and Heidenheim just above them in 16th with 11 points. ([futbol24.com](https://www.futbol24.com/betting-tips/preview/13-12-2025-fc-st-pauli-1-fc-heidenheim-1846-betting-tip/?utm_source=openai))\n\n**Recent Form and Head-to-Head Record:**\n\n- **FC St. Pauli:** The team has been inconsistent, failing to win in their last three home matches and scoring only one goal while conceding six. ([forebet.com](https://www.forebet.com/en/football-match-previews/24361-st-pauli-v-heidenheim-bottom-tier-battle-at-the-millerntor-promises-high-stakes?utm_source=openai))\n\n- **1. FC Heidenheim 1846:** Heidenheim has secured back-to-back wins, including a 2-1 victory away at Union Berlin. However, their away form remains a concern, with five defeats in their last six away f\n\n---\n\nMarket 3:\nTitle: Spread: Liverpool FC (-1.5)\nCurrent Market Price: 68.0% (this is the market's implied probability)\nRecent trade: $900.00 on Brighton & Hove Albion FC\nLink: https://polymarket.com/event/epl-liv-bri-2025-12-13-more-markets\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nLiverpool FC's recent performances have been mixed, impacting betting markets, particularly the spread of Liverpool (-1.5).\n\n**Recent Match Results:**\n\n- **December 6, 2025:** Liverpool drew 3-3 against Leeds United. Despite leading 2-0 and later 3-2, they conceded a late equalizer. ([reuters.com](https://www.reuters.com/sports/soccer/tanaka-talisman-leeds-roar-back-draw-with-liverpool-2025-12-06/?utm_source=openai))\n\n- **December 3, 2025:** Liverpool drew 1-1 with Sunderland. ([skysports.com](https://www.skysports.com/liverpool-results/2025-26?utm_source=openai))\n\n- **November 30, 2025:** Liverpool secured a 2-0 victory over West Ham United. ([skysports.com](https://www.skysports.com/liverpool-results/2025-26?utm_source=openai))\n\n**Upcoming Match:**\n\n- **December 13, 2025:** Liverpool is set to face Brighton & Hove Albion at Anfield. ([thisisanfield.com](https://www.thisisanfield.com/2025/12/liverpool-52-december-games/?utm_source=openai))\n\n**Key Considerations for Betting:**\n\n- **Moh\n\n---\n\n\nProvide predictions in the exact format specified.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\n\nIMPORTANT: For each market, you MUST estimate the TRUE PROBABILITY of the outcome.\nCompare your probability estimate to the market price to find EDGE (mispricing).\n\nEdge = Your Probability - Market Probability\n- Positive edge on YES side means market undervalues YES\n- Negative edge means market overvalues YES (bet NO instead)\n\nFor each market, provide your prediction in this EXACT format:\n\nMARKET [number]: [decision]\nYour Probability: [0-100]%\nMarket Price: [shown price]%\nEdge: [+/-X]% (Your prob - Market)\nExpected Value: [calculate: Edge \u00d7 potential payout]\nReasoning: [1-2 sentences explaining your probability estimate]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES = Your probability > Market price + 10% (minimum 10% edge)\n- NO = Your probability < Market price - 10%\n- NO_TRADE = Edge < 10% (not enough value)\n\nBe contrarian when you have conviction. Look for markets where news hasn't been priced in yet.",
+  "consensus_summary": "The consensus identifies a clear, high-confidence trade on Market 2 (Both Teams to Score), with all models agreeing it is undervalued, offering a ~15% edge. For Markets 1 and 3, the models show mixed or negative edges, leading to a collective recommendation against trading them. Overall, the analysis converges on a single actionable opportunity while advising caution on the others due to insufficient value.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "DEEPSEEK",
+    "AI #3": "GEMINI"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.05,
+      "success": true
+    },
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4SUJ8CdqepEbAXASddW'}",
+      "response_time": 0.08,
+      "success": false
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4SUJ9CTLhbQKwPMstXJ'}",
+      "response_time": 0.08,
+      "success": false
+    },
+    "openai": {
+      "response": "MARKET 1: NO_TRADE  \nYour Probability: 70%  \nMarket Price: 65.0%  \nEdge: +5% (Your prob - Market)  \nExpected Value: +5%  \nReasoning: Both teams have shown capability of scoring and conceding goals, but the market price already reflects a high probability. Given Hoffenheim's strong home record and Hamburger SV's mixed form, a slight edge towards the over is present but not enough for a confident trade.\n\nMARKET 2: YES  \nYour Probability: 65%  \nMarket Price: 49.4%  \nEdge: +15.6% (Your prob - Market)  \nExpected Value: +15.6%  \nReasoning: Both teams have vulnerabilities in defense, as shown by recent results, with Heidenheim scoring away and St. Pauli struggling defensively. The probability of both teams scoring appears undervalued at the current market price, providing a significant edge.\n\nMARKET 3: NO_TRADE  \nYour Probability: 60%  \nMarket Price: 68.0%  \nEdge: -8% (Your prob - Market)  \nExpected Value: -8%  \nReasoning: Liverpool's recent mixed performances and Brighton's potential to challenge suggest a closer match than the spread implies. Despite Liverpool's home advantage, the market may overestimate their ability to cover the -1.5 spread, but the edge is not large enough to confidently recommend a NO bet.",
+      "response_time": 3.02,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO_TRADE\nYour Probability: 70%\nMarket Price: 65.0%\nEdge: +5.0% (Your prob - Market)\nExpected Value: 5.0%\nReasoning: Hoffenheim's strong home form and high league position suggest a higher chance of a high-scoring game, but Hamburg's inconsistent form and the general uncertainty of goal totals limit a high-conviction edge.\n\nMARKET 2: YES\nYour Probability: 65%\nMarket Price: 49.4%\nEdge: +15.6% (Your prob - Market)\nExpected Value: 15.6%\nReasoning: Both teams are in poor defensive form and desperate for points in a relegation battle, which typically leads to open, error-prone games where both teams are likely to score.\n\nMARKET 3: NO\nYour Probability: 50%\nMarket Price: 68.0%\nEdge: -18.0% (Your prob - Market)\nExpected Value: 18.0%\nReasoning: Liverpool's recent inconsistent form, including two draws where they failed to dominate, against a Brighton side capable of resilience makes a win by two or more clear goals less probable than the market suggests.",
+      "response_time": 9.29,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: NO_TRADE\nYour Probability: 60%\nMarket Price: 65.0%\nEdge: -5% (Your prob - Market)\nExpected Value: -0.05 * potential payout\nReasoning: While Hoffenheim has a strong home record, the provided context lacks specific goal-scoring/conceding data to confidently assess the likelihood",
+      "response_time": 10.14,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 14.07
+  }
+}

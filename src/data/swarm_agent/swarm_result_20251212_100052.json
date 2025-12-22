@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-12T10:00:52.585742",
+  "prompt": "Analyze these 3 Polymarket markets and provide your predictions.\nYou have been given RECENT NEWS AND CONTEXT from web search for each market.\nUse this information to make more informed predictions.\n\n\nMarket 1:\nTitle: Games Total: O/U 2.5\nRecent trade: $831.00 on Over\nLink: https://polymarket.com/event/dota2-ty-amaru-2025-12-12\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nThe \"Over/Under 2.5 Goals\" betting market is a popular wager in football (soccer) where bettors predict whether the total number of goals scored in a match will be over or under 2.5. If the total goals are 3 or more, the \"Over\" bet wins; if 2 or fewer, the \"Under\" bet wins. ([gambling.com](https://www.gambling.com/au/sports-betting/strategy/over-2-5-goals-meaning-alternative-total-goals-2367100?utm_source=openai))\n\n**Recent Trends and Data:**\n\n- **Liverpool vs. Brighton:** In 10 out of 15 matches this season, 67% of Liverpool's games have seen over 2.5 goals. ([windrawwin.com](https://www.windrawwin.com/us/soccer-stats/over-under-25-goals/?utm_source=openai))\n\n- **Manchester City:** Similarly, 67% of Manchester City's games this season have had over 2.5 goals. ([windrawwin.com](https://www.windrawwin.com/us/soccer-stats/over-under-25-goals/?utm_source=openai))\n\n**Expert Insights:**\n\n- **Betting Strategies:** The over 2.5 goals market is favored for its simplicity, focusing solely on th...\n\n---\n\nMarket 2:\nTitle: Will Infrared launch a token by December 31 2025?\nRecent trade: $700.00 on Yes\nLink: https://polymarket.com/event/will-infrared-launch-a-token-by\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nInfrared Finance, a decentralized finance (DeFi) infrastructure platform, has not publicly announced a specific date for launching its governance token. In March 2025, the company raised $14 million in a Series A funding round led by Framework Ventures, bringing its total funding to $18.75 million. This funding was structured as a Simple Agreement for Future Tokens (SAFT), indicating plans for a future token launch. ([coindesk.com](https://www.coindesk.com/business/2025/03/04/infrared-raises-usd16m-to-roll-out-first-liquidity-staking-protocol-on-berachain?utm_source=openai))\n\nAs of December 12, 2025, Infrared has not provided an official launch date for its token. Prediction markets on Polymarket show varying probabilities for a token launch by December 31, 2025, with the \"Yes\" outcome priced at 79% and the \"No\" outcome at 21%. ([polymarket.com](https://polymarket.com/event/will-infrared-launch-a-token-by/will-infrared-launch-a-token-by-september-30-2026?utm_source=openai))\n\nGiven the ...\n\n---\n\nMarket 3:\nTitle: Dota 2: Passion UA vs Team Tidebound (BO3)\nRecent trade: $1,000.00 on Passion UA\nLink: https://polymarket.com/event/dota2-psnua-tt2-2025-12-12\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nThe upcoming Dota 2 match between Passion UA and Team Tidebound is scheduled for December 12, 2025, at 11:00 AM UTC, as part of the ESL Dota2 2025 DreamLeague Season 27 Main Event Group Stage - Round 3. ([strafe.com](https://www.strafe.com/match/passion-ua-vs-team-tidebound-round-3-main-event-f36515/?utm_source=openai))\n\n**Team Overview:**\n\n- **Passion UA**: Ranked #26 in the Strafe Dota 2 World Rankings, Passion UA has a 52.21% win rate with a record of 366 wins and 335 losses. ([dotabuff.com](https://www.dotabuff.com/esports/teams/9247798-passion-ua?utm_source=openai)) In their last five matches, they have secured one win. ([bo3.gg](https://bo3.gg/dota2/matches/passion-ua-dota2-vs-team-tidebound-12-12-2025?utm_source=openai))\n\n- **Team Tidebound**: Holding the #12 position in the Strafe Dota 2 World Rankings, Team Tidebound has a 56% win rate over the past year. ([bo3.gg](https://bo3.gg/dota2/matches/passion-ua-dota2-vs-team-tidebound-12-12-2025?utm_source=openai)) However, their rec...\n\n---\n\n\nProvide predictions for each market in the specified format.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\nUse this context to make more informed predictions.\n\nFor each market, provide your prediction in this exact format:\n\nMARKET [number]: [decision]\nReasoning: [brief 1-2 sentence explanation that references the news context if relevant]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES means you would bet on the \"Yes\" outcome\n- NO means you would bet on the \"No\" outcome\n- NO_TRADE means you would not take a position\n\nBe concise and focused on the most promising opportunities.",
+  "consensus_summary": "The consensus is unanimous for Market 1 (NO_TRADE due to irrelevant soccer context) and strongly agrees on Market 2 (YES, citing the SAFT funding as a key signal). For Market 3, four of five models predict NO (favoring Team Tidebound), with one dissenting YES prediction based on perceived betting value.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "DEEPSEEK",
+    "AI #3": "CLAUDE",
+    "AI #4": "OPUS",
+    "AI #5": "GEMINI"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.04,
+      "success": true
+    },
+    "openai": {
+      "response": "MARKET 1: NO_TRADE  \nReasoning: The context provided is about soccer and doesn't apply directly to the Dota 2 market titled \"Games Total: O/U 2.5\". Without specific information on the Dota 2 match dynamics, it's prudent to avoid making a prediction based on unrelated soccer data.\n\nMARKET 2: YES  \nReasoning: Infrared Finance has structured its recent funding as a SAFT, indicating clear intentions to launch a token in the future. With significant investment already secured, and the \"Yes\" outcome priced at 79%, the probability of Infrared launching a token by the end of 2025 appears strong.\n\nMARKET 3: NO  \nReasoning: Team Tidebound is ranked significantly higher than Passion UA in the Strafe Dota 2 World Rankings and has a better win rate. Despite recent support for Passion UA, the overall data favors Team Tidebound, suggesting Passion UA is less likely to win.",
+      "response_time": 2.99,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO_TRADE\nReasoning: The provided news context is about soccer/football over/under goal markets, but the market title \"Games Total: O/U 2.5\" and link reference Dota 2, creating a clear mismatch; no relevant context for the actual event is given.\n\nMARKET 2: YES\nReasoning: The recent $14 million Series A funding was structured as a SAFT, explicitly indicating plans for a future token launch, and the market price of 79% for \"Yes\" aligns with this strong institutional signal.\n\nMARKET 3: NO\nReasoning: Team Tidebound is ranked #12 with a 56% win rate, significantly higher than Passion UA's #26 ranking and 52% win rate, and Passion UA has only one win in their last five matches, indicating recent poor form.",
+      "response_time": 7.04,
+      "success": true
+    },
+    "claude": {
+      "response": "MARKET 1: NO_TRADE\nReasoning: This appears to be a Dota 2 esports match (Amaru vs TY), not a football match. The provided news context about soccer over/under 2.5 goals is irrelevant to Dota 2 map totals, making informed prediction impossible without proper context.\n\nMARKET 2: YES\nReasoning: Infrared raised $14M via SAFT (Simple Agreement for Future Tokens) in March 2025, strongly indicating token launch plans. With only 19 days left in 2025 and the market already pricing YES at 79%, the recent momentum and funding structure support a likely December launch.\n\nMARKET 3: YES\nReasoning: Team Tidebound is ranked significantly higher (#12 vs #26), has a better win rate (56% vs 52.21%), and Passion UA has won only 1 of their last 5 matches. The $1,000 bet on Passion UA appears contrarian to the team strength differential, making Tidebound the value play.",
+      "response_time": 8.44,
+      "success": true
+    },
+    "opus": {
+      "response": "MARKET 1: NO_TRADE\nReasoning: This appears to be a Dota 2 match (TY vs Amaru) based on the link, but the news context provided is about soccer over/under goals, making it irrelevant. Without specific information about the Dota 2 teams and their typical game counts in best-of series, I cannot make an informed prediction.\n\nMARKET 2: YES\nReasoning: With $14M raised via SAFT (indicating explicit token plans), only ~19 days remaining until deadline, and the market already pricing YES at 79%, the SAFT structure creates strong pressure to launch. The funding mechanism essentially commits them to a token, making a 2025 launch highly probable.\n\nMARKET 3: NO\nReasoning: Team Tidebound is ranked significantly higher (#12 vs #26), has a better win rate (56% vs 52%), and while both teams have struggled recently, Tidebound's superior ranking in this DreamLeague tournament suggests they are the stronger team. Betting on Tidebound (NO on Passion UA) appears to be the better value.",
+      "response_time": 8.53,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: NO_TRADE\nReasoning: The market title \"Games Total: O/U 2.5\" points to a Dota 2 event, but the provided news context is entirely about \"Over/Under 2.5 Goals\" in football (soccer). This severe mismatch makes the context irrelevant and prevents an informed prediction.\n\nMARKET 2: YES\nReasoning",
+      "response_time": 10.82,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 6,
+    "failed_responses": 0,
+    "total_time": 14.55
+  }
+}

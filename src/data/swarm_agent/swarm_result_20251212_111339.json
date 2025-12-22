@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-12T11:13:39.667127",
+  "prompt": "Analyze these 3 Polymarket markets and provide your predictions.\nYou have been given RECENT NEWS AND CONTEXT from web search for each market.\nUse this information to make more informed predictions.\n\n\nMarket 1:\nTitle: Will Wolverhampton Wanderers FC win on 2025-12-13?\nRecent trade: $842.03 on No\nLink: https://polymarket.com/event/epl-ars-wol-2025-12-13\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\n\n## [Emirates Stadium](https://www.google.com/maps/search/Emirates+Stadium?utm_source=openai)\n\n\n## EPL Schedule\n- Wolverhampton Wanderers @ Arsenal FC on Saturday, Dec 13, 2025 at 12:00 PM PST\n\n\nWolverhampton Wanderers FC is set to face Arsenal FC on December 13, 2025, at Emirates Stadium. Arsenal leads the Premier League with 33 points, while Wolves are at the bottom with just 2 points. ([futbol24.com](https://www.futbol24.com/betting-tips/preview/13-12-2025-arsenal-fc-wolverhampton-wanderers-fc-betting-tip/?utm_source=openai))\n\n**Recent Form:**\n\n- **Wolverhampton Wanderers:**\n  - Suffered a 4-1 defeat to Manchester United on December 8, marking their eighth consecutive league loss. ([reuters.com](https://www.reuters.com/sports/soccer/manchester-united-go-sixth-with-4-1-win-wolves-misery-continues-2025-12-08/?utm_source=openai))\n  - Previously lost 1-0 to Aston Villa on November 30. ([reuters.com](https://www.reuters.com/sports/soccer/kamara-stunner-sends-villa-third-with-narrow-win-o...\n\n---\n\nMarket 2:\nTitle: Dota 2: BetBoom Team vs OG - Game 1 Winner\nRecent trade: $800.00 on OG\nLink: https://polymarket.com/event/dota2-bb4-og-2025-12-12\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nAs of December 12, 2025, BetBoom Team and OG are set to face each other in Game 1 of their Best of 3 series in the ESL Dota 2 2025 DreamLeague Season 27 Main Event. ([strafe.com](https://www.strafe.com/match/betboom-team-vs-og-round-3-main-event-8a4cd8/?utm_source=openai))\n\n**Recent Performances:**\n\n- **BetBoom Team:** The team has demonstrated strong form recently, securing victories in four of their last five matches. ([strafe.com](https://www.strafe.com/match/betboom-team-vs-og-round-3-main-event-8a4cd8/?utm_source=openai))\n\n- **OG:** Similarly, OG has also won four of their last five matches, indicating a competitive edge. ([strafe.com](https://www.strafe.com/match/betboom-team-vs-og-round-3-main-event-8a4cd8/?utm_source=openai))\n\n**Head-to-Head Record:**\n\nIn their previous encounters, BetBoom Team has a favorable record against OG, with five wins compared to OG's two. ([egamersworld.com](https://egamersworld.com/dota2/match/XnQphN9BV/og-vs-betboom-team-oVJQbS3Pp?utm_source=openai)...\n\n---\n\nMarket 3:\nTitle: Will Girona FC win on 2025-12-12?\nRecent trade: $910.00 on No\nLink: https://polymarket.com/event/lal-rso-gir-2025-12-12\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nGirona FC is set to face Real Sociedad today, December 12, 2025, at 9:00 PM CET in a crucial La Liga match at the Reale Arena in San Sebasti\u00e1n. ([as.com](https://as.com/futbol/primera/real-sociedad-girona-horarrio-como-ver-en-directo-en-tv-y-como-seguir-online-laliga-f202512-n/?utm_source=openai))\n\n**Recent Performance:**\n\n- **Girona FC:** Currently 18th in La Liga with 12 points, Girona has struggled this season, securing only two wins, six draws, and seven losses. ([footystats.org](https://footystats.org/clubs/girona-fc-312?utm_source=openai)) Their recent form includes a 2-0 victory over Elche CF on December 7, 2025. ([thescore.com](https://www.thescore.com/liga/events/90978?utm_source=openai))\n\n- **Real Sociedad:** Sitting 14th in the league with 16 points, Real Sociedad has faced challenges, including a recent 2-1 defeat to Alav\u00e9s. ([as.com](https://as.com/futbol/primera/alineacion-posible-de-la-real-sociedad-ante-el-girona-en-laliga-ea-sports-f202512-n/?utm_source=openai))\n\n**Tea...\n\n---\n\n\nProvide predictions for each market in the specified format.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\nUse this context to make more informed predictions.\n\nFor each market, provide your prediction in this exact format:\n\nMARKET [number]: [decision]\nReasoning: [brief 1-2 sentence explanation that references the news context if relevant]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES means you would bet on the \"Yes\" outcome\n- NO means you would bet on the \"No\" outcome\n- NO_TRADE means you would not take a position\n\nBe concise and focused on the most promising opportunities.",
+  "consensus_summary": "The consensus strongly predicts \"No\" for both the Wolverhampton Wanderers and Girona FC matches, citing their poor league positions and poor form against stronger opponents. For the Dota 2 match, opinions are split between \"No Trade\" and favoring BetBoom Team, with disagreement on whether the head-to-head record is decisive given both teams' equally strong recent form. Overall, the predictions are highly confident for the two soccer matches but cautious and divided on the esports outcome.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "DEEPSEEK",
+    "AI #3": "OPUS",
+    "AI #4": "GEMINI",
+    "AI #5": "CLAUDE"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.04,
+      "success": true
+    },
+    "openai": {
+      "response": "MARKET 1: NO\nReasoning: Wolverhampton Wanderers are at the bottom of the Premier League with just 2 points and have lost their last eight league matches. Arsenal leads the league and is playing at home, making a Wolves win highly unlikely.\n\nMARKET 2: NO_TRADE\nReasoning: Both BetBoom Team and OG are in strong form, each winning four of their last five matches. Although BetBoom has a slightly better head-to-head record, the recent performances of both teams make this match too close to call confidently.\n\nMARKET 3: NO\nReasoning: Girona FC is struggling in La Liga with only two wins this season and is facing Real Sociedad away. Despite Real Sociedad's challenges, Girona's poor overall performance this season makes their victory unlikely.",
+      "response_time": 3.48,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO  \nReasoning: Arsenal leads the Premier League while Wolves are bottom with only 2 points and are on an eight-game losing streak, making a Wolves away win highly improbable.\n\nMARKET 2: NO_TRADE  \nReasoning: Both BetBoom Team and OG have won four of their last five matches, indicating a closely matched Game 1, and the head-to-head record is not decisive enough for a confident bet.\n\nMARKET 3: NO  \nReasoning: While both teams are in the lower half, Girona is 18th with only two wins this season and is playing away at Real Sociedad, making a Girona victory the less likely outcome.",
+      "response_time": 6.03,
+      "success": true
+    },
+    "opus": {
+      "response": "MARKET 1: NO\nReasoning: Wolves are bottom of the Premier League with just 2 points and on an 8-game losing streak, while Arsenal leads the table with 33 points playing at home at Emirates Stadium. A Wolves win here is extremely unlikely.\n\nMARKET 2: NO\nReasoning: BetBoom Team has a favorable 5-2 head-to-head record against OG, and both teams are in similar form (4 wins in last 5). The historical advantage gives BetBoom the edge in Game 1, making a bet on OG (the \"Yes\" outcome) less attractive.\n\nMARKET 3: NO\nReasoning: Girona is 18th in La Liga with poor form (2 wins, 6 draws, 7 losses) and playing away at Real Sociedad's Reale Arena. Despite Real Sociedad's own struggles, an away win for Girona is unlikely given their current position and form.",
+      "response_time": 6.26,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: NO\nReasoning: Wolverhampton Wanderers are at the bottom of the league with 8 consecutive losses, including recent heavy defeats, and are playing away at the league leaders, Arsenal.\n\nMARKET 2: YES\nReasoning: Despite both teams having strong recent form, BetBoom Team has a superior head-to-head record against OG (5 wins vs 2), suggesting they have a historical advantage in this matchup.\n\nMARKET 3: NO\nReasoning: Girona FC is currently 18th in La Liga with a poor season record and will be playing away from home against Real Sociedad, who are higher in the league standings.",
+      "response_time": 6.55,
+      "success": true
+    },
+    "claude": {
+      "response": "MARKET 1: NO\nReasoning: Arsenal is top of the Premier League with 33 points while Wolves are dead last with only 2 points and have lost 8 consecutive league matches. Arsenal playing at home at Emirates Stadium makes a Wolves victory extremely unlikely.\n\nMARKET 2: NO_TRADE\nReasoning: Both teams are in strong recent form (4 wins in last 5 matches each), and while BetBoom has a favorable 5-2 head-to-head record, this is too close to call with confidence for a single game in a competitive Best of 3 series.\n\nMARKET 3: NO\nReasoning: Girona is 18th in La Liga with a poor record (2-6-7) playing away against Real Sociedad at Reale Arena. Despite Real Sociedad's own struggles at 14th place, home advantage and Girona's weak position make a Girona win unlikely.",
+      "response_time": 7.1,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 6,
+    "failed_responses": 0,
+    "total_time": 12.19
+  }
+}

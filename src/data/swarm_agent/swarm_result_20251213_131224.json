@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T13:12:24.202372",
+  "prompt": "Analyze these 3 Polymarket markets.\n\nFor EACH market:\n1. Estimate the TRUE PROBABILITY based on news context\n2. Calculate EDGE vs market price\n3. Only recommend trades with 10%+ edge\n\n\nMarket 1:\nTitle: Torino FC vs. US Cremonese: O/U 2.5\nCurrent Market Price: 51.0% (this is the market's implied probability)\nRecent trade: $5,100.51 on Under\nLink: https://polymarket.com/event/sea-tor-cre-2025-12-13-more-markets\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nThe Serie A match between Torino FC and US Cremonese is scheduled for December 13, 2025, at the Stadio Olimpico Grande Torino in Turin. ([foxsports.com](https://www.foxsports.com/soccer/serie-a-torino-vs-us-cremonese-dec-13-2025-game-boxscore-625347?utm_source=openai))\n\n**Over/Under 2.5 Goals Betting Odds:**\n\n- **Over 2.5 Goals:** +112\n- **Under 2.5 Goals:** -149\n\nThis indicates that the betting market favors fewer than 2.5 goals in the match. ([foxsports.com](https://www.foxsports.com/soccer/serie-a-torino-vs-us-cremonese-dec-13-2025-game-boxscore-625347?utm_source=openai))\n\n**Recent Form and Scoring Trends:**\n\n- **Torino FC:** In their last five matches, Torino have scored a total of six goals, averaging 1.2 goals per game. ([sportpesajackpot.com](https://www.sportpesajackpot.com/torino-vs-cremonese-prediction-185692142/?utm_source=openai))\n\n- **US Cremonese:** Over the same period, Cremonese have scored seven goals, averaging 1.4 goals per game. ([sportpesajackpot.com](https://www.s\n\n---\n\nMarket 2:\nTitle: Will Partido Popular (PP) win the 2025 Extremadura regional election?\nCurrent Market Price: 96.4% (this is the market's implied probability)\nRecent trade: $600.00 on Yes\nLink: https://polymarket.com/event/extremadura-regional-election-winner\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nLas elecciones regionales en Extremadura est\u00e1n programadas para el 21 de diciembre de 2025. Seg\u00fan la encuesta preelectoral del Centro de Investigaciones Sociol\u00f3gicas (CIS) publicada el 28 de noviembre de 2025, el Partido Popular (PP) lidera con un 38,5% de intenci\u00f3n de voto, lo que podr\u00eda traducirse en entre 25 y 29 esca\u00f1os. Sin embargo, para formar gobierno, el PP necesitar\u00eda el apoyo de Vox, que podr\u00eda obtener entre 10 y 12 esca\u00f1os, duplicando su representaci\u00f3n actual. Por su parte, el PSOE se situar\u00eda en segundo lugar con un 31,6% de los votos, estim\u00e1ndose entre 19 y 22 esca\u00f1os, lo que representar\u00eda una disminuci\u00f3n significativa respecto a los 28 esca\u00f1os obtenidos en las elecciones anteriores. ([elpais.com](https://elpais.com/espana/2025-11-28/el-pp-necesitara-a-vox-para-volver-a-gobernar-extremadura-segun-el-cis.html?utm_source=openai))\n\nMar\u00eda Guardiola, actual presidenta del Gobierno de Extremadura y candidata del PP, ha presentado un programa electoral con 608 medidas enfocadas e\n\n---\n\nMarket 3:\nTitle: Club Atl\u00e9tico de Madrid vs. Valencia CF: Both Teams to Score\nCurrent Market Price: 53.4% (this is the market's implied probability)\nRecent trade: $728.98 on No\nLink: https://polymarket.com/event/lal-mad-val-2025-12-13-more-markets\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nThe upcoming LaLiga match between Atl\u00e9tico Madrid and Valencia CF is generating significant interest, particularly regarding the \"Both Teams to Score\" (BTTS) market. Here's a concise overview of the latest insights:\n\n**Match Overview:**\n- **Date & Venue:** Saturday, 13 December 2025, at the Riyadh Air Metropolitano Stadium.\n- **Kick-off:** 14:00 local time.\n\n**Team Form and Statistics:**\n- **Atl\u00e9tico Madrid:**\n  - **Home Performance:** Unbeaten in their last 16 home league games, with 10 consecutive home wins.\n  - **Defensive Record:** Conceded only 15 goals in 16 league matches this season.\n  - **Recent Head-to-Head:** Dominated recent encounters with Valencia, including a 3-0 victory in their last home match against them. ([forebet.com](https://www.forebet.com/en/football-match-previews/24478-atletico-madrid-seek-home-statement-facing-struggling-valencia?utm_source=openai))\n\n- **Valencia CF:**\n  - **Away Performance:** Winless in their last nine away league matches.\n  - **Scoring Rec\n\n---\n\n\nProvide predictions in the exact format specified.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\n\nIMPORTANT: For each market, you MUST estimate the TRUE PROBABILITY of the outcome.\nCompare your probability estimate to the market price to find EDGE (mispricing).\n\nEdge = Your Probability - Market Probability\n- Positive edge on YES side means market undervalues YES\n- Negative edge means market overvalues YES (bet NO instead)\n\nFor each market, provide your prediction in this EXACT format:\n\nMARKET [number]: [decision]\nYour Probability: [0-100]%\nMarket Price: [shown price]%\nEdge: [+/-X]% (Your prob - Market)\nExpected Value: [calculate: Edge \u00d7 potential payout]\nReasoning: [1-2 sentences explaining your probability estimate]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES = Your probability > Market price + 10% (minimum 10% edge)\n- NO = Your probability < Market price - 10%\n- NO_TRADE = Edge < 10% (not enough value)\n\nBe contrarian when you have conviction. Look for markets where news hasn't been priced in yet.",
+  "consensus_summary": "The consensus shows no trade recommendation for Market 1, with all AIs estimating a true probability below or near the market price, resulting in a negative edge. For Market 2, all models agree the market price is too high, though they disagree on the severity of the overvaluation. Only AI #3 recommends a trade for Market 3 (a \"Yes\" on Both Teams to Score), citing a significant positive edge, which is a notable point of disagreement as the others advise against it.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "GEMINI",
+    "AI #3": "DEEPSEEK"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.04,
+      "success": true
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4k6DWsNXxRxpKkCxD6h'}",
+      "response_time": 0.08,
+      "success": false
+    },
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4k6DW8AJ3m6MGg4LwFg'}",
+      "response_time": 0.08,
+      "success": false
+    },
+    "openai": {
+      "response": "MARKET 1: NO\nYour Probability: 60%\nMarket Price: 51.0%\nEdge: -9% (Your prob - Market)\nExpected Value: -$0.09 per $1 bet\nReasoning: The betting odds and recent team scoring trends suggest a higher likelihood of the match going under 2.5 goals. However, the edge is not significant enough to recommend a trade.\n\nMARKET 2: NO_TRADE\nYour Probability: 90%\nMarket Price: 96.4%\nEdge: -6.4% (Your prob - Market)\nExpected Value: -$0.064 per $1 bet\nReasoning: Despite the PP leading in polls, there remains some uncertainty due to the need for coalition support from Vox. The market's high price reflects a strong expectation of a PP victory, leaving insufficient edge for a contrarian position.\n\nMARKET 3: NO\nYour Probability: 45%\nMarket Price: 53.4%\nEdge: -8.4% (Your prob - Market)\nExpected Value: -$0.084 per $1 bet\nReasoning: Atl\u00e9tico Madrid's strong home performance and Valencia's poor away record suggest a lower probability of both teams scoring. However, the edge is not large enough to justify a trade.",
+      "response_time": 2.92,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: NO_TRADE\nYour Probability: 44%\nMarket Price: 51.0%\nEdge: -7% (44 - 51)\nExpected Value: -0.07 * potential payout\nReasoning: Professional betting odds heavily favor Under 2.5 goals, with \"Over 2.5\" implied at a vig-adjusted",
+      "response_time": 9.85,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO_TRADE\nYour Probability: 45%\nMarket Price: 51.0%\nEdge: -6.0% (Your prob - Market)\nExpected Value: -6.0% (Edge \u00d7 potential payout)\nReasoning: Betting odds (-149 for Under) imply a ~60% probability for Under 2.5 goals, but recent team form (averages of 1.2 and 1.4 goals per game) suggests a combined average near 2.6, making it a close call. My estimate is slightly below the market, but the edge is insufficient for a trade.\n\nMARKET 2: NO\nYour Probability: 80%\nMarket Price: 96.4%\nEdge: -16.4% (Your prob - Market)\nExpected Value: -16.4% (Edge \u00d7 potential payout)\nReasoning: While the PP leads in polls, the need for a coalition with Vox to govern introduces significant execution risk; a 96% market price ignores the possibility of negotiation failure or an unexpected result, creating a large negative edge.\n\nMARKET 3: YES\nYour Probability: 70%\nMarket Price: 53.4%\nEdge: +16.6% (Your prob - Market)\nExpected Value: +16.6% (Edge \u00d7 potential payout)\nReasoning: Despite Atl\u00e9tico's strong home defense, Valencia's need to score and Atl\u00e9tico's attacking capability at home make \"Both Teams to Score\" more likely than the market suggests, especially in a dynamic league match.",
+      "response_time": 11.83,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 16.59
+  }
+}

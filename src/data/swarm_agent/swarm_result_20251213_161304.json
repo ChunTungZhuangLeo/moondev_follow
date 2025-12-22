@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T16:13:04.859704",
+  "prompt": "Analyze these 3 Polymarket markets.\n\nFor EACH market:\n1. Estimate the TRUE PROBABILITY based on news context\n2. Calculate EDGE vs market price\n3. Only recommend trades with 10%+ edge\n\n\nMarket 1:\nTitle: Dota 2: Passion UA vs Team Nemesis - Game 2 Winner\nCurrent Market Price: 81.0% (this is the market's implied probability)\nRecent trade: $3,154.99 on Team Nemesis\nLink: https://polymarket.com/event/dota2-psnua-nem-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nAs of December 13, 2025, at 4:12 PM, the Dota 2 match between Passion UA and Team Nemesis in the ESL Dota2 2025 DreamLeague Season 27 Main Event is scheduled to begin at 2:30 PM. Therefore, the match has not yet started, and no results are available at this time.\n\n**Match Details:**\n- **Teams:** Passion UA vs. Team Nemesis\n- **Tournament:** ESL Dota2 2025 DreamLeague Season 27 Main Event\n- **Stage:** Group Stage - Round 4\n- **Format:** Best of 3\n- **Start Time:** December 13, 2025, at 2:30 PM\n- **Prize Pool:** $1,000,000\n- **Location:** Offline\n\n**Team Information:**\n- **Passion UA:** Ranked #26 in the Strafe Dota 2 World Rankings, with a recent form of 1 win and 9 losses.\n- **Team Nemesis:** Ranked #24 in the Strafe Dota 2 World Rankings, with a recent form of 1 win and 9 losses.\n\n**Community Predictions:**\n- According to Strafe Esports, 79.6% of users predict a victory for Team Nemesis, while 20.4% favor Passion UA. ([strafe.com](https://www.strafe.com/match/passion-ua-vs-team-nemesi\n\n---\n\nMarket 2:\nTitle: Northern Illinois Huskies vs. Elon Phoenix: O/U 158.5\nCurrent Market Price: 50.6% (this is the market's implied probability)\nRecent trade: $895.26 on Under\nLink: https://polymarket.com/event/cbb-nill-elon-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nThe Northern Illinois Huskies (3-6) are set to face the Elon Phoenix (5-4) today, December 13, 2025, at 1 p.m. EST in Elon, North Carolina. The over/under for the game is set at 159.5 points. ([sports.betmgm.com](https://sports.betmgm.com/en/blog/ncaab/northern-illinois-elon-prediction-odds-picks-dec-13-college-basketball-jaa/?utm_source=openai))\n\n**Recent Performance:**\n\n- **Elon Phoenix:** In their previous game, Elon secured a 73-52 victory over the Wofford Terriers, with Chandler Cuthrell contributing 21 points. ([foxsports.com](https://www.foxsports.com/articles/cbk/northern-illinois-visits-elon-after-cuthrells-21point-game?utm_source=openai)) Cuthrell leads the team with an average of 22.9 points per game and is shooting 54.4% from the field. ([elonphoenix.com](https://elonphoenix.com/news/2025/12/12/mens-basketball-phoenix-hosts-niu-in-saturday-matinee.aspx?utm_source=openai))\n\n- **Northern Illinois Huskies:** The Huskies have struggled on the road, with a 1-5 away record. They \n\n---\n\nMarket 3:\nTitle: Israel and Indonesia normalize relations by June 30, 2026?\nCurrent Market Price: 83.4% (this is the market's implied probability)\nRecent trade: $729.69 on No\nLink: https://polymarket.com/event/israel-and-indonesia-normalize-relations-by\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nAs of December 13, 2025, there have been no official announcements indicating that Israel and Indonesia will normalize diplomatic relations by June 30, 2026. Indonesia's Foreign Ministry has consistently stated that it will not establish diplomatic ties with Israel unless Israel first recognizes an independent and sovereign Palestinian state. ([indonesiabusinesspost.com](https://indonesiabusinesspost.com/5351/geopolitics/fm-rules-out-normalization-with-israel-without-palestinian-recognition?utm_source=openai))\n\nIn May 2025, Indonesian President Prabowo Subianto expressed Indonesia's readiness to establish diplomatic relations with Israel, contingent upon Israel's recognition of Palestinian statehood. He emphasized that a two-state solution is essential for achieving true peace in the region. ([thediplomat.com](https://thediplomat.com/2025/05/prabowo-says-indonesia-ready-to-establish-diplomatic-ties-with-israel-on-one-condition/?utm_source=openai))\n\nHowever, in October 2025, Indonesia d\n\n---\n\n\nProvide predictions in the exact format specified.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\n\nIMPORTANT: For each market, you MUST estimate the TRUE PROBABILITY of the outcome.\nCompare your probability estimate to the market price to find EDGE (mispricing).\n\nEdge = Your Probability - Market Probability\n- Positive edge on YES side means market undervalues YES\n- Negative edge means market overvalues YES (bet NO instead)\n\nFor each market, provide your prediction in this EXACT format:\n\nMARKET [number]: [decision]\nYour Probability: [0-100]%\nMarket Price: [shown price]%\nEdge: [+/-X]% (Your prob - Market)\nExpected Value: [calculate: Edge \u00d7 potential payout]\nReasoning: [1-2 sentences explaining your probability estimate]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES = Your probability > Market price + 10% (minimum 10% edge)\n- NO = Your probability < Market price - 10%\n- NO_TRADE = Edge < 10% (not enough value)\n\nBe contrarian when you have conviction. Look for markets where news hasn't been priced in yet.",
+  "consensus_summary": "The consensus identifies a clear trading opportunity only in Market 3, where all three AIs agree the \"No\" position holds a significant negative edge against an overly optimistic market price. For Market 1, there is general agreement that no trade is advisable, though AI #3's much lower probability estimate is a notable outlier. Regarding Market 2, the models disagree on both the true probability and trade viability, indicating a lack of reliable consensus.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "DEEPSEEK",
+    "AI #3": "GEMINI"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.04,
+      "success": true
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4ysWRdQ55ckyhQTP4Np'}",
+      "response_time": 0.1,
+      "success": false
+    },
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4ysWQtRo2bK1zUDAxGj'}",
+      "response_time": 0.1,
+      "success": false
+    },
+    "openai": {
+      "response": "MARKET 1: NO_TRADE  \nYour Probability: 80%  \nMarket Price: 81.0%  \nEdge: -1% (Your prob - Market)  \nExpected Value: -$0.01  \nReasoning: Both teams have similar rankings and poor recent performance, suggesting that the market's 81% is slightly high but not enough to warrant a trade.\n\nMARKET 2: NO_TRADE  \nYour Probability: 52%  \nMarket Price: 50.6%  \nEdge: +1.4% (Your prob - Market)  \nExpected Value: +$0.014  \nReasoning: The game is closely matched, with the over/under set slightly higher than the market's implied probability. However, the edge is not significant enough for a trade.\n\nMARKET 3: NO  \nYour Probability: 60%  \nMarket Price: 83.4%  \nEdge: -23.4% (Your prob - Market)  \nExpected Value: -$0.234  \nReasoning: Despite some political discussions, the lack of substantial progress towards normalization and Indonesia's firm stance on Palestinian statehood make the current market price overly optimistic.",
+      "response_time": 3.44,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO_TRADE\nYour Probability: 80%\nMarket Price: 81.0%\nEdge: -1.0% (Your prob - Market)\nExpected Value: -1.0%\nReasoning: The true probability is closely aligned with market price and community predictions, with no significant informational edge as the match has not started.\n\nMARKET 2: YES\nYour Probability: 65%\nMarket Price: 50.6%\nEdge: +14.4% (Your prob - Market)\nExpected Value: +14.4%\nReasoning: Elon's strong offensive performance led by Cuthrell (22.9 ppg) against a struggling Northern Illinois road defense (1-5 away) makes the Over more likely than the market suggests.\n\nMARKET 3: NO\nYour Probability: 25%\nMarket Price: 83.4%\nEdge: -58.4% (Your prob - Market)\nExpected Value: -58.4%\nReasoning: Indonesia's firm, repeated precondition of Israeli recognition of Palestinian statehood makes normalization by the deadline highly improbable given the current diplomatic stalemate.",
+      "response_time": 8.62,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: Dota 2: Passion UA vs Team Nemesis - Game 2 Winner\nYour Probability: 55%\nMarket Price: 81.0%\nEdge: -26% (55% - 81%)\nExpected Value: -26% * potential payout\nReasoning: The teams are very close in world rankings (#24 vs #",
+      "response_time": 9.94,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 14.16
+  }
+}

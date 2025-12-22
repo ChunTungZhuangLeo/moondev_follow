@@ -1,0 +1,52 @@
+{
+  "timestamp": "2025-12-13T08:44:25.931133",
+  "prompt": "Analyze these 3 Polymarket markets and provide your predictions.\nYou have been given RECENT NEWS AND CONTEXT from web search for each market.\nUse this information to make more informed predictions.\n\n\nMarket 1:\nTitle: Will Brisbane Roar FC win on 2025-12-13?\nRecent trade: $1,804.20 on Yes\nLink: https://polymarket.com/event/aus-wsw-bri-2025-12-13\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nBrisbane Roar FC is set to face Western Sydney Wanderers FC on December 13, 2025, at CommBank Stadium in Sydney. ([wswanderersfc.com.au](https://wswanderersfc.com.au/news/wanderers-ready-to-take-on-brisbane-roar-at-commbank-stadium/?utm_source=openai))\n\n**Recent Performance:**\n\n- **Brisbane Roar FC:**\n  - Currently 2nd in the A-League Men standings with 14 points from 7 matches, including 4 wins, 2 draws, and 1 loss. ([thetopbookies.com](https://www.thetopbookies.com/betting-tips/football/wsw-vs-bri-13-dec-2025?utm_source=openai))\n  - Unbeaten in their last five league games, with notable victories over Melbourne Victory (1-0) and Newcastle Jets (3-0). ([thetopbookies.com](https://www.thetopbookies.com/betting-tips/football/wsw-vs-bri-13-dec-2025?utm_source=openai))\n  - Demonstrated defensive solidity, conceding only three goals in the season so far. ([thetopbookies.com](https://www.thetopbookies.com/betting-tips/football/wsw-vs-bri-13-dec-2025?utm_source=openai))\n\n- **Western Sydney W...\n\n---\n\nMarket 2:\nTitle: Spread: Paris Saint-Germain FC (-2.5)\nRecent trade: $541.60 on FC Metz\nLink: https://polymarket.com/event/fl1-met-psg-2025-12-13-more-markets\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nParis Saint-Germain (PSG) has recently faced challenges that may impact their performance against Athletic Bilbao, particularly concerning the -2.5 goal spread.\n\n**Recent Match Performance:**\nOn December 10, 2025, PSG played a goalless draw against Athletic Bilbao in the UEFA Champions League. Despite dominating the second half and creating several clear chances, PSG's offensive efforts were thwarted by Bilbao's goalkeeper, Unai Sim\u00f3n. The absence of forward Ousmane Demb\u00e9l\u00e9, who was sidelined due to illness, was notably felt in this match. ([reuters.com](https://www.reuters.com/sports/soccer/psg-held-goalless-draw-athletic-bilbaos-simon-shines-between-posts-2025-12-10/?utm_source=openai))\n\n**Injury Updates:**\nOusmane Demb\u00e9l\u00e9, a key attacking player, has been struggling with fitness issues. He missed domestic games against Olympique Lyonnais and Le Havre due to a calf injury and was recently ruled out of the Champions League match against Athletic Bilbao due to illness. His absence has ...\n\n---\n\nMarket 3:\nTitle: Will TSG 1899 Hoffenheim win on 2025-12-13?\nRecent trade: $940.50 on Yes\nLink: https://polymarket.com/event/bun-hof-hsv-2025-12-13\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nTSG 1899 Hoffenheim is set to face Hamburger SV on December 13, 2025, at the PreZero Arena in Sinsheim. Hoffenheim currently holds 5th place in the Bundesliga with a record of 7 wins, 2 draws, and 4 losses, totaling 23 points. In their most recent match on December 8, 2025, they suffered a 2-0 away defeat to Borussia Dortmund. ([outlookindia.com](https://www.outlookindia.com/sports/football/borussia-dortmund-vs-hoffenheim-german-bundesliga-2025-26-in-pics?utm_source=openai))\n\nHamburger SV, on the other hand, is positioned 13th in the league with 4 wins, 3 draws, and 6 losses, accumulating 15 points. They have struggled on the road, failing to secure a win in any of their 6 away matches this season. ([futbol24.com](https://www.futbol24.com/betting-tips/preview/13-12-2025-tsg-1899-hoffenheim-hamburger-sv-betting-tip/?utm_source=openai))\n\nHistorically, Hoffenheim has had the upper hand in their encounters, winning 2 of the last 5 meetings, with 2 victories for Hamburger SV and 1 draw. The...\n\n---\n\n\nProvide predictions for each market in the specified format.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\nUse this context to make more informed predictions.\n\nFor each market, provide your prediction in this exact format:\n\nMARKET [number]: [decision]\nReasoning: [brief 1-2 sentence explanation that references the news context if relevant]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES means you would bet on the \"Yes\" outcome\n- NO means you would bet on the \"No\" outcome\n- NO_TRADE means you would not take a position\n\nBe concise and focused on the most promising opportunities.",
+  "consensus_summary": "The consensus strongly predicts **Yes** for Brisbane Roar and Hoffenheim winning, citing strong form and home advantage, respectively. All four AIs unanimously predict **No** for PSG covering the -2.5 spread due to recent offensive struggles and a key absence. The only disagreement is AI #4's \"No Trade\" on Market 1, cautioning against the large \"Yes\" bet despite agreeing with the favorable analysis.",
+  "model_mapping": {
+    "AI #1": "GROQ",
+    "AI #2": "OPENAI",
+    "AI #3": "GEMINI",
+    "AI #4": "DEEPSEEK"
+  },
+  "responses": {
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4PfPQfL1Dkr5hwM2uft'}",
+      "response_time": 0.08,
+      "success": false
+    },
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4PfPQuNzgnNQVhrifV1'}",
+      "response_time": 0.08,
+      "success": false
+    },
+    "groq": {
+      "response": "MARKET 1: YES\nReasoning: Brisbane Roar FC's recent performance, including being unbeaten in their last five league games and demonstrating defensive solidity, suggests they have a strong chance of winning against Western Sydney Wanderers FC.\n\nMARKET 2: NO\nReasoning: Given Paris Saint-Germain's recent goalless draw against Athletic Bilbao and the absence of key player Ousmane Demb\u00e9l\u00e9, it's uncertain if they can achieve a margin of victory greater than 2.5 goals against FC Metz.\n\nMARKET 3: YES\nReasoning: TSG 1899 Hoffenheim's home advantage and Hamburger SV's struggle to secure wins in away matches, combined with Hoffenheim's historical upper hand in their encounters, suggest Hoffenheim has a favorable chance of winning on December 13, 2025.",
+      "response_time": 0.63,
+      "success": true
+    },
+    "openai": {
+      "response": "MARKET 1: YES  \nReasoning: Brisbane Roar FC is currently in excellent form, positioned 2nd in the A-League Men standings and unbeaten in their last five league games. Their strong defensive record and recent victories suggest they are well-prepared to secure a win against Western Sydney Wanderers FC.\n\nMARKET 2: NO  \nReasoning: PSG's recent goalless draw against Athletic Bilbao and the absence of key player Ousmane Demb\u00e9l\u00e9 due to fitness issues suggest that they may struggle to cover a -2.5 goal spread against FC Metz. Their current offensive challenges indicate a less dominant performance is likely.\n\nMARKET 3: YES  \nReasoning: TSG 1899 Hoffenheim, currently 5th in the Bundesliga and playing at home, are favored against Hamburger SV, who have yet to win an away game this season and are positioned lower in the league standings. Hoffenheim's stronger league position and historical advantage in head-to-head encounters support a bet on their victory.",
+      "response_time": 2.21,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: YES\nReasoning: Brisbane Roar FC is in strong form, currently 2nd in the A-League Men, and unbeaten in their last five league games with a solid defensive record.\n\nMARKET 2: NO\nReasoning: PSG recently struggled offensively in a goalless draw, failing to convert chances, and key forward Ousmane Demb\u00e9l\u00e9's ongoing fitness issues and recent illness could hinder their ability to cover a -2.5 goal spread.\n\nMARKET 3: YES\nReasoning: Hoffenheim is significantly higher in the Bundesliga standings and will play at home, while Hamburger SV has a very poor away record, having failed to win any of their 6 away matches this season.",
+      "response_time": 4.6,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO_TRADE  \nReasoning: Brisbane Roar is in strong form, but the match is at Western Sydney's home stadium (CommBank Stadium), and the context does not provide enough specific tactical or injury information to confidently bet against the market's recent large Yes trade.\n\nMARKET 2: NO  \nReasoning: PSG's recent offensive struggles, including a 0-0 draw against Athletic Bilbao and the absence of key attacker Ousmane Demb\u00e9l\u00e9 due to illness, make it unlikely they will win by a 3-goal margin (-2.5 spread) against FC Metz.\n\nMARKET 3: YES  \nReasoning: Hoffenheim is significantly higher in the Bundesliga table and faces a Hamburger SV side that has failed to win any of its 6 away matches this season, making a home victory the probable outcome.",
+      "response_time": 7.3,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 11.58
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T09:10:04.680838",
+  "prompt": "Analyze these 3 Polymarket markets.\n\nFor EACH market:\n1. Estimate the TRUE PROBABILITY based on news context\n2. Calculate EDGE vs market price\n3. Only recommend trades with 10%+ edge\n\n\nMarket 1:\nTitle: Will the highest temperature in London be 12\u00b0C on December 13?\nCurrent Market Price: 94.9% (this is the market's implied probability)\nRecent trade: $646.57 on No\nLink: https://polymarket.com/event/highest-temperature-in-london-on-december-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nOn December 13, 2025, London is expected to experience temperatures around 6\u00b0C (43\u00b0F), with forecasts indicating a high of 6\u00b0C and a \"feels-like\" temperature of 6\u00b0C. ([londonworld.com](https://www.londonworld.com/news/london-weather-snow-forecast-december-5417641?utm_source=openai)) This is consistent with London's typical December climate, which features average high temperatures of approximately 7.8\u00b0C (46\u00b0F) and average lows around 3.5\u00b0C (38.3\u00b0F). ([weather-atlas.com](https://www.weather-atlas.com/en/united-kingdom/london-weather-december?utm_source=openai))\n\nHistorically, the highest temperature recorded in London on December 13 is 13.3\u00b0C (55.9\u00b0F), observed in 1901. ([extremeweatherwatch.com](https://www.extremeweatherwatch.com/cities/london-on/record-high-by-day?utm_source=openai)) Therefore, a high of 12\u00b0C (53.6\u00b0F) on December 13 would be notably above the average for this date but still below the historical maximum.\n\nIn recent years, London has experienced record-breaking warmth \n\n---\n\nMarket 2:\nTitle: Will Liverpool FC vs. Brighton & Hove Albion FC end in a draw?\nCurrent Market Price: 77.0% (this is the market's implied probability)\nRecent trade: $630.03 on No\nLink: https://polymarket.com/event/epl-liv-bri-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nLiverpool FC is set to host Brighton & Hove Albion FC at Anfield on Saturday, December 13, 2025. Recent developments suggest a competitive match, with both teams facing unique challenges.\n\n**Team News and Context:**\n\n- **Liverpool FC:** The team is grappling with internal tensions, notably involving Mohamed Salah. Salah criticized the club and manager Arne Slot after being benched in a 3-3 draw against Leeds United, accusing them of scapegoating him. His future at the club is uncertain, with speculation about his departure for the Africa Cup of Nations on December 15 and potential interest from Saudi clubs. ([reuters.com](https://www.reuters.com/sports/soccer/salahs-liverpool-future-under-spotlight-brighton-visit-anfield-2025-12-11/?utm_source=openai))\n\n- **Brighton & Hove Albion FC:** Brighton is aiming to build on their recent 3-2 victory over Liverpool in May, seeking consecutive league wins against them for the first time. ([theanalyst.com](https://theanalyst.com/articles/liverpool\n\n---\n\nMarket 3:\nTitle: Will Torino FC win on 2025-12-13?\nCurrent Market Price: 48.1% (this is the market's implied probability)\nRecent trade: $600.00 on Yes\nLink: https://polymarket.com/event/sea-tor-cre-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nTorino FC is set to host US Cremonese on Saturday, December 13, 2025, at the Stadio Olimpico Grande Torino. The match is scheduled to kick off at 15:00 local time. ([newt.torinofc.it](https://newt.torinofc.it/en/calendario/2025-2026/prima-squadra/15?utm_source=openai))\n\n**Recent Performance:**\n\n- **Torino FC:** In their latest fixture on December 8, 2025, Torino narrowly lost 3-2 to AC Milan. Prior to that, they suffered a significant 5-1 defeat to Como on November 24, 2025. ([torinofc.it](https://www.torinofc.it/en/news/24/11/2025/torino-como-1-5_39785?utm_source=openai))\n\n- **US Cremonese:** Cremonese has shown resilience, securing two consecutive victories in their recent matches. Their most recent win was a 3-1 triumph over Fiorentina on December 6, 2025. ([reuters.com](https://www.reuters.com/sports/soccer/milan-target-scudetto-momentum-title-rivals-hit-road-after-european-setbacks-2025-12-11/?utm_source=openai))\n\n**Team News:**\n\n- **Torino FC:** The team is grappling with several\n\n---\n\n\nProvide predictions in the exact format specified.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\n\nIMPORTANT: For each market, you MUST estimate the TRUE PROBABILITY of the outcome.\nCompare your probability estimate to the market price to find EDGE (mispricing).\n\nEdge = Your Probability - Market Probability\n- Positive edge on YES side means market undervalues YES\n- Negative edge means market overvalues YES (bet NO instead)\n\nFor each market, provide your prediction in this EXACT format:\n\nMARKET [number]: [decision]\nYour Probability: [0-100]%\nMarket Price: [shown price]%\nEdge: [+/-X]% (Your prob - Market)\nExpected Value: [calculate: Edge \u00d7 potential payout]\nReasoning: [1-2 sentences explaining your probability estimate]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES = Your probability > Market price + 10% (minimum 10% edge)\n- NO = Your probability < Market price - 10%\n- NO_TRADE = Edge < 10% (not enough value)\n\nBe contrarian when you have conviction. Look for markets where news hasn't been priced in yet.",
+  "consensus_summary": "The consensus strongly agrees that Market 1's \"YES\" price is vastly overvalued, with all models estimating a true probability near 5% versus a 94.9% market price, creating a massive edge to bet \"NO.\" For Market 3, there is notable disagreement, with one model seeing a 16.9% edge on \"YES\" while another finds no actionable trade, indicating higher uncertainty. Market 2 shows mixed signals, with no clear 10%+ edge consensus, leading most models to recommend no trade.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "GEMINI",
+    "AI #3": "DEEPSEEK"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.04,
+      "success": true
+    },
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4RcZVnNBLrofBX22fbW'}",
+      "response_time": 0.08,
+      "success": false
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4RcZUYJSsKBXmqenTSX'}",
+      "response_time": 0.09,
+      "success": false
+    },
+    "openai": {
+      "response": "MARKET 1: NO\nYour Probability: 5%\nMarket Price: 94.9%\nEdge: -89.9% (Your prob - Market)\nExpected Value: -$89.90 (Edge \u00d7 potential payout)\nReasoning: Given the forecasted high temperature of 6\u00b0C for December 13 in London, which is significantly below 12\u00b0C, the probability of the temperature reaching 12\u00b0C is extremely low. Historical data also supports this expectation, as 12\u00b0C would be notably above average for this time of year.\n\nMARKET 2: NO\nYour Probability: 40%\nMarket Price: 77.0%\nEdge: -37% (Your prob - Market)\nExpected Value: -$37.00 (Edge \u00d7 potential payout)\nReasoning: Despite internal tensions at Liverpool FC, a draw is less probable given Liverpool's strong home performance and the competitive edge they have historically over Brighton. The market seems to overestimate the likelihood of a draw possibly due to recent team issues.\n\nMARKET 3: NO_TRADE\nYour Probability: 50%\nMarket Price: 48.1%\nEdge: +1.9% (Your prob - Market)\nExpected Value: $1.90 (Edge \u00d7 potential payout)\nReasoning: Torino FC and US Cremonese have had mixed recent performances, with Torino facing challenges and Cremonese showing resilience. The probability is close to the market price, suggesting no significant edge.",
+      "response_time": 4.09,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: NO\nYour Probability: 2%\nMarket Price: 94.9%\nEdge: -92.9% (2% - 94.9%)\nExpected Value: 17.69 (This represents the expected profit per $1 bet on NO, calculated as (Your P(NO) - Market P(NO)) * (",
+      "response_time": 10.08,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO\nYour Probability: 5%\nMarket Price: 94.9%\nEdge: -89.9% (Your prob - Market)\nExpected Value: +89.9% (Betting NO at 5.1% price gives high EV)\nReasoning: Forecasts indicate a high of 6\u00b0C, far below the 12\u00b0C threshold, making a 12\u00b0C high extremely unlikely despite historical records.\n\nMARKET 2: NO_TRADE\nYour Probability: 65%\nMarket Price: 77.0%\nEdge: -12.0% (Your prob - Market)\nExpected Value: -12.0%\nReasoning: While Liverpool has internal issues, they remain strong at Anfield; a draw is possible but the market price of 77% seems too high, though not by a full 10% edge for a NO bet.\n\nMARKET 3: YES\nYour Probability: 65%\nMarket Price: 48.1%\nEdge: +16.9% (Your prob - Market)\nExpected Value: +16.9%\nReasoning: Torino is at home against a lower-division opponent (Cremonese) in the Coppa Italia, and their recent poor form is likely overstated in the price, giving them a solid chance to win.",
+      "response_time": 10.17,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 15.03
+  }
+}

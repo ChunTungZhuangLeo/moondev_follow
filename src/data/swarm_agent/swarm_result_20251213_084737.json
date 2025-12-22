@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T08:47:37.939904",
+  "prompt": "Analyze these 3 Polymarket markets.\n\nFor EACH market:\n1. Estimate the TRUE PROBABILITY based on news context\n2. Calculate EDGE vs market price\n3. Only recommend trades with 10%+ edge\n\n\nMarket 1:\nTitle: Weed rescheduled by March 31?\nCurrent Market Price: 29.0% (this is the market's implied probability)\nRecent trade: $590.15 on Yes\nLink: https://polymarket.com/event/weed-rescheduled-by-march-31\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nAs of December 13, 2025, there have been significant developments regarding the potential rescheduling of marijuana under the Controlled Substances Act (CSA).\n\n**Recent Developments:**\n\n- **White House Position:** On December 11, 2025, the White House stated that President Donald Trump has made \"no final decisions\" regarding the rescheduling of marijuana. This indicates that, despite prior reports suggesting imminent action, no official change has been implemented. ([forbes.com](https://www.forbes.com/sites/willyakowicz/2025/12/11/white-house-says-president-trump-has-made-no-final-decisions-around-marijuana-rescheduling/?utm_source=openai))\n\n- **Market Predictions:** In August 2025, prediction markets indicated a 53% chance that marijuana would be rescheduled before 2026. This reflects ongoing uncertainty and differing opinions on the timeline for potential rescheduling. ([barchart.com](https://www.barchart.com/story/news/34267471/markets-bet-on-whether-marijuana-will-be-rescheduled-be\n\n---\n\nMarket 2:\nTitle: LoL: Dplus KIA vs T1 - Game 2 Winner\nCurrent Market Price: 65.8% (this is the market's implied probability)\nRecent trade: $2,500.00 on T1\nLink: https://polymarket.com/event/lol-dk-t1-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nAs of December 13, 2025, the most recent match between Dplus KIA and T1 occurred on January 16, 2025, during the LCK Cup 2025 Group Stage. In this best-of-three series, Dplus KIA emerged victorious with a 2-1 win over T1. ([strafe.com](https://www.strafe.com/match/dplus-kia-vs-t1-group-stage-group-stage-cup-2025-0d34ae?utm_source=openai))\n\n**Match Breakdown:**\n- **Game 1:** Dplus KIA dominated with a 14-2 victory in 23 minutes.\n- **Game 2:** T1 responded with a 17-7 win in 31 minutes.\n- **Game 3:** Dplus KIA clinched the series with an 18-9 win in 34 minutes.\n\n**Key Player Statistics:**\n- **Most Kills:** ShowMaker (Dplus KIA) with 15 kills.\n- **Top Creep Score:** Aiming (Dplus KIA) with 845 CS.\n- **Top Kill Participation:** Gumayusi (T1) with a 96% kill participation rate.\n\n**Head-to-Head Record:**\nPrior to this match, T1 and Dplus KIA had faced each other 13 times, with T1 leading the series 10-3. ([strafe.com](https://www.strafe.com/match/dplus-kia-vs-t1-group-stage-group-stage-cup-2\n\n---\n\nMarket 3:\nTitle: Will Google have the top AI model at the end of December 2025?\nCurrent Market Price: 87.5% (this is the market's implied probability)\nRecent trade: $657.29 on Yes\nLink: https://polymarket.com/event/which-company-has-top-ai-model-end-of-december-style-control-on\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nAs of December 13, 2025, Google's AI model, Gemini 3 Deep Think, is considered one of the most advanced AI models available. Launched in early December 2025, Gemini 3 Deep Think is designed for complex reasoning and problem-solving tasks, achieving exceptional performance on benchmarks such as Humanity's Last Exam and ARC-AGI 2. ([tomsguide.com](https://www.tomsguide.com/ai/google-gemini/google-just-launched-gemini-3-deep-think-its-most-powerful-ai-model-yet?utm_source=openai))\n\nIn response to Google's advancements, OpenAI accelerated the development of its GPT-5.2 model, which was released on December 11, 2025. This model focuses on enhancing general intelligence, coding capabilities, and long-context understanding to remain competitive in the AI landscape. ([reuters.com](https://www.reuters.com/technology/openai-launches-gpt-52-ai-model-with-improved-capabilities-2025-12-11/?utm_source=openai))\n\nPrediction markets reflect a strong belief in Google's leading position in the AI race. A\n\n---\n\n\nProvide predictions in the exact format specified.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\n\nIMPORTANT: For each market, you MUST estimate the TRUE PROBABILITY of the outcome.\nCompare your probability estimate to the market price to find EDGE (mispricing).\n\nEdge = Your Probability - Market Probability\n- Positive edge on YES side means market undervalues YES\n- Negative edge means market overvalues YES (bet NO instead)\n\nFor each market, provide your prediction in this EXACT format:\n\nMARKET [number]: [decision]\nYour Probability: [0-100]%\nMarket Price: [shown price]%\nEdge: [+/-X]% (Your prob - Market)\nExpected Value: [calculate: Edge \u00d7 potential payout]\nReasoning: [1-2 sentences explaining your probability estimate]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES = Your probability > Market price + 10% (minimum 10% edge)\n- NO = Your probability < Market price - 10%\n- NO_TRADE = Edge < 10% (not enough value)\n\nBe contrarian when you have conviction. Look for markets where news hasn't been priced in yet.",
+  "consensus_summary": "The consensus shows no trade for Market 1 due to low edge, unanimous agreement to bet against T1 in Market 2 given an overvalued price, and mixed signals for Market 3 with two models seeing insufficient edge. All models agree the market price for marijuana rescheduling is too high, and they consistently find a significant edge in betting against T1. The primary disagreement centers on whether the edge against Google's AI leadership is large enough to warrant a trade.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "DEEPSEEK",
+    "AI #3": "GEMINI"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.04,
+      "success": true
+    },
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4PuLA5xW858LjvtVzga'}",
+      "response_time": 0.08,
+      "success": false
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4PuLAas3tAsZJordwxA'}",
+      "response_time": 0.1,
+      "success": false
+    },
+    "openai": {
+      "response": "MARKET 1: NO_TRADE  \nYour Probability: 35%  \nMarket Price: 29.0%  \nEdge: +6% (Your prob - Market)  \nExpected Value: Not enough edge  \nReasoning: Despite uncertainty and a lack of final decision from the White House, historical trends and market predictions suggest some chance of rescheduling. However, the edge is not significant enough to warrant a trade.\n\nMARKET 2: NO  \nYour Probability: 55%  \nMarket Price: 65.8%  \nEdge: -10.8% (Your prob - Market)  \nExpected Value: -10.8% \u00d7 potential payout on NO  \nReasoning: While T1 has historically performed well against Dplus KIA, the most recent match showed Dplus KIA's capability to win. The probability of T1 winning is lower than the market price suggests, providing a 10.8% edge on betting NO.\n\nMARKET 3: NO  \nYour Probability: 75%  \nMarket Price: 87.5%  \nEdge: -12.5% (Your prob - Market)  \nExpected Value: -12.5% \u00d7 potential payout on NO  \nReasoning: Although Google's Gemini 3 Deep Think is highly advanced, OpenAI's recent release of GPT-5.2 introduces competition. The market's probability seems overly confident, and the likelihood of Google maintaining the top position is less certain, providing an edge on betting NO.",
+      "response_time": 3.76,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO_TRADE\nYour Probability: 20%\nMarket Price: 29.0%\nEdge: -9.0% (Your prob - Market)\nExpected Value: -9.0%\nReasoning: The White House statement that Trump has made \"no final decisions\" significantly dampens the likelihood of rescheduling by the March 31 deadline, but the market price already reflects substantial skepticism.\n\nMARKET 2: NO\nYour Probability: 45%\nMarket Price: 65.8%\nEdge: -20.8% (Your prob - Market)\nExpected Value: -20.8%\nReasoning: While T1 has a strong historical record, the most recent match in January 2025 was won by Dplus KIA in a close 2-1 series, indicating the matchup is more competitive than the current market price suggests.\n\nMARKET 3: NO_TRADE\nYour Probability: 85%\nMarket Price: 87.5%\nEdge: -2.5% (Your prob - Market)\nExpected Value: -2.5%\nReasoning: Google's Gemini 3 Deep Think is highly advanced, but OpenAI's rapid release of GPT-5.2 creates significant competition, making the market's high confidence in Google's December leadership reasonable.",
+      "response_time": 9.83,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: Weed rescheduled by March 31?\nYour Probability: 8%\nMarket Price: 29.0%\nEdge: -21% (Your prob - Market)\nExpected Value: -14.91%\nReasoning: The White House explicitly stated \"no final decisions\" on December 11, 2025, making",
+      "response_time": 9.84,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 14.43
+  }
+}

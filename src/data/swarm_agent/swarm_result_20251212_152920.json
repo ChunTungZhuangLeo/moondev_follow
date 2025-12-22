@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-12T15:29:20.725232",
+  "prompt": "Analyze these 3 Polymarket markets and provide your predictions.\nYou have been given RECENT NEWS AND CONTEXT from web search for each market.\nUse this information to make more informed predictions.\n\n\nMarket 1:\nTitle: Will JD Vance win the 2028 US Presidential Election?\nRecent trade: $699.96 on No\nLink: https://polymarket.com/event/presidential-election-winner-2028\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nAs of December 12, 2025, Vice President JD Vance is emerging as a prominent figure in discussions about the 2028 U.S. Presidential Election. Recent developments provide insight into his potential candidacy and the political landscape:\n\n**Official Announcements:**\n\n- **President Trump's Endorsement:** In August 2025, President Donald Trump referred to JD Vance as the \"most likely\" successor for the 2028 election, acknowledging his current role as Vice President and suggesting a potential collaboration with Secretary of State Marco Rubio. ([en.apa.az](https://en.apa.az/america/trump-names-vance-as-his-likely-successor-in-2028-us-elections-479723?utm_source=openai))\n\n**Expert Opinions:**\n\n- **Marco Rubio's Support:** Secretary of State Marco Rubio has expressed support for Vance's potential 2028 bid, describing him as a \"close friend\" and a strong candidate. While not ruling out his own presidential ambitions, Rubio emphasized his current diplomatic responsibilities. ([livemint.com](https...\n\n---\n\nMarket 2:\nTitle: Call of Duty: Riyadh Falcons vs Carolina Royal Ravens (BO5)\nRecent trade: $800.00 on Riyadh Falcons\nLink: https://polymarket.com/event/codmw-riyf-crr-2025-12-12\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nThe upcoming Call of Duty League (CDL) match between the Riyadh Falcons and the Carolina Royal Ravens is scheduled for December 12, 2025, at 8:00 PM UK time. ([betclan.com](https://www.betclan.com/esports/predictionsdetails/186043831/Riyadh-Falcons-v-Carolina-Royal-Ravens-prediction-h2h-tip-and-match-preview/?utm_source=openai))\n\n**Team Performance and Recent Developments:**\n\n- **Riyadh Falcons:** The Falcons have struggled throughout the 2025 season, finishing Major 1 with a 0\u20137 record and Major 2 with a 0\u20137 record. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2025_Call_of_Duty_League_season?utm_source=openai)) Their Hardpoint performance was particularly poor, with a 6\u201342 record (12.5%) and an average margin of -60.6, the worst in the league. ([breakingpoint.gg](https://www.breakingpoint.gg/posts/926?utm_source=openai))\n\n- **Carolina Royal Ravens:** The Royal Ravens also faced challenges, finishing Major 1 with a 5\u20132 record and Major 2 with a 5\u20132 record. ([en.wikipedia.org](http...\n\n---\n\nMarket 3:\nTitle: Call of Duty: G2 Minnesota vs Boston Breach (BO5)\nRecent trade: $800.00 on G2 Minnesota\nLink: https://polymarket.com/event/codmw-g2m-bos-2025-12-12\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nAs of December 12, 2025, G2 Minnesota (formerly Minnesota R\u00d8KKR) is set to face Boston Breach in a Call of Duty League (CDL) Major 1 Qualifier match scheduled for 9:30 PM UK time. ([betclan.com](https://www.betclan.com/esports/predictionsdetails/186043832/G2-Minnesota-v-Boston-Breach-prediction-h2h-tip-and-match-preview/?utm_source=openai))\n\n**Team Updates:**\n\n- **G2 Minnesota:** In October 2025, G2 Esports rebranded their CDL franchise from Minnesota R\u00d8KKR to G2 Minnesota, maintaining their base in Minnesota. ([esports.net](https://www.esports.net/news/cod/g2-rebrands-call-of-duty-league-team-from-minnesota-rokkr-to-g2-minnesota?utm_source=openai))\n\n- **Boston Breach:** No significant recent changes have been reported for Boston Breach.\n\n**Recent Performance:**\n\n- **G2 Minnesota:** In the 2025 CDL season, G2 Minnesota finished 10th in Major 1 qualifiers with a 2\u20135 record, and 7th in Major 2 qualifiers with a 3\u20134 record. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2025_Call_of_Du...\n\n---\n\n\nProvide predictions for each market in the specified format.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\nUse this context to make more informed predictions.\n\nFor each market, provide your prediction in this exact format:\n\nMARKET [number]: [decision]\nReasoning: [brief 1-2 sentence explanation that references the news context if relevant]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES means you would bet on the \"Yes\" outcome\n- NO means you would bet on the \"No\" outcome\n- NO_TRADE means you would not take a position\n\nBe concise and focused on the most promising opportunities.",
+  "consensus_summary": "The consensus shows high uncertainty for the 2028 election, with most models advising against a trade on JD Vance despite his endorsements. For the esports markets, there is notable disagreement, particularly on the G2 Minnesota match where predictions are split between \"YES\" and \"NO_TRADE.\" Overall, the AI responses emphasize caution due to insufficient or conflicting information, recommending trades only where historical performance data is starkly one-sided.",
+  "model_mapping": {
+    "AI #1": "DEEPSEEK",
+    "AI #2": "CLAUDE",
+    "AI #3": "OPUS",
+    "AI #4": "OPENAI",
+    "AI #5": "GEMINI"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.05,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO  \nReasoning: While JD Vance has received endorsements, the 2028 election is highly uncertain and far away; the significant recent trade on \"No\" aligns with the inherent unpredictability of a presidential race three years in advance.\n\nMARKET 2: NO_TRADE  \nReasoning: Both teams have poor records, with Riyadh Falcons being historically weak, but the context lacks specific, up-to-date form or roster news for this match, making the outcome too speculative.\n\nMARKET 3: NO_TRADE  \nReasoning: The provided context includes only historical season records and a rebranding, without current match-specific insights or recent head-to-head performance, offering insufficient edge for a confident prediction.",
+      "response_time": 6.02,
+      "success": true
+    },
+    "claude": {
+      "response": "MARKET 1: NO_TRADE\nReasoning: While Trump's endorsement is significant, predicting a presidential election 3+ years out involves enormous uncertainty with multiple unknown candidates, economic conditions, and political dynamics that haven't yet materialized.\n\nMARKET 2: NO_TRADE\nReasoning: Riyadh Falcons have an abysmal 0-14 record with terrible stats, but the recent $800 bet on them suggests possible roster changes or inside information not reflected in historical data that makes this too uncertain.\n\nMARKET 3: YES\nReasoning: G2 Minnesota has consistently outperformed Boston Breach in Major qualifiers (2-5 vs worse records for Boston), and the recent $800 bet on G2 Minnesota aligns with their superior historical performance this season.",
+      "response_time": 6.74,
+      "success": true
+    },
+    "opus": {
+      "response": "MARKET 1: NO\nReasoning: While JD Vance has Trump's endorsement and is well-positioned as VP, the 2028 election is over 3 years away with many variables. Historical odds of any single candidate winning are low, and the current price likely overestimates his chances given potential primary challengers and general election uncertainty.\n\nMARKET 2: NO\nReasoning: The Riyadh Falcons have a dismal 0-14 record across Majors 1 and 2 with the worst Hardpoint performance in the league (-60.6 margin), while Carolina Royal Ravens have a solid 10-4 combined record. The recent $800 trade on Falcons appears to be poor value given this stark performance disparity.\n\nMARKET 3: YES\nReasoning: G2 Minnesota (3-4 in Major 2) has shown improvement over Boston Breach's likely similar or weaker performance, and the recent $800 trade on G2 Minnesota aligns with their marginally better recent form. However, this is a close matchup with limited edge.",
+      "response_time": 7.56,
+      "success": true
+    },
+    "openai": {
+      "response": "MARKET 1: NO_TRADE  \nReasoning: While JD Vance has significant endorsements and political backing for a potential 2028 presidential run, the outcome of a presidential election is highly uncertain at this stage, especially given it involves numerous unpredictable variables over the next few years. Thus, taking a position now would be speculative.\n\nMARKET 2: NO  \nReasoning: The Riyadh Falcons have performed poorly throughout the 2025 season, with a notably bad record in Major events and a particularly weak Hardpoint performance. In contrast, the Carolina Royal Ravens have had a much stronger record, making a bet on the Falcons risky despite the recent market trade favoring them.\n\nMARKET 3: NO_TRADE  \nReasoning: G2 Minnesota and Boston Breach's recent performances appear competitive, with G2 Minnesota slightly underperforming. However, without clear dominance or significant recent changes for either team, the outcome is uncertain, suggesting caution in taking a position.",
+      "response_time": 7.66,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: NO_TRADE\nReasoning: While JD Vance is currently Vice President and has received President Trump's endorsement as the \"most likely\" successor, winning a presidential election is a high bar, and many factors can change by 2028. The current market price of ~30% for a YES outcome is plausible, making a clear edge difficult to identify",
+      "response_time": 11.37,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 6,
+    "failed_responses": 0,
+    "total_time": 15.78
+  }
+}

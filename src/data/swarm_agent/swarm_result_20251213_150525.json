@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T15:05:25.407624",
+  "prompt": "Analyze these 3 Polymarket markets.\n\nFor EACH market:\n1. Estimate the TRUE PROBABILITY based on news context\n2. Calculate EDGE vs market price\n3. Only recommend trades with 10%+ edge\n\n\nMarket 1:\nTitle: Spurs vs. Thunder: O/U 231.5\nCurrent Market Price: 49.0% (this is the market's implied probability)\nRecent trade: $997.00 on Under\nLink: https://polymarket.com/event/nba-sas-okc-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nThe San Antonio Spurs are set to face the Oklahoma City Thunder in an NBA Cup semifinal on Saturday, December 13, 2025, at 6:00 PM PST in Las Vegas. \n\n**Recent Developments:**\n\n- **Victor Wembanyama's Return:** Spurs center Victor Wembanyama, who missed 12 games due to a left calf strain, is listed as probable for the game. Coach Mitch Johnson expects him to play with a minutes restriction. Wembanyama has been averaging 26.2 points, 12.9 rebounds, 4.0 assists, and 3.6 blocks in 12 games this season. ([reuters.com](https://www.reuters.com/sports/spurs-star-c-victor-wembanyama-calf-could-return-vs-thunder--flm-2025-12-12/?utm_source=openai))\n\n- **Thunder's Dominance:** The Thunder have achieved a franchise-record 16-game winning streak, including a 138-89 victory over the Phoenix Suns in the NBA Cup quarterfinals. Shai Gilgeous-Alexander led with 28 points and eight assists. ([reuters.com](https://www.reuters.com/sports/basketball/thunders-record-16th-straight-win-is-suns-worst-loss-ever\n\n---\n\nMarket 2:\nTitle: Spread: Florida State Seminoles (-11.5)\nCurrent Market Price: 48.0% (this is the market's implied probability)\nRecent trade: $3,360.00 on Massachusetts Minutemen\nLink: https://polymarket.com/event/cbb-umass-flst-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nAs of December 13, 2025, there are no upcoming games for the Florida State Seminoles football team, and therefore no current betting lines or spreads available. The Seminoles concluded their 2025 season with a 5-7 record, finishing 2-6 in the Atlantic Coast Conference (ACC). Their final game was a 34-14 victory over Virginia Tech on November 29, 2025. ([sportsline.com](https://www.sportsline.com/insiders/florida-state-vs-n-c-state-odds-line-2025-college-football-picks-for-week-13-predictions-from-proven-model/amp/?utm_source=openai))\n\nIn the aftermath of the season, quarterback Tommy Castellanos petitioned the NCAA for an additional year of eligibility, citing his limited participation during his freshman year at UCF in 2022. ([reuters.com](https://www.reuters.com/sports/florida-state-qb-tommy-castellanos-petitions-ncaa-extra-season--flm-2025-12-05/?utm_source=openai)) Additionally, head coach Mike Norvell agreed to a restructured contract, contributing $4.5 million from his 2025 salar\n\n---\n\nMarket 3:\nTitle: Will Getafe CF win on 2025-12-13?\nCurrent Market Price: 64.0% (this is the market's implied probability)\nRecent trade: $2,587.98 on No\nLink: https://polymarket.com/event/lal-get-esp-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nGetafe CF is set to host RCD Espanyol in a La Liga match on Saturday, December 13, 2025, at 21:00 local time at the Coliseum Alfonso P\u00e9rez in Getafe, Madrid. ([globalsportsarchive.com](https://globalsportsarchive.com/en/soccer/match/2025-12-13/getafe-cf-vs-rcd-espanyol-de-barcelona/3759030?utm_source=openai))\n\n**Team Form and Standings:**\n\n- **Getafe CF:** Currently in 8th place with 20 points, Getafe has shown resilience at home, conceding only five goals in seven games. However, they've struggled offensively, failing to score in three of their last four league matches. ([footballwhispers.com](https://footballwhispers.com/blog/getafe-vs-espanyol-prediction-13-12-2025/?utm_source=openai))\n\n- **RCD Espanyol:** Sitting 5th with 27 points, Espanyol enters the match on a strong run, having won their last three league games and keeping two clean sheets. ([newsminimalist.com](https://www.newsminimalist.com/articles/getafe-hosts-espanyol-in-la-liga-on-december-13-2025-d3add495?utm_source=open\n\n---\n\n\nProvide predictions in the exact format specified.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\n\nIMPORTANT: For each market, you MUST estimate the TRUE PROBABILITY of the outcome.\nCompare your probability estimate to the market price to find EDGE (mispricing).\n\nEdge = Your Probability - Market Probability\n- Positive edge on YES side means market undervalues YES\n- Negative edge means market overvalues YES (bet NO instead)\n\nFor each market, provide your prediction in this EXACT format:\n\nMARKET [number]: [decision]\nYour Probability: [0-100]%\nMarket Price: [shown price]%\nEdge: [+/-X]% (Your prob - Market)\nExpected Value: [calculate: Edge \u00d7 potential payout]\nReasoning: [1-2 sentences explaining your probability estimate]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES = Your probability > Market price + 10% (minimum 10% edge)\n- NO = Your probability < Market price - 10%\n- NO_TRADE = Edge < 10% (not enough value)\n\nBe contrarian when you have conviction. Look for markets where news hasn't been priced in yet.",
+  "consensus_summary": "The consensus identifies no actionable trades with a 10%+ positive edge across all three markets. Analysts agree Market 2 and Market 3 prices are overestimated, recommending \"NO\" bets due to significant negative edges. While Market 1 opinions vary on the true probability, all agree the edge is too small for a recommended trade.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "GEMINI",
+    "AI #3": "DEEPSEEK"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.04,
+      "success": true
+    },
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4tiH1tvMaNFi5iwkbuf'}",
+      "response_time": 0.1,
+      "success": false
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4tiGyArG6LNfLSUvySD'}",
+      "response_time": 0.12,
+      "success": false
+    },
+    "openai": {
+      "response": "MARKET 1: NO_TRADE  \nYour Probability: 55%  \nMarket Price: 49.0%  \nEdge: +6% (55% - 49%)  \nExpected Value: +6% \u00d7 potential payout  \nReasoning: Wembanyama's return with a minutes restriction may limit his impact, but the Thunder's offensive dominance suggests a high-scoring game is plausible. The market price reflects a balanced view, and the edge is not significant enough for a trade.\n\nMARKET 2: NO  \nYour Probability: 30%  \nMarket Price: 48.0%  \nEdge: -18% (30% - 48%)  \nExpected Value: -18% \u00d7 potential payout  \nReasoning: The absence of a current game and the poor season record for Florida State indicates that the perceived probability is overestimated. The edge strongly favors betting against Florida State covering the spread.\n\nMARKET 3: NO  \nYour Probability: 50%  \nMarket Price: 64.0%  \nEdge: -14% (50% - 64%)  \nExpected Value: -14% \u00d7 potential payout  \nReasoning: Getafe's recent struggles in scoring and Espanyol's strong form and defensive solidity suggest that the probability of Getafe winning is lower than the market implies. This presents a contrarian opportunity to bet against Getafe.",
+      "response_time": 3.92,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: NO\nYour Probability: 35%\nMarket Price: 49.0%\nEdge: -14% (35% - 49%)\nExpected Value: -$13.45 (for YES) or $13.45 (for NO)\nReasoning: The high total of 231.5 combined with",
+      "response_time": 10.18,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO_TRADE\nYour Probability: 55%\nMarket Price: 49.0%\nEdge: +6.0% (Your prob - Market)\nExpected Value: 6.0%\nReasoning: Wembanyama's return boosts Spurs' scoring and defense, but his minutes restriction and the Thunder's historic offensive form (138 pts last game) make the total highly volatile; a slight lean to Over is not a 10%+ edge.\n\nMARKET 2: NO\nYour Probability: 25%\nMarket Price: 48.0%\nEdge: -23.0% (Your prob - Market)\nExpected Value: 23.0%\nReasoning: The provided context is for football, but the market title references a college basketball spread with no relevant news; this severe information asymmetry suggests the market price is wildly inaccurate, creating a large negative edge on YES.\n\nMARKET 3: NO\nYour Probability: 45%\nMarket Price: 64.0%\nEdge: -19.0% (Your prob - Market)\nExpected Value: 19.0%\nReasoning: Espanyol is in superior form (3 straight wins, 5th place) and Getafe has a poor recent attack (failed to score in 3 of 4), making a Getafe win less likely than the market implies.",
+      "response_time": 10.35,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 14.04
+  }
+}

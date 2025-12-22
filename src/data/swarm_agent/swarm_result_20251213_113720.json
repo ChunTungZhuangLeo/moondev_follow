@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T11:37:20.725702",
+  "prompt": "Analyze these 3 Polymarket markets and provide your predictions.\nYou have been given RECENT NEWS AND CONTEXT from web search for each market.\nUse this information to make more informed predictions.\n\n\nMarket 1:\nTitle: Will Alanyaspor win on 2025-12-13?\nRecent trade: $15,593.07 on No\nLink: https://polymarket.com/event/tur-kay-ala-2025-12-13\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nAlanyaspor is set to face Kayserispor in a S\u00fcper Lig match on December 13, 2025, at Kadir Has Stadium in Kayseri. The match is scheduled to kick off at 14:00 local time. ([futbol24.com](https://www.futbol24.com/betting-tips/preview/13-12-2025-kayserispor-alanyaspor-betting-tip/?utm_source=openai))\n\n**Recent Form and Statistics:**\n\n- **Alanyaspor:** Currently 10th in the league with 17 points from 15 matches, Alanyaspor has achieved 3 wins, 8 draws, and 4 losses. ([satdee.com](https://www.satdee.com/fixture/1394573?utm_source=openai))\n\n- **Kayserispor:** Sitting 17th with 13 points from 15 matches, Kayserispor has 2 wins, 7 draws, and 6 losses. ([satdee.com](https://www.satdee.com/fixture/1394573?utm_source=openai))\n\n**Head-to-Head Record:**\n\n- In their most recent encounter on May 3, 2025, the match ended in a 1-1 draw. ([ysscores.com](https://www.ysscores.com/en/match/4842455/Kayserispor-vs-Alanyaspor?utm_source=openai))\n\n**Expert Predictions:**\n\n- Betting odds suggest a favorable out...\n\n---\n\nMarket 2:\nTitle: Will 1. FSV Mainz 05 win on 2025-12-14?\nRecent trade: $38,400.00 on No\nLink: https://polymarket.com/event/bun-bay-mai-2025-12-14\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\n1. FSV Mainz 05 is set to face Bayern Munich on December 14, 2025, at the Allianz Arena in Munich. Recent analyses and statistics suggest that Mainz faces a challenging match ahead.\n\n**Recent Form and Performance:**\n\n- **Mainz 05:** In the 2025/26 Bundesliga season, Mainz has struggled, securing only one win, three draws, and nine losses in 13 matches, placing them at the bottom of the league table with six points. ([bundesliga.com](https://www.bundesliga.com/en/bundesliga/clubs/1-fsv-mainz-05?utm_source=openai))\n\n- **Bayern Munich:** Bayern has demonstrated strong form, winning 85.61% of their matches, with odds of 1.12 at Bwin. ([wincomparator.com](https://www.wincomparator.com/predictions/bayern-munich-1-fsv-mainz-05-7679675/?utm_source=openai))\n\n**Betting Odds and Predictions:**\n\n- Betting odds heavily favor Bayern Munich, with a win at 1.13, a draw at 11.60, and a Mainz win at 23.00. ([futbol24.com](https://www.futbol24.com/betting-tips/preview/14-12-2025-fc-bayern-munchen-1-fsv-m...\n\n---\n\nMarket 3:\nTitle: Will Hannover 96 win on 2025-12-13?\nRecent trade: $6,506.51 on No\nLink: https://polymarket.com/event/bl2-h96-boc-2025-12-13\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nHannover 96 is set to face VfL Bochum on December 13, 2025, at the Heinz-von-Heiden-Arena in Hannover. The match is scheduled to kick off at 19:30 UK time. ([mybets.today](https://www.mybets.today/soccer-predictions/match-prediction-analysis-hannover-96-vs-bochum-betting-tip-dii266235/?utm_source=openai))\n\n**Recent Form:**\n\n- **Hannover 96:** In their last five matches, Hannover has achieved two wins, two draws, and one loss, scoring an average of 2.2 goals per game and conceding 1.4 goals per game. ([betmines.com](https://betmines.com/match-preview/hannover-96-vs-vfl-bochum-1848-prediction-match-preview-and-analysis-2-bundesliga-13-12-2025?utm_source=openai))\n\n- **VfL Bochum:** Bochum's recent form includes two wins, one draw, and two losses in their last five matches, with an average of 1.2 goals scored and 1.4 goals conceded per game. ([betmines.com](https://betmines.com/match-preview/hannover-96-vs-vfl-bochum-1848-prediction-match-preview-and-analysis-2-bundesliga-13-12-2025?utm_so...\n\n---\n\n\nProvide predictions for each market in the specified format.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\nUse this context to make more informed predictions.\n\nFor each market, provide your prediction in this exact format:\n\nMARKET [number]: [decision]\nReasoning: [brief 1-2 sentence explanation that references the news context if relevant]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES means you would bet on the \"Yes\" outcome\n- NO means you would bet on the \"No\" outcome\n- NO_TRADE means you would not take a position\n\nBe concise and focused on the most promising opportunities.",
+  "consensus_summary": "The consensus strongly predicts \"No\" for Mainz 05 beating Bayern Munich, given Mainz's poor form versus Bayern's dominance. For Alanyaspor, opinions are split between \"No\" and \"No Trade,\" reflecting uncertainty despite their slightly better league position. Regarding Hannover 96, analysts disagree between \"Yes\" and \"No Trade,\" indicating a perceived close match where home advantage and recent form create ambiguity.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "GEMINI",
+    "AI #3": "DEEPSEEK"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.04,
+      "success": true
+    },
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4crDK1btVB1BxoLYegJ'}",
+      "response_time": 0.08,
+      "success": false
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4crDKkjytjc2W3dwUr6'}",
+      "response_time": 0.09,
+      "success": false
+    },
+    "openai": {
+      "response": "MARKET 1: NO_TRADE  \nReasoning: Alanyaspor is slightly better positioned in the league compared to Kayserispor, but both teams have similar recent performances with many draws. The head-to-head record also shows a draw. The market has significant trade volume on \"No,\" suggesting skepticism about Alanyaspor's chances, but the outcome is uncertain enough to avoid a definitive bet.\n\nMARKET 2: NO  \nReasoning: Mainz 05 is struggling significantly in the Bundesliga, positioned at the bottom with only one win, whereas Bayern Munich is in strong form with a high win percentage. The overwhelming betting odds favor Bayern, making a Munich victory highly probable, hence betting against a Mainz win seems prudent.\n\nMARKET 3: NO_TRADE  \nReasoning: Hannover 96 and VfL Bochum have similar recent forms, with both teams showing a mix of wins, draws, and losses. Hannover has a slight edge with better goal-scoring, but the match seems evenly poised. The market's recent trade suggests doubt about Hannover's victory, indicating uncertainty, which makes taking a position inadvisable.",
+      "response_time": 2.5,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: NO\nReasoning: Alanyaspor is playing away against Kayserispor, and while slightly higher in the league, their recent head-to-head was a draw, making an away win uncertain. \"No\" covers both a draw and a Kayserispor win.\n\nMARKET 2: NO\nReasoning: Mainz 05 is at the bottom of the league and faces a dominant Bayern Munich team, which has an 85.61% win rate and extremely favorable betting odds, playing at home. A Mainz win is highly improbable.\n\nMARKET 3: YES\nReasoning: Hannover 96 has better recent form (2 wins, 2 draws, 1 loss) and a significantly higher average goals scored per game (2.2) compared to VfL Bochum (1.2 goals scored), and they are playing at home.",
+      "response_time": 6.72,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO  \nReasoning: Alanyaspor is playing away against a lower-table Kayserispor, but their recent form shows a high number of draws (8 in 15 matches) and the last head-to-head was a draw, making an away win less likely despite the opponent's poor position.\n\nMARKET 2: NO  \nReasoning: Mainz 05 is bottom of the Bundesliga with only one win this season and faces a dominant Bayern Munich at home, with betting odds heavily favoring a Bayern victory (1.13 for win), making a Mainz win extremely improbable.\n\nMARKET 3: NO_TRADE  \nReasoning: While Hannover 96 has slightly better recent form and is playing at home, Bochum's form is comparable and the match appears relatively balanced, with no clear edge strong enough to justify a definitive bet given the available data.",
+      "response_time": 6.77,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 10.84
+  }
+}

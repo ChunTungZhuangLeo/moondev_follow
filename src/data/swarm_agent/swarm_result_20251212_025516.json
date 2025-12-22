@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-12T02:55:16.526722",
+  "prompt": "Analyze these 3 Polymarket markets and provide your predictions.\nYou have been given RECENT NEWS AND CONTEXT from web search for each market.\nUse this information to make more informed predictions.\n\n\nMarket 1:\nTitle: Jon Stewart cancelled by December 31?\nRecent trade: $794.95 on No\nLink: https://polymarket.com/event/late-show-hosts-cancelled-by-december-31\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nAs of December 12, 2025, there is no credible information indicating that Jon Stewart will be canceled by December 31. In fact, recent developments suggest the opposite.\n\n**Contract Extension:**\nOn November 3, 2025, Paramount Skydance announced that Jon Stewart will continue hosting \"The Daily Show\" every Monday and serve as executive producer until December 2026. This extension follows his return to the show in February 2024 after a nine-year hiatus. ([reuters.com](https://www.reuters.com/business/media-telecom/jon-stewart-will-remain-helm-the-daily-show-until-next-december-2025-11-03/?utm_source=openai))\n\n**Show Performance:**\nUnder Stewart's leadership, \"The Daily Show\" has experienced a resurgence, achieving its highest quarterly ratings in four years during the third quarter of 2025. ([reuters.com](https://www.reuters.com/business/media-telecom/jon-stewart-will-remain-helm-the-daily-show-until-next-december-2025-11-03/?utm_source=openai))\n\n**Industry Context:**\nThe late-night tele...\n\n---\n\nMarket 2:\nTitle: Canadiens vs. Penguins: O/U 5.5\nRecent trade: $502.50 on Over\nLink: https://polymarket.com/event/nhl-mon-pit-2025-12-12\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nThe Montreal Canadiens are set to face the Pittsburgh Penguins on December 12, 2025, at PPG Paints Arena in Pittsburgh. The over/under for the game is set at 5.5 goals.\n\n**Recent Team Performances:**\n\n- **Montreal Canadiens:** The Canadiens have a record of 15 wins, 11 losses, and 3 ties. They have scored an average of 3.21 goals per game and allowed 3.62 goals against. In their last six games, they have a 2-4 record. ([betonline.ag](https://www.betonline.ag/news/sport/nhl/match/2458929-mon-vs-pit/?utm_source=openai))\n\n- **Pittsburgh Penguins:** The Penguins have a record of 14 wins, 7 losses, and 3 ties. They have scored an average of 3.14 goals per game and allowed 2.89 goals against. In their last six games, they have a 2-4 record. ([betonline.ag](https://www.betonline.ag/news/sport/nhl/match/2458929-mon-vs-pit/?utm_source=openai))\n\n**Betting Trends:**\n\n- The total has gone over in 4 of Pittsburgh's last 6 games. ([betonline.ag](https://www.betonline.ag/news/sport/nhl/match/2458929-...\n\n---\n\nMarket 3:\nTitle: Spread: Bulls (-3.5)\nRecent trade: $500.00 on Hornets\nLink: https://polymarket.com/event/nba-chi-cha-2025-12-12\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nThe Chicago Bulls are set to face the Charlotte Hornets on Friday, December 12, 2025, at the Spectrum Center in Charlotte. The Bulls are favored by 1.5 points in this matchup. ([foxsports.com](https://www.foxsports.com/articles/nba/bulls-vs-hornets-prediction-odds-picks-dec-12?utm_source=openai))\n\n**Recent Performance:**\n\n- **Chicago Bulls:** The Bulls are on a seven-game losing streak, with their most recent loss being a 123-91 defeat to the Golden State Warriors on December 7. ([cbssports.com](https://www.cbssports.com/nba/news/podziemski-scores-21-warriors-beat-bulls-123-91-for-chicagos-7th-straight-loss/?utm_source=openai)) During this stretch, they have struggled offensively, failing to score over 100 points in several games. ([reuters.com](https://www.reuters.com/sports/bulls-hornets-set-meet-after-working-fix-flaws--flm-2025-12-11/?utm_source=openai))\n\n- **Charlotte Hornets:** The Hornets have lost three of their last four games, including a 115-106 loss to the Denver Nuggets on...\n\n---\n\n\nProvide predictions for each market in the specified format.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\nUse this context to make more informed predictions.\n\nFor each market, provide your prediction in this exact format:\n\nMARKET [number]: [decision]\nReasoning: [brief 1-2 sentence explanation that references the news context if relevant]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES means you would bet on the \"Yes\" outcome\n- NO means you would bet on the \"No\" outcome\n- NO_TRADE means you would not take a position\n\nBe concise and focused on the most promising opportunities.",
+  "consensus_summary": "Consensus strongly agrees Jon Stewart will not be cancelled, given his contract extension and show performance. For the NHL game, opinions are split between the over due to scoring trends and a \"no trade\" due to close statistics, with no clear majority. Regarding the NBA spread, disagreement is sharp between those citing the Bulls' losing streak as a reason they won't cover and others seeing value in the posted line.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "OPUS",
+    "AI #3": "GEMINI",
+    "AI #4": "DEEPSEEK",
+    "AI #5": "CLAUDE"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.15,
+      "success": true
+    },
+    "openai": {
+      "response": "MARKET 1: NO\nReasoning: Jon Stewart's contract extension through December 2026 and the recent success of \"The Daily Show\" under his leadership strongly indicate that he will not be canceled by December 31, 2025. There is no credible information suggesting a cancellation is impending.\n\nMARKET 2: YES\nReasoning: Both the Canadiens and Penguins have been involved in high-scoring games recently, with Montreal allowing an average of 3.62 goals per game and Pittsburgh's last 6 games seeing the total go over 4 times. These trends suggest that the total goals are likely to exceed 5.5.\n\nMARKET 3: NO\nReasoning: Despite being slight favorites, the Bulls are on a seven-game losing streak and have struggled offensively, which makes them unlikely to cover a -3.5 spread against the Hornets, who have a more favorable recent performance despite their own struggles. The market point spread also suggests a tighter game.",
+      "response_time": 2.68,
+      "success": true
+    },
+    "opus": {
+      "response": "Here are my predictions for each market:\n\nMARKET 1: NO\nReasoning: Jon Stewart just signed a contract extension through December 2026 and \"The Daily Show\" is achieving its highest ratings in four years - there's no credible indication of cancellation by year-end.\n\nMARKET 2: Over\nReasoning: Montreal averages 3.21 goals scored and allows 3.62 goals against (6.83 total), while Pittsburgh's recent trend shows overs hitting in 4 of their last 6 games. Combined averages suggest over 5.5 is likely.\n\nMARKET 3: Hornets\nReasoning: The Bulls are on a seven-game losing streak and struggling offensively (failing to score 100+ in several games), while the spread listed in other sources is only 1.5 points - a 3.5 point spread seems too generous for a team in freefall.",
+      "response_time": 5.91,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: NO\nReasoning: Jon Stewart signed a contract extension until December 2026 on November 3, 2025, and his show is performing well, making his cancellation by December 31, 2025, highly unlikely.\n\nMARKET 2: YES\nReasoning: Both the Canadiens' (6.83 total goals/game average) and Penguins' (6.03 total goals/game average) recent game statistics suggest a combined score likely to exceed 5.5 goals, and Pittsburgh's recent trend also favors the over.\n\nMARKET 3: NO\nReasoning: The Bulls are on a seven-game losing streak and struggling offensively, making it unlikely they will cover a -3.5 spread, especially when official betting lines only favor them by -1.5 points.",
+      "response_time": 6.79,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO  \nReasoning: The recent news confirms Jon Stewart has a contract extension through December 2026 and his show is achieving high ratings, making cancellation by December 31 extremely unlikely.\n\nMARKET 2: NO_TRADE  \nReasoning: While the total has gone over in 4 of Pittsburgh's last 6 games, both teams have identical 2-4 recent records and average goal totals that make the over/under 5.5 a close call without a clear edge.\n\nMARKET 3: YES  \nReasoning: Despite the Bulls' seven-game losing streak, they are still favored by 1.5 points in this matchup, and the Hornets have also been struggling, losing three of their last four, suggesting Chicago may cover a -3.5 spread against a weak opponent.",
+      "response_time": 7.39,
+      "success": true
+    },
+    "claude": {
+      "response": "MARKET 1: NO\nReasoning: Jon Stewart just signed a contract extension through December 2026 as of November 3, 2025, and The Daily Show is experiencing its highest ratings in four years. There is zero indication of cancellation with only 19 days remaining in the year.\n\nMARKET 2: NO_TRADE\nReasoning: While both teams average over 6 combined goals per game (3.21 + 2.89 = 6.1) and Pittsburgh has hit the over in 4 of their last 6 games, both teams are struggling with 2-4 records in their last 6 games, creating uncertainty. The line is tight at 5.5.\n\nMARKET 3: YES (Bulls -3.5)\nReasoning: Despite the Bulls' seven-game losing streak, the market shows the spread at -3.5 for Bulls while news reports indicate they're only favored by 1.5 points, suggesting value. The Hornets have also lost 3 of their last 4 games and both teams are struggling, but the discrepancy in spread reporting suggests potential market inefficiency favoring the Bulls.",
+      "response_time": 10.13,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 6,
+    "failed_responses": 0,
+    "total_time": 14.83
+  }
+}

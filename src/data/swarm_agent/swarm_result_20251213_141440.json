@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T14:14:40.750079",
+  "prompt": "Analyze these 3 Polymarket markets.\n\nFor EACH market:\n1. Estimate the TRUE PROBABILITY based on news context\n2. Calculate EDGE vs market price\n3. Only recommend trades with 10%+ edge\n\n\nMarket 1:\nTitle: Dota 2: BetBoom Team vs Tundra Esports - Game 1 Winner\nCurrent Market Price: 41.6% (this is the market's implied probability)\nRecent trade: $1,000.00 on BetBoom Team\nLink: https://polymarket.com/event/dota2-bb4-tundra-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nAs of December 13, 2025, there is no recent news regarding a specific \"Game 1\" between BetBoom Team and Tundra Esports. Their most recent encounter occurred on October 15, 2025, during the BLAST Slam IV Group Stage, where Tundra Esports secured a 1-0 victory in a Best of 1 match. ([strafe.com](https://www.strafe.com/match/tundra-esports-vs-betboom-team-group-stage-main-event-f60ab5/?utm_source=openai))\n\nHistorically, Tundra Esports has maintained a favorable record against BetBoom Team. In their previous 25 matchups, Tundra Esports won 14 times, BetBoom Team secured 6 victories, and 5 matches ended in ties. ([strafe.com](https://www.strafe.com/match/tundra-esports-vs-betboom-team-group-stage-main-event-f60ab5/?utm_source=openai))\n\nLooking ahead, BetBoom Team and Tundra Esports are scheduled to face each other in the ESL Dota2 2025 DreamLeague Season 27 Main Event on December 13, 2025, at 2:30 PM. This match is part of the Group Stage - Round 4 and will be a Best of 3 series. BetBoom Te\n\n---\n\nMarket 2:\nTitle: Will Motherwell FC win on 2025-12-13?\nCurrent Market Price: 41.0% (this is the market's implied probability)\nRecent trade: $7,908.45 on Yes\nLink: https://polymarket.com/event/scop-dun-mot-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nMotherwell FC is set to face Dundee United on December 13, 2025, at Tannadice Park in a Scottish Premiership match. The game is scheduled to kick off at 3:00 PM GMT.\n\n**Recent Form:**\n\n- **Motherwell FC:** Currently in 3rd place with 26 points from 16 matches, Motherwell has demonstrated strong form, including three consecutive wins. Their recent performances highlight a solid defensive setup, conceding only once in their last five matches. ([futbol24.com](https://www.futbol24.com/betting-tips/preview/13-12-2025-dundee-united-motherwell-fc-betting-tip/?utm_source=openai))\n\n- **Dundee United:** Sitting in 8th place with 16 points from 15 matches, Dundee United has struggled recently, with no wins in their last five matches. Their most recent outing was a 0-2 loss against St. Mirren FC, extending their winless streak to five matches. ([futbol24.com](https://www.futbol24.com/betting-tips/preview/13-12-2025-dundee-united-motherwell-fc-betting-tip/?utm_source=openai))\n\n**Head-to-Head Record\n\n---\n\nMarket 3:\nTitle: Will Heart of Midlothian FC win on 2025-12-13?\nCurrent Market Price: 52.0% (this is the market's implied probability)\nRecent trade: $20,800.00 on Yes\nLink: https://polymarket.com/event/scop-fal-hmi-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nHeart of Midlothian FC is set to face Falkirk FC on December 13, 2025, at Falkirk Stadium. The match is scheduled to kick off at 20:00 local time. ([futbol24.com](https://www.futbol24.com/betting-tips/preview/13-12-2025-falkirk-fc-heart-of-midlothian-fc-betting-tip/?utm_source=openai))\n\n**Recent Form:**\n\n- **Heart of Midlothian FC:** Leading the Scottish Premiership with 35 points, they have achieved 10 wins, 5 draws, and only 1 loss this season. Their recent form includes a 2-1 away victory against Celtic on December 7, 2025. ([espn.com](https://www.espn.com/soccer/match/_/gameId/742426/heart-of-midlothian-celtic?utm_source=openai))\n\n- **Falkirk FC:** Currently in 7th place with 21 points, Falkirk has recorded 5 wins, 6 draws, and 5 losses. Their recent performances have been inconsistent, with only one win in their last five matches. ([futbol24.com](https://www.futbol24.com/betting-tips/preview/13-12-2025-falkirk-fc-heart-of-midlothian-fc-betting-tip/?utm_source=openai))\n\n**Head-to-H\n\n---\n\n\nProvide predictions in the exact format specified.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\n\nIMPORTANT: For each market, you MUST estimate the TRUE PROBABILITY of the outcome.\nCompare your probability estimate to the market price to find EDGE (mispricing).\n\nEdge = Your Probability - Market Probability\n- Positive edge on YES side means market undervalues YES\n- Negative edge means market overvalues YES (bet NO instead)\n\nFor each market, provide your prediction in this EXACT format:\n\nMARKET [number]: [decision]\nYour Probability: [0-100]%\nMarket Price: [shown price]%\nEdge: [+/-X]% (Your prob - Market)\nExpected Value: [calculate: Edge \u00d7 potential payout]\nReasoning: [1-2 sentences explaining your probability estimate]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES = Your probability > Market price + 10% (minimum 10% edge)\n- NO = Your probability < Market price - 10%\n- NO_TRADE = Edge < 10% (not enough value)\n\nBe contrarian when you have conviction. Look for markets where news hasn't been priced in yet.",
+  "consensus_summary": "The consensus identifies a strong, high-edge opportunity in Market 2 (Motherwell FC) with all models agreeing on a ~60% true probability versus a 41% market price. For Markets 1 and 3, opinions are split on whether the edge is sufficient, leading to a mix of \"NO_TRADE\" and directional recommendations. Overall, Market 2 is the clearest actionable trade, while the others are viewed as either fairly priced or lacking a decisive edge.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "GEMINI",
+    "AI #3": "DEEPSEEK"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.05,
+      "success": true
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4pqnkYUqVBhpEkjg6YQ'}",
+      "response_time": 0.08,
+      "success": false
+    },
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4pqnjoDbG6S2McokLiY'}",
+      "response_time": 0.09,
+      "success": false
+    },
+    "openai": {
+      "response": "MARKET 1: NO_TRADE  \nYour Probability: 40%  \nMarket Price: 41.6%  \nEdge: -1.6%  \nExpected Value: -$0.016 per $1 bet  \nReasoning: Tundra Esports has a historical advantage over BetBoom Team, winning the majority of past encounters. The recent lack of specific news changes the dynamics. The market price is close to my estimated probability, indicating minimal edge.\n\nMARKET 2: YES  \nYour Probability: 60%  \nMarket Price: 41.0%  \nEdge: +19%  \nExpected Value: +$0.19 per $1 bet  \nReasoning: Motherwell FC is in strong form, with three consecutive wins and a solid defense, while Dundee United is struggling without a win in their last five matches. Motherwell's higher league position and better form suggest they are likely to win.\n\nMARKET 3: YES  \nYour Probability: 65%  \nMarket Price: 52.0%  \nEdge: +13%  \nExpected Value: +$0.13 per $1 bet  \nReasoning: Heart of Midlothian FC is leading the league with strong recent performances, including a win against Celtic. Falkirk FC is inconsistent, making Hearts the likely favorite to win this match.",
+      "response_time": 2.79,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: NO\nYour Probability: 30%\nMarket Price: 41.6%\nEdge: -11.6% (30% - 41.6%)\nExpected Value: -0.116\nReasoning: Historical data strongly favors Tundra Esports over BetBoom Team (14 wins vs 6 in 20",
+      "response_time": 9.58,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO_TRADE\nYour Probability: 45%\nMarket Price: 41.6%\nEdge: +3.4% (Your prob - Market)\nExpected Value: 0.034 \u00d7 potential payout\nReasoning: Tundra has a strong historical edge (14-6), but the most recent match was a Tundra win and the market price already reflects a close game, leaving insufficient edge.\n\nMARKET 2: YES\nYour Probability: 60%\nMarket Price: 41.0%\nEdge: +19.0% (Your prob - Market)\nExpected Value: 0.19 \u00d7 potential payout\nReasoning: Motherwell is in strong form (3rd place, 3 wins in a row) facing a struggling Dundee United (8th, winless in 5), creating a significant mispricing versus the market.\n\nMARKET 3: NO_TRADE\nYour Probability: 65%\nMarket Price: 52.0%\nEdge: +13.0% (Your prob - Market)\nExpected Value: 0.13 \u00d7 potential payout\nReasoning: Hearts are clear league leaders with excellent form, including a recent win over Celtic, while Falkirk is inconsistent, but the market price has already moved significantly toward Hearts.",
+      "response_time": 9.92,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 14.75
+  }
+}

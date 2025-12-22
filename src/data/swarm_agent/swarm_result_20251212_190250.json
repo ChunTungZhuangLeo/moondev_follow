@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-12T19:02:50.604952",
+  "prompt": "Analyze these 3 Polymarket markets and provide your predictions.\nYou have been given RECENT NEWS AND CONTEXT from web search for each market.\nUse this information to make more informed predictions.\n\n\nMarket 1:\nTitle: Angers SCO vs. FC Nantes: O/U 1.5\nRecent trade: $643.00 on Over\nLink: https://polymarket.com/event/fl1-ang-nan-2025-12-12-more-markets\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nThe upcoming Ligue 1 match between Angers SCO and FC Nantes is anticipated to be a low-scoring affair, with the Over/Under (O/U) line set at 1.5 goals. Recent analyses and statistics support this expectation:\n\n- **Recent Form**: Angers SCO has been in solid form, securing three wins and two losses in their last five matches, including a 1-0 away victory over Nice. In contrast, FC Nantes has struggled, remaining winless in their last five games with two draws and three defeats, including losses to Lyon and Lens. ([betonvalue.com](https://www.betonvalue.com/predictions/angers-sco-vs-fc-nantes-predictions-betting-tips-match-preview-2025-12-12?utm_source=openai))\n\n- **Head-to-Head Record**: In the last 23 encounters between the two teams, Angers SCO has won six times, FC Nantes ten times, and there have been seven draws. Notably, the most common result in these matchups is a 1-1 draw, occurring eight times. ([oddspedia.com](https://oddspedia.com/football/nantes-angers-67306/predictions?utm...\n\n---\n\nMarket 2:\nTitle: Lighter market cap (FDV) >$6B one day after launch?\nRecent trade: $974.61 on No\nLink: https://polymarket.com/event/lighter-market-cap-fdv-one-day-after-launch\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nThe prediction market on Polymarket regarding Lighter's token's Fully Diluted Valuation (FDV) one day after launch has seen fluctuating probabilities over the past week. As of December 12, 2025, the market indicates an 11% chance that Lighter's FDV will exceed $6 billion one day post-launch. This is a decrease from the 14% probability observed on December 9, 2025, and the 7% probability on December 8, 2025. ([polymarket.com](https://polymarket.com/market/lighter-market-cap-fdv-6b-one-day-after-launch-324-746-197?utm_source=openai))\n\nIn terms of recent developments, Lighter announced a $68 million raise at a $1.5 billion valuation on November 11, 2025. ([kucoin.com](https://www.kucoin.com/news/insight/ETH/6913877454a807000792709d?utm_source=openai)) This valuation suggests a token price of approximately $37.5 per point, assuming a total supply of 40 million points. However, the FDV of $1.5 billion is significantly lower than the $6 billion threshold set in the prediction market.\n\nExpert...\n\n---\n\nMarket 3:\nTitle: Games Total: O/U 2.5\nRecent trade: $988.49 on Over\nLink: https://polymarket.com/event/cs2-furia-navi-2025-12-12\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nThe \"Over/Under 2.5 goals\" betting market is a popular wager in soccer, where bettors predict whether the total number of goals scored in a match will be over or under 2.5. Recent trends indicate a shift towards more matches ending with under 2.5 goals.\n\n**Recent Trends:**\n\n- **December 2025 Data:** In December, 55% of matches (20 games) have seen over 2.5 goals, while 45% have seen under 2.5 goals. This is a decrease from November, where over 2.5 goals occurred in 68.6% of matches. ([accaplanner.com](https://www.accaplanner.com/league/english-premier-league/over-under-goals/?utm_source=openai))\n\n- **La Liga Specifics:** In Spain's La Liga, over 2.5 goals have been scored in 30.8% of games in December, down from 50% in November. ([accaplanner.com](https://www.accaplanner.com/league/spain-la-liga/over-under-goals/?utm_source=openai))\n\n**Upcoming Matches and Predictions:**\n\n- **December 12, 2025:**\n  - *Real Sociedad vs. Girona:* Predicted to have over 2.5 goals. ([predictz.com](https://...\n\n---\n\n\nProvide predictions for each market in the specified format.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\nUse this context to make more informed predictions.\n\nFor each market, provide your prediction in this exact format:\n\nMARKET [number]: [decision]\nReasoning: [brief 1-2 sentence explanation that references the news context if relevant]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES means you would bet on the \"Yes\" outcome\n- NO means you would bet on the \"No\" outcome\n- NO_TRADE means you would not take a position\n\nBe concise and focused on the most promising opportunities.",
+  "consensus_summary": "The consensus strongly predicts \"NO\" for Market 2 due to Lighter's $1.5B valuation being far below the $6B target. For Markets 1 and 3, there is significant disagreement and confusion, with most models recommending \"NO_TRADE\" due to conflicting signals or mismatched context between the news and the actual market events. Overall, only Market 2 has clear, unified reasoning for a prediction.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "DEEPSEEK",
+    "AI #3": "OPUS",
+    "AI #4": "CLAUDE",
+    "AI #5": "GEMINI"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.05,
+      "success": true
+    },
+    "openai": {
+      "response": "MARKET 1: NO_TRADE  \nReasoning: The match between Angers SCO and FC Nantes is anticipated to be low-scoring, supported by both teams' recent form and their head-to-head record, which often ends in 1-1 draws. However, the market has seen significant trading on the Over, suggesting mixed sentiment. Given the conflicting signals, a NO_TRADE position is prudent.\n\nMARKET 2: NO  \nReasoning: Lighter's recent $68 million raise at a $1.5 billion valuation suggests that the Fully Diluted Valuation (FDV) is far below the $6 billion threshold set in the prediction market. The current market probability is only 11%, reflecting skepticism about reaching such a high FDV shortly after launch.\n\nMARKET 3: NO_TRADE  \nReasoning: Although there is a slight trend towards fewer matches ending with over 2.5 goals, the recent data shows a nearly even split between over and under outcomes. Without specific information about the teams playing in this match, it's difficult to make a confident prediction, so a NO_TRADE position is advisable.",
+      "response_time": 5.44,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO_TRADE  \nReasoning: The news highlights a common 1-1 draw historically and Angers' solid form versus Nantes' struggles, but this context is insufficient to confidently predict over or under 1.5 goals in a low-scoring league match.\n\nMARKET 2: NO  \nReasoning: Lighter's recent $68 million raise was at a $1.5 billion valuation, which is far below the $6 billion FDV threshold, and the current market probability is only 11%, indicating a low likelihood of exceeding that target post-launch.\n\nMARKET 3: NO_TRADE  \nReasoning: The provided context discusses general soccer trends and different leagues, but it does not include specific information about the CS2 match between Furia and Navi, making an informed prediction impossible.",
+      "response_time": 6.71,
+      "success": true
+    },
+    "opus": {
+      "response": "MARKET 1: YES\nReasoning: Despite the news suggesting a low-scoring affair, the O/U 1.5 is a very low threshold. Head-to-head shows 1-1 draws are common (which hits the over), and with Angers in decent form needing goals at home, 2+ total goals is likely.\n\nMARKET 2: NO\nReasoning: Lighter raised at a $1.5B valuation just last month, making a $6B FDV one day after launch (4x that valuation) highly unlikely. The market correctly prices this at only 11% probability.\n\nMARKET 3: YES\nReasoning: This appears to be a CS2 esports match (FURIA vs NAVI), not soccer, where best-of-3 series commonly go to 3 games between competitive teams. Both are quality teams, making a full 3-game series (Over 2.5) probable.",
+      "response_time": 7.46,
+      "success": true
+    },
+    "claude": {
+      "response": "# Polymarket Predictions Analysis\n\n## MARKET 1: NO_TRADE\nReasoning: The news context is about a soccer match (Angers vs Nantes) with O/U 1.5 goals, but the market link references a different sport entirely (CS2 FURIA vs NAVI). This mismatch between the news and actual market makes it impossible to make an informed prediction.\n\n## MARKET 2: NO\nReasoning: Lighter recently raised $68M at a $1.5B valuation, which is 4x below the $6B threshold. The current market probability is only 11% and declining, and there's no indication of catalysts that would justify a 4x valuation jump within one day of launch.\n\n## MARKET 3: NO_TRADE\nReasoning: The news context discusses soccer Over/Under 2.5 goals betting, but the market link is for a CS2 (Counter-Strike 2) esports match between FURIA and NAVI. The \"Games Total\" likely refers to best-of-3 or best-of-5 map series in esports, making the soccer statistics completely irrelevant.",
+      "response_time": 7.84,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: NO\nReasoning: The news context explicitly states the match is \"anticipated to be a low-scoring affair\" and that recent analyses support this expectation, indicating a strong likelihood of Under 1.5 goals.\n\nMARKET 2: NO\nReasoning: Lighter's most recent valuation was $1.5 billion, which is significantly lower than the $6",
+      "response_time": 9.97,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 6,
+    "failed_responses": 0,
+    "total_time": 15.12
+  }
+}

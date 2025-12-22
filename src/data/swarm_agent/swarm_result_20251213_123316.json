@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T12:33:16.158402",
+  "prompt": "Analyze these 3 Polymarket markets and provide your predictions.\nYou have been given RECENT NEWS AND CONTEXT from web search for each market.\nUse this information to make more informed predictions.\n\n\nMarket 1:\nTitle: FC St. Pauli 1910 vs. 1. FC Heidenheim 1846: O/U 1.5\nRecent trade: $800.00 on Over\nLink: https://polymarket.com/event/bun-pau-hei-2025-12-13-more-markets\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nFC St. Pauli and 1. FC Heidenheim are set to face off in a Bundesliga match on December 13, 2025. Both teams are struggling near the bottom of the league table, with St. Pauli in 17th place and Heidenheim just above them in 16th. ([forebet.com](https://www.forebet.com/en/football-match-previews/24361-st-pauli-v-heidenheim-bottom-tier-battle-at-the-millerntor-promises-high-stakes?utm_source=openai))\n\n**Recent Form and Scoring Trends:**\n\n- **FC St. Pauli:** The team has been experiencing a goal-scoring drought, failing to score in six of their 13 matches this season. They have also lost their last three home games without finding the net. ([bundesliga.com](https://www.bundesliga.com/en/bundesliga/matchday/2025-2026/14/fc-st-pauli-vs-1-fc-heidenheim-1846/liveticker?utm_source=openai))\n\n- **1. FC Heidenheim:** Heidenheim has scored a total of 12 goals in 13 matches this season, averaging less than one goal per game. Their away form is concerning, with five defeats in their last six away fi...\n\n---\n\nMarket 2:\nTitle: Dota 2: OG vs Team Spirit - Game 2 Winner\nRecent trade: $1,000.00 on Team Spirit\nLink: https://polymarket.com/event/dota2-og-ts8-2025-12-13\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nAs of December 13, 2025, OG and Team Spirit are set to face off in a Best of 3 series during the Group Stage \u2013 Round 4 of the ESL Dota2 2025 DreamLeague Season 27 Main Event. ([strafe.com](https://www.strafe.com/match/og-vs-team-spirit-round-4-main-event-2e7511/?utm_source=openai))\n\n**Recent Performance:**\n\n- **OG:** In their last five matches, OG has secured four victories, demonstrating a strong upward trajectory. ([egamersworld.com](https://egamersworld.com/dota2/match/5whrjgEzh/og-vs-team-spirit-WUM-6ZoWG?utm_source=openai))\n\n- **Team Spirit:** Similarly, Team Spirit has won four of their last five matches, maintaining consistent performance. ([egamersworld.com](https://egamersworld.com/dota2/match/5whrjgEzh/og-vs-team-spirit-WUM-6ZoWG?utm_source=openai))\n\n**Head-to-Head Record:**\n\nHistorically, Team Spirit has dominated their encounters with OG, winning nine out of ten matches. ([egamersworld.com](https://egamersworld.com/dota2/match/5whrjgEzh/og-vs-team-spirit-WUM-6ZoWG?utm_sourc...\n\n---\n\nMarket 3:\nTitle: Will Swansea City AFC win on 2025-12-13?\nRecent trade: $711.14 on No\nLink: https://polymarket.com/event/elc-sto-swa-2025-12-13\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nSwansea City AFC is set to face Stoke City on December 13, 2025, at the bet365 Stadium in Stoke-on-Trent. The match is scheduled to kick off at 12:30 PM GMT (7:30 AM ET). ([futbol24.com](https://www.futbol24.com/betting-tips/preview/13-12-2025-stoke-city-fc-swansea-city-betting-tip/?utm_source=openai))\n\n**Recent Form:**\n\n- **Swansea City:** The team has shown improvement with back-to-back home victories over Oxford United and Portsmouth. However, they have struggled on the road, with no away wins under head coach Vitor Matos. ([swanseacity.com](https://www.swanseacity.com/news/preview-stoke-city-v-swansea-city-6?utm_source=openai))\n\n- **Stoke City:** The Potters have faced challenges recently, losing their last three matches, including a narrow 1-0 defeat to Ipswich Town. ([swanseacity.com](https://www.swanseacity.com/news/preview-stoke-city-v-swansea-city-6?utm_source=openai))\n\n**Head-to-Head:**\n\nIn their previous encounter, Stoke City secured a 3-1 victory over Swansea. ([dailysports...\n\n---\n\n\nProvide predictions for each market in the specified format.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\nUse this context to make more informed predictions.\n\nFor each market, provide your prediction in this exact format:\n\nMARKET [number]: [decision]\nReasoning: [brief 1-2 sentence explanation that references the news context if relevant]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES means you would bet on the \"Yes\" outcome\n- NO means you would bet on the \"No\" outcome\n- NO_TRADE means you would not take a position\n\nBe concise and focused on the most promising opportunities.",
+  "consensus_summary": "The consensus strongly predicts \"NO\" for Markets 1 and 3, citing both teams' scoring droughts in the football match and Swansea's poor away form, respectively. For Market 2, there is majority agreement on \"YES\" favoring Team Spirit due to their historical dominance, though one dissenting view cites uncertainty. Overall, the predictions show high alignment, with the clearest edge being the under on goals in Market 1.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "GEMINI",
+    "AI #3": "DEEPSEEK"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.04,
+      "success": true
+    },
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4h7b7ZmY66du31xHK9U'}",
+      "response_time": 0.08,
+      "success": false
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4h7b6aWNtVF4htQhdF8'}",
+      "response_time": 0.09,
+      "success": false
+    },
+    "openai": {
+      "response": "MARKET 1: NO\nReasoning: Both FC St. Pauli and 1. FC Heidenheim are struggling with scoring, with St. Pauli failing to score in six of their 13 matches and Heidenheim averaging less than one goal per game. The recent form suggests a low-scoring game, making the under 1.5 goals more likely.\n\nMARKET 2: YES\nReasoning: Team Spirit has a strong historical record against OG, winning nine out of their last ten encounters. Despite both teams showing strong recent form, Team Spirit's historical dominance suggests a higher probability of them winning Game 2.\n\nMARKET 3: NO\nReasoning: Swansea City has struggled on the road and has not won any away matches under their current head coach. Despite Stoke City's recent poor form, their previous win over Swansea and Swansea's away struggles suggest that Swansea is unlikely to win this match.",
+      "response_time": 2.76,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: NO\nReasoning: Both St. Pauli and Heidenheim are experiencing severe goal-scoring droughts, with St. Pauli failing to score in 6 of 13 matches and Heidenheim averaging less than one goal per game, strongly suggesting an under 1.5 goals outcome.\n\nMARKET 2: YES\nReasoning: Despite both teams showing strong recent form, Team Spirit has a historically dominant head-to-head record against OG, winning 9 out of their last 10 encounters.\n\nMARKET 3: NO\nReasoning: Swansea City AFC has shown no away wins under head coach Vitor Matos, despite recent home victories, making an away win against Stoke City unlikely, especially considering Stoke won their previous encounter.",
+      "response_time": 5.57,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO  \nReasoning: Both teams are in poor form with significant scoring droughts; St. Pauli has failed to score in six matches and Heidenheim averages less than a goal per game, making Under 1.5 goals likely.\n\nMARKET 2: NO_TRADE  \nReasoning: Both OG and Team Spirit have strong recent form with four wins in their last five matches, but Team Spirit holds a dominant historical head-to-head advantage, creating too much uncertainty for a clear edge.\n\nMARKET 3: NO  \nReasoning: Swansea has no away wins under their current coach and faces a Stoke side that, despite recent losses, historically defeated them 3-1, suggesting Swansea is unlikely to secure an away victory.",
+      "response_time": 6.37,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 10.39
+  }
+}

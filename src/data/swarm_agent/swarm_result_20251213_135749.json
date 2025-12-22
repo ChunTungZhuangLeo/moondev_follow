@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T13:57:49.102047",
+  "prompt": "Analyze these 3 Polymarket markets.\n\nFor EACH market:\n1. Estimate the TRUE PROBABILITY based on news context\n2. Calculate EDGE vs market price\n3. Only recommend trades with 10%+ edge\n\n\nMarket 1:\nTitle: Andrii Yermak arrested by December 31?\nCurrent Market Price: 96.0% (this is the market's implied probability)\nRecent trade: $543.36 on No\nLink: https://polymarket.com/event/andrii-yermak-arrested-by-november-30\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nAs of December 13, 2025, there are no reports indicating that Andrii Yermak, former head of the Office of the President of Ukraine, has been arrested. Yermak resigned on November 28, 2025, following a raid on his residence by anti-corruption investigators amid a significant corruption probe in Ukraine's energy sector. ([apnews.com](https://apnews.com/article/3a58193bcb3f7816a715dee9e60e4541?utm_source=openai))\n\nThe investigation, known as Operation Midas, focuses on a $100 million bribery case involving the state atomic agency, Energoatom. While Yermak was not named a suspect, the raid and subsequent resignation have intensified political tensions within Ukraine. ([reuters.com](https://www.reuters.com/world/europe/ukraine-anti-corruption-officers-search-office-zelenskiys-chief-staff-officials-2025-11-28/?utm_source=openai))\n\nAs of now, there have been no official announcements regarding further legal actions against Yermak. The situation remains fluid, and developments may occur as the\n\n---\n\nMarket 2:\nTitle: Will AC Reggiana 1919 win on 2025-12-13?\nCurrent Market Price: 57.0% (this is the market's implied probability)\nRecent trade: $943.92 on No\nLink: https://polymarket.com/event/itsb-reg-pad-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nAC Reggiana 1919 is set to face Calcio Padova in a Serie B match today, December 13, 2025, at 15:00 CET at the Mapei Stadium \u2013 Citt\u00e0 del Tricolore in Reggio Emilia. ([reggianacalcio.it](https://reggianacalcio.it/?utm_source=openai))\n\n**Recent Form:**\n\n- **AC Reggiana 1919:** In their last five matches, they have secured one win, with a goal difference of 4:5, averaging 0.8 goals per match. ([copybet.com](https://www.copybet.com/football-tips/Football-Italy-Serie-B-AC-Reggiana-1919-Padova-13-12-2025/28552072/?utm_source=openai))\n\n- **Calcio Padova:** Similarly, Padova has won one of their last five matches, with a goal difference of 3:5, averaging 0.6 goals per match. ([copybet.com](https://www.copybet.com/football-tips/Football-Italy-Serie-B-AC-Reggiana-1919-Padova-13-12-2025/28552072/?utm_source=openai))\n\n**Head-to-Head Record:**\n\nIn the last ten encounters between the two teams, Reggiana has won once, Padova three times, and there have been six draws. ([matchstat.com](https://matchst\n\n---\n\nMarket 3:\nTitle: Will Kendrick Lamar release an album in 2025?\nCurrent Market Price: 96.0% (this is the market's implied probability)\nRecent trade: $863.04 on No\nLink: https://polymarket.com/event/which-artists-will-release-new-albums-in-2025\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nAs of December 13, 2025, Kendrick Lamar has not released a new album in 2025. His most recent album, *GNX*, was surprise-released on November 22, 2024, through PGLang and Interscope Records. The album received critical acclaim and commercial success, debuting at number one on the Billboard 200 and becoming the first rap album to sell over 1 million units in the U.S. in 2025. ([vice.com](https://www.vice.com/en/article/kendrick-lamar-gnx-first-rap-album-1-million-milestone-2025/?utm_source=openai))\n\nIn 2025, Lamar has been actively involved in several high-profile collaborations and performances. He performed at the Super Bowl LIX halftime show on February 9, 2025, where he showcased songs from *GNX*, including \"Luther,\" \"Man at the Garden,\" \"Peekaboo,\" \"Squabble Up,\" and \"TV Off.\" This performance attracted 133.5 million viewers, making it the most-watched Super Bowl halftime show in history. ([en.wikipedia.org](https://en.wikipedia.org/wiki/GNX_%28album%29?utm_source=openai))\n\nAdditio\n\n---\n\n\nProvide predictions in the exact format specified.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\n\nIMPORTANT: For each market, you MUST estimate the TRUE PROBABILITY of the outcome.\nCompare your probability estimate to the market price to find EDGE (mispricing).\n\nEdge = Your Probability - Market Probability\n- Positive edge on YES side means market undervalues YES\n- Negative edge means market overvalues YES (bet NO instead)\n\nFor each market, provide your prediction in this EXACT format:\n\nMARKET [number]: [decision]\nYour Probability: [0-100]%\nMarket Price: [shown price]%\nEdge: [+/-X]% (Your prob - Market)\nExpected Value: [calculate: Edge \u00d7 potential payout]\nReasoning: [1-2 sentences explaining your probability estimate]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES = Your probability > Market price + 10% (minimum 10% edge)\n- NO = Your probability < Market price - 10%\n- NO_TRADE = Edge < 10% (not enough value)\n\nBe contrarian when you have conviction. Look for markets where news hasn't been priced in yet.",
+  "consensus_summary": "The consensus identifies a strong \"NO\" trade for Market 1 (Yermak arrest), as all models see the 96% price as a massive overestimate given no arrest reports. For Market 3 (Kendrick album), two models recommend \"NO\" due to the imminent year-end, while one sees insufficient edge, indicating a leaning but not unanimous trade. Market 2 (soccer) shows the most disagreement, with models split between \"NO\" and \"NO_TRADE,\" reflecting balanced team data and no clear edge.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "GEMINI",
+    "AI #3": "DEEPSEEK"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.05,
+      "success": true
+    },
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4oZ5n96YtCaiAe1Ry9U'}",
+      "response_time": 0.09,
+      "success": false
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4oZ5nPNM8ujh5Zkacpa'}",
+      "response_time": 0.1,
+      "success": false
+    },
+    "openai": {
+      "response": "MARKET 1: NO\nYour Probability: 20%\nMarket Price: 96.0%\nEdge: -76% (Your prob - Market)\nExpected Value: -76% \u00d7 potential payout\nReasoning: Despite the raid on Yermak\u2019s residence and his resignation, there are no reports or official announcements regarding his arrest. The market\u2019s implied probability is extremely high, suggesting overvaluation of the likelihood of his arrest by December 31.\n\nMARKET 2: NO_TRADE\nYour Probability: 50%\nMarket Price: 57.0%\nEdge: -7% (Your prob - Market)\nExpected Value: -7% \u00d7 potential payout\nReasoning: Both teams have similar recent performance and head-to-head records, indicating a fairly balanced match-up. The market price isn\u2019t significantly mispriced given the available information, resulting in insufficient edge for a recommended trade.\n\nMARKET 3: NO_TRADE\nYour Probability: 10%\nMarket Price: 96.0%\nEdge: -86% (Your prob - Market)\nExpected Value: -86% \u00d7 potential payout\nReasoning: Kendrick Lamar has recently released an album and engaged in high-profile performances, making a new album release unlikely this year. However, given the high market price, the probability of a 2025 release is exceedingly low, providing no room for a trade.",
+      "response_time": 4.41,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: NO\nYour Probability: 5%\nMarket Price: 96.0%\nEdge: -91% (5% - 96%)\nExpected Value: -$91\nReasoning: The news states Yermak was not named a suspect and there are no official announcements of further legal actions as of December 13, 2025",
+      "response_time": 9.01,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO_TRADE\nYour Probability: 15%\nMarket Price: 96.0%\nEdge: -81.0% (Your prob - Market)\nExpected Value: N/A (Edge < 10% for a YES trade, but NO side has huge edge)\nReasoning: No reports of arrest exist, and the market deadline is extremely soon, making an arrest before year-end highly unlikely given the current investigative pace.\n\nMARKET 2: NO\nYour Probability: 40%\nMarket Price: 57.0%\nEdge: -17.0% (Your prob - Market)\nExpected Value: +29.8% (Betting NO at 43% price implies 17% edge)\nReasoning: Both teams have identical poor recent form (1 win in last 5), and Reggiana has a historically weak head-to-head record (1 win in last 10), making them slight underdogs at best.\n\nMARKET 3: NO\nYour Probability: 5%\nMarket Price: 96.0%\nEdge: -91.0% (Your prob - Market)\nExpected Value: +22.75% (Betting NO at 4% price implies 91% edge)\nReasoning: With only 18 days left in 2025 and no announcement or credible rumors of an imminent album, the probability of a surprise release is near zero.",
+      "response_time": 10.99,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 16.56
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T09:38:12.592269",
+  "prompt": "Analyze these 3 Polymarket markets.\n\nFor EACH market:\n1. Estimate the TRUE PROBABILITY based on news context\n2. Calculate EDGE vs market price\n3. Only recommend trades with 10%+ edge\n\n\nMarket 1:\nTitle: Spread: Liverpool FC (-1.5)\nCurrent Market Price: 68.0% (this is the market's implied probability)\nRecent trade: $900.00 on Brighton & Hove Albion FC\nLink: https://polymarket.com/event/epl-liv-bri-2025-12-13-more-markets\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nLiverpool FC is set to face Brighton & Hove Albion at Anfield on Saturday, December 13, 2025. Recent developments suggest that Liverpool's performance may influence betting markets, particularly the spread of -1.5 goals.\n\n**Recent Performance:**\n\n- **Match Against Leeds United (December 6, 2025):** Liverpool drew 3-3 with Leeds United. Despite leading 2-0 early in the second half, Liverpool conceded a stoppage-time equalizer. ([espn.com](https://www.espn.com/soccer/report/_/gameId/740742?utm_source=openai))\n\n- **Champions League Victory Over Inter Milan (December 9, 2025):** Liverpool secured a 1-0 win against Inter Milan, with Dominik Szoboszlai scoring an 88th-minute penalty. ([reuters.com](https://www.reuters.com/sports/soccer/late-szoboszlai-penalty-gives-liverpool-1-0-win-over-inter-milan-2025-12-09/?utm_source=openai))\n\n**Team Dynamics:**\n\n- **Mohamed Salah's Situation:** Salah has publicly criticized the club and manager Arne Slot, expressing frustration over reduced playing tim\n\n---\n\nMarket 2:\nTitle: Spread: Lightning (-1.5)\nCurrent Market Price: 68.6% (this is the market's implied probability)\nRecent trade: $1,000.00 on Islanders\nLink: https://polymarket.com/event/nhl-tb-nyi-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nThe Tampa Bay Lightning are set to face the New York Islanders today, Saturday, December 13, 2025, at 12:30 PM PST (3:30 PM EST) at UBS Arena in Elmont, New York. ([foxsports.com](https://www.foxsports.com/articles/nhl/lightning-vs-islanders-prediction-odds-picks-dec-13?utm_source=openai))\n\n**Recent Developments:**\n\n- **Victor Hedman's Injury:** Lightning captain and defenseman Victor Hedman is scheduled to undergo elbow surgery on Monday, December 15, 2025, and is expected to be sidelined for several weeks. Hedman had recently returned from a previous injury but aggravated it, leading to his current absence. ([reuters.com](https://www.reuters.com/sports/lightning-captain-victor-hedman-have-elbow-surgery--flm-2025-12-13/?utm_source=openai))\n\n- **Brayden Point's Return:** Forward Brayden Point returned to the lineup on December 8, 2025, after missing seven games due to an undisclosed injury. His presence is expected to bolster the Lightning's offensive capabilities. ([nhl.com](https://w\n\n---\n\nMarket 3:\nTitle: Will Melbourne Victory FC win on 2025-12-13?\nCurrent Market Price: 68.0% (this is the market's implied probability)\nRecent trade: $680.00 on Yes\nLink: https://polymarket.com/event/aus-vic-ade-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nMelbourne Victory FC is set to face Adelaide United on Saturday, December 13, 2025, at AAMI Park in Melbourne. ([melbournevictory.com.au](https://melbournevictory.com.au/news/victory-men-host-reds-in-original-rivalry/?utm_source=openai))\n\n**Recent Performance:**\n\n- **Melbourne Victory FC:** The team has struggled in recent matches, with a 3-0 loss to Sydney FC on November 22, 2025. ([espn.com](https://www.espn.com/soccer/match/_/gameId/758442/melbourne-victory-sydney-fc?utm_source=openai))\n\n- **Adelaide United:** Adelaide United has had a mixed record, with a 2-1 loss to Canberra United on December 5, 2025. ([hint.bet](https://www.hint.bet/football/match/758595?utm_source=openai))\n\n**Match Details:**\n\n- **Date and Time:** December 13, 2025, at 7:35 PM AEDT for the A-League Men\u2019s match. ([melbournevictory.com.au](https://melbournevictory.com.au/news/victory-men-host-reds-in-original-rivalry/?utm_source=openai))\n\n- **Venue:** AAMI Park, Melbourne. ([aamipark.com.au](https://aamipark.com.\n\n---\n\n\nProvide predictions in the exact format specified.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\n\nIMPORTANT: For each market, you MUST estimate the TRUE PROBABILITY of the outcome.\nCompare your probability estimate to the market price to find EDGE (mispricing).\n\nEdge = Your Probability - Market Probability\n- Positive edge on YES side means market undervalues YES\n- Negative edge means market overvalues YES (bet NO instead)\n\nFor each market, provide your prediction in this EXACT format:\n\nMARKET [number]: [decision]\nYour Probability: [0-100]%\nMarket Price: [shown price]%\nEdge: [+/-X]% (Your prob - Market)\nExpected Value: [calculate: Edge \u00d7 potential payout]\nReasoning: [1-2 sentences explaining your probability estimate]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES = Your probability > Market price + 10% (minimum 10% edge)\n- NO = Your probability < Market price - 10%\n- NO_TRADE = Edge < 10% (not enough value)\n\nBe contrarian when you have conviction. Look for markets where news hasn't been priced in yet.",
+  "consensus_summary": "The consensus identifies negative edges across all markets, with no AI recommending a \"YES\" trade due to perceived overpricing. There is strong agreement that Market 2 offers the largest negative edge, primarily due to Victor Hedman's injury for the Lightning. The overall summary is that no market presents a clear 10%+ positive edge for a recommended trade based on the provided analyses.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "GEMINI",
+    "AI #3": "DEEPSEEK"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.04,
+      "success": true
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4Tky7YkNSompVgwKi3o'}",
+      "response_time": 0.07,
+      "success": false
+    },
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4Tky8YHz7n3YFgUDru5'}",
+      "response_time": 0.08,
+      "success": false
+    },
+    "openai": {
+      "response": "MARKET 1: NO_TRADE  \nYour Probability: 65%  \nMarket Price: 68.0%  \nEdge: -3% (Your prob - Market)  \nExpected Value: -3% \u00d7 potential payout  \nReasoning: Liverpool's recent performances show inconsistency, with a draw against Leeds and a narrow win over Inter Milan, indicating they might not cover the spread against Brighton. However, the market is already close to this estimation, leaving little edge for a trade.\n\nMARKET 2: NO  \nYour Probability: 55%  \nMarket Price: 68.6%  \nEdge: -13.6% (Your prob - Market)  \nExpected Value: -13.6% \u00d7 potential payout  \nReasoning: The absence of Victor Hedman is a significant blow to the Lightning's defense, and while Brayden Point's return boosts their offense, the overall impact likely reduces their chances of covering a -1.5 spread against the Islanders.\n\nMARKET 3: NO_TRADE  \nYour Probability: 60%  \nMarket Price: 68.0%  \nEdge: -8% (Your prob - Market)  \nExpected Value: -8% \u00d7 potential payout  \nReasoning: Melbourne Victory's recent form is worrying, losing 3-0 to Sydney FC, but Adelaide United's form is also shaky. The probability of a Melbourne Victory win is slightly less than the market price, but not enough to justify a trade.",
+      "response_time": 2.77,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: NO\nYour Probability: 52%\nMarket Price: 68.0%\nEdge: -16% (Your prob - Market)\nExpected Value: -$5.12 (Calculated as -16% * (100 - 68) for betting YES, or +16% * 68 for betting",
+      "response_time": 9.57,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO_TRADE\nYour Probability: 60%\nMarket Price: 68.0%\nEdge: -8.0% (Your prob - Market)\nExpected Value: -8.0% (Not enough edge for a trade)\nReasoning: Liverpool's inconsistent form (draw vs. Leeds) and internal tension with Salah offset the home advantage and recent UCL win, making a -1.5 goal spread less likely than the market suggests, but not by a 10% margin.\n\nMARKET 2: NO\nYour Probability: 50%\nMarket Price: 68.6%\nEdge: -18.6% (Your prob - Market)\nExpected Value: +18.6% (Betting NO at 31.4% price implies +EV)\nReasoning: The loss of captain Victor Hedman is a major defensive blow for the Lightning, significantly reducing their likelihood of winning by 2+ goals against the Islanders, making the market price overly optimistic.\n\nMARKET 3: NO\nYour Probability: 55%\nMarket Price: 68.0%\nEdge: -13.0% (Your prob - Market)\nExpected Value: +13.0% (Betting NO at 32.0% price implies +EV)\nReasoning: Melbourne Victory's recent poor form, including a 3-0 loss, and Adelaide's capability suggest the market overvalues a straight win for the home team, creating edge on the NO side.",
+      "response_time": 11.23,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 15.24
+  }
+}

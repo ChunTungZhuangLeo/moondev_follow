@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-12T22:16:44.760282",
+  "prompt": "Analyze these 3 Polymarket markets and provide your predictions.\nYou have been given RECENT NEWS AND CONTEXT from web search for each market.\nUse this information to make more informed predictions.\n\n\nMarket 1:\nTitle: Will US Cremonese win on 2025-12-13?\nRecent trade: $754.10 on No\nLink: https://polymarket.com/event/sea-tor-cre-2025-12-13\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nUS Cremonese is set to face Torino FC on December 13, 2025, at the Stadio Olimpico Grande Torino in Turin, Italy. ([foxsports.com](https://www.foxsports.com/soccer/serie-a-torino-vs-us-cremonese-dec-13-2025-game-boxscore-625347?utm_source=openai))\n\n**Recent Performance:**\n\n- **US Cremonese:** The team has shown strong form recently, securing a 3-1 victory over Bologna on December 1, 2025. ([football-italia.net](https://football-italia.net/serie-a-bologna-1-3-cremonese-vardy-shock-win/?utm_source=openai)) Additionally, they achieved a 2-0 win against Lecce on December 7, 2025, with goals from Federico Bonazzoli and Antonio Sanabria. ([espn.com](https://www.espn.com/soccer/match/_/gameId/736921/lecce-cremonese?utm_source=openai))\n\n- **Torino FC:** Torino has struggled in recent matches, recording a series of losses and draws. Their most recent match resulted in a 2-2 draw against US Cremonese on February 20, 2023. ([video.thescore.com](https://video.thescore.com/seri/events/90551?utm_sou...\n\n---\n\nMarket 2:\nTitle: Will Estudiantes de La Plata win on 2025-12-13?\nRecent trade: $515.38 on Yes\nLink: https://polymarket.com/event/arg-rac-est-2025-12-13\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nEstudiantes de La Plata se enfrentar\u00e1 a Racing Club en la final del Torneo Clausura 2025 el 13 de diciembre de 2025 en el Estadio \u00danico Madre de Ciudades en Santiago del Estero. ([as.com](https://as.com/futbol/internacional/asi-ha-sido-el-camino-de-estudiantes-y-racing-hasta-la-final-del-torneo-clausura-2025-f202512-n/?utm_source=openai))\n\n**Historial reciente de Estudiantes de La Plata:**\n\n- **Eliminatorias previas:** En las semifinales, Estudiantes venci\u00f3 a Gimnasia y Esgrima La Plata por 1-0, con un gol de Tiago Palacios en el minuto 62. ([as.com](https://as.com/futbol/internacional/estudiantes-conquista-la-plata-y-se-las-vera-con-racing-f202512-n/?utm_source=openai))\n\n- **Rendimiento en el Torneo Clausura:** El equipo ha mostrado una mejora significativa en su rendimiento, avanzando a la final tras superar a equipos como Rosario Central y Central C\u00f3rdoba. ([as.com](https://as.com/futbol/internacional/asi-ha-sido-el-camino-de-estudiantes-y-racing-hasta-la-final-del-torneo-clausura-2...\n\n---\n\nMarket 3:\nTitle: Will Racing Club vs. Estudiantes de La Plata end in a draw?\nRecent trade: $800.64 on Yes\nLink: https://polymarket.com/event/arg-rac-est-2025-12-13\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nRacing Club and Estudiantes de La Plata are set to face each other in the 2025 Torneo Clausura final on December 13, 2025, at the Estadio \u00danico Madre de Ciudades in Santiago del Estero. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2025_Torneo_Clausura_final?utm_source=openai))\n\n**Recent Form:**\n\n- **Racing Club:** The team has demonstrated strong performance, securing five consecutive victories across all competitions, including notable wins against River Plate (3-2) and Boca Juniors (1-0). ([betonvalue.com](https://www.betonvalue.com/predictions/racing-club-vs-estudiantes-de-la-plata-predictions-betting-tips-match-preview-2025-12-14?utm_source=openai))\n\n- **Estudiantes de La Plata:** Estudiantes have shown resilience, especially in away games, conceding only nine goals in seven Liga Profesional 2025 away matches. ([betonvalue.com](https://www.betonvalue.com/predictions/racing-club-vs-estudiantes-de-la-plata-predictions-betting-tips-match-preview-2025-12-14?utm_source=openai))\n\n**...\n\n---\n\n\nProvide predictions for each market in the specified format.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\nUse this context to make more informed predictions.\n\nFor each market, provide your prediction in this exact format:\n\nMARKET [number]: [decision]\nReasoning: [brief 1-2 sentence explanation that references the news context if relevant]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES means you would bet on the \"Yes\" outcome\n- NO means you would bet on the \"No\" outcome\n- NO_TRADE means you would not take a position\n\nBe concise and focused on the most promising opportunities.",
+  "consensus_summary": "The consensus shows strong disagreement on Market 1 due to data reliability concerns, while Markets 2 and 3 show clearer alignment. Most models predict Racing Club's superior form makes an Estudiantes win unlikely (Market 2: NO) and that a draw is less probable than the market implies (Market 3: NO). Overall, predictions for the Argentine final are more confident than for the Serie A match, where inconsistent information creates significant uncertainty.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "DEEPSEEK",
+    "AI #3": "GEMINI",
+    "AI #4": "OPUS",
+    "AI #5": "CLAUDE"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.06,
+      "success": true
+    },
+    "openai": {
+      "response": "MARKET 1: YES  \nReasoning: US Cremonese has shown strong recent form with consecutive victories against Bologna and Lecce, while Torino FC has struggled with recent losses and draws. Considering Cremonese's current momentum and Torino's difficulties, a bet on Cremonese winning seems justified.\n\nMARKET 2: YES  \nReasoning: Estudiantes de La Plata has demonstrated improved performance, advancing to the Torneo Clausura final by defeating strong opponents like Rosario Central and Central C\u00f3rdoba. Their resilience and recent successes suggest they have a good chance of winning against Racing Club.\n\nMARKET 3: NO  \nReasoning: Racing Club has an impressive record with five consecutive victories, indicating strong form and a likelihood of either winning or losing rather than drawing. Given their recent performances, a draw seems less likely.",
+      "response_time": 3.76,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO  \nReasoning: Torino is playing at home, and while Cremonese has recent wins, the provided context shows Torino's last result against them was a 2-2 draw, suggesting a competitive match where an away win is not the most likely outcome.\n\nMARKET 2: NO  \nReasoning: Racing Club is in excellent form with five consecutive wins, including victories over top teams, making them strong favorites in the final against Estudiantes, who have had a more difficult path.\n\nMARKET 3: NO_TRADE  \nReasoning: While a draw in a cup final is possible, the context indicates Racing Club's strong momentum and Estudiantes' resilient away defense, creating too much uncertainty to confidently bet on either a decisive result or a draw.",
+      "response_time": 5.41,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: YES\nReasoning: US Cremonese has shown strong recent form with two convincing wins, while Torino FC has struggled, suggesting Cremonese is undervalued by the market's current \"No\" bias despite playing away.\n\nMARKET 2: NO_TRADE\nReasoning: While Estudiantes reached the final with a good win, Racing Club's recent form of five consecutive victories, including against strong opponents, makes an Estudiantes win less certain than the market currently implies.\n\nMARKET 3: NO\nReasoning: The market's implied probability of 80% for a draw seems excessively high for a final, especially considering Racing Club's strong form with five consecutive victories, suggesting they are more likely to secure a win.",
+      "response_time": 5.56,
+      "success": true
+    },
+    "opus": {
+      "response": "MARKET 1: NO\nReasoning: US Cremonese is playing away at Torino's Stadio Olimpico Grande Torino, and despite Cremonese's recent good form (wins over Bologna and Lecce), winning away against a Serie A opponent is challenging. The recent $754 trade on No suggests market sentiment aligns with this view.\n\nMARKET 2: NO\nReasoning: This is a cup final against Racing Club, who have won five consecutive matches including impressive victories over River Plate and Boca Juniors. Finals are typically close affairs, and Racing's superior recent form makes an outright Estudiantes win less likely.\n\nMARKET 3: NO_TRADE\nReasoning: While finals can often be tight and end in draws (especially in regulation), Racing's strong form with 5 consecutive wins suggests they may be capable of deciding the match. The draw outcome is possible but the market dynamics and Racing's momentum make this unpredictable.",
+      "response_time": 7.34,
+      "success": true
+    },
+    "claude": {
+      "response": "MARKET 1: NO_TRADE\nReasoning: There's a critical data inconsistency - the news references a match in 2023 and mentions players/results that don't align with a December 2025 fixture. Without reliable current form data for this specific match, I cannot make a confident prediction.\n\nMARKET 2: NO\nReasoning: This is a cup final between two strong teams. Racing Club has superior recent form with five consecutive victories including wins over River Plate and Boca Juniors, while Estudiantes' path shows they're competitive but facing a team in peak form. Finals are typically tight, making an outright Estudiantes win less likely than Racing winning or a draw.\n\nMARKET 3: NO\nReasoning: While cup finals can end in draws, Racing Club's exceptional current form (5 straight wins against top opposition) suggests they're more likely to win outright. The recent betting market activity ($800 on Yes) may be overvaluing the draw probability given Racing's momentum advantage.",
+      "response_time": 8.84,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 6,
+    "failed_responses": 0,
+    "total_time": 12.56
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T14:03:27.535553",
+  "prompt": "Analyze these 3 Polymarket markets.\n\nFor EACH market:\n1. Estimate the TRUE PROBABILITY based on news context\n2. Calculate EDGE vs market price\n3. Only recommend trades with 10%+ edge\n\n\nMarket 1:\nTitle: Will Bristol City FC win on 2025-12-13?\nCurrent Market Price: 83.0% (this is the market's implied probability)\nRecent trade: $969.56 on No\nLink: https://polymarket.com/event/elc-cov-bri-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nBristol City FC is set to face Coventry City on December 13, 2025, at the Coventry Building Society Arena. Coventry City currently leads the Championship with 44 points, while Bristol City is mid-table with 30 points. ([espn.com](https://www.espn.com/soccer/match/_/gameId/744841/bristol-city-coventry-city?utm_source=openai))\n\n**Recent Form:**\n\n- **Coventry City:** The team has been in strong form, winning four of their last five matches. ([welcome.bet](https://welcome.bet/coventry-city-vs-bristol-city-predictions-dec-13-2025/?utm_source=openai))\n\n- **Bristol City:** The team has been inconsistent, with two wins in their last five matches. ([welcome.bet](https://welcome.bet/coventry-city-vs-bristol-city-predictions-dec-13-2025/?utm_source=openai))\n\n**Head-to-Head Record:**\n\nIn the last five encounters, Coventry City has won two matches, and Bristol City has won one, with two draws. ([welcome.bet](https://welcome.bet/coventry-city-vs-bristol-city-predictions-dec-13-2025/?utm_source=opena\n\n---\n\nMarket 2:\nTitle: Will Borussia M\u00f6nchengladbach vs. VfL Wolfsburg end in a draw?\nCurrent Market Price: 74.0% (this is the market's implied probability)\nRecent trade: $3,700.00 on No\nLink: https://polymarket.com/event/bun-moe-wol-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nThe upcoming Bundesliga match between Borussia M\u00f6nchengladbach and VfL Wolfsburg is scheduled for December 13, 2025, at Borussia-Park. Recent analyses and expert opinions provide insights into the potential outcome of this fixture.\n\n**Recent Form and Head-to-Head Record:**\n\n- **Borussia M\u00f6nchengladbach:** The team has demonstrated strong performance at home, winning 60% of their last five home games. ([betclever.com](https://betclever.com/h2h/borussia-monchengladbach-vs-vfl-wolfsburg/?utm_source=openai))\n\n- **VfL Wolfsburg:** Their away form has been less impressive, with a 20% win rate in their last five away games. ([betclever.com](https://betclever.com/h2h/borussia-monchengladbach-vs-vfl-wolfsburg/?utm_source=openai))\n\n- **Head-to-Head Record:** In their most recent encounters, Wolfsburg secured a 1-0 victory in May 2025 and a 5-1 win in January 2025. ([bettingsuretips.com](https://www.bettingsuretips.com/borussia-mnchengladbach-vs-vfl-wolfsburg-prediction-h2h-betting-tips?utm_sourc\n\n---\n\nMarket 3:\nTitle: CSUN Matadors vs. Delaware Fightin' Blue Hens\nCurrent Market Price: 61.0% (this is the market's implied probability)\nRecent trade: $1,525.00 on Delaware Fightin' Blue Hens\nLink: https://polymarket.com/event/cbb-csunr-del-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nThe California State University, Northridge (CSUN) Matadors are set to face the University of Delaware Fightin' Blue Hens in a men's basketball game today, December 13, 2025, at 1 p.m. EST in Newark, Delaware. ([gomatadors.com](https://gomatadors.com/news/2025/12/9/mens-basketball-csun-hosts-fresno-state-visits-delaware-in-non-conference-action?utm_source=openai))\n\n**Recent Performances:**\n\n- **CSUN Matadors:** In their previous game on December 10, 2025, the Matadors secured an 89-87 victory over the Fresno State Bulldogs, with senior guard Larry Hughes II leading the team with 25 points. ([foxsports.com](https://www.foxsports.com/articles/cbk/hughes-leads-csu-northridge-against-delaware-after-25point-performance?utm_source=openai))\n\n- **Delaware Fightin' Blue Hens:** The Blue Hens have a 3-6 record this season, including a 1-2 mark at home. ([gomatadors.com](https://gomatadors.com/news/2025/12/9/mens-basketball-csun-hosts-fresno-state-visits-delaware-in-non-conference-action?utm_sour\n\n---\n\n\nProvide predictions in the exact format specified.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\n\nIMPORTANT: For each market, you MUST estimate the TRUE PROBABILITY of the outcome.\nCompare your probability estimate to the market price to find EDGE (mispricing).\n\nEdge = Your Probability - Market Probability\n- Positive edge on YES side means market undervalues YES\n- Negative edge means market overvalues YES (bet NO instead)\n\nFor each market, provide your prediction in this EXACT format:\n\nMARKET [number]: [decision]\nYour Probability: [0-100]%\nMarket Price: [shown price]%\nEdge: [+/-X]% (Your prob - Market)\nExpected Value: [calculate: Edge \u00d7 potential payout]\nReasoning: [1-2 sentences explaining your probability estimate]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES = Your probability > Market price + 10% (minimum 10% edge)\n- NO = Your probability < Market price - 10%\n- NO_TRADE = Edge < 10% (not enough value)\n\nBe contrarian when you have conviction. Look for markets where news hasn't been priced in yet.",
+  "consensus_summary": "The consensus identifies Market 1's \"NO\" (Bristol City losing) as a clear opportunity, with all models agreeing the market's 83% price for a Bristol win vastly overestimates their true probability against the league leaders. For Market 3, opinions diverge, with one model seeing a 14% edge for CSUN while another finds no actionable trade, indicating higher uncertainty. There is general agreement that Market 2's high probability for a draw is overvalued, though the estimated edge varies.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "GEMINI",
+    "AI #3": "DEEPSEEK"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.04,
+      "success": true
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4oyzGSujzao4Dohifee'}",
+      "response_time": 0.08,
+      "success": false
+    },
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4oyzKAsiPZwVHv83ZNx'}",
+      "response_time": 0.09,
+      "success": false
+    },
+    "openai": {
+      "response": "MARKET 1: NO\nYour Probability: 30%\nMarket Price: 83.0%\nEdge: -53% (Your prob - Market)\nExpected Value: -53% \u00d7 payout\nReasoning: Bristol City is facing a much stronger Coventry City team, who are leading the Championship and have been in excellent form. Given their recent performances and Coventry's superior standing, Bristol City's chances of winning seem significantly overestimated by the market.\n\nMARKET 2: NO\nYour Probability: 30%\nMarket Price: 74.0%\nEdge: -44% (Your prob - Market)\nExpected Value: -44% \u00d7 payout\nReasoning: Borussia M\u00f6nchengladbach's strong home performance combined with Wolfsburg's poor away form suggests a higher likelihood of a non-draw outcome. The head-to-head results also indicate that a draw is less probable than the market implies.\n\nMARKET 3: YES\nYour Probability: 75%\nMarket Price: 61.0%\nEdge: +14% (Your prob - Market)\nExpected Value: +14% \u00d7 payout\nReasoning: CSUN Matadors have shown competitive performance, including a recent win with a standout player performance. Delaware's current form and home record do not inspire confidence, suggesting CSUN has a better chance than the market indicates.",
+      "response_time": 3.55,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: NO\nYour Probability: 15%\nMarket Price: 83.0%\nEdge: -68% (Your prob - Market)\nExpected Value: 331.8% (for betting NO)\nReasoning: Bristol City FC is an inconsistent mid-table team playing away against Coventry City, who are league leaders in strong form. The",
+      "response_time": 9.92,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO\nYour Probability: 30%\nMarket Price: 83.0%\nEdge: -53.0% (Your prob - Market)\nExpected Value: +63.6% (Edge \u00d7 potential payout for NO at 17c)\nReasoning: Coventry City is league leader in strong form, playing at home, while Bristol City is mid-table and inconsistent, making a Bristol City win highly unlikely.\n\nMARKET 2: NO\nYour Probability: 40%\nMarket Price: 74.0%\nEdge: -34.0% (Your prob - Market)\nExpected Value: +130.8% (Edge \u00d7 potential payout for NO at 26c)\nReasoning: A 74% probability for a draw in a Bundesliga match is extremely high; recent H2H shows decisive results, and home/away form disparities suggest a higher chance of a home win than a draw.\n\nMARKET 3: NO_TRADE\nYour Probability: 55%\nMarket Price: 61.0%\nEdge: -6.0% (Your prob - Market)\nExpected Value: N/A\nReasoning: Delaware is at home but has a poor record (3-6), while CSUN is coming off a strong road win, making the market price for Delaware slightly overvalued but not by a decisive 10% margin.",
+      "response_time": 10.62,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 17.13
+  }
+}

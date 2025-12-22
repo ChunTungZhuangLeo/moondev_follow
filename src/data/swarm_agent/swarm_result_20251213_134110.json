@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T13:41:10.151266",
+  "prompt": "Analyze these 3 Polymarket markets and provide your predictions.\nYou have been given RECENT NEWS AND CONTEXT from web search for each market.\nUse this information to make more informed predictions.\n\n\nMarket 1:\nTitle: FC St. Pauli 1910 vs. 1. FC Heidenheim 1846: O/U 2.5\nRecent trade: $1,458.99 on Over\nLink: https://polymarket.com/event/bun-pau-hei-2025-12-13-more-markets\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nThe upcoming Bundesliga match between FC St. Pauli and 1. FC Heidenheim on December 13, 2025, presents an intriguing scenario for the Over/Under 2.5 goals market. Here's a concise summary of the most relevant and recent information:\n\n**Recent Form and Scoring Trends:**\n\n- **FC St. Pauli:** The team has struggled offensively, scoring only 11 goals in 13 matches this season, averaging approximately 0.85 goals per game. ([futbor.com](https://futbor.com/match/st-pauli-vs-heidenheim/stats-and-prediction/8227678?utm_source=openai)) Additionally, they've failed to score in six of their 13 matches, with only Mainz having a worse record in this regard. ([bundesliga.com](https://www.bundesliga.com/en/bundesliga/matchday/2025-2026/14/fc-st-pauli-vs-1-fc-heidenheim-1846/liveticker?utm_source=openai))\n\n- **1. FC Heidenheim:** Heidenheim has been more productive, netting 12 goals in 13 matches, averaging about 0.92 goals per game. ([futbor.com](https://futbor.com/match/st-pauli-vs-heidenheim/stats-a...\n\n---\n\nMarket 2:\nTitle: Will Blackburn Rovers FC win on 2025-12-13?\nRecent trade: $6,047.49 on No\nLink: https://polymarket.com/event/elc-por-bbr-2025-12-13\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nBlackburn Rovers FC is scheduled to play against Portsmouth FC on December 13, 2025, at Fratton Park in Portsmouth. ([globalsportsarchive.com](https://globalsportsarchive.com/en/soccer/match/2025-12-13/portsmouth-fc-vs-blackburn-rovers-fc/3750387?utm_source=openai))\n\n**Recent Performance:**\n\n- **Blackburn Rovers FC:**\n  - On December 9, 2025, Blackburn secured a 1-1 draw against Oxford United at Ewood Park. ([thescore.com](https://www.thescore.com/engch/events/89973/box_score?utm_source=openai))\n  - On December 6, 2025, they achieved a 1-0 victory over Sheffield Wednesday, with Yuki Ohashi scoring the decisive goal. ([skysports.com](https://www.skysports.com/football/blackburn-rovers-vs-sheffield-wednesday/live/534535?utm_source=openai))\n\n- **Portsmouth FC:**\n  - In their most recent match, Portsmouth suffered a 1-0 away defeat to Swansea City at Swansea.com Stadium. ([sportsgambler.com](https://www.sportsgambler.com/betting-tips/football/portsmouth-vs-blackburn-prediction-lineups-odds...\n\n---\n\nMarket 3:\nTitle: Will Middlesbrough FC win on 2025-12-13?\nRecent trade: $6,878.77 on No\nLink: https://polymarket.com/event/elc-mid-qpr-2025-12-13\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nMiddlesbrough FC is set to face Queens Park Rangers (QPR) on December 13, 2025, at Riverside Stadium in a crucial EFL Championship fixture. The match is scheduled to kick off at 15:00 GMT.\n\n**Recent Form:**\n\n- **Middlesbrough FC:** The team has demonstrated strong performance recently, securing three consecutive wins. Notably, they achieved a 2-1 victory over Charlton Athletic on December 9, 2025. ([espn.com](https://www.espn.com/soccer/match/_/gameId/744831?utm_source=openai)) Their home record is impressive, with only one defeat at Riverside Stadium since April. ([soccernews.com](https://www.soccernews.com/bitesize-prediction-middlesbrough-vs-qpr-13-12-25/393319/?utm_source=openai))\n\n- **Queens Park Rangers:** QPR has also been in good form, winning four of their last five matches. Their most recent success was a 2-1 win against Birmingham City on December 9, 2025. ([betmines.com](https://betmines.com/match-preview/middlesbrough-vs-queens-park-rangers-prediction-match-preview-and-ana...\n\n---\n\n\nProvide predictions for each market in the specified format.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\nUse this context to make more informed predictions.\n\nFor each market, provide your prediction in this exact format:\n\nMARKET [number]: [decision]\nReasoning: [brief 1-2 sentence explanation that references the news context if relevant]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES means you would bet on the \"Yes\" outcome\n- NO means you would bet on the \"No\" outcome\n- NO_TRADE means you would not take a position\n\nBe concise and focused on the most promising opportunities.",
+  "consensus_summary": "The consensus strongly predicts **Under 2.5 goals** for Market 1 and a **Middlesbrough win** for Market 3, based on clear statistical and form-based reasoning from all three AIs. For Market 2, there is a split between \"No Trade\" and \"No,\" indicating uncertainty, though the context of an away game and mixed form leads to a cautious or negative outlook on Blackburn. Overall, predictions for Markets 1 and 3 are highly aligned and actionable, while Market 2 lacks a definitive consensus.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "GEMINI",
+    "AI #3": "DEEPSEEK"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.05,
+      "success": true
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4nHmEPd5N8cq93MafMr'}",
+      "response_time": 0.07,
+      "success": false
+    },
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4nHmGNK5UFbbvmfG2yH'}",
+      "response_time": 0.08,
+      "success": false
+    },
+    "openai": {
+      "response": "MARKET 1: NO\nReasoning: Both FC St. Pauli and 1. FC Heidenheim have struggled offensively this season, with St. Pauli averaging only 0.85 goals per game and Heidenheim 0.92 goals per game. Given their recent scoring trends and struggles in finding the back of the net, it's likely that the total goals will be under 2.5.\n\nMARKET 2: NO_TRADE\nReasoning: Blackburn Rovers have shown mixed form with a recent win and a draw, while Portsmouth recently lost their last match. However, the information does not provide a clear advantage to either team, making it difficult to confidently predict Blackburn's victory, especially with the recent trade heavily favoring a \"No\" outcome.\n\nMARKET 3: YES\nReasoning: Middlesbrough FC has been in excellent form with three consecutive wins and a strong home record, having only lost once at Riverside Stadium since April. Although QPR is also performing well, Middlesbrough's recent form and home advantage suggest a favorable outcome for them.",
+      "response_time": 3.37,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: NO\nReasoning: Both FC St. Pauli and 1. FC Heidenheim have low scoring averages (0.85 and 0.92 goals per game respectively), with St. Pauli failing to score in nearly half their matches, suggesting an Under 2.5 outcome is more likely.\n\nMARKET 2: NO_TRADE\nReasoning: Blackburn Rovers have mixed recent form (win, draw) and are playing away, while Portsmouth recently lost, making a definitive prediction on an away win difficult without further context on head-to-head or home advantage strength.\n\nMARKET 3: YES\nReasoning: Middlesbrough FC is in strong form with three consecutive wins and has an impressive home record with only one defeat at Riverside Stadium since April, making a win against QPR highly probable despite QPR's recent good form.",
+      "response_time": 4.7,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO  \nReasoning: Both teams have low scoring averages (St. Pauli 0.85, Heidenheim 0.92 goals per game) and St. Pauli has failed to score in nearly half their matches, making Under 2.5 goals the more likely outcome.\n\nMARKET 2: NO  \nReasoning: Blackburn is playing away against Portsmouth, and while both teams have mixed recent results, the significant recent trade on \"No\" aligns with the context showing no clear advantage for Blackburn to secure an away win.\n\nMARKET 3: YES  \nReasoning: Middlesbrough is in strong form with three consecutive wins and an impressive home record, having lost only once at Riverside since April, making them favorites against a QPR side that, while in good form, is facing a tough away fixture.",
+      "response_time": 7.08,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 12.25
+  }
+}

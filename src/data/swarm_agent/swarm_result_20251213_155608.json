@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T15:56:08.175866",
+  "prompt": "Analyze these 3 Polymarket markets.\n\nFor EACH market:\n1. Estimate the TRUE PROBABILITY based on news context\n2. Calculate EDGE vs market price\n3. Only recommend trades with 10%+ edge\n\n\nMarket 1:\nTitle: Telstar 1963 vs. NEC: O/U 1.5\nCurrent Market Price: 79.4% (this is the market's implied probability)\nRecent trade: $600.00 on Over\nLink: https://polymarket.com/event/ere-tel-nec-2025-12-13-more-markets\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nThe Eredivisie match between Telstar 1963 and NEC is scheduled for December 13, 2025, at 15:30 UK time. ([betclan.com](https://www.betclan.com/predictionsdetails/football/185690342/telstar-v-nec-prediction-h2h-tip-and-match-preview/?utm_source=openai))\n\n**Recent Form:**\n\n- **Telstar 1963:** In their last five matches, Telstar has achieved one win, four draws, and one loss. ([sportpesajackpot.com](https://www.sportpesajackpot.com/telstar-vs-nec-prediction-185690342/?utm_source=openai))\n\n- **NEC:** NEC has been in strong form, securing four consecutive wins in their recent matches. ([sportpesajackpot.com](https://www.sportpesajackpot.com/telstar-vs-nec-prediction-185690342/?utm_source=openai))\n\n**Head-to-Head Record:**\n\nIn the last six encounters between Telstar and NEC, Telstar has won two matches, NEC has won two, and there have been two draws. ([footboom1.com](https://www.footboom1.com/sr/football/game/sc-telstar-nec-nijmegen-2025-12-13?utm_source=openai))\n\n**Over/Under 1.5 Goals Pred\n\n---\n\nMarket 2:\nTitle: O/U 1.5 Rounds\nCurrent Market Price: 40.0% (this is the market's implied probability)\nRecent trade: $620.00 on Under\nLink: https://polymarket.com/event/ufc-ces2-cez1-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nOver/Under (O/U) 1.5 rounds is a common betting line in combat sports, particularly in boxing and mixed martial arts (MMA), where bettors wager on whether a fight will last more or fewer than 1.5 rounds. This line is set to determine if the fight will extend beyond the first half of the second round.\n\n**Understanding O/U 1.5 Rounds Betting:**\n\n- **Over 1.5 Rounds:** The fight must last beyond 2 minutes and 30 seconds of the second round.\n- **Under 1.5 Rounds:** The fight must conclude before or at 2 minutes and 29 seconds of the second round.\n\nThis betting format is prevalent in MMA, where bouts are typically scheduled for three rounds, and in boxing, where fights can range from four to twelve rounds. The 1.5-round line is often used to gauge the expected duration of a fight based on the fighters' styles and histories.\n\n**Recent Context and Considerations:**\n\n- **Fighter Styles:** Fighters known for aggressive, knockout-oriented approaches may have shorter fights, leading to a higher l\n\n---\n\nMarket 3:\nTitle: Dota 2: Team Liquid vs Virtus.pro - Game 2 Winner\nCurrent Market Price: 88.5% (this is the market's implied probability)\nRecent trade: $1,062.76 on Team Liquid\nLink: https://polymarket.com/event/dota2-liquid-vp-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nAs of December 13, 2025, Team Liquid and Virtus.pro are set to face each other in a Best of 3 series during the Group Stage of DreamLeague Season 27. ([gosugamers.net](https://www.gosugamers.net/dota2/tournaments/62214-dreamleague-season-27/matches/635889-team-liquid-vs-virtus-pro?utm_source=openai)) The match is scheduled to begin at 14:30 local time.\n\n**Recent Performance:**\n\n- **Team Liquid:** Ranked 7th in the Strafe Dota 2 World Rankings, Team Liquid has secured 7 wins in their last 10 matches. ([strafe.com](https://www.strafe.com/match/team-liquid-vs-virtus-pro-round-4-main-event-2e7162/?utm_source=openai))\n\n- **Virtus.pro:** Holding the 17th position in the same rankings, Virtus.pro has achieved 3 wins in their last 10 matches. ([strafe.com](https://www.strafe.com/match/team-liquid-vs-virtus-pro-round-4-main-event-2e7162/?utm_source=openai))\n\n**Betting Odds:**\n\nBookmakers favor Team Liquid, with odds of 1.19 for a win and 4.35 for Virtus.pro. ([tips.gg](https://tips.gg/matches/d\n\n---\n\n\nProvide predictions in the exact format specified.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\n\nIMPORTANT: For each market, you MUST estimate the TRUE PROBABILITY of the outcome.\nCompare your probability estimate to the market price to find EDGE (mispricing).\n\nEdge = Your Probability - Market Probability\n- Positive edge on YES side means market undervalues YES\n- Negative edge means market overvalues YES (bet NO instead)\n\nFor each market, provide your prediction in this EXACT format:\n\nMARKET [number]: [decision]\nYour Probability: [0-100]%\nMarket Price: [shown price]%\nEdge: [+/-X]% (Your prob - Market)\nExpected Value: [calculate: Edge \u00d7 potential payout]\nReasoning: [1-2 sentences explaining your probability estimate]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES = Your probability > Market price + 10% (minimum 10% edge)\n- NO = Your probability < Market price - 10%\n- NO_TRADE = Edge < 10% (not enough value)\n\nBe contrarian when you have conviction. Look for markets where news hasn't been priced in yet.",
+  "consensus_summary": "The consensus identifies no trades with a 10%+ edge, as all models agree Market 1's price is efficient and Market 3's is overvalued. There is notable disagreement only on Market 2, where AI #1 sees a 15% edge for \"Over\" while others find it insufficient or unclear. Overall, the analysis suggests passing on all three markets given the lack of a clear, high-conviction opportunity.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "DEEPSEEK",
+    "AI #3": "GEMINI"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.06,
+      "success": true
+    },
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4xaXkARfZCpM4ggsWeM'}",
+      "response_time": 0.1,
+      "success": false
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4xaXjB6TaUbGiXMaTEF'}",
+      "response_time": 0.15,
+      "success": false
+    },
+    "openai": {
+      "response": "MARKET 1: NO_TRADE\nYour Probability: 80%\nMarket Price: 79.4%\nEdge: +0.6% (Your prob - Market)\nExpected Value: +0.006 \u00d7 potential payout\nReasoning: Given NEC's strong recent form and the historical competitiveness between the teams, the probability of over 1.5 goals is high. However, the market price already reflects this, offering minimal edge.\n\nMARKET 2: NO\nYour Probability: 55%\nMarket Price: 40.0%\nEdge: +15% (Your prob - Market)\nExpected Value: +0.15 \u00d7 potential payout\nReasoning: The market may underestimate the possibility of the fight extending past 1.5 rounds. The implied market probability suggests a shorter fight, but considering typical fight structures and possible defensive strategies, the fight lasting longer is plausible.\n\nMARKET 3: NO\nYour Probability: 75%\nMarket Price: 88.5%\nEdge: -13.5% (Your prob - Market)\nExpected Value: -0.135 \u00d7 potential payout\nReasoning: While Team Liquid is the stronger team and expected to win, the current market price significantly overestimates their chances. Virtus.pro still has potential to upset given the team's capabilities, making the market price too high.",
+      "response_time": 3.22,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO_TRADE\nYour Probability: 80%\nMarket Price: 79.4%\nEdge: +0.6% (Your prob - Market)\nExpected Value: 0.6% \u00d7 potential payout\nReasoning: NEC's strong recent form suggests a high probability of goals, but Telstar's draws and historical competitiveness make the true probability very close to the efficient market price.\n\nMARKET 2: NO_TRADE\nYour Probability: 45%\nMarket Price: 40.0%\nEdge: +5.0% (Your prob - Market)\nExpected Value: 5.0% \u00d7 potential payout\nReasoning: Without specific fighter context, the generic 1.5-round line often has inherent volatility, but a 5% edge is insufficient to overcome the noise and recommend a trade.\n\nMARKET 3: NO\nYour Probability: 75%\nMarket Price: 88.5%\nEdge: -13.5% (Your prob - Market)\nExpected Value: 13.5% \u00d7 potential payout (on NO side)\nReasoning: While Team Liquid is favored, an 88.5% implied probability for a single game in a Bo3 series is excessive given Virtus.pro's capability to win an upset, especially in esports.",
+      "response_time": 9.42,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: NO_TRADE\nYour Probability: 75%\nMarket Price: 79.4%\nEdge: -4.4% (Your prob - Market)\nExpected Value: -0.044 * potential payout\nReasoning: While NEC is in strong scoring form, Telstar's recent history of draws could indicate lower-scoring games",
+      "response_time": 10.56,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 14.6
+  }
+}

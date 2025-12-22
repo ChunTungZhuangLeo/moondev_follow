@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T12:10:56.934186",
+  "prompt": "Analyze these 3 Polymarket markets and provide your predictions.\nYou have been given RECENT NEWS AND CONTEXT from web search for each market.\nUse this information to make more informed predictions.\n\n\nMarket 1:\nTitle: Torino FC vs. US Cremonese: O/U 1.5\nRecent trade: $800.00 on Over\nLink: https://polymarket.com/event/sea-tor-cre-2025-12-13-more-markets\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nThe upcoming Serie A match between Torino FC and US Cremonese is scheduled for December 13, 2025, at the Stadio Olimpico Grande Torino in Turin. ([foxsports.com](https://www.foxsports.com/soccer/serie-a-torino-vs-us-cremonese-dec-13-2025-game-boxscore-625347?utm_source=openai))\n\n**Over/Under 1.5 Goals Betting Odds:**\n\n- **Over 1.5 Goals:** 1.36\n- **Under 1.5 Goals:** 2.88\n\n([pokerstars.com](https://www.pokerstars.com/sports/soccer/1/italian-serie-a/81/torino-v-us-cremonese/35016420/?utm_source=openai))\n\n**Recent Form and Statistics:**\n\n- **Torino FC:**\n  - Position: 16th in Serie A\n  - Goals Scored: 14 in 14 matches (average of 1 goal per match)\n  - Goals Conceded: 18 in 14 matches (average of 1.29 goals per match)\n  - Recent Matches: Winless in their last six games, with three draws and three losses. ([betdecider.com](https://betdecider.com/picks/torino-fc-vs-us-cremonese-soccer-betting-preview-odds-offensive-leaders-12-13-2025/?utm_source=openai))\n\n- **US Cremonese:**\n  - Position: 9...\n\n---\n\nMarket 2:\nTitle: Arkansas Razorbacks vs. Texas Tech Red Raiders\nRecent trade: $1,028.20 on Texas Tech Red Raiders\nLink: https://polymarket.com/event/cbb-ark-txtech-2025-12-13\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nThe Arkansas Razorbacks and the Texas Tech Red Raiders are set to renew their basketball rivalry today, December 13, 2025, at the American Airlines Center in Dallas, Texas. This matchup, dubbed the \"Revocruit Rematch,\" is a non-conference game that rekindles the competitive history between these two programs. ([arkansasrazorbacks.com](https://arkansasrazorbacks.com/arkansas-returns-to-dallas-faces-texas-tech-in-revocruit-rematch/?utm_source=openai))\n\n**Recent Performance:**\n\n- **Arkansas Razorbacks:** The Razorbacks enter this game with a 7-2 record in non-conference play. In their most recent outing on December 6, 2025, they secured a decisive 82-58 victory over Fresno State. Darius Acuff Jr. led the team with 18 points, eight assists, and five rebounds, while Meleek Thomas and D.J. Wagner each contributed 12 points. The Razorbacks demonstrated strong perimeter shooting, making 11 of 30 three-point attempts. ([reuters.com](https://www.reuters.com/sports/basketball/no-25-arkansas-shoot...\n\n---\n\nMarket 3:\nTitle: Dota 2: Team Tidebound vs Yakutou Brothers - Game 2 Winner\nRecent trade: $1,187.00 on Team Tidebound\nLink: https://polymarket.com/event/dota2-tt2-yb1-2025-12-13\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nAs of December 13, 2025, there is no available information regarding the outcome of Game 2 between Team Tidebound and Yakult Brothers in the ESL Dota2 2025 DreamLeague Season 27 Main Event. The match is scheduled to begin at 11:00 AM UTC, and the result will be determined upon its conclusion.\n\n**Recent Performance and Head-to-Head Record:**\n\n- **Team Tidebound:** Over the past six months, Team Tidebound has earned $245,000, placing them 9th in earnings among Dota 2 teams. They achieved a 5-6th place finish in the BLAST Slam III, securing $35,000 in prize money. Their overall win rate stands at 59%, with a slight dip to 56% over the past month. Notable victories include wins against BetBoom Team and Xtreme Gaming. ([bo3.gg](https://bo3.gg/dota2/predictions/yakult-s-brothers-vs-tidebound-match-prediction-and-analysis-asian-champions-league-2025-playoffs?utm_source=openai))\n\n- **Yakult Brothers:** In the same period, Yakult Brothers have earned $122,500, ranking 16th in earnings. They hav...\n\n---\n\n\nProvide predictions for each market in the specified format.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\nUse this context to make more informed predictions.\n\nFor each market, provide your prediction in this exact format:\n\nMARKET [number]: [decision]\nReasoning: [brief 1-2 sentence explanation that references the news context if relevant]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES means you would bet on the \"Yes\" outcome\n- NO means you would bet on the \"No\" outcome\n- NO_TRADE means you would not take a position\n\nBe concise and focused on the most promising opportunities.",
+  "consensus_summary": "The consensus strongly favors \"YES\" for Market 1 (Over 1.5 goals) due to supportive betting odds, while opinions are split on Markets 2 and 3, leading to a mix of \"YES\" and \"NO_TRADE\" predictions. The primary disagreement centers on whether the available data for the basketball and esports markets is sufficient for a confident prediction or too volatile. Overall, Market 1 is viewed as the clearest opportunity, whereas the others are seen as more speculative.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "GEMINI",
+    "AI #3": "DEEPSEEK"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.04,
+      "success": true
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4fQSdLHJN7qmuddJNJC'}",
+      "response_time": 0.1,
+      "success": false
+    },
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4fQSd5qxNwtSYJd9DB8'}",
+      "response_time": 0.12,
+      "success": false
+    },
+    "openai": {
+      "response": "MARKET 1: YES  \nReasoning: The betting odds heavily favor the \"Over 1.5 Goals\" outcome with odds of 1.36 compared to 2.88 for the \"Under.\" Additionally, Torino FC's average goals scored and conceded per match suggest a likelihood of more than 1.5 goals in total.\n\nMARKET 2: NO_TRADE  \nReasoning: Both teams have strong recent performances, making it difficult to predict a clear winner. While Texas Tech has significant recent trading activity, Arkansas' recent decisive victory and strong shooting performance suggest this could be a close game.\n\nMARKET 3: YES  \nReasoning: Team Tidebound has a better overall win rate and higher earnings compared to Yakult Brothers, alongside recent notable victories. This makes them the more favorable team to bet on for winning Game 2.",
+      "response_time": 1.67,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: YES\nReasoning: The betting odds heavily favor \"Over 1.5 Goals\" at 1.36, and Torino's average goals scored (1.0) and conceded (1.29) per game suggest a high likelihood of at least two goals in the match.\n\nMARKET 2: NO_TRADE\nReasoning: While Arkansas has a strong 7-2 record and a recent dominant win, crucial performance data for Texas Tech is missing, making it difficult to assess the market's strong lean towards Texas Tech without full context.\n\nMARKET 3: YES\nReasoning: Team Tidebound demonstrates superior performance metrics with higher earnings ($245,000 vs $122,500) and a stronger overall win rate (59%) compared to Yakult Brothers, aligning with the market's current trade.",
+      "response_time": 7.46,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO_TRADE  \nReasoning: The provided betting odds heavily favor Over 1.5 goals (1.36 vs 2.88 for Under), and Torino's poor recent form suggests a low-scoring match is possible, but the market price is not given, making a clear edge difficult to assess without knowing the implied probability on Polymarket.\n\nMARKET 2: YES  \nReasoning: The recent news indicates Arkansas is ranked (#25) and coming off a strong 82-58 win, while Texas Tech is unranked and lost its last game; this suggests Arkansas is the favorite, so betting on them (the \"Yes\" side for Arkansas) is supported by the context.\n\nMARKET 3: NO_TRADE  \nReasoning: While Team Tidebound has higher earnings and a better recent win rate than Yakult Brothers, the outcome of a single Dota 2 game is highly volatile, and the provided context does not show a decisive enough advantage to justify a bet.",
+      "response_time": 8.32,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 16.18
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T14:25:54.433559",
+  "prompt": "Analyze these 3 Polymarket markets.\n\nFor EACH market:\n1. Estimate the TRUE PROBABILITY based on news context\n2. Calculate EDGE vs market price\n3. Only recommend trades with 10%+ edge\n\n\nMarket 1:\nTitle: Will Hamburger SV win on 2025-12-13?\nCurrent Market Price: 79.0% (this is the market's implied probability)\nRecent trade: $1,027.28 on No\nLink: https://polymarket.com/event/bun-hof-hsv-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nHamburger SV is set to face TSG Hoffenheim on December 13, 2025, at the PreZero Arena in Sinsheim, Germany. ([bundesliga.com](https://www.bundesliga.com/en/bundesliga/matchday/2025-2026/14/tsg-hoffenheim-vs-hamburger-sv?utm_source=openai))\n\n**Recent Performance:**\n\n- **Hamburger SV:** In their latest match on December 7, 2025, they secured a 3-2 victory over Werder Bremen, marking their second consecutive win. ([espn.com](https://www.espn.com/soccer/match/_/gameId/746826?utm_source=openai))\n\n- **TSG Hoffenheim:** They experienced a 2-0 defeat against Borussia Dortmund on December 6, 2025, ending a six-match unbeaten streak. ([bundesliga.com](https://www.bundesliga.com/en/bundesliga/matchday/2025-2026/14/tsg-hoffenheim-vs-hamburger-sv?utm_source=openai))\n\n**Match Details:**\n\n- **Date and Time:** December 13, 2025, at 2:30 PM local time.\n\n- **Venue:** PreZero Arena, Sinsheim.\n\n**Team Statistics:**\n\n- **TSG Hoffenheim:** Currently 5th in the Bundesliga with 25 goals scored (1.9 per game) \n\n---\n\nMarket 2:\nTitle: Will AS Saint-\u00c9tienne win on 2025-12-13?\nCurrent Market Price: 40.0% (this is the market's implied probability)\nRecent trade: $15,986.64 on No\nLink: https://polymarket.com/event/fr2-ass-bas-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nAS Saint-\u00c9tienne is set to face SC Bastia on December 13, 2025, at Stade Geoffroy-Guichard in a Ligue 2 match scheduled for 19:00 local time. ([tntsports.co.uk](https://www.tntsports.co.uk/football/ligue-2/2025-2026/as-saint-etienne-sc-bastia_mtc1608659/live.shtml?utm_source=openai))\n\n**Recent Form:**\n\n- **AS Saint-\u00c9tienne:** The team has demonstrated strong performance, securing four consecutive victories in their recent matches. ([ratingbet.com](https://ratingbet.com/predictions/saint-tienne-vs-sc-bastia-prediction-and-betting-tips-on-december-13-2025/?utm_source=openai))\n\n- **SC Bastia:** Conversely, Bastia has struggled, losing 10 of their first 16 Ligue 2 matches and failing to secure an away win this season. ([ratingbet.com](https://ratingbet.com/predictions/saint-tienne-vs-sc-bastia-prediction-and-betting-tips-on-december-13-2025/?utm_source=openai))\n\n**Betting Odds:**\n\n- **Home Win (AS Saint-\u00c9tienne):** Odds are approximately 1.70. ([footballpredictions.ai](https://footballpred\n\n---\n\nMarket 3:\nTitle: LSU Tigers vs. SMU Mustangs\nCurrent Market Price: 51.0% (this is the market's implied probability)\nRecent trade: $3,968.99 on SMU Mustangs\nLink: https://polymarket.com/event/cbb-lsu-smu-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nLSU and SMU have a history of competitive matchups across various sports, with recent developments in both football and men's basketball.\n\n**Football:**\n\nIn May 2025, LSU and SMU announced a home-and-home football series for the 2028 and 2029 seasons. The Tigers will host the Mustangs on September 2, 2028, in Baton Rouge, and travel to Dallas on September 1, 2029. This series marks the first meeting between the two programs since 1934, when they tied 14-14 in Baton Rouge. ([cbssports.com](https://www.cbssports.com/college-football/news/five-questions-as-lsu-smu-announce-home-and-home-series-will-brian-kelly-still-be-coaching-tigers-in-2028/?utm_source=openai))\n\n**Men's Basketball:**\n\nThe LSU Tigers and SMU Mustangs are set to face off on December 13, 2025, at the Smoothie King Center in New Orleans. Both teams enter the game with strong records: LSU at 8-1 and SMU at 9-1. LSU boasts an average of 88.4 points per game, while SMU averages 89.8 points. Key players include LSU's Max Mackin\n\n---\n\n\nProvide predictions in the exact format specified.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\n\nIMPORTANT: For each market, you MUST estimate the TRUE PROBABILITY of the outcome.\nCompare your probability estimate to the market price to find EDGE (mispricing).\n\nEdge = Your Probability - Market Probability\n- Positive edge on YES side means market undervalues YES\n- Negative edge means market overvalues YES (bet NO instead)\n\nFor each market, provide your prediction in this EXACT format:\n\nMARKET [number]: [decision]\nYour Probability: [0-100]%\nMarket Price: [shown price]%\nEdge: [+/-X]% (Your prob - Market)\nExpected Value: [calculate: Edge \u00d7 potential payout]\nReasoning: [1-2 sentences explaining your probability estimate]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES = Your probability > Market price + 10% (minimum 10% edge)\n- NO = Your probability < Market price - 10%\n- NO_TRADE = Edge < 10% (not enough value)\n\nBe contrarian when you have conviction. Look for markets where news hasn't been priced in yet.",
+  "consensus_summary": "The consensus identifies a strong positive edge for AS Saint-\u00c9tienne (Market 2), with all models agreeing the market price significantly underestimates their probability. For Hamburger SV (Market 1), all models agree the market price is overvalued, though they disagree on the severity of the mispricing. The LSU vs. SMU market (Market 3) is viewed as efficiently priced, with no actionable edge.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "GEMINI",
+    "AI #3": "DEEPSEEK"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.04,
+      "success": true
+    },
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4qhK3ZCewSZncyBTriv'}",
+      "response_time": 0.08,
+      "success": false
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4qhK53adYegj8YaZYiY'}",
+      "response_time": 0.1,
+      "success": false
+    },
+    "openai": {
+      "response": "MARKET 1: NO_TRADE  \nYour Probability: 75%  \nMarket Price: 79.0%  \nEdge: -4% (Your prob - Market)  \nExpected Value: -4 \u00d7 potential payout  \nReasoning: Hamburger SV has been on a winning streak and is performing well, but TSG Hoffenheim's home advantage and overall strong performance in the league make the match competitive. The market price seems to slightly overestimate Hamburger SV's chances, but not enough to justify a trade.\n\nMARKET 2: YES  \nYour Probability: 60%  \nMarket Price: 40.0%  \nEdge: +20% (Your prob - Market)  \nExpected Value: 20 \u00d7 potential payout  \nReasoning: AS Saint-\u00c9tienne is in excellent form with four consecutive victories, while SC Bastia is struggling, especially in away matches. The market underestimates AS Saint-\u00c9tienne's chances, providing a significant edge for a YES trade.\n\nMARKET 3: NO_TRADE  \nYour Probability: 50%  \nMarket Price: 51.0%  \nEdge: -1% (Your prob - Market)  \nExpected Value: -1 \u00d7 potential payout  \nReasoning: Both LSU and SMU have strong records and similar scoring averages, making this a closely matched game. The market price reflects this evenly, resulting in minimal edge and no clear advantage for a trade.",
+      "response_time": 2.81,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: NO\nYour Probability: 35%\nMarket Price: 79.0%\nEdge: -44% (35% - 79%)\nExpected Value: -44% \u00d7 potential payout\nReasoning: An away win probability of 79% against a 5th-placed Bundesliga team (TSG Hoffenheim) playing at home",
+      "response_time": 9.53,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO_TRADE\nYour Probability: 65%\nMarket Price: 79.0%\nEdge: -14.0% (Your prob - Market)\nExpected Value: -0.177 (Edge \u00d7 potential payout: -0.14 * (1/0.79 - 1))\nReasoning: Hamburger SV is in good form, but they are playing away against a stronger Hoffenheim side (5th in Bundesliga), making a 79% win probability seem significantly overvalued.\n\nMARKET 2: YES\nYour Probability: 65%\nMarket Price: 40.0%\nEdge: +25.0% (Your prob - Market)\nExpected Value: +0.625 (Edge \u00d7 potential payout: 0.25 * (1/0.40 - 1))\nReasoning: AS Saint-\u00c9tienne is on a four-game winning streak at home against SC Bastia, who has been terrible away, creating a large positive edge versus the market price.\n\nMARKET 3: NO_TRADE\nYour Probability: 50%\nMarket Price: 51.0%\nEdge: -1.0% (Your prob - Market)\nExpected Value: -0.020 (Edge \u00d7 potential payout: -0.01 * (1/0.51 - 1))\nReasoning: This is a near toss-up game between two strong, evenly matched basketball teams (LSU 8-1 vs. SMU 9-1), so the market price is efficient with no significant edge.",
+      "response_time": 11.32,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 16.62
+  }
+}

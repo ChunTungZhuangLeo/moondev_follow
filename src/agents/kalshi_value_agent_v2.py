@@ -41,6 +41,7 @@ from dataclasses import dataclass
 from termcolor import cprint
 from dotenv import load_dotenv
 import threading
+import subprocess
 from concurrent.futures import ThreadPoolExecutor
 
 # Add project root to path
@@ -386,7 +387,7 @@ REASONING: [2-3 sentences explaining why to hold or exit based on new info]
 """
 
 # Data Paths - V2 uses separate folder
-DATA_FOLDER = os.path.join(project_root, "src/data/kalshi_value_v2_1221")
+DATA_FOLDER = os.path.expanduser("~/kalshiv2_1222")
 LOGS_FOLDER = os.path.join(DATA_FOLDER, "logs")
 MARKETS_CSV = os.path.join(DATA_FOLDER, "markets.csv")
 PREDICTIONS_CSV = os.path.join(DATA_FOLDER, "predictions.csv")
@@ -2203,6 +2204,19 @@ If you can't find recent news, say "No recent news found" and provide any releva
                 cprint(f"{'#'*70}", "magenta")
 
                 self.run_once()
+
+                # Sync data to GitHub after each run
+                sync_script = os.path.join(DATA_FOLDER, "sync_to_github.sh")
+                if os.path.exists(sync_script):
+                    cprint("\n📤 Syncing data to GitHub...", "cyan")
+                    try:
+                        result = subprocess.run([sync_script], capture_output=True, text=True)
+                        if result.returncode == 0:
+                            cprint("✅ GitHub sync complete", "green")
+                        else:
+                            cprint(f"⚠️ GitHub sync issue: {result.stderr}", "yellow")
+                    except Exception as e:
+                        cprint(f"⚠️ GitHub sync error: {e}", "yellow")
 
                 if not AUTO_RUN_LOOP:
                     break

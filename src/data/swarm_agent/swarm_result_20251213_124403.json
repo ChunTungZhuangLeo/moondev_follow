@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T12:44:03.116915",
+  "prompt": "Analyze these 3 Polymarket markets.\n\nFor EACH market:\n1. Estimate the TRUE PROBABILITY based on news context\n2. Calculate EDGE vs market price\n3. Only recommend trades with 10%+ edge\n\n\nMarket 1:\nTitle: Will Sentient launch a token in 2025?\nCurrent Market Price: 76.0% (this is the market's implied probability)\nRecent trade: $1,000.00 on No\nLink: https://polymarket.com/event/will-sentient-launch-a-token-in-2025\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nAs of December 13, 2025, Sentient has launched its token, Sentient (SENT), marking a significant milestone in the development of decentralized Artificial General Intelligence (AGI). The token was officially launched on November 13, 2025, following a pre-order period from November 10 to November 13, 2025. ([sentientc.ai](https://www.sentientc.ai/token/index.html?utm_source=openai))\n\nThe Sentient Foundation, established in 2024, aims to create a decentralized protocol for community-owned AGI, challenging the dominance of centralized AI entities. The SENT token serves as a governance and utility token within this ecosystem, enabling holders to participate in decision-making processes and access various platform features. ([sentientc.ai](https://www.sentientc.ai/token/index.html?utm_source=openai))\n\nIn August 2025, Sentient introduced The GRID, an open-source AGI network designed as a decentralized alternative to proprietary AI marketplaces. This network integrates with major blockchains s\n\n---\n\nMarket 2:\nTitle: Will \u00c7aykur Rizespor vs. Ey\u00fcpspor end in a draw?\nCurrent Market Price: 83.0% (this is the market's implied probability)\nRecent trade: $649.35 on No\nLink: https://polymarket.com/event/tur-riz-eyu-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nThe upcoming Turkish S\u00fcper Lig match between \u00c7aykur Rizespor and Ey\u00fcpspor is scheduled for December 13, 2025, at 11:30 AM local time at the \u00c7aykur Didi Stadyumu in Rize, Turkey. ([sportsbook.dexwin.bet](https://sportsbook.dexwin.bet/sportsbook/football/turkey/super-lig/caykur-rizespor-eyupspor-1006000000000073541664?utm_source=openai))\n\n**Recent Form and Head-to-Head Record:**\n\n- **\u00c7aykur Rizespor:** In their last five matches, Rizespor has achieved one win, two losses, and two draws. ([soccersite.com](https://www.soccersite.com/predictions-caykur-rizespor-vs-eyupspor-tips-and-stats-offt66aab?utm_source=openai))\n\n- **Ey\u00fcpspor:** Ey\u00fcpspor's recent form includes two wins, one loss, and two draws in their last five games. ([soccersite.com](https://www.soccersite.com/predictions-caykur-rizespor-vs-eyupspor-tips-and-stats-offt66aab?utm_source=openai))\n\nHistorically, \u00c7aykur Rizespor has dominated the head-to-head encounters, winning three of the last four matches against Ey\u00fcpspor, with one m\n\n---\n\nMarket 3:\nTitle: Will C\u00f3rdoba CF win on 2025-12-13?\nCurrent Market Price: 43.0% (this is the market's implied probability)\nRecent trade: $3,305.41 on Yes\nLink: https://polymarket.com/event/es2-cor-eib-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nC\u00f3rdoba CF is set to face SD Eibar on Saturday, December 13, 2025, at 14:00 at the Nuevo Arc\u00e1ngel Stadium in C\u00f3rdoba, Spain. This match is part of Matchday 18 in the Segunda Divisi\u00f3n, with both teams aiming to secure crucial points.\n\n**Recent Form and Team News:**\n\n- **C\u00f3rdoba CF:** The team has been struggling, failing to win any of their last five matches. In their most recent fixture on December 7, they drew 0-0 against CD Legan\u00e9s, a result that deepened their winless streak. ([cadenaser.com](https://cadenaser.com/andalucia/2025/12/07/el-cordoba-cf-perdona-en-butarque-y-ahonda-su-crisis-de-resultados-radio-cordoba/?utm_source=openai)) Additionally, they have five players sidelined due to injuries. ([as.com](https://as.com/futbol/segunda/se-buscan-motivos-para-celebrar-f202512-n/?utm_source=openai))\n\n- **SD Eibar:** Eibar is also in a precarious position, sitting at the bottom of the league table with only 17 points. Their recent form includes a 4-0 loss to Racing Santander on Novemb\n\n---\n\n\nProvide predictions in the exact format specified.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\n\nIMPORTANT: For each market, you MUST estimate the TRUE PROBABILITY of the outcome.\nCompare your probability estimate to the market price to find EDGE (mispricing).\n\nEdge = Your Probability - Market Probability\n- Positive edge on YES side means market undervalues YES\n- Negative edge means market overvalues YES (bet NO instead)\n\nFor each market, provide your prediction in this EXACT format:\n\nMARKET [number]: [decision]\nYour Probability: [0-100]%\nMarket Price: [shown price]%\nEdge: [+/-X]% (Your prob - Market)\nExpected Value: [calculate: Edge \u00d7 potential payout]\nReasoning: [1-2 sentences explaining your probability estimate]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES = Your probability > Market price + 10% (minimum 10% edge)\n- NO = Your probability < Market price - 10%\n- NO_TRADE = Edge < 10% (not enough value)\n\nBe contrarian when you have conviction. Look for markets where news hasn't been priced in yet.",
+  "consensus_summary": "All three AIs agree Market 1 presents a clear 24% edge to bet \"YES\" or \"NO\" (both imply 100% true probability), as the token launch is a confirmed past event. For Market 2, consensus identifies the 83% price as a severe mispricing, though responses disagree on whether to trade \"NO\" or avoid it due to potential data issues. Regarding Market 3, there is no consensus, as the AIs are split between \"YES,\" \"NO,\" and \"NO TRADE,\" indicating high uncertainty.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "GEMINI",
+    "AI #3": "DEEPSEEK"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.05,
+      "success": true
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4hvmw1RiU97CgMkHQT6'}",
+      "response_time": 0.08,
+      "success": false
+    },
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4hvmwWAWckuX2byTwB6'}",
+      "response_time": 0.16,
+      "success": false
+    },
+    "openai": {
+      "response": "MARKET 1: NO\nYour Probability: 100%\nMarket Price: 76.0%\nEdge: +24% (Your prob - Market)\nExpected Value: 24% \u00d7 potential payout\nReasoning: Sentient has already launched their token as of November 13, 2025, as confirmed by multiple sources. This is definitive evidence that the event has occurred, giving this outcome a probability of 100%.\n\nMARKET 2: NO\nYour Probability: 30%\nMarket Price: 83.0%\nEdge: -53% (Your prob - Market)\nExpected Value: -53% \u00d7 potential payout\nReasoning: Both teams have had a mix of outcomes in their recent matches, but historically, \u00c7aykur Rizespor has dominated encounters against Ey\u00fcpspor. This suggests a lower likelihood of a draw than the market predicts.\n\nMARKET 3: NO_TRADE\nYour Probability: 40%\nMarket Price: 43.0%\nEdge: -3% (Your prob - Market)\nExpected Value: -3% \u00d7 potential payout\nReasoning: C\u00f3rdoba CF has been struggling with a winless streak and multiple injuries, yet SD Eibar is also in poor form. The uncertainty around both teams makes it difficult to find a significant edge here, hence a no trade recommendation.",
+      "response_time": 2.48,
+      "success": true
+    },
+    "gemini": {
+      "response": "Here are the predictions for the Polymarket markets:\n\nMARKET 1: YES\nYour Probability: 100%\nMarket Price: 76.0%\nEdge: +24% (Your prob - Market)\nExpected Value: +0.24\nReasoning: The token launch is a confirmed past event, having occurred on November 13,",
+      "response_time": 10.67,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO\nYour Probability: 100%\nMarket Price: 76.0%\nEdge: +24.0% (Your prob - Market)\nExpected Value: +24% (Betting NO at 24% price yields ~31.6% return on risk)\nReasoning: The token has already launched in November 2025, making a \"YES for 2025\" a certainty. The market price of 76% is a massive mispricing.\n\nMARKET 2: NO_TRADE\nYour Probability: 25%\nMarket Price: 83.0%\nEdge: -58.0% (Your prob - Market)\nExpected Value: N/A (Edge magnitude >10% but direction is NO)\nReasoning: A draw probability in soccer is typically 20-30%; the market price of 83% for a draw is absurdly high, but this appears to be a data error or mislabeled market (likely the price shown is for \"NO\" to a draw). Without clarity, it's not a clear trade.\n\nMARKET 3: YES\nYour Probability: 60%\nMarket Price: 43.0%\nEdge: +17.0% (Your prob - Market)\nExpected Value: +17% (Betting YES at 43% price yields ~39.5% return on risk)\nReasoning: C\u00f3rdoba CF is at home against the bottom-placed team, and while both are struggling, home advantage and Eibar's poor form (including a recent 4-0 loss) provide enough edge over the market's pessimistic 43% probability.",
+      "response_time": 12.16,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 17.22
+  }
+}

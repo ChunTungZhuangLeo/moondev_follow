@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T11:31:47.401201",
+  "prompt": "Analyze these 3 Polymarket markets and provide your predictions.\nYou have been given RECENT NEWS AND CONTEXT from web search for each market.\nUse this information to make more informed predictions.\n\n\nMarket 1:\nTitle: Starmer out by June 30, 2026?\nRecent trade: $714.09 on No\nLink: https://polymarket.com/event/starmer-out-in-2025\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nAs of December 13, 2025, there is no official announcement regarding Prime Minister Keir Starmer's resignation by June 30, 2026. However, several recent developments provide context to assess the likelihood of such an event:\n\n**Cabinet Reshuffles and Ministerial Resignations:**\n- In September 2025, Deputy Prime Minister Angela Rayner resigned due to a tax error involving her property purchase. ([reuters.com](https://www.reuters.com/world/uk/uk-deputy-pm-rayner-quits-over-tax-error-local-media-reports-2025-09-05/?utm_source=openai))\n- Following Rayner's departure, Starmer conducted a significant cabinet reshuffle, appointing David Lammy as Deputy Prime Minister and Yvette Cooper as Foreign Secretary. ([apnews.com](https://apnews.com/article/330c39c53c4d6710c19855f45598c400?utm_source=openai))\n\n**Approval Ratings:**\n- In May 2025, a YouGov survey indicated that 69% of voters held an unfavorable view of Starmer, with only 23% viewing him favorably. ([cnbc.com](https://www.cnbc.com/2025/05...\n\n---\n\nMarket 2:\nTitle: Will turnout in the 2025 Honduran general election be less than 55%?\nRecent trade: $920.85 on No\nLink: https://polymarket.com/event/turnout-in-2025-honduran-general-election\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nAs of December 13, 2025, the Honduran general election held on November 30, 2025, has been marred by significant delays and irregularities in vote counting, making it challenging to predict voter turnout with certainty. However, historical data and current trends provide some context for estimating the turnout.\n\n**Historical Voter Turnout:**\n\n- **2021 Election:** The previous general election in 2021 saw a voter turnout of approximately 68.58%, marking an 11% increase from the 2017 election. ([electionguide.org](https://www.electionguide.org/elections/id/3646/?utm_source=openai))\n\n**Current Election Context:**\n\n- **Election Delays:** The 2025 election has experienced significant delays in vote counting due to systemic failures and political infighting. As of December 13, 2025, critical delays have left hundreds of thousands of ballots uncounted, and 15% of tally sheets have been flagged for inconsistencies. ([reuters.com](https://www.reuters.com/world/americas/inside-honduras-election-...\n\n---\n\nMarket 3:\nTitle: Will Ey\u00fcpspor win on 2025-12-13?\nRecent trade: $790.00 on No\nLink: https://polymarket.com/event/tur-riz-eyu-2025-12-13\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nEy\u00fcpspor is set to face \u00c7aykur Rizespor on December 13, 2025, in a Turkish S\u00fcper Lig match at the \u00c7aykur Didi Stadium in Rize. Both teams are positioned near the bottom of the league table, with \u00c7aykur Rizespor in 12th place with 15 points and Ey\u00fcpspor in 16th place with 13 points. ([futbol24.com](https://www.futbol24.com/betting-tips/preview/13-12-2025-caykur-rizespor-eyupspor-betting-tip/?utm_source=openai))\n\n**Recent Form:**\n\n- **\u00c7aykur Rizespor:** In their last five matches, they have secured one win, one draw, and suffered three losses. ([mybets.today](https://www.mybets.today/soccer-predictions/match-prediction-analysis-caykur-rizespor-vs-eyupspor-betting-tip-dii266443/?utm_source=openai))\n\n- **Ey\u00fcpspor:** Over the same period, they have achieved two wins, one draw, and experienced two losses. ([mybets.today](https://www.mybets.today/soccer-predictions/match-prediction-analysis-caykur-rizespor-vs-eyupspor-betting-tip-dii266443/?utm_source=openai))\n\n**Head-to-Head Record:**\n\nIn th...\n\n---\n\n\nProvide predictions for each market in the specified format.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\nUse this context to make more informed predictions.\n\nFor each market, provide your prediction in this exact format:\n\nMARKET [number]: [decision]\nReasoning: [brief 1-2 sentence explanation that references the news context if relevant]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES means you would bet on the \"Yes\" outcome\n- NO means you would bet on the \"No\" outcome\n- NO_TRADE means you would not take a position\n\nBe concise and focused on the most promising opportunities.",
+  "consensus_summary": "The consensus strongly predicts \"NO\" for Market 1, as all AIs agree Starmer's reshuffle indicates stability despite low ratings. For Market 2, there is a clear split, with disagreement on whether historical trends or current election irregularities will determine the turnout outcome. Market 3 shows unanimous uncertainty, with all models recommending \"NO_TRADE\" due to the closely matched and poor form of both football teams.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "DEEPSEEK",
+    "AI #3": "GEMINI"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.04,
+      "success": true
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4cRSCTmc2DykTHdCQt8'}",
+      "response_time": 0.08,
+      "success": false
+    },
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4cRSCxKN3VuNP6L5Djb'}",
+      "response_time": 0.09,
+      "success": false
+    },
+    "openai": {
+      "response": "MARKET 1: NO_TRADE  \nReasoning: While Keir Starmer's unfavorable ratings and recent cabinet reshuffles suggest political instability, there is no concrete evidence or major political movement indicating an imminent resignation by June 30, 2026. The situation is too uncertain to confidently predict his resignation within this timeframe.\n\nMARKET 2: NO  \nReasoning: Despite the delays and irregularities in the 2025 Honduran general election, historical voter turnout rates have been relatively high, with the 2021 election seeing 68.58% turnout. It seems likely that the turnout will still exceed 55%, even amidst current challenges.\n\nMARKET 3: NO_TRADE  \nReasoning: Both Ey\u00fcpspor and \u00c7aykur Rizespor have been performing similarly poorly, and their recent forms are comparable. The match outcome is too unpredictable given their closely matched positions and inconsistent performances, making it difficult to confidently bet on Ey\u00fcpspor winning.",
+      "response_time": 2.42,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO  \nReasoning: Despite Starmer's low approval ratings and cabinet resignations, there is no indication of an imminent resignation, and a recent major reshuffle suggests he is consolidating his leadership rather than preparing to exit.\n\nMARKET 2: YES  \nReasoning: While historical turnout has been above 55%, the current election is plagued by severe delays, irregularities, and uncounted ballots, which likely suppressed voter participation and increases the probability of turnout falling below the threshold.\n\nMARKET 3: NO_TRADE  \nReasoning: Both teams are in poor and similar form near the bottom of the table, with Ey\u00fcpspor playing away; the match is too close to call with the provided information, making a bet on either outcome highly speculative.",
+      "response_time": 6.93,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: NO\nReasoning: Despite low approval ratings and a recent cabinet reshuffle, there is no direct news indicating an imminent resignation or removal of Prime Minister Starmer within the next six months. The reshuffle suggests an attempt to stabilize his government rather than a precursor to departure.\n\nMARKET 2: YES\nReasoning: The 2025 Honduran general election",
+      "response_time": 9.51,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 13.64
+  }
+}

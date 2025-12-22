@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T15:22:19.180877",
+  "prompt": "Analyze these 3 Polymarket markets.\n\nFor EACH market:\n1. Estimate the TRUE PROBABILITY based on news context\n2. Calculate EDGE vs market price\n3. Only recommend trades with 10%+ edge\n\n\nMarket 1:\nTitle: Spread: Washington (-9.5)\nCurrent Market Price: 48.0% (this is the market's implied probability)\nRecent trade: $2,380.00 on Boise State\nLink: https://polymarket.com/event/cfb-boise-wash-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nThe Washington Commanders are set to face the New York Giants on Sunday, December 14, 2025, at 10:00 AM PST. The Commanders are currently underdogs, with the Giants favored by 2 points. ([sportsbookreview.com](https://www.sportsbookreview.com/scores/nfl-football/matchup/359051?utm_source=openai))\n\n**Recent Developments:**\n\n- **Injuries:** The Commanders have been significantly impacted by injuries. Quarterback Jayden Daniels is sidelined due to a left elbow injury sustained in a previous game. Tight end Zach Ertz has been diagnosed with a torn ACL in his right knee, ending his season. ([reuters.com](https://www.reuters.com/sports/commanders-qb-jayden-daniels-elbow-out-vs-giants--flm-2025-12-10/?utm_source=openai))\n\n- **Team Performance:** The Commanders are on an eight-game losing streak, with their most recent defeat being a 31-0 loss to the Minnesota Vikings. During this game, both Daniels and Ertz were injured, further depleting the team's roster. ([reuters.com](https://www.reuters.\n\n---\n\nMarket 2:\nTitle: Arne Slot out as Liverpool Manager in 2025?\nCurrent Market Price: 94.6% (this is the market's implied probability)\nRecent trade: $609.37 on No\nLink: https://polymarket.com/event/arne-slot-out-as-liverpool-manager-in-2025\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nAs of December 13, 2025, there is no official announcement regarding Arne Slot's departure as Liverpool's manager. Slot, who took over in June 2024, led the team to a Premier League title in his first season. ([liverpoolfc.com](https://www.liverpoolfc.com/team/mens/staff/arne-slot?utm_source=openai))\n\nHowever, recent developments suggest growing tensions within the club. Mohamed Salah, a key player, has publicly criticized the club after being benched for consecutive matches, including a 3-3 draw against Leeds United. Salah accused the club of undermining him and claimed his relationship with Slot had deteriorated. ([reuters.com](https://www.reuters.com/sports/soccer/salah-is-destroying-his-liverpool-legacy-says-rooney-2025-12-08/?utm_source=openai))\n\nIn response, Slot acknowledged that Salah's comments have \"affected people\" at the club and admitted the situation is troubling. ([fourfourtwo.com](https://www.fourfourtwo.com/person/coaches-managers/liverpool-boss-arne-slot-admits-mo-sal\n\n---\n\nMarket 3:\nTitle: FC St. Pauli 1910 vs. 1. FC Heidenheim 1846: O/U 3.5\nCurrent Market Price: 85.0% (this is the market's implied probability)\nRecent trade: $502.35 on Under\nLink: https://polymarket.com/event/bun-pau-hei-2025-12-13-more-markets\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nThe upcoming Bundesliga match between FC St. Pauli and 1. FC Heidenheim 1846 is scheduled for December 13, 2025, at 2:30 PM Central European Time (CET) at Millerntor-Stadion in Hamburg. ([foxsports.com](https://www.foxsports.com/soccer/bundesliga-fc-st-pauli-vs-heidenheim-dec-13-2025-game-boxscore-631715?utm_source=openai))\n\n**Over/Under 3.5 Goals:**\n\nBetting odds indicate a strong preference for the \"Under\" option in the over/under 3.5 goals market. For instance, Betfair offers odds of 1.28 for the \"Under\" and 4.3 for the \"Over.\" ([betfair.com](https://www.betfair.com/exchange/plus/football/market/1.251205175?utm_source=openai))\n\n**Recent Form and Scoring Trends:**\n\n- **FC St. Pauli:** The team has scored 11 goals in 13 Bundesliga matches this season, averaging approximately 0.85 goals per game. ([betdecider.com](https://betdecider.com/picks/fc-st-pauli-vs-1-fc-heidenheim-1846-soccer-betting-preview-odds-offensive-leaders-12-13-2025/?utm_source=openai))\n\n- **1. FC Heidenheim 1846:** H\n\n---\n\n\nProvide predictions in the exact format specified.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\n\nIMPORTANT: For each market, you MUST estimate the TRUE PROBABILITY of the outcome.\nCompare your probability estimate to the market price to find EDGE (mispricing).\n\nEdge = Your Probability - Market Probability\n- Positive edge on YES side means market undervalues YES\n- Negative edge means market overvalues YES (bet NO instead)\n\nFor each market, provide your prediction in this EXACT format:\n\nMARKET [number]: [decision]\nYour Probability: [0-100]%\nMarket Price: [shown price]%\nEdge: [+/-X]% (Your prob - Market)\nExpected Value: [calculate: Edge \u00d7 potential payout]\nReasoning: [1-2 sentences explaining your probability estimate]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES = Your probability > Market price + 10% (minimum 10% edge)\n- NO = Your probability < Market price - 10%\n- NO_TRADE = Edge < 10% (not enough value)\n\nBe contrarian when you have conviction. Look for markets where news hasn't been priced in yet.",
+  "consensus_summary": "The consensus identifies a clear betting opportunity only in Market 3, where AI#3 recommends \"YES\" on the Over/Under with a calculated 10% edge, while others see no trade. For Markets 1 and 2, all AIs agree there is no positive edge, though they disagree on the specific probability estimates due to varying interpretations of the news context. The overall analysis shows caution, with only one potential trade meeting the 10%+ edge threshold from the provided responses.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "GEMINI",
+    "AI #3": "DEEPSEEK"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.04,
+      "success": true
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4uzoyYkQvL6YeUuz5z4'}",
+      "response_time": 0.07,
+      "success": false
+    },
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4uzoynp5dKomynpMJ2L'}",
+      "response_time": 0.08,
+      "success": false
+    },
+    "openai": {
+      "response": "MARKET 1: NO\nYour Probability: 30%\nMarket Price: 48.0%\nEdge: -18% (Your prob - Market)\nExpected Value: Negative (not calculated as NO trade)\nReasoning: Washington is currently on an eight-game losing streak and significantly impacted by key injuries, including their quarterback, making it unlikely they will cover a -9.5 point spread.\n\nMARKET 2: NO_TRADE\nYour Probability: 85%\nMarket Price: 94.6%\nEdge: -9.6% (Your prob - Market)\nExpected Value: Not calculated (NO_TRADE)\nReasoning: Despite tensions between Slot and Salah, there is no official announcement of Slot's departure, but the high market price suggests the market already heavily factors in potential dismissal, making any further bet not worthwhile.\n\nMARKET 3: NO_TRADE\nYour Probability: 80%\nMarket Price: 85.0%\nEdge: -5% (Your prob - Market)\nExpected Value: Not calculated (NO_TRADE)\nReasoning: The scoring trends and odds favor the \"Under\" 3.5 goals, but the market price nearly aligns with the likely outcome, leaving insufficient edge to recommend a trade.",
+      "response_time": 3.91,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: NO\nYour Probability: 8%\nMarket Price: 48.0%\nEdge: -40% (8% - 48%)\nExpected Value: -0.40 \u00d7 1 = -0.40\nReasoning: Washington is an underdog by 2 points, on an 8-game losing streak, lost",
+      "response_time": 9.94,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO_TRADE\nYour Probability: 50%\nMarket Price: 48.0%\nEdge: +2.0% (Your prob - Market)\nExpected Value: 0.04 units (on a 1-unit bet at implied odds)\nReasoning: The market is for a college football (CFB) spread between Washington and Boise State, but the provided news context is about the NFL's Washington Commanders, making it irrelevant and unusable for analysis. Without valid information, a 50% neutral probability is assigned, showing no significant edge.\n\nMARKET 2: NO\nYour Probability: 70%\nMarket Price: 94.6%\nEdge: -24.6% (Your prob - Market)\nExpected Value: +0.26 units (betting NO at 5.4% market probability)\nReasoning: While public tension exists, Slot is a reigning Premier League champion manager, and no official departure talks are reported. The market at 94.6% implies a near-certainty of him leaving in 2025, which is an extreme overreaction to player-manager friction.\n\nMARKET 3: YES\nYour Probability: 95%\nMarket Price: 85.0%\nEdge: +10.0% (Your prob - Market)\nExpected Value: 0.67 units (on a 1-unit bet at implied odds)\nReasoning: Betting odds from traditional sportsbooks strongly favor Under 3.5 goals (~78% implied probability), and both teams have low scoring averages, making the Polymarket price of 85% for Under still undervalued relative to the true likelihood.",
+      "response_time": 12.28,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 16.68
+  }
+}

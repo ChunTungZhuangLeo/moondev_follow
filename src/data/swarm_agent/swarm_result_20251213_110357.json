@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T11:03:57.878318",
+  "prompt": "Analyze these 3 Polymarket markets and provide your predictions.\nYou have been given RECENT NEWS AND CONTEXT from web search for each market.\nUse this information to make more informed predictions.\n\n\nMarket 1:\nTitle: Dota 2: BetBoom Team vs Tundra Esports (BO3)\nRecent trade: $844.94 on BetBoom Team\nLink: https://polymarket.com/event/dota2-bb4-tundra-2025-12-13\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nBetBoom Team and Tundra Esports have a competitive history in Dota 2, with their most recent encounter on July 17, 2025, during the Esports World Cup 2025 quarterfinals. In that best-of-three series, Tundra Esports secured a 2-1 victory over BetBoom Team. ([dltv.org](https://dltv.org/matches/421342/betboom-team-vs-tundra-esports-esports-world-cup-2025?utm_source=openai))\n\nHistorically, Tundra Esports has had the upper hand, winning 12 out of 23 matches against BetBoom Team, with 5 draws and 6 wins for BetBoom Team. ([strafe.com](https://www.strafe.com/match/betboom-team-vs-tundra-esports-quarterfinals-main-tournament-c0af70?utm_source=openai))\n\nIn their most recent match, Tundra Esports' player bzm achieved an average of 10.8 kills, 2.6 deaths, and 12.1 assists per game, while BetBoom Team's gpk averaged 3.9 kills, 4.3 deaths, and 13.0 assists per game. ([bo3.gg](https://bo3.gg/dota2/matches/tundra-esports-dota2-vs-betboom-team-dota2-08-04-2025?utm_source=openai))\n\nAs of December 13, 2...\n\n---\n\nMarket 2:\nTitle: Dota 2: Runa Team vs Amaru Gaming (BO3)\nRecent trade: $805.95 on Runa Team\nLink: https://polymarket.com/event/dota2-runa-amaru-2025-12-13\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nRuna Team and Amaru Gaming are set to face off in a Best of 3 series on December 13, 2025, at 11:00 AM as part of the ESL Dota2 2025 DreamLeague Season 27 Main Event Group Stage. ([strafe.com](https://www.strafe.com/match/runa-team-vs-amaru-gaming-round-4-main-event-ecf4c6/?utm_source=openai))\n\n**Team Profiles:**\n\n- **Runa Team**: Currently ranked #21 in the Strafe Dota 2 World Rankings, Runa Team has secured 2 wins in their last 5 matches. ([strafe.com](https://www.strafe.com/match/runa-team-vs-amaru-gaming-round-4-main-event-ecf4c6/?utm_source=openai))\n\n- **Amaru Gaming**: Unranked in the Strafe Dota 2 World Rankings, Amaru Gaming has achieved 1 win in their last 3 matches. ([strafe.com](https://www.strafe.com/match/runa-team-vs-amaru-gaming-round-4-main-event-ecf4c6/?utm_source=openai))\n\n**Recent Performances:**\n\n- On December 12, 2025, Amaru Gaming faced Team Yandex in a Best of 3 series, resulting in a 2-0 loss for Amaru Gaming. ([strafe.com](https://www.strafe.com/match/team-yand...\n\n---\n\nMarket 3:\nTitle: Eintracht Frankfurt vs. FC Augsburg: O/U 2.5\nRecent trade: $932.96 on Over\nLink: https://polymarket.com/event/bun-ein-aug-2025-12-13-more-markets\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nThe upcoming Bundesliga match between Eintracht Frankfurt and FC Augsburg is scheduled for December 13, 2025, at Deutsche Bank Park in Frankfurt. ([mybets.today](https://www.mybets.today/soccer-predictions/match-prediction-analysis-eintracht-frankfurt-vs-augsburg-betting-tip-dii26527i/?utm_source=openai))\n\n**Recent Form and Head-to-Head Record:**\n\n- **Eintracht Frankfurt:** The team has secured 3 wins in their last 6 league matches. ([forebet.com](https://www.forebet.com/en/football/matches/eintracht-frankfurt-augsburg-2344022?utm_source=openai))\n\n- **FC Augsburg:** The team has suffered losses in 57% of their away games this season. ([forebet.com](https://www.forebet.com/en/football/matches/eintracht-frankfurt-augsburg-2344022?utm_source=openai))\n\n- **Head-to-Head:** In their last 6 meetings, Eintracht Frankfurt has seen 3 draws against Augsburg, indicating closely contested encounters. ([forebet.com](https://www.forebet.com/en/football/matches/eintracht-frankfurt-augsburg-2344022?utm...\n\n---\n\n\nProvide predictions for each market in the specified format.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\nUse this context to make more informed predictions.\n\nFor each market, provide your prediction in this exact format:\n\nMARKET [number]: [decision]\nReasoning: [brief 1-2 sentence explanation that references the news context if relevant]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES means you would bet on the \"Yes\" outcome\n- NO means you would bet on the \"No\" outcome\n- NO_TRADE means you would not take a position\n\nBe concise and focused on the most promising opportunities.",
+  "consensus_summary": "The consensus strongly favors Runa Team (Market 2) due to their ranking and opponent's poor form, while Market 1 is seen as too close to call, resulting in a split between \"NO\" and \"NO_TRADE\" predictions. For Market 3, opinions are divided on the Over/Under goal prediction, with disagreement centering on whether historical trends or current team form are more indicative. Overall, the only clear agreement is on Market 2, with the other markets lacking a unified prediction.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "GEMINI",
+    "AI #3": "DEEPSEEK"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.04,
+      "success": true
+    },
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4aJU9rsyEAT6L1WmeTE'}",
+      "response_time": 0.1,
+      "success": false
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4aJUKH483nt4PoLCorB'}",
+      "response_time": 0.17,
+      "success": false
+    },
+    "openai": {
+      "response": "MARKET 1: NO_TRADE  \nReasoning: While Tundra Esports has a historical edge over BetBoom Team, winning 12 out of 23 matches, the outcome of a best-of-three series can be quite unpredictable due to the competitive nature of both teams. The recent performance metrics also suggest both teams have their strengths, making this a close match that doesn't present a clear betting opportunity.\n\nMARKET 2: YES  \nReasoning: Runa Team is ranked #21 and has secured more recent victories compared to Amaru Gaming, which is unranked and recently lost 0-2 to Team Yandex. The recent form and ranking favor Runa Team, making them a stronger candidate for winning this series.\n\nMARKET 3: YES  \nReasoning: Given Eintracht Frankfurt's decent form with 3 wins in their last 6 matches and FC Augsburg's poor away performance, combined with the fact that recent trades have favored the Over, there is a good chance that the match could see more than 2.5 goals.",
+      "response_time": 2.62,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: NO\nReasoning: Despite the market favoring BetBoom Team, Tundra Esports won their most recent BO3 encounter 2-1 and holds a superior historical head-to-head record against BetBoom Team.\n\nMARKET 2: YES\nReasoning: Runa Team is globally ranked #21 and has a better recent win rate, while Amaru Gaming is unranked and recently suffered a 2-0 loss, supporting the market's strong favoring of Runa Team.\n\nMARKET 3: NO\nReasoning: The market heavily favors Over 2.5 goals, but the head-to-head record shows 3 draws in their last 6 meetings, suggesting closely contested encounters which often imply fewer goals rather than a high-scoring game.",
+      "response_time": 5.74,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO_TRADE  \nReasoning: While Tundra has a historical edge and won their most recent encounter, the data shows a competitive rivalry with BetBoom capable of winning, making this too close to call confidently based on the provided context.\n\nMARKET 2: YES  \nReasoning: Runa Team is ranked (#21) while Amaru Gaming is unranked and coming off a recent 2-0 loss, indicating a performance gap that favors Runa Team in this BO3.\n\nMARKET 3: YES  \nReasoning: Augsburg has lost 57% of their away games this season, and Frankfurt's home advantage increases the likelihood of a higher-scoring match exceeding 2.5 goals.",
+      "response_time": 7.24,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 12.26
+  }
+}

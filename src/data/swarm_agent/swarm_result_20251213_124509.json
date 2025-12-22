@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T12:45:09.333092",
+  "prompt": "Analyze these 3 Polymarket markets and provide your predictions.\nYou have been given RECENT NEWS AND CONTEXT from web search for each market.\nUse this information to make more informed predictions.\n\n\nMarket 1:\nTitle: Will \u00c7aykur Rizespor vs. Ey\u00fcpspor end in a draw?\nRecent trade: $649.35 on No\nLink: https://polymarket.com/event/tur-riz-eyu-2025-12-13\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\n\u00c7aykur Rizespor and Ey\u00fcpspor are set to face each other in a S\u00fcper Lig match on December 13, 2025. Historically, \u00c7aykur Rizespor has dominated this fixture, winning three of the last four encounters, with one match ending in a draw. The most recent match on April 20, 2025, saw \u00c7aykur Rizespor secure a 1-0 victory at home. ([m.aiscore.com](https://m.aiscore.com/head-to-head/soccer-caykur-rizespor-vs-eyupspor?utm_source=openai))\n\nIn their recent performances, \u00c7aykur Rizespor has shown a mixed record, with two wins, four losses, and four draws in their last ten league games. They have scored an average of 1.4 goals per match during this period. ([sportsgambler.com](https://www.sportsgambler.com/betting-tips/football/rizespor-vs-eyupspor-prediction-lineups-odds-2025-12-13/?utm_source=openai)) Ey\u00fcpspor, on the other hand, has also had a varied performance, with three wins, four losses, and three draws in their last ten league games, averaging 0.6 goals per match. ([sportsgambler.com](https:...\n\n---\n\nMarket 2:\nTitle: Will C\u00f3rdoba CF win on 2025-12-13?\nRecent trade: $9,814.83 on No\nLink: https://polymarket.com/event/es2-cor-eib-2025-12-13\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nC\u00f3rdoba CF is set to face SD Eibar on December 13, 2025, at the Nuevo Arc\u00e1ngel Stadium in a Segunda Divisi\u00f3n match. The game is scheduled to kick off at 14:00 local time. ([futbol24.com](https://www.futbol24.com/betting-tips/preview/13-12-2025-cordoba-cf-sd-eibar-betting-tip/?utm_source=openai))\n\n**Recent Performance:**\n\n- **C\u00f3rdoba CF:** The team has been struggling recently, failing to secure a victory in their last five matches. Their most recent game was a 0-0 draw against Legan\u00e9s. ([sportsgambler.com](https://www.sportsgambler.com/betting-tips/football/cordoba-vs-eibar-prediction-lineups-odds-2025-12-13/?utm_source=openai))\n\n- **SD Eibar:** Eibar has also been underperforming, losing three consecutive matches. Their latest defeat was a 4-0 loss to Racing Santander. ([copybet.com](https://www.copybet.com/football-tips/Football-Spain-Segunda-Division-Cordoba-CF-Eibar-13-12-2025/28580314/?utm_source=openai))\n\n**Team News:**\n\n- **C\u00f3rdoba CF:** Defender Rub\u00e9n Alves has expressed confid...\n\n---\n\nMarket 3:\nTitle: Spread: Arsenal FC (-1.5)\nRecent trade: $918.34 on Wolverhampton Wanderers FC\nLink: https://polymarket.com/event/epl-ars-wol-2025-12-13-more-markets\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nArsenal FC is set to face Wolverhampton Wanderers today, December 13, 2025, at 12:00 PM PST. The betting line for this match is Arsenal FC (-1.5), indicating that Arsenal is favored to win by at least two goals.\n\n**Recent Performance:**\n\nArsenal's recent form has been mixed:\n\n- **December 6, 2025:** A 2-1 loss to Aston Villa, ending an 18-game unbeaten streak. ([reuters.com](https://www.reuters.com/sports/soccer/aston-villa-stun-arsenal-with-buendias-last-gasp-winner-2025-12-06/?utm_source=openai))\n\n- **December 3, 2025:** A 2-0 victory over Brentford.\n\n- **November 30, 2025:** A 1-1 draw against Chelsea.\n\n- **November 26, 2025:** A 3-1 win over Bayern Munich in the Champions League. ([dailysports.net](https://dailysports.net/team/arsenal/results/?utm_source=openai))\n\n**Injury Updates:**\n\nArsenal is contending with several injuries:\n\n- **Gabriel Magalh\u00e3es:** Underwent hamstring surgery and is out for the season. ([goal.com](https://www.goal.com/en-us/lists/arsenal-dealt-huge-injury-blo...\n\n---\n\n\nProvide predictions for each market in the specified format.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\nUse this context to make more informed predictions.\n\nFor each market, provide your prediction in this exact format:\n\nMARKET [number]: [decision]\nReasoning: [brief 1-2 sentence explanation that references the news context if relevant]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES means you would bet on the \"Yes\" outcome\n- NO means you would bet on the \"No\" outcome\n- NO_TRADE means you would not take a position\n\nBe concise and focused on the most promising opportunities.",
+  "consensus_summary": "The consensus strongly predicts \"NO\" for Markets 1 and 3, citing historical dominance and injury concerns, respectively. For Market 2, there is a split between \"NO\" and \"NO_TRADE,\" though all agree on C\u00f3rdoba CF's poor form making a win unlikely. Overall, the collective analysis leans against the draw in Market 1, against C\u00f3rdoba winning in Market 2, and against Arsenal covering the spread in Market 3.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "GEMINI",
+    "AI #3": "DEEPSEEK"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.04,
+      "success": true
+    },
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4i24aWTPNuMATSJGdzv'}",
+      "response_time": 0.08,
+      "success": false
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4i24aWQRDAi6nhs7MZJ'}",
+      "response_time": 0.08,
+      "success": false
+    },
+    "openai": {
+      "response": "MARKET 1: NO_TRADE  \nReasoning: The historical context shows that \u00c7aykur Rizespor has dominated the recent encounters against Ey\u00fcpspor, but both teams have shown inconsistent performances in their recent matches. With both teams having a mix of wins, losses, and draws, the outcome is uncertain. Hence, a no trade is the prudent choice given the information.\n\nMARKET 2: NO  \nReasoning: C\u00f3rdoba CF is on a poor run, failing to win any of their last five matches. Although Eibar is also underperforming, the significant recent trading volume on \"No\" suggests market sentiment strongly believes C\u00f3rdoba CF will not win. Given their current form, betting against C\u00f3rdoba CF seems the more likely outcome.\n\nMARKET 3: NO  \nReasoning: Arsenal, despite being favorites, recently lost to Aston Villa and has injury concerns, including key player Gabriel Magalh\u00e3es being out. Wolverhampton Wanderers could potentially keep the game close given Arsenal's mixed recent performances, making it less likely for Arsenal to cover a -1.5 spread.",
+      "response_time": 3.06,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: NO\nReasoning: \u00c7aykur Rizespor has historically dominated this fixture, winning three of the last four encounters, and averages significantly more goals per match than Ey\u00fcpspor, making a draw less likely despite both teams having some recent draws.\n\nMARKET 2: NO\nReasoning: C\u00f3rdoba CF has failed to win in their last five matches, indicating poor form, and while SD Eibar has also been struggling, C\u00f3rdoba's inability to secure a victory makes a win for them improbable.\n\nMARKET 3: NO\nReasoning: Arsenal's recent mixed form, including a 2-1 loss to Aston Villa that ended a long unbeaten streak, and the significant season-ending injury to key defender Gabriel Magalh\u00e3es, suggest they may struggle to cover a -1.5 spread.",
+      "response_time": 4.84,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO  \nReasoning: Historical data shows \u00c7aykur Rizespor has dominated this fixture, winning three of the last four encounters, and their recent goal-scoring average (1.4) is significantly higher than Ey\u00fcpspor's (0.6), making a draw less likely.\n\nMARKET 2: NO_TRADE  \nReasoning: Both C\u00f3rdoba CF and SD Eibar are in poor form, with C\u00f3rdoba winless in five and Eibar on a three-match losing streak, creating too much uncertainty to confidently bet on a C\u00f3rdoba victory.\n\nMARKET 3: NO  \nReasoning: Arsenal's mixed recent form, including a recent loss to Aston Villa, combined with key defensive injuries like Gabriel Magalh\u00e3es being out for the season, makes it unlikely they will cover a -1.5 spread against Wolverhampton Wanderers.",
+      "response_time": 7.0,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 11.72
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T16:30:07.025635",
+  "prompt": "Analyze these 3 Polymarket markets.\n\nFor EACH market:\n1. Estimate the TRUE PROBABILITY based on news context\n2. Calculate EDGE vs market price\n3. Only recommend trades with 10%+ edge\n\n\nMarket 1:\nTitle: Will SpaceX's market cap be greater than $1T at market close on IPO day?\nCurrent Market Price: 67.0% (this is the market's implied probability)\nRecent trade: $513.09 on Yes\nLink: https://polymarket.com/event/spacex-ipo-closing-market-cap\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nSpaceX is reportedly planning an initial public offering (IPO) in mid-to-late 2026, aiming to raise over $25 billion and achieve a valuation exceeding $1 trillion. ([reuters.com](https://www.reuters.com/business/spacex-pursue-2026-ipo-raising-above-30-billion-bloomberg-news-reports-2025-12-09/?utm_source=openai)) This would position SpaceX among the most valuable companies globally, potentially surpassing Saudi Aramco's $1.7 trillion valuation from its 2019 IPO. ([space.com](https://www.space.com/space-exploration/spacex-plans-to-go-public-in-2026-seeks-usd1-5-trillion-valuation-reports?utm_source=openai))\n\nThe anticipated valuation is largely driven by the rapid growth of SpaceX's Starlink satellite internet service, which is projected to generate $15 billion in revenue in 2025, with expectations to increase to $22\u2013$24 billion in 2026. ([reuters.com](https://www.reuters.com/business/spacex-pursue-2026-ipo-raising-above-30-billion-bloomberg-news-reports-2025-12-09/?utm_source=openai)) \n\n---\n\nMarket 2:\nTitle: Massachusetts Minutemen vs. Florida State Seminoles\nCurrent Market Price: 87.0% (this is the market's implied probability)\nRecent trade: $741.82 on Florida State Seminoles\nLink: https://polymarket.com/event/cbb-umass-flst-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nThe Massachusetts Minutemen are set to face the Florida State Seminoles today, Saturday, December 13, 2025, at 12 p.m. ET, as part of the 31st Annual AutoNation Orange Bowl Basketball Classic at the Amerant Bank Arena in Sunrise, Florida. ([umassathletics.com](https://umassathletics.com/news/2025/12/12/mens-basketball-minutemen-take-on-florida-state-at-orange-bowl-basketball-classic?utm_source=openai))\n\n**Recent Performances:**\n\n- **Massachusetts Minutemen (7-3):** In their most recent game on December 10, the Minutemen secured a 76-74 victory over Boston College. Marcus Banks Jr. led the team with 29 points, marking his eighth consecutive game scoring in double figures. Additionally, Daniel Hankins-Sanford contributed 17 points, Leonardo Bettiol added 12, and Jayden Ndjigue recorded a season-high 11 rebounds. ([umassathletics.com](https://umassathletics.com/news/2025/12/12/mens-basketball-minutemen-take-on-florida-state-at-orange-bowl-basketball-classic?utm_source=openai))\n\n- **Florid\n\n---\n\nMarket 3:\nTitle: Will Birmingham City FC win on 2025-12-13?\nCurrent Market Price: 63.0% (this is the market's implied probability)\nRecent trade: $1,229.13 on No\nLink: https://polymarket.com/event/elc-bir-cha-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nAs of December 13, 2025, Birmingham City FC is set to host Charlton Athletic at St Andrew's Trillion Trophy Stadium in a Sky Bet Championship match. The game is scheduled to kick off at 3:00 PM local time. ([foxsports.com](https://www.foxsports.com/soccer/english-championship-birmingham-vs-charlton-dec-13-2025-game-boxscore-629242?utm_source=openai))\n\n**Recent Form:**\n\n- **Birmingham City FC:** The team has demonstrated strong home performance, winning their last four consecutive home league games with an aggregate score of 14-2. They have secured 17 home league victories in 2025, equaling their most wins at home in a calendar year, matching the 18 wins achieved in 2000. ([charltonlife.vanillacommunity.com](https://charltonlife.vanillacommunity.com/discussion/101039/match-preview-birmingham-city-vs-charlton-athletic-saturday-13th-december-2025-3pm-ko?utm_source=openai))\n\n- **Charlton Athletic FC:** Charlton has struggled in away matches, losing their last three away league games. Their\n\n---\n\n\nProvide predictions in the exact format specified.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\n\nIMPORTANT: For each market, you MUST estimate the TRUE PROBABILITY of the outcome.\nCompare your probability estimate to the market price to find EDGE (mispricing).\n\nEdge = Your Probability - Market Probability\n- Positive edge on YES side means market undervalues YES\n- Negative edge means market overvalues YES (bet NO instead)\n\nFor each market, provide your prediction in this EXACT format:\n\nMARKET [number]: [decision]\nYour Probability: [0-100]%\nMarket Price: [shown price]%\nEdge: [+/-X]% (Your prob - Market)\nExpected Value: [calculate: Edge \u00d7 potential payout]\nReasoning: [1-2 sentences explaining your probability estimate]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES = Your probability > Market price + 10% (minimum 10% edge)\n- NO = Your probability < Market price - 10%\n- NO_TRADE = Edge < 10% (not enough value)\n\nBe contrarian when you have conviction. Look for markets where news hasn't been priced in yet.",
+  "consensus_summary": "The consensus identifies a strong edge for betting \"YES\" on SpaceX's $1T+ IPO market cap and Birmingham City FC's win, as both AI models recommending trades see significant probability gaps versus market prices. All analysts agree there is insufficient edge to trade the Florida State Seminoles game, as the market price accurately reflects their high likelihood of winning. Therefore, actionable trades are only recommended for Markets 1 and 3, where multiple models calculate a >10% edge.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "GEMINI",
+    "AI #3": "DEEPSEEK"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.04,
+      "success": true
+    },
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW51AiK6Hsq3DeFGZRBu2'}",
+      "response_time": 0.07,
+      "success": false
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW51AiM5Bh9cuu4PVEJRD'}",
+      "response_time": 0.09,
+      "success": false
+    },
+    "openai": {
+      "response": "MARKET 1: NO_TRADE  \nYour Probability: 75%  \nMarket Price: 67.0%  \nEdge: +8% (Your prob - Market)  \nExpected Value: Not enough value  \nReasoning: SpaceX's ambitious IPO plans and expected high valuation are supported by significant revenue growth projections from its Starlink service, suggesting a strong possibility of exceeding a $1 trillion market cap. However, the market already reflects a high probability, and the edge is not sufficient to justify a trade.\n\nMARKET 2: NO_TRADE  \nYour Probability: 90%  \nMarket Price: 87.0%  \nEdge: +3% (Your prob - Market)  \nExpected Value: Not enough value  \nReasoning: Florida State Seminoles are likely favorites based on recent team performances and the venue advantage, but the current market price already reflects a high probability of their victory. There's not enough edge here to justify a trade.\n\nMARKET 3: YES  \nYour Probability: 75%  \nMarket Price: 63.0%  \nEdge: +12% (Your prob - Market)  \nExpected Value: Positive (12% edge \u00d7 potential payout)  \nReasoning: Birmingham City FC has a strong home record, winning their last four home games with a commanding goal difference. Charlton Athletic's poor away form further supports a high probability of Birmingham's victory, providing a substantial edge over the market price.",
+      "response_time": 3.86,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: YES\nYour Probability: 88%\nMarket Price: 67.0%\nEdge: +21% (88% - 67%)\nExpected Value: 6.93 (calculated as 0.21 * (100 - 67))\nReasoning: SpaceX is explicitly \"aiming to achieve a",
+      "response_time": 9.29,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: YES\nYour Probability: 85%\nMarket Price: 67.0%\nEdge: +18.0% (Your prob - Market)\nExpected Value: +18.0% (e.g., a $1 YES bet at 67c has an expected profit of ~$0.27)\nReasoning: The specific Reuters report citing a $1T+ target valuation for a 2026 IPO, backed by Starlink's massive and growing revenue projections, makes a >$1T closing cap the likely plan and outcome.\n\nMARKET 2: NO_TRADE\nYour Probability: 85%\nMarket Price: 87.0%\nEdge: -2.0% (Your prob - Market)\nExpected Value: -2.0%\nReasoning: Florida State is a strong favorite, and while UMass has a decent record and recent win, the context is incomplete, and an 87% market price already reflects a high likelihood of a Seminoles victory.\n\nMARKET 3: YES\nYour Probability: 80%\nMarket Price: 63.0%\nEdge: +17.0% (Your prob - Market)\nExpected Value: +17.0% (e.g., a $1 YES bet at 63c has an expected profit of ~$0.27)\nReasoning: Birmingham's dominant home form (4 straight wins, 14-2 aggregate) against Charlton's poor away form (3 straight losses) creates a significant mismatch that the market appears to undervalue.",
+      "response_time": 11.61,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 16.08
+  }
+}

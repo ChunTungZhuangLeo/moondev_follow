@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-12T10:45:26.547147",
+  "prompt": "Analyze these 3 Polymarket markets and provide your predictions.\nYou have been given RECENT NEWS AND CONTEXT from web search for each market.\nUse this information to make more informed predictions.\n\n\nMarket 1:\nTitle: Will Angers SCO win on 2025-12-12?\nRecent trade: $579.33 on No\nLink: https://polymarket.com/event/fl1-ang-nan-2025-12-12\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nAngers SCO is set to face FC Nantes today, December 12, 2025, at 20:45 CET (2:45 PM EST) at Stade Raymond-Kopa in Angers. This Ligue 1 match is crucial for both teams, with Angers aiming to solidify their mid-table position and Nantes striving to escape the relegation zone.\n\n**Recent Form:**\n\n- **Angers SCO:** In their last five matches, Angers has secured three wins and suffered two losses, including a 1-0 victory over OGC Nice on December 7. ([copybet.com](https://www.copybet.com/football-tips/Football-France-Ligue-1-Angers-SCO-Nantes-12-12-2025/28544830/?utm_source=openai))\n\n- **FC Nantes:** Nantes has struggled recently, losing three consecutive matches and failing to win in their last six games. ([thescore.com](https://www.thescore.com/fran/events/89963?utm_source=openai))\n\n**Head-to-Head Record:**\n\nIn their previous encounter on May 4, 2025, Angers SCO defeated FC Nantes 1-0. ([thescore.com](https://www.thescore.com/fran/events/89963?utm_source=openai))\n\n**Betting Odds:**\n\n- **An...\n\n---\n\nMarket 2:\nTitle: Will Marco Rubio win the 2028 US Presidential Election?\nRecent trade: $757.55 on No\nLink: https://polymarket.com/event/presidential-election-winner-2028\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nAs of December 12, 2025, Secretary of State Marco Rubio has not officially declared his candidacy for the 2028 U.S. Presidential Election. In July 2025, he expressed support for Vice President JD Vance, stating, \"I think JD Vance would be a great nominee. If he decides he wants to do that... I hope he intends to do it.\" ([aol.com](https://www.aol.com/rubio-2028-election-think-jd-143236894.html?utm_source=openai))\n\nIn November 2025, reports indicated that Rubio privately acknowledged Vance as the leading contender for the Republican nomination and expressed readiness to support him if Vance chooses to run. ([newsmax.com](https://www.newsmax.com/politics/marco-rubio-jd-vance-gop/2025/11/07/id/1233629/?utm_source=openai))\n\nPublic opinion polls from September 2025 show JD Vance leading the Republican field with 53% support among Republicans and Republican-leaning independents, while Rubio garnered 4% support. ([ygo-assets-websites-editorial-emea.yougov.net](https://ygo-assets-websites-edit...\n\n---\n\nMarket 3:\nTitle: Will Lu\u00eds Marques Mendes win the 2026 Portugal presidential election?\nRecent trade: $655.26 on Yes\nLink: https://polymarket.com/event/portugal-presidential-election\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nAs of December 12, 2025, the race for Portugal's 2026 presidential election remains highly competitive, with Lu\u00eds Marques Mendes, former leader of the Social Democratic Party (PSD), emerging as a leading candidate.\n\n**Recent Polling Data:**\n\n- **Pitag\u00f3rica Poll (November 5-14, 2025):** Marques Mendes leads with 22.6% of voter intentions, closely followed by Henrique Gouveia e Melo at 21.1%, indicating a technical tie between the two. ([faf.ae](https://www.faf.ae/home/2025/12/5/portuguese-presidential-election-2026-comprehensive-analytical-report?utm_source=openai))\n\n- **ICS/ISCTE Poll (Late November 2025):** Gouveia e Melo and far-right leader Andr\u00e9 Ventura each garner 18% support, with Marques Mendes at 16%, suggesting a tight race among the top contenders. ([reuters.com](https://www.reuters.com/world/poll-shows-farright-leader-independent-admiral-tied-race-portugals-presidency-2025-11-28/?utm_source=openai))\n\n**Candidate Profiles:**\n\n- **Lu\u00eds Marques Mendes:** Emphasizing \"ambition, ...\n\n---\n\n\nProvide predictions for each market in the specified format.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\nUse this context to make more informed predictions.\n\nFor each market, provide your prediction in this exact format:\n\nMARKET [number]: [decision]\nReasoning: [brief 1-2 sentence explanation that references the news context if relevant]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES means you would bet on the \"Yes\" outcome\n- NO means you would bet on the \"No\" outcome\n- NO_TRADE means you would not take a position\n\nBe concise and focused on the most promising opportunities.",
+  "consensus_summary": "The consensus strongly predicts Angers SCO will win their match and Marco Rubio will not win the 2028 election, based on clear form and polling data. All models unanimously agree the Portugal presidential race is too uncertain and competitive to call, recommending no trade. There is no disagreement among the AI responses on any market outcome.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "GEMINI",
+    "AI #3": "DEEPSEEK",
+    "AI #4": "OPUS",
+    "AI #5": "CLAUDE"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.05,
+      "success": true
+    },
+    "openai": {
+      "response": "MARKET 1: YES  \nReasoning: Angers SCO has shown relatively strong recent form, winning three of their last five matches, and they previously defeated Nantes 1-0 earlier this year. Considering Nantes' current struggles, with three consecutive losses and no wins in their last six matches, Angers is likely to win this match.\n\nMARKET 2: NO  \nReasoning: Marco Rubio has not declared his candidacy and has shown public support for JD Vance, who is currently the leading contender for the Republican nomination with substantial support in polls. Given Rubio's low poll numbers and his backing of Vance, it seems unlikely that Rubio will win the 2028 US Presidential Election.\n\nMARKET 3: NO_TRADE  \nReasoning: The Portuguese presidential race appears highly competitive with no clear frontrunner. Lu\u00eds Marques Mendes is a leading candidate but is closely tied with other contenders in polls. Given the current polling data showing a tight race, it is uncertain whether Marques Mendes will win, making it a risky bet.",
+      "response_time": 4.61,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: YES\nReasoning: Angers SCO is in significantly better recent form, having won three of their last five matches, while FC Nantes has lost three consecutive games and failed to win in their last six. Angers also defeated Nantes in their previous encounter.\n\nMARKET 2: NO\nReasoning: Marco Rubio has not declared his candidacy for 2028 and has repeatedly endorsed Vice President JD Vance, who leads Republican polls with 53% support compared to Rubio's 4%.\n\nMARKET 3: NO_TRADE\nReasoning: While Lu\u00eds Marques Mendes is a leading candidate, polling data is inconsistent, showing him either in a technical tie for first or in third place, indicating a highly competitive race with other strong contenders. The current market price for \"Yes\" seems overly optimistic given the tight and varied poll results.",
+      "response_time": 6.22,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: YES\nReasoning: Angers has stronger recent form with three wins in five matches and a recent victory, while Nantes is on a six-game winless streak with three consecutive losses, and Angers won the previous head-to-head.\n\nMARKET 2: NO\nReasoning: Recent news indicates Rubio has not declared candidacy, has publicly supported JD Vance for the nomination, and polls show Vance with 53% support among Republicans versus Rubio's 4%, making his path to the nomination highly unlikely.\n\nMARKET 3: NO_TRADE\nReasoning: Polling data is contradictory, with one showing Marques Mendes narrowly leading and another showing him in third place, indicating a highly uncertain and competitive race without a clear edge.",
+      "response_time": 6.52,
+      "success": true
+    },
+    "opus": {
+      "response": "MARKET 1: YES\nReasoning: Angers is playing at home with strong recent form (3 wins in last 5), while Nantes has lost 3 consecutive matches and failed to win in 6 games. Angers also won their previous head-to-head encounter 1-0.\n\nMARKET 2: NO\nReasoning: Rubio himself has publicly endorsed JD Vance for 2028, polling shows Vance at 53% vs Rubio's 4% among Republicans, and Rubio has privately acknowledged Vance as the leading contender - making a Rubio victory highly unlikely.\n\nMARKET 3: NO_TRADE\nReasoning: Polling shows an extremely tight race with Marques Mendes leading in some polls but trailing in others, with multiple candidates within margin of error; the outcome is too uncertain to take a confident position.",
+      "response_time": 6.53,
+      "success": true
+    },
+    "claude": {
+      "response": "MARKET 1: YES\nReasoning: Angers SCO has strong recent form with 3 wins in their last 5 matches, including a victory over Nice, while Nantes is struggling badly with 3 consecutive losses and no wins in 6 games. Playing at home at Stade Raymond-Kopa gives Angers additional advantage against a relegation-threatened opponent.\n\nMARKET 2: NO\nReasoning: Rubio has not declared candidacy and has publicly endorsed JD Vance for 2028, with Vance leading polls at 53% vs Rubio's 4% among Republicans. Rubio appears to be positioning himself as a supporter rather than competitor to Vance.\n\nMARKET 3: NO_TRADE\nReasoning: The polling shows a highly competitive three-way race with Marques Mendes at 16-22.6% depending on the poll, essentially tied with Gouveia e Melo and Ventura. The race is too close and volatile to confidently predict a winner over a year out from the election.",
+      "response_time": 7.48,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 6,
+    "failed_responses": 0,
+    "total_time": 11.0
+  }
+}

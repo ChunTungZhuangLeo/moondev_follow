@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T13:13:08.890439",
+  "prompt": "Analyze these 3 Polymarket markets and provide your predictions.\nYou have been given RECENT NEWS AND CONTEXT from web search for each market.\nUse this information to make more informed predictions.\n\n\nMarket 1:\nTitle: Torino FC vs. US Cremonese: O/U 2.5\nRecent trade: $986.00 on Over\nLink: https://polymarket.com/event/sea-tor-cre-2025-12-13-more-markets\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nThe upcoming Serie A match between Torino FC and US Cremonese is scheduled for December 13, 2025, at the Stadio Olimpico Grande Torino in Turin. ([foxsports.com](https://www.foxsports.com/soccer/serie-a-torino-vs-us-cremonese-dec-13-2025-game-boxscore-625347?utm_source=openai))\n\n**Recent Form and Head-to-Head Record:**\n\n- **Torino FC:** Currently 16th in Serie A, Torino has struggled recently, failing to win any of their last six matches across all competitions, with three draws and three losses. ([forebet.com](https://www.forebet.com/en/football-match-previews/24488-torino-seek-much-needed-revival-against-in-form-cremonese?utm_source=openai))\n\n- **US Cremonese:** Sitting 9th in the league, Cremonese has shown more consistency, securing three wins and three losses in their last six matches. ([forebet.com](https://www.forebet.com/en/football-match-previews/24488-torino-seek-much-needed-revival-against-in-form-cremonese?utm_source=openai))\n\nIn their previous encounters, Torino has been u...\n\n---\n\nMarket 2:\nTitle: Will Partido Popular (PP) win the 2025 Extremadura regional election?\nRecent trade: $600.00 on Yes\nLink: https://polymarket.com/event/extremadura-regional-election-winner\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nLas elecciones auton\u00f3micas en Extremadura est\u00e1n programadas para el 21 de diciembre de 2025. Seg\u00fan las encuestas m\u00e1s recientes, el Partido Popular (PP), liderado por Mar\u00eda Guardiola, se perfila como el partido con mayor intenci\u00f3n de voto, aunque necesitar\u00eda el apoyo de Vox para formar gobierno.\n\n**Encuestas recientes:**\n\n- **Centro de Investigaciones Sociol\u00f3gicas (CIS):** En una encuesta publicada el 28 de noviembre de 2025, el PP obtendr\u00eda entre 25 y 29 esca\u00f1os, mientras que el PSOE se situar\u00eda entre 19 y 22 esca\u00f1os. Vox experimentar\u00eda un notable ascenso, alcanzando entre 10 y 12 esca\u00f1os. ([elpais.com](https://elpais.com/espana/2025-11-28/el-pp-necesitara-a-vox-para-volver-a-gobernar-extremadura-segun-el-cis.html?utm_source=openai))\n\n- **Sigma Dos para El Mundo:** Seg\u00fan una encuesta publicada el 3 de noviembre de 2025, el PP liderar\u00eda con un 41,7% de intenci\u00f3n de voto, seguido por el PSOE con un 35,6%. Vox consolidar\u00eda su posici\u00f3n como clave para la gobernabilidad, con un 11,4% de apo...\n\n---\n\nMarket 3:\nTitle: Club Atl\u00e9tico de Madrid vs. Valencia CF: Both Teams to Score\nRecent trade: $728.98 on No\nLink: https://polymarket.com/event/lal-mad-val-2025-12-13-more-markets\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nThe upcoming LaLiga match between Atl\u00e9tico de Madrid and Valencia CF is scheduled for Saturday, December 13, 2025, at 14:00 CET at the Riyadh Air Metropolitano Stadium. ([as.com](https://as.com/futbol/primera/atletico-de-madrid-valencia-horarrio-como-ver-en-directo-en-tv-y-como-seguir-online-laliga-f202512-n/?utm_source=openai))\n\n**Recent Form and Team News:**\n\n- **Atl\u00e9tico de Madrid:** The team enters the match with confidence following a 3-2 victory over PSV in the Champions League, securing their place among the competition's top eight. ([as.com](https://as.com/futbol/primera/reset-entre-mascarillas-f202512-n/?utm_source=openai)) Domestically, Atl\u00e9tico has been strong at home, winning 11 of their last 12 league matches at the Metropolitano. ([cadenaser.com](https://cadenaser.com/nacional/2025/12/13/atletico-de-madrid-valencia-cf-en-directo-el-partido-de-la-jornada-16-de-laliga-en-vivo-cadena-ser/?utm_source=openai))\n\n- **Valencia CF:** Valencia is grappling with a flu outbreak affec...\n\n---\n\n\nProvide predictions for each market in the specified format.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\nUse this context to make more informed predictions.\n\nFor each market, provide your prediction in this exact format:\n\nMARKET [number]: [decision]\nReasoning: [brief 1-2 sentence explanation that references the news context if relevant]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES means you would bet on the \"Yes\" outcome\n- NO means you would bet on the \"No\" outcome\n- NO_TRADE means you would not take a position\n\nBe concise and focused on the most promising opportunities.",
+  "consensus_summary": "All three AIs unanimously predict \"YES\" for the Partido Popular winning the Extremadura election and \"NO\" for both teams scoring in the Atl\u00e9tico Madrid vs. Valencia match. For the Torino vs. Cremonese match, two AIs predict \"NO\" on the Over/Under, while one abstains due to uncertainty from the large \"Over\" trade. The consensus is strongest for the political and LaLiga markets, with the Serie A match being the least certain.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "DEEPSEEK",
+    "AI #3": "GEMINI"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.06,
+      "success": true
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4k9tLp9CEd9DwyJqNQQ'}",
+      "response_time": 0.08,
+      "success": false
+    },
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4k9tLpLqtkoa6TJyLVB'}",
+      "response_time": 0.09,
+      "success": false
+    },
+    "openai": {
+      "response": "MARKET 1: NO_TRADE  \nReasoning: Torino FC has been struggling, while Cremonese is more consistent, suggesting a potentially low-scoring game. However, the Over market indicates significant interest in a higher-scoring match, making it uncertain.\n\nMARKET 2: YES  \nReasoning: According to recent polls, the Partido Popular (PP) is leading in the Extremadura regional election, with significant support and potential to win, especially with the backing of Vox.\n\nMARKET 3: NO  \nReasoning: Atl\u00e9tico de Madrid is strong defensively and has a good home record, while Valencia is experiencing issues with a flu outbreak, which could hinder their scoring ability. This supports the bet on \"No\" for both teams to score.",
+      "response_time": 1.73,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO  \nReasoning: Torino is in poor form with no wins in six matches and Cremonese is more consistent, suggesting a low-scoring, tactical match likely to stay under 2.5 goals.\n\nMARKET 2: YES  \nReasoning: Recent polls consistently show the Partido Popular leading in vote intention, positioning it as the most likely winner of the Extremadura regional election.\n\nMARKET 3: NO  \nReasoning: Atl\u00e9tico Madrid has a strong home defensive record with 11 wins in their last 12 league matches at home, while Valencia is weakened by a flu outbreak, reducing their scoring threat.",
+      "response_time": 5.33,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: NO\nReasoning: Torino's recent form shows a struggle to score, with no wins and three losses and three draws in their last six matches, suggesting a low-scoring game is more likely.\n\nMARKET 2: YES\nReasoning: Recent polls from both CIS and Sigma Dos consistently show the Partido Popular leading in vote intention and projected seats for the 2025 Extremadura regional election.\n\nMARKET 3: NO\nReasoning: Valencia CF is currently grappling with a flu outbreak, which is likely to hinder their scoring ability, while Atl\u00e9tico de Madrid has a strong home record.",
+      "response_time": 6.13,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 11.49
+  }
+}

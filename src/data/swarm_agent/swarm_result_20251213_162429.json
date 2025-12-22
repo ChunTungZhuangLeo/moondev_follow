@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T16:24:29.461262",
+  "prompt": "Analyze these 3 Polymarket markets.\n\nFor EACH market:\n1. Estimate the TRUE PROBABILITY based on news context\n2. Calculate EDGE vs market price\n3. Only recommend trades with 10%+ edge\n\n\nMarket 1:\nTitle: Will Burnley FC win on 2025-12-13?\nCurrent Market Price: 76.0% (this is the market's implied probability)\nRecent trade: $1,098.18 on No\nLink: https://polymarket.com/event/epl-bur-ful-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nBurnley FC is set to face Fulham FC on Saturday, December 13, 2025, at Turf Moor. \n\n**Recent Form:**\n\n- **Burnley FC:** Burnley has been struggling, losing their last five Premier League matches. ([betmines.com](https://betmines.com/match-preview/burnley-vs-fulham-prediction-match-preview-and-analysis-premier-league-13-12-2025?utm_source=openai))\n\n- **Fulham FC:** Fulham has also faced challenges, losing their last two league matches and three of their previous five. ([footballwhispers.com](https://footballwhispers.com/blog/burnley-vs-fulham-prediction-13-12-2025/?utm_source=openai))\n\n**Team News:**\n\n- **Burnley FC:** The team is dealing with defensive issues due to suspensions and injuries. Key defenders Kyle Walker and Lucas Pires are unavailable, leading to potential lineup changes. ([sports.yahoo.com](https://sports.yahoo.com/articles/burnley-vs-fulham-match-preview-060000035.html?utm_source=openai))\n\n- **Fulham FC:** Ryan Sessegnon and Rodrigo Muniz are sidelined with thigh injuri\n\n---\n\nMarket 2:\nTitle: Will Stade Brestois 29 win on 2025-12-13?\nCurrent Market Price: 53.0% (this is the market's implied probability)\nRecent trade: $836.61 on No\nLink: https://polymarket.com/event/fl1-ren-sbr-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nStade Brestois 29 is set to face Stade Rennais FC on December 13, 2025, at Roazhon Park in Rennes. The match is scheduled to kick off at 5:00 PM local time. ([staderennais.com](https://www.staderennais.com/matchs/2025-12-13-rennes-vs-brest?utm_source=openai))\n\n**Recent Form:**\n\n- **Stade Brestois 29:** The team has shown resilience in recent matches, securing three consecutive victories in Ligue 1. Notably, they achieved a 1-0 win against AS Monaco on December 5, 2025, despite playing with ten men. ([futmetrix.com](https://www.futmetrix.com/en/matches/stade-brestois-29-vs-monaco-2025-12-05-1800?utm_source=openai))\n\n- **Stade Rennais FC:** Rennes experienced a setback with a 5-0 defeat to Paris Saint-Germain in their previous match. Prior to that, they had secured four wins in their last five league games. ([futbol24.com](https://www.futbol24.com/betting-tips/preview/13-12-2025-stade-rennais-stade-brest-29-betting-tip/?utm_source=openai))\n\n**Head-to-Head Record:**\n\nIn their most recent \n\n---\n\nMarket 3:\nTitle: Will Arsenal FC vs. Wolverhampton Wanderers FC end in a draw?\nCurrent Market Price: 90.0% (this is the market's implied probability)\nRecent trade: $1,699.20 on No\nLink: https://polymarket.com/event/epl-ars-wol-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\n\n## [Emirates Stadium](https://www.google.com/maps/search/Emirates+Stadium?utm_source=openai)\n\n\nArsenal FC is set to host Wolverhampton Wanderers FC at Emirates Stadium on Saturday, December 13, 2025, at 12:00 PM PST. \n\n**Recent Developments:**\n\n- **Arsenal's Recent Performance:** Arsenal's 18-match unbeaten run in the Premier League was halted by a 2-1 defeat to Aston Villa on December 7, 2025. Forward Viktor Gy\u00f6keres emphasized the need for a quick recovery and focus on upcoming fixtures. ([reuters.com](https://www.reuters.com/sports/soccer/gyokeres-urges-arsenal-bounce-back-after-villa-end-unbeaten-run-2025-12-07/?utm_source=openai))\n\n- **Injury Concerns:** Defender Jurrien Timber is a fitness concern for Arsenal ahead of the match, having missed the midweek Champions League game due to discomfort from a knock. Midfielder Declan Rice is also battling illness and is uncertain for the upcoming match. ([fourfourtwo.com](https://www.fourfourtwo.com/person/player/is-jurrien-timber-injure\n\n---\n\n\nProvide predictions in the exact format specified.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\n\nIMPORTANT: For each market, you MUST estimate the TRUE PROBABILITY of the outcome.\nCompare your probability estimate to the market price to find EDGE (mispricing).\n\nEdge = Your Probability - Market Probability\n- Positive edge on YES side means market undervalues YES\n- Negative edge means market overvalues YES (bet NO instead)\n\nFor each market, provide your prediction in this EXACT format:\n\nMARKET [number]: [decision]\nYour Probability: [0-100]%\nMarket Price: [shown price]%\nEdge: [+/-X]% (Your prob - Market)\nExpected Value: [calculate: Edge \u00d7 potential payout]\nReasoning: [1-2 sentences explaining your probability estimate]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES = Your probability > Market price + 10% (minimum 10% edge)\n- NO = Your probability < Market price - 10%\n- NO_TRADE = Edge < 10% (not enough value)\n\nBe contrarian when you have conviction. Look for markets where news hasn't been priced in yet.",
+  "consensus_summary": "The consensus strongly agrees that Market 1's \"YES\" price is overvalued due to Burnley's poor form and injuries, with all models recommending a \"NO\" trade. For Market 2, there is significant disagreement on Brest's chances, leading to conflicting trade recommendations between the AIs. Regarding Market 3, the models generally view a draw as unlikely but disagree on whether the market price offers a sufficient edge to trade against it.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "GEMINI",
+    "AI #3": "DEEPSEEK"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.04,
+      "success": true
+    },
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4zjhmeYmpHzjtJrpwKJ'}",
+      "response_time": 0.1,
+      "success": false
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4zjhmeZ45drxqZhzaxM'}",
+      "response_time": 0.12,
+      "success": false
+    },
+    "openai": {
+      "response": "MARKET 1: NO\nYour Probability: 60%\nMarket Price: 76.0%\nEdge: -16% (Your prob - Market)\nExpected Value: -$0.16 per $1 bet\nReasoning: Both teams are struggling, but Burnley is dealing with significant defensive issues. This makes their chance of winning lower than the market price suggests.\n\nMARKET 2: NO_TRADE\nYour Probability: 50%\nMarket Price: 53.0%\nEdge: -3% (Your prob - Market)\nExpected Value: -$0.03 per $1 bet\nReasoning: While Stade Brestois 29 has been in good form, Rennes is strong at home and has had a solid recent record aside from the PSG match. The market price is close to fair.\n\nMARKET 3: NO\nYour Probability: 10%\nMarket Price: 90.0%\nEdge: -80% (Your prob - Market)\nExpected Value: -$0.80 per $1 bet\nReasoning: A draw in Premier League matches is rare, especially with Arsenal's strong form and Wolverhampton's inconsistency. The market price significantly overestimates the likelihood of a draw.",
+      "response_time": 3.49,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: NO\nYour Probability: 35%\nMarket Price: 76.0%\nEdge: -41% (35% - 76%)\nExpected Value: -0.41\nReasoning: Burnley's form is very poor (5 consecutive losses) and they have significant defensive injuries, making a 76% win probability",
+      "response_time": 10.2,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO\nYour Probability: 40%\nMarket Price: 76.0%\nEdge: -36.0% (Your prob - Market)\nExpected Value: 36.0% (Betting NO at 24c has implied probability of 76% for YES; a NO win yields ~317% profit, so EV \u2248 |Edge| \u00d7 payout \u2248 0.36 \u00d7 3.17 \u2248 114%)\nReasoning: Burnley is in terrible form with 5 straight losses and key defensive absences, while Fulham's struggles are less severe, making a home win far less likely than the market suggests.\n\nMARKET 2: YES\nYour Probability: 70%\nMarket Price: 53.0%\nEdge: +17.0% (Your prob - Market)\nExpected Value: 32.1% (Betting YES at 53c, a win yields ~89% profit, so EV \u2248 0.17 \u00d7 0.89 \u2248 15.1%. Note: Using Edge \u00d7 payout on stake: 0.17 \u00d7 1.89 = 32.1% return on investment)\nReasoning: Brest is in strong form with 3 consecutive wins, including against Monaco, while Rennes is coming off a heavy 5-0 defeat, giving Brest a significant momentum edge.\n\nMARKET 3: NO_TRADE\nYour Probability: 85%\nMarket Price: 90.0%\nEdge: -5.0% (Your prob - Market)\nExpected Value: -5.6% (Betting NO at 10c has implied probability of 90% for YES; a NO win yields 900% profit, but negative edge makes EV negative)\nReasoning: While Arsenal's unbeaten run ended and they have minor injury concerns, they remain strong favorites at home against Wolves, making a draw possible but not at the near-certainty the market prices.",
+      "response_time": 13.64,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 17.8
+  }
+}

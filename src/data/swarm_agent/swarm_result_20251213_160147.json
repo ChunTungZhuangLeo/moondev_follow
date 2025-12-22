@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T16:01:47.001136",
+  "prompt": "Analyze these 3 Polymarket markets.\n\nFor EACH market:\n1. Estimate the TRUE PROBABILITY based on news context\n2. Calculate EDGE vs market price\n3. Only recommend trades with 10%+ edge\n\n\nMarket 1:\nTitle: O/U 3.5 Rounds\nCurrent Market Price: 51.0% (this is the market's implied probability)\nRecent trade: $612.51 on Over\nLink: https://polymarket.com/event/ufc-man1-bra6-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nThe \"Over/Under 3.5 Rounds\" (O/U 3.5 Rounds) betting market allows participants to wager on whether a boxing or MMA fight will last more or fewer than 3.5 rounds. A bet on the \"Over\" wins if the fight extends beyond 3.5 rounds, while a bet on the \"Under\" wins if the fight concludes before reaching 3.5 rounds. ([msportsupport.zendesk.com](https://msportsupport.zendesk.com/hc/en-us/articles/31550415180055-Understanding-Over-Under-Rounds-in-Boxing-Bets?utm_source=openai))\n\nIn recent times, there have been no significant updates or official announcements specifically related to the O/U 3.5 Rounds betting market. However, understanding the dynamics of this market is crucial for bettors. Factors such as the fighters' historical performance, fighting styles, and the nature of the matchup can influence the expected duration of a fight. For instance, bouts between aggressive fighters with knockout power may be more likely to end quickly, making the \"Under\" a potentially favorable bet.\n\nIt's als\n\n---\n\nMarket 2:\nTitle: Spread: Illinois Fighting Illini (-10.5)\nCurrent Market Price: 58.2% (this is the market's implied probability)\nRecent trade: $3,500.00 on Illinois Fighting Illini\nLink: https://polymarket.com/event/cbb-nebr-ill-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nThe Illinois Fighting Illini are set to face the Nebraska Cornhuskers today, December 13, 2025, at 4:00 PM ET at the State Farm Center in Champaign, Illinois. Illinois enters the game as a 10.5-point favorite, with the over/under set at 156.5 points. ([foxsports.com](https://www.foxsports.com/articles/college-basketball/illinois-vs-nebraska-prediction-how-to-watch-odds-channel-dec-13?utm_source=openai))\n\n**Recent Performance:**\n\n- **Illinois Fighting Illini:** The Illini are coming off an 88-80 victory over Ohio State in their Big Ten opener on December 10. Freshman Keaton Wagler led the team with 23 points, supported by David Mirkovic (22 points), Andrej Stojakovic (17 points), and Zvonimir Ivisic (13 points). This win improved Illinois's record to 8-2 overall and 1-0 in conference play. ([reuters.com](https://www.reuters.com/sports/basketball/no-13-illinois-fends-off-ohio-state-big-ten-opener--flm-2025-12-10/?utm_source=openai))\n\n- **Nebraska Cornhuskers:** Nebraska remains undefeate\n\n---\n\nMarket 3:\nTitle: Will Jamey-Lyn Horth win by KO or TKO?\nCurrent Market Price: 93.0% (this is the market's implied probability)\nRecent trade: $1,137.74 on No\nLink: https://polymarket.com/event/ufc-jam16-ter3-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nAs of December 13, 2025, there is no specific prediction market data available regarding whether Jamey-Lyn Horth will win by knockout (KO) or technical knockout (TKO) in her upcoming fight. However, analyzing her past performances provides some insight into her fighting style and potential outcomes.\n\n**Fighting Style and Performance:**\n\n- **Striking:** Horth has demonstrated effective striking in her previous bouts. In her UFC debut against Hailey Cowan on April 29, 2023, she utilized body kicks to control the distance and scored a unanimous decision victory. ([sasknow.com](https://sasknow.com/2023/04/29/canadas-jamey-lyn-horth-wins-ufc-debut-by-decision-over-hailey-cowan/?utm_source=openai))\n\n- **Finishes:** Out of her 8 professional wins, 3 have been by KO/TKO, indicating a solid ability to finish fights via striking. ([sherdog.com](https://www.sherdog.com/fighter/JameyLyn-Horth-246541?utm_source=openai))\n\n**Upcoming Fight:**\n\nHorth is scheduled to face Tereza Bled\u00e1 at UFC on ESPN 73\n\n---\n\n\nProvide predictions in the exact format specified.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\n\nIMPORTANT: For each market, you MUST estimate the TRUE PROBABILITY of the outcome.\nCompare your probability estimate to the market price to find EDGE (mispricing).\n\nEdge = Your Probability - Market Probability\n- Positive edge on YES side means market undervalues YES\n- Negative edge means market overvalues YES (bet NO instead)\n\nFor each market, provide your prediction in this EXACT format:\n\nMARKET [number]: [decision]\nYour Probability: [0-100]%\nMarket Price: [shown price]%\nEdge: [+/-X]% (Your prob - Market)\nExpected Value: [calculate: Edge \u00d7 potential payout]\nReasoning: [1-2 sentences explaining your probability estimate]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES = Your probability > Market price + 10% (minimum 10% edge)\n- NO = Your probability < Market price - 10%\n- NO_TRADE = Edge < 10% (not enough value)\n\nBe contrarian when you have conviction. Look for markets where news hasn't been priced in yet.",
+  "consensus_summary": "The consensus finds no actionable trades, as all three AI models agree Market 1 lacks specific information for a high-conviction edge and unanimously identify Markets 2 and 3 as having negative expected value. They notably agree that the market prices for Illinois covering the spread and for Horth winning by KO/TKO are overvalued relative to their true probability estimates. The collective analysis recommends against any trade, as no model identified an opportunity with a 10% or greater positive edge.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "DEEPSEEK",
+    "AI #3": "GEMINI"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.04,
+      "success": true
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4y1TXMtTjTLyxD8TvdX'}",
+      "response_time": 0.08,
+      "success": false
+    },
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4y1TYrBcX9vTe36uuRi'}",
+      "response_time": 0.16,
+      "success": false
+    },
+    "openai": {
+      "response": "MARKET 1: NO_TRADE  \nYour Probability: 55%  \nMarket Price: 51.0%  \nEdge: +4% (Your prob - Market)  \nExpected Value: +4% \u00d7 potential payout  \nReasoning: The lack of significant news or updates suggests relying on historical performance and fighter styles. Given no new information skewing the fight towards an early finish, the probability of the fight lasting over 3.5 rounds is slightly higher, but not enough to justify a trade.\n\nMARKET 2: NO  \nYour Probability: 45%  \nMarket Price: 58.2%  \nEdge: -13.2% (Your prob - Market)  \nExpected Value: -13.2% \u00d7 potential payout  \nReasoning: Illinois's recent performance and Nebraska's undefeated status suggest a closer game than the spread implies. Given Nebraska's strong form, the probability that Illinois covers a 10.5-point spread is lower, providing a good opportunity to bet against the spread.\n\nMARKET 3: NO  \nYour Probability: 80%  \nMarket Price: 93.0%  \nEdge: -13% (Your prob - Market)  \nExpected Value: -13% \u00d7 potential payout  \nReasoning: Despite Horth's capability for KOs, her past performances show a mixed record of decisions and stoppages, making a KO/TKO outcome less certain than the market suggests. This creates a significant edge for betting against a KO/TKO outcome.",
+      "response_time": 4.43,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO_TRADE\nYour Probability: 50%\nMarket Price: 51.0%\nEdge: -1.0% (Your prob - Market)\nExpected Value: -1.0%\nReasoning: The provided context is generic and explains the market mechanics, but offers no specific fighter, matchup, or event details to form a probability estimate different from the near-even market price.\n\nMARKET 2: NO\nYour Probability: 40%\nMarket Price: 58.2%\nEdge: -18.2% (Your prob - Market)\nExpected Value: -18.2%\nReasoning: While Illinois is favored, Nebraska is undefeated (context cut off), and covering a 10.5-point spread in conference play is challenging; the market price overvalues Illinois given the opponent's strong record.\n\nMARKET 3: NO\nYour Probability: 70%\nMarket Price: 93.0%\nEdge: -23.0% (Your prob - Market)\nExpected Value: -23.0%\nReasoning: While Horth has KO/TKO ability (3 of 8 wins), a 93% implied probability for a specific win method is extremely high; the true chance is significantly lower, making \"NO\" (she does not win by KO/TKO) the value side.",
+      "response_time": 9.68,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: NO_TRADE\nYour Probability: 50%\nMarket Price: 51.0%\nEdge: -1% (Your prob - Market)\nExpected Value: -0.01\nReasoning: The provided context is generic and offers no specific information about the fighters or their styles, making it impossible to form a strong conviction to deviate from",
+      "response_time": 9.89,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 15.26
+  }
+}

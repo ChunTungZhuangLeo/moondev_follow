@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-13T11:30:38.309446",
+  "prompt": "Analyze these 3 Polymarket markets.\n\nFor EACH market:\n1. Estimate the TRUE PROBABILITY based on news context\n2. Calculate EDGE vs market price\n3. Only recommend trades with 10%+ edge\n\n\nMarket 1:\nTitle: Dota 2: Team Yandex vs Xtreme Gaming - Game 1 Winner\nCurrent Market Price: 61.0% (this is the market's implied probability)\nRecent trade: $967.46 on Xtreme Gaming\nLink: https://polymarket.com/event/dota2-ty-xtreme-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nIn their most recent encounter on November 30, 2025, during the BLAST Slam V Main Event Play-In stage, Xtreme Gaming secured a 1-0 victory over Team Yandex in a Best of 1 match. ([navi.gg](https://navi.gg/en/tournaments/res-unchained-2025-blast-slam-5/match/12561?utm_source=openai)) The match concluded with a score of 14-8 in favor of Xtreme Gaming. ([strafe.com](https://www.strafe.com/match/team-yandex-vs-natus-vincere-play-in-main-event-blast-slam-v-fcc346/?utm_source=openai))\n\nThe upcoming match between Team Yandex and Xtreme Gaming is scheduled for December 13, 2025, at 11:00 AM as part of the ESL Dota2 2025 DreamLeague Season 27 Main Event Group Stage - Round 4. ([strafe.com](https://www.strafe.com/match/team-yandex-vs-xtreme-gaming-round-4-main-event-4ca133/?utm_source=openai)) This will be the first time these two teams face each other in this tournament.\n\nIn their recent performances, both teams have shown competitive form. Team Yandex has won 3 of their last 5 matches, while X\n\n---\n\nMarket 2:\nTitle: Will FC Volendam win on 2025-12-13?\nCurrent Market Price: 88.0% (this is the market's implied probability)\nRecent trade: $630.00 on No\nLink: https://polymarket.com/event/ere-gro-vol-2025-12-13\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nFC Volendam is set to face FC Groningen in an Eredivisie match on Saturday, December 13, 2025, at 18:45 local time (12:45 PM EST) at Euroborg Stadium in Groningen.\n\n**Recent Form:**\n\n- **FC Volendam:** The team has struggled in recent matches, recording one win, one draw, and three losses in their last five games. ([bettingsuretips.com](https://www.bettingsuretips.com/groningen-vs-fc-volendam-prediction-h2h-betting-tips?utm_source=openai))\n\n- **FC Groningen:** Similarly, FC Groningen has faced challenges, with one win, one draw, and three losses in their last five fixtures. ([bettingsuretips.com](https://www.bettingsuretips.com/groningen-vs-fc-volendam-prediction-h2h-betting-tips?utm_source=openai))\n\n**Match Predictions:**\n\n- **Outcome:** Analysts favor FC Groningen to win, with odds of 1.43, while a draw is priced at 4.40, and an away win for FC Volendam at 7.10. ([footballpredictions.ai](https://footballpredictions.ai/football-predictions/groningen-vs-fc-volendam-predictions-tips-13-\n\n---\n\nMarket 3:\nTitle: Starmer out by June 30, 2026?\nCurrent Market Price: 66.0% (this is the market's implied probability)\nRecent trade: $714.09 on No\nLink: https://polymarket.com/event/starmer-out-in-2025\n\n\ud83d\udcf0 WEB SEARCH CONTEXT:\nAs of December 13, 2025, there is no official announcement regarding UK Prime Minister Keir Starmer's resignation by June 30, 2026. However, several developments suggest increasing speculation about his potential departure:\n\n**Public Opinion Polls:**\n- A September 2025 Opinium poll revealed that 54% of UK adults believe Starmer should resign, surpassing the 45% who called for his predecessor, Rishi Sunak, to step down in April 2024. ([uk.news.yahoo.com](https://uk.news.yahoo.com/more-half-brits-think-starmer-144322839.html?utm_source=openai))\n- In November 2025, a YouGov survey indicated that 23% of 2024 Labour voters think Starmer should resign immediately, with an additional 22% preferring he step down before the next election. ([uk.news.yahoo.com](https://uk.news.yahoo.com/almost-quarter-labour-voters-think-104129052.html?utm_source=openai))\n\n**Political Betting Markets:**\n- As of November 2025, betting exchanges and major bookmakers have assigned a 35.2% chance that Starmer will le\n\n---\n\n\nProvide predictions in the exact format specified.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\n\nIMPORTANT: For each market, you MUST estimate the TRUE PROBABILITY of the outcome.\nCompare your probability estimate to the market price to find EDGE (mispricing).\n\nEdge = Your Probability - Market Probability\n- Positive edge on YES side means market undervalues YES\n- Negative edge means market overvalues YES (bet NO instead)\n\nFor each market, provide your prediction in this EXACT format:\n\nMARKET [number]: [decision]\nYour Probability: [0-100]%\nMarket Price: [shown price]%\nEdge: [+/-X]% (Your prob - Market)\nExpected Value: [calculate: Edge \u00d7 potential payout]\nReasoning: [1-2 sentences explaining your probability estimate]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES = Your probability > Market price + 10% (minimum 10% edge)\n- NO = Your probability < Market price - 10%\n- NO_TRADE = Edge < 10% (not enough value)\n\nBe contrarian when you have conviction. Look for markets where news hasn't been priced in yet.",
+  "consensus_summary": "The consensus identifies no clear 10%+ edge for Market 1, strongly agrees the price for Market 2 is overvalued, and shows a major disagreement on Market 3's probability. AI #1 and #3 align closely on the first two markets, while AI #3's high-conviction \"YES\" on Market 3 contrasts sharply with the others' neutral or opposing views. Overall, only AI #3 presents a trade meeting the 10% edge threshold, specifically a \"YES\" on the Starmer market.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "GEMINI",
+    "AI #3": "DEEPSEEK"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.05,
+      "success": true
+    },
+    "claude": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4cL3ekZ26bqUAET8F9y'}",
+      "response_time": 0.07,
+      "success": false
+    },
+    "opus": {
+      "response": null,
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CW4cL3jxkLgsfo8E3mTSr'}",
+      "response_time": 0.12,
+      "success": false
+    },
+    "openai": {
+      "response": "MARKET 1: NO_TRADE  \nYour Probability: 65%  \nMarket Price: 61.0%  \nEdge: +4% (Your prob - Market)  \nExpected Value: +4% \u00d7 potential payout  \nReasoning: Xtreme Gaming recently defeated Team Yandex and appears to have a slight edge based on recent performance. However, the edge does not meet the 10% threshold for a trade recommendation.\n\nMARKET 2: NO  \nYour Probability: 20%  \nMarket Price: 88.0%  \nEdge: -68% (Your prob - Market)  \nExpected Value: -68% \u00d7 potential payout  \nReasoning: FC Volendam is the underdog with high odds against them, and recent form does not support an 88% probability of winning. Analysts favor FC Groningen, making the market price seem significantly overvalued for Volendam.\n\nMARKET 3: NO_TRADE  \nYour Probability: 60%  \nMarket Price: 66.0%  \nEdge: -6% (Your prob - Market)  \nExpected Value: -6% \u00d7 potential payout  \nReasoning: While there is significant speculation about Starmer's potential resignation, there hasn't been definitive movement or announcements to strongly suggest a departure by June 30, 2026. The current market price is close to the estimated probability, offering insufficient edge for a trade.",
+      "response_time": 3.5,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: NO_TRADE\nYour Probability: 70%\nMarket Price: 61.0%\nEdge: +9% (Your prob - Market)\nExpected Value: +9% * potential payout\nReasoning: Xtreme Gaming recently defeated Team Yandex 1-0 (14-8 score) on November 30, 2",
+      "response_time": 9.39,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: NO_TRADE\nYour Probability: 65%\nMarket Price: 61.0%\nEdge: +4.0% (Your prob - Market)\nExpected Value: 0.04 \u00d7 (1/0.61 - 1) \u2248 0.026 (2.6% return)\nReasoning: Xtreme Gaming won the recent head-to-head, but Team Yandex has decent recent form (3/5 wins), making this a close match. The market price is reasonably efficient.\n\nMARKET 2: NO\nYour Probability: 15%\nMarket Price: 88.0%\nEdge: -73.0% (Your prob - Market)\nExpected Value: -0.73 \u00d7 (1/0.88 - 1) \u2248 -0.10 (-10% return, but positive EV on NO side)\nReasoning: Analysts strongly favor the home team (FC Groningen) with odds implying ~70% win probability; an away win for Volendam is a major upset at ~14% implied probability, far below the market's 88%.\n\nMARKET 3: YES\nYour Probability: 85%\nMarket Price: 66.0%\nEdge: +19.0% (Your prob - Market)\nExpected Value: 0.19 \u00d7 (1/0.66 - 1) \u2248 0.10 (10% return)\nReasoning: Significant polling shows over half the public and a large portion of Labour voters think Starmer should resign, and betting markets (35.2% chance to leave) appear disconnected from this growing pressure, creating a major mispricing.",
+      "response_time": 12.56,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 4,
+    "failed_responses": 2,
+    "total_time": 17.65
+  }
+}

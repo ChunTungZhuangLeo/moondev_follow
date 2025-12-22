@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-12T22:10:56.675377",
+  "prompt": "Analyze these 3 Polymarket markets and provide your predictions.\nYou have been given RECENT NEWS AND CONTEXT from web search for each market.\nUse this information to make more informed predictions.\n\n\nMarket 1:\nTitle: Will Stade de Reims win on 2025-12-13?\nRecent trade: $548.47 on Yes\nLink: https://polymarket.com/event/fr2-rst-rei-2025-12-13\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nStade de Reims is scheduled to play against Red Star FC on December 13, 2025, in a Ligue 2 match. ([sportytrader.com](https://www.sportytrader.com/en/results-live/red-star-reims-7681114/?utm_source=openai))\n\n**Recent Performance:**\n\n- **Stade de Reims:**\n  - On December 9, 2025, they secured a 4-0 victory over Stade Laval, with goals from Nicolas Pallois, Keito Nakamura, an own goal by Malik Tchokounte, and Adama Bojang. ([espn.com.sg](https://www.espn.com.sg/football/match/_/gameId/747604?utm_source=openai))\n  - In their previous away match, they achieved a 1-0 win against Guingamp on November 23, 2024. ([fr.wikipedia.org](https://fr.wikipedia.org/wiki/Jade_Nassi?utm_source=openai))\n\n- **Red Star FC:**\n  - Their most recent match details are not available in the provided sources.\n\n**Head-to-Head Record:**\n\n- The last encounter between Stade de Reims and Red Star FC ended in a 1-1 draw. ([sportytrader.com](https://www.sportytrader.com/en/results-live/red-star-reims-7681114/?utm_source=...\n\n---\n\nMarket 2:\nTitle: Will FC Metz vs. Paris Saint-Germain FC end in a draw?\nRecent trade: $855.00 on No\nLink: https://polymarket.com/event/fl1-met-psg-2025-12-13\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nThe upcoming Ligue 1 match between FC Metz and Paris Saint-Germain (PSG) is scheduled for December 13, 2025, at Stade Saint-Symphorien in Metz. Recent analyses and betting odds suggest that a draw is unlikely, with PSG heavily favored to win.\n\n**Recent Form and Head-to-Head Record:**\n\n- **FC Metz:** Currently at the bottom of the Ligue 1 table with 11 points from 15 matches, Metz has lost three consecutive league games, conceding nine goals in that span. ([dailysports.net](https://dailysports.net/predictions/metz-vs-paris-saint-germain-prediction-h2h-and-probable-line-ups-december-13-2025/?utm_source=openai))\n\n- **Paris Saint-Germain:** PSG is in strong form, having won four of their last five Ligue 1 matches. ([betonvalue.com](https://www.betonvalue.com/predictions/fc-metz-vs-paris-saint-germain-fc-predictions-betting-tips-match-preview-2025-12-13?utm_source=openai))\n\n- **Head-to-Head:** PSG has a perfect record against Metz, winning all 13 previous encounters. ([khelnow.com](https://...\n\n---\n\nMarket 3:\nTitle: Will FC Metz win on 2025-12-13?\nRecent trade: $10,709.81 on Yes\nLink: https://polymarket.com/event/fl1-met-psg-2025-12-13\n\n\ud83d\udcf0 RECENT NEWS/CONTEXT FROM WEB SEARCH:\nFC Metz is set to face Paris Saint-Germain (PSG) on December 13, 2025, at Stade Saint-Symphorien in Metz. ([psg.fr](https://www.psg.fr/en/matches/mens-football/20252026/metz-vs-paris-2025-12-13?utm_source=openai))\n\n**Recent Performance:**\n\n- **FC Metz:** Currently 17th in Ligue 1 with a record of 3 wins, 2 draws, and 9 losses. ([footystats.org](https://footystats.org/clubs/fc-metz-438?utm_source=openai)) In their last five matches, they have achieved two wins and three losses. ([fr.thescore.com](https://fr.thescore.com/fran/events/89949?utm_source=openai))\n\n- **PSG:** Leading Ligue 1 with 9 wins, 3 draws, and 1 loss. ([thescore.com](https://www.thescore.com/fran/events/89949?utm_source=openai)) Their recent form includes four wins, one draw, and one loss in their last six matches. ([fr.thescore.com](https://fr.thescore.com/fran/events/89949?utm_source=openai))\n\n**Head-to-Head Record:**\n\nIn their previous encounter on May 19, 2024, PSG defeated FC Metz 2-0. ([thescore.com](https://www.t...\n\n---\n\n\nProvide predictions for each market in the specified format.",
+  "system_prompt": "You are a prediction market expert analyzing Polymarket markets.\nYou have been provided with RECENT NEWS AND CONTEXT for each market from web search.\nUse this context to make more informed predictions.\n\nFor each market, provide your prediction in this exact format:\n\nMARKET [number]: [decision]\nReasoning: [brief 1-2 sentence explanation that references the news context if relevant]\n\nDecision must be one of: YES, NO, or NO_TRADE\n- YES means you would bet on the \"Yes\" outcome\n- NO means you would bet on the \"No\" outcome\n- NO_TRADE means you would not take a position\n\nBe concise and focused on the most promising opportunities.",
+  "consensus_summary": "The consensus strongly predicts \"NO\" for both the draw and FC Metz win against PSG, citing PSG's dominant form and perfect historical record. For Stade de Reims, four of five AIs predict \"YES\" based on their strong recent form, with only one model abstaining due to insufficient opponent data. The large contrarian bet on a Metz win is unanimously viewed as irrational against the overwhelming evidence.",
+  "model_mapping": {
+    "AI #1": "OPENAI",
+    "AI #2": "DEEPSEEK",
+    "AI #3": "OPUS",
+    "AI #4": "GEMINI",
+    "AI #5": "CLAUDE"
+  },
+  "responses": {
+    "groq": {
+      "response": "None",
+      "response_time": 0.06,
+      "success": true
+    },
+    "openai": {
+      "response": "MARKET 1: YES  \nReasoning: Stade de Reims recently demonstrated strong form with a decisive 4-0 victory over Stade Laval and a previous win against Guingamp. Given their current momentum and the lack of recent performance details for Red Star FC, Stade de Reims appears likely to win their upcoming match.\n\nMARKET 2: NO  \nReasoning: PSG is heavily favored to win against FC Metz, who are struggling at the bottom of the Ligue 1 table and have lost three consecutive games. PSG's strong form and perfect head-to-head record against Metz make a draw highly unlikely.\n\nMARKET 3: NO  \nReasoning: FC Metz is facing PSG, a team leading Ligue 1 and in strong form with a history of victories over Metz. Given Metz's poor league position and recent performance, it is very unlikely they will win against PSG.",
+      "response_time": 4.17,
+      "success": true
+    },
+    "deepseek": {
+      "response": "MARKET 1: YES  \nReasoning: Stade de Reims is in strong form with a recent 4-0 win and an away victory, while Red Star FC's current performance is unclear and their last head-to-head was a draw, giving Reims the edge.\n\nMARKET 2: NO  \nReasoning: PSG is heavily favored, in strong form with four wins in their last five, while FC Metz is bottom of the table and has lost all 13 previous encounters against PSG, making a draw very unlikely.\n\nMARKET 3: NO  \nReasoning: FC Metz is in poor form and at the bottom of Ligue 1, while PSG leads the league and has a perfect historical record against Metz, making a Metz win highly improbable.",
+      "response_time": 5.74,
+      "success": true
+    },
+    "opus": {
+      "response": "**MARKET 1: YES**\nReasoning: Stade de Reims is in excellent form with a dominant 4-0 win over Stade Laval just days ago, and they're playing against Red Star FC in Ligue 2. Their recent performances suggest they're the stronger side, though the previous 1-1 draw adds some uncertainty.\n\n**MARKET 2: NO**\nReasoning: PSG has won all 13 previous encounters against Metz, is leading Ligue 1 with strong form (4 wins in last 5), while Metz sits bottom of the table with 3 consecutive losses. A draw is highly unlikely given this massive disparity.\n\n**MARKET 3: NO**\nReasoning: FC Metz winning against PSG is extremely improbable - they're 17th in Ligue 1 with poor form, while PSG leads the league and has a perfect 13-0 head-to-head record against Metz. The $10,709 trade on Yes appears to be contrarian or market-making activity rather than a rational bet.",
+      "response_time": 6.66,
+      "success": true
+    },
+    "gemini": {
+      "response": "MARKET 1: YES\nReasoning: Stade de Reims has demonstrated strong recent form, securing a 4-0 victory just days before the market date and another away win previously, indicating good momentum.\n\nMARKET 2: NO\nReasoning: FC Metz is at the bottom of Ligue 1 with three consecutive losses, while PSG is in strong form and has won all 13 previous encounters against Metz, making a draw highly improbable.\n\nMARKET 3: NO\nReasoning: FC Metz is struggling at the bottom of the league and has a perfect losing record against top-ranked PSG, making a Metz win extremely unlikely.",
+      "response_time": 6.92,
+      "success": true
+    },
+    "claude": {
+      "response": "MARKET 1: NO_TRADE\nReasoning: This appears to be a Ligue 2 match between Stade de Reims and Red Star FC. While Reims showed strong form with a 4-0 victory over Laval, there's insufficient information about Red Star's recent performance and the odds/probability implied by the $548 Yes bet to make a confident prediction.\n\nMARKET 2: NO\nReasoning: PSG is heavily favored with a perfect 13-0 record against Metz, and Metz is bottom of the table having lost 3 consecutive matches while conceding 9 goals. The recent $855 No trade aligns with the overwhelming likelihood that PSG wins rather than draws.\n\nMARKET 3: NO\nReasoning: Despite the large $10,709 Yes bet, FC Metz winning is highly unlikely. They're 17th in Ligue 1 (3-2-9 record), PSG leads the league (9-3-1), PSG has won all 13 previous encounters including a 2-0 victory in their last meeting, and Metz has lost 3 straight while PSG won 4 of their last 5 matches.",
+      "response_time": 8.01,
+      "success": true
+    }
+  },
+  "metadata": {
+    "total_models": 6,
+    "successful_responses": 6,
+    "failed_responses": 0,
+    "total_time": 12.17
+  }
+}
