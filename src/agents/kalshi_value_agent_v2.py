@@ -32,6 +32,7 @@ import os
 import sys
 import time
 import json
+import csv
 import argparse
 import requests
 import pandas as pd
@@ -396,6 +397,8 @@ TRADE_LOG_CSV = os.path.join(DATA_FOLDER, "trade_log.csv")
 PORTFOLIO_CSV = os.path.join(DATA_FOLDER, "portfolio.csv")
 PRICE_HISTORY_CSV = os.path.join(DATA_FOLDER, "price_history.csv")  # Hourly price snapshots
 REEVAL_LOG_CSV = os.path.join(DATA_FOLDER, "reeval_log.csv")  # Re-evaluation history
+MODEL_PREDICTIONS_CSV = os.path.join(DATA_FOLDER, "model_predictions.csv")  # Individual model votes
+MODEL_PERFORMANCE_CSV = os.path.join(DATA_FOLDER, "model_performance.csv")  # Model accuracy stats
 
 # Re-evaluation Configuration
 REEVAL_PRICE_MOVE_THRESHOLD = 0.20  # Re-evaluate if price moved >20% from entry
@@ -836,12 +839,34 @@ class KalshiValueAgent:
             return None  # Skip low-volume long-term markets silently
 
         results = []
+        model_votes = []  # Track individual model predictions
 
         # Query all models - the prompts are small so this is fast
         for model_config in SWARM_MODELS:
+            model_name = model_config.get('name', 'unknown')
             result = self._analyze_single_market(market, model_config)
+
+            # Track this model's vote
+            vote_record = {
+                'timestamp': datetime.now().isoformat(),
+                'ticker': ticker,
+                'model_type': model_config.get('type', 'unknown'),
+                'model_name': model_name,
+                'side': result.get('side', 'SKIP') if result else 'ERROR',
+                'true_prob': result.get('true_prob', None) if result else None,
+                'edge': result.get('edge', None) if result else None,
+                'confidence': result.get('confidence', None) if result else None,
+                'market_yes_price': market.get('yes_price', 0),
+                'market_no_price': market.get('no_price', 0),
+            }
+            model_votes.append(vote_record)
+
             if result and result.get('side') in ['YES', 'NO']:
+                result['model_name'] = model_name
                 results.append(result)
+
+        # Log all model predictions to CSV
+        self._log_model_predictions(model_votes, ticker)
 
         # Final count - which side has more?
         final_yes = sum(1 for r in results if r.get('side') == 'YES')
@@ -894,6 +919,100 @@ class KalshiValueAgent:
             'reasoning': f"{agree_count}/{total_count} models agree on {consensus_side}",
             'link': f"https://kalshi.com/markets/{ticker}"
         }
+
+    def _log_model_predictions(self, model_votes: List[Dict], ticker: str):
+        """Log individual model predictions to CSV for performance tracking."""
+        try:
+            with self.csv_lock:
+                file_exists = os.path.exists(MODEL_PREDICTIONS_CSV)
+                with open(MODEL_PREDICTIONS_CSV, 'a', newline='') as f:
+                    fieldnames = ['timestamp', 'ticker', 'model_type', 'model_name', 'side',
+                                  'true_prob', 'edge', 'confidence', 'market_yes_price',
+                                  'market_no_price', 'consensus_side', 'was_consensus', 'outcome']
+                    writer = csv.DictWriter(f, fieldnames=fieldnames)
+                    if not file_exists:
+                        writer.writeheader()
+
+                    # Determine consensus for this batch
+                    yes_votes = sum(1 for v in model_votes if v.get('side') == 'YES')
+                    no_votes = sum(1 for v in model_votes if v.get('side') == 'NO')
+                    consensus_side = 'YES' if yes_votes >= no_votes else 'NO'
+
+                    for vote in model_votes:
+                        vote['consensus_side'] = consensus_side
+                        vote['was_consensus'] = vote.get('side') == consensus_side
+                        vote['outcome'] = None  # Will be filled when market resolves
+                        writer.writerow(vote)
+        except Exception as e:
+            cprint(f"⚠️ Error logging model predictions: {e}", "yellow")
+
+    def calculate_model_performance(self):
+        """
+        Calculate and display each model's prediction accuracy.
+        Call this after markets have resolved to see which models perform best.
+        """
+        if not os.path.exists(MODEL_PREDICTIONS_CSV):
+            cprint("No model predictions data found", "yellow")
+            return
+
+        try:
+            df = pd.read_csv(MODEL_PREDICTIONS_CSV)
+
+            # Filter to only YES/NO predictions (exclude SKIP and ERROR)
+            df = df[df['side'].isin(['YES', 'NO'])]
+
+            if df.empty:
+                cprint("No valid predictions to analyze", "yellow")
+                return
+
+            # Group by model and calculate stats
+            cprint("\n" + "="*70, "cyan")
+            cprint("  MODEL PERFORMANCE ANALYSIS", "cyan", attrs=['bold'])
+            cprint("="*70 + "\n", "cyan")
+
+            model_stats = []
+            for model_name in df['model_name'].unique():
+                model_df = df[df['model_name'] == model_name]
+                total_predictions = len(model_df)
+                consensus_agreements = model_df['was_consensus'].sum()
+                agreement_rate = consensus_agreements / total_predictions if total_predictions > 0 else 0
+
+                # Count how often model voted YES vs NO
+                yes_votes = (model_df['side'] == 'YES').sum()
+                no_votes = (model_df['side'] == 'NO').sum()
+
+                # Average confidence when model votes
+                avg_confidence = model_df['confidence'].mean()
+                avg_edge = model_df['edge'].abs().mean()
+
+                model_stats.append({
+                    'model': model_name,
+                    'predictions': total_predictions,
+                    'consensus_rate': agreement_rate,
+                    'yes_votes': yes_votes,
+                    'no_votes': no_votes,
+                    'avg_confidence': avg_confidence,
+                    'avg_edge': avg_edge
+                })
+
+            # Sort by consensus rate (models that agree with consensus most)
+            model_stats.sort(key=lambda x: x['consensus_rate'], reverse=True)
+
+            for stat in model_stats:
+                bias = "YES-biased" if stat['yes_votes'] > stat['no_votes'] * 1.5 else \
+                       "NO-biased" if stat['no_votes'] > stat['yes_votes'] * 1.5 else "Balanced"
+                cprint(f"  {stat['model'][:30]:<30}", "white", attrs=['bold'])
+                cprint(f"    Predictions: {stat['predictions']:>5}  |  Consensus Rate: {stat['consensus_rate']*100:>5.1f}%", "white")
+                cprint(f"    YES: {stat['yes_votes']:>4}  NO: {stat['no_votes']:>4}  |  Bias: {bias}", "white")
+                cprint(f"    Avg Confidence: {stat['avg_confidence']:>4.1f}  |  Avg Edge: {stat['avg_edge']*100:>5.1f}%\n", "white")
+
+            # Save performance summary
+            perf_df = pd.DataFrame(model_stats)
+            perf_df.to_csv(MODEL_PERFORMANCE_CSV, index=False)
+            cprint(f"📊 Performance saved to {MODEL_PERFORMANCE_CSV}", "green")
+
+        except Exception as e:
+            cprint(f"⚠️ Error calculating model performance: {e}", "yellow")
 
     def _execute_single_trade(self, trade: Dict, market: Dict) -> bool:
         """
@@ -2253,12 +2372,19 @@ def main():
         action='store_true',
         help='Run once and exit (no loop)'
     )
+    parser.add_argument(
+        '--model-stats',
+        action='store_true',
+        help='Show model performance statistics and exit'
+    )
 
     args = parser.parse_args()
 
     agent = KalshiValueAgent(live_mode=args.live)
 
-    if args.once:
+    if args.model_stats:
+        agent.calculate_model_performance()
+    elif args.once:
         agent.run_once()
     else:
         agent.run_loop()
