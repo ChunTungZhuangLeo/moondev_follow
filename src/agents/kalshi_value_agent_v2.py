@@ -386,7 +386,7 @@ REASONING: [2-3 sentences explaining why to hold or exit based on new info]
 """
 
 # Data Paths - V2 uses separate folder
-DATA_FOLDER = os.path.join(project_root, "src/data/kalshi_value_v2")
+DATA_FOLDER = os.path.join(project_root, "src/data/kalshi_value_v2_1221")
 LOGS_FOLDER = os.path.join(DATA_FOLDER, "logs")
 MARKETS_CSV = os.path.join(DATA_FOLDER, "markets.csv")
 PREDICTIONS_CSV = os.path.join(DATA_FOLDER, "predictions.csv")
@@ -1521,6 +1521,73 @@ LINK: {trade['link']}
 
         cprint(f"\n📈 Saved {len(position_updates)} position snapshots to price_history.csv", "cyan")
 
+    def _save_final_price_history(self):
+        """
+        Save price history for ALL open positions after trades are executed.
+        This ensures newly opened positions are included in price_history.csv.
+        """
+        open_positions = self.executor.get_open_positions()
+
+        if open_positions.empty:
+            return
+
+        timestamp = datetime.now().isoformat()
+        records = []
+        total_cost = 0.0
+        total_unrealized_pnl = 0.0
+
+        for _, pos in open_positions.iterrows():
+            entry_price = pos['price_cents'] / 100.0
+            current_price = pos.get('current_price_cents', pos['price_cents']) / 100.0
+            cost = pos['cost_usd']
+            unrealized_pnl = pos.get('unrealized_pnl', 0.0)
+            pnl_pct = (unrealized_pnl / cost * 100) if cost > 0 else 0
+
+            total_cost += cost
+            total_unrealized_pnl += unrealized_pnl
+
+            records.append({
+                'timestamp': timestamp,
+                'ticker': pos['ticker'],
+                'side': pos['side'],
+                'entry_price': entry_price,
+                'current_price': current_price,
+                'unrealized_pnl': round(unrealized_pnl, 2),
+                'pnl_pct': round(pnl_pct, 2),
+                'status': 'open'
+            })
+
+        # Add portfolio summary row
+        total_pnl_pct = (total_unrealized_pnl / total_cost * 100) if total_cost > 0 else 0
+        records.append({
+            'timestamp': timestamp,
+            'ticker': '_PORTFOLIO_TOTAL',
+            'side': '',
+            'entry_price': total_cost,
+            'current_price': total_cost + total_unrealized_pnl,
+            'unrealized_pnl': round(total_unrealized_pnl, 2),
+            'pnl_pct': round(total_pnl_pct, 2),
+            'status': 'summary'
+        })
+
+        # Load existing or create new
+        if os.path.exists(PRICE_HISTORY_CSV):
+            try:
+                existing_df = pd.read_csv(PRICE_HISTORY_CSV)
+            except Exception:
+                existing_df = pd.DataFrame()
+        else:
+            existing_df = pd.DataFrame()
+
+        # Append and save
+        new_df = pd.DataFrame(records)
+        combined = pd.concat([existing_df, new_df], ignore_index=True)
+
+        with self.csv_lock:
+            combined.to_csv(PRICE_HISTORY_CSV, index=False)
+
+        cprint(f"\n📈 Final snapshot: {len(open_positions)} positions saved to price_history.csv", "cyan")
+
     def _check_early_exit(self, pos: pd.Series, market: Dict, session: requests.Session):
         """
         Check if we should exit a position early (before settlement).
@@ -2018,6 +2085,9 @@ If you can't find recent news, say "No recent news found" and provide any releva
 
         # Export run log
         self._export_run_log(run_timestamp, df, qualified_trades, executed_count)
+
+        # Save price history AFTER trades are executed (so new positions are included)
+        self._save_final_price_history()
 
         # Show portfolio
         self.executor.display_open_positions()
