@@ -1,0 +1,153 @@
+======================================================================
+KALSHI VALUE AGENT - RUN LOG
+======================================================================
+
+Timestamp: 2025-12-23 20:11:45
+Mode: PAPER
+Bankroll: $5,000
+
+MARKETS ANALYZED: 44
+QUALIFIED TRADES: 13
+EXECUTED TRADES: 0
+
+======================================================================
+QUALIFIED TRADES DETAILS
+======================================================================
+
+#1: KXGDP-26JAN30-T1.0
+    Title: Will **real GDP** increase by more than 1.0% in Q4 2025?
+    Side: YES
+    Consensus: 3/4 models
+    Edge: 11.6%
+    Confidence: 7.3/10
+    True Prob: 0.81
+    Market Price: $0.89
+    Link: https://kalshi.com/markets/KXGDP-26JAN30-T1.0
+
+#2: KXCPICOMBO-25DEC-0129
+    Title: Will CPI be Above 0.1% AND YOYCPI be Above 2.9% for Dec 2025?
+    Side: YES
+    Consensus: 4/4 models
+    Edge: 93.8%
+    Confidence: 6.0/10
+    True Prob: 0.32
+    Market Price: $0.10
+    Link: https://kalshi.com/markets/KXCPICOMBO-25DEC-0129
+
+#3: KXGDP-26JAN30-T2.0
+    Title: Will **real GDP** increase by more than 2.0% in Q4 2025?
+    Side: YES
+    Consensus: 4/5 models
+    Edge: 11.7%
+    Confidence: 7.0/10
+    True Prob: 0.70
+    Market Price: $0.62
+    Link: https://kalshi.com/markets/KXGDP-26JAN30-T2.0
+
+#4: KXCPICOMBO-25DEC-027
+    Title: Will CPI be Above 0% AND YOYCPI be Above 2.7% for Dec 2025?
+    Side: YES
+    Consensus: 4/4 models
+    Edge: 37.1%
+    Confidence: 6.2/10
+    True Prob: 0.48
+    Market Price: $0.35
+    Link: https://kalshi.com/markets/KXCPICOMBO-25DEC-027
+
+#5: KXHIGHCHI-25DEC23-B51.5
+    Title: Will the high temp in Chicago be 51-52° on Dec 23, 2025?
+    Side: NO
+    Consensus: 3/4 models
+    Edge: 61.0%
+    Confidence: 8.7/10
+    True Prob: 0.38
+    Market Price: $0.99
+    Link: https://kalshi.com/markets/KXHIGHCHI-25DEC23-B51.5
+
+#6: KXCPI-25DEC-T0.2
+    Title: Will CPI rise more than 0.2% in December 2025?
+    Side: YES
+    Consensus: 3/3 models
+    Edge: 21.5%
+    Confidence: 6.7/10
+    True Prob: 0.58
+    Market Price: $0.48
+    Link: https://kalshi.com/markets/KXCPI-25DEC-T0.2
+
+#7: KXGDP-26JAN30-T1.5
+    Title: Will **real GDP** increase by more than 1.5% in Q4 2025?
+    Side: YES
+    Consensus: 3/4 models
+    Edge: 9.4%
+    Confidence: 7.7/10
+    True Prob: 0.80
+    Market Price: $0.78
+    Link: https://kalshi.com/markets/KXGDP-26JAN30-T1.5
+
+#8: KXGDP-26JAN30-T2.5
+    Title: Will **real GDP** increase by more than 2.5% in Q4 2025?
+    Side: YES
+    Consensus: 4/4 models
+    Edge: 31.9%
+    Confidence: 6.2/10
+    True Prob: 0.55
+    Market Price: $0.40
+    Link: https://kalshi.com/markets/KXGDP-26JAN30-T2.5
+
+#9: KXHIGHCHI-25DEC23-T52
+    Title: Will the high temp in Chicago be >52° on Dec 23, 2025?
+    Side: NO
+    Consensus: 3/4 models
+    Edge: 196.3%
+    Confidence: 8.3/10
+    True Prob: 0.07
+    Market Price: $0.01
+    Link: https://kalshi.com/markets/KXHIGHCHI-25DEC23-T52
+
+#10: KXGDP-26JAN30-T1.75
+    Title: Will **real GDP** increase by more than 1.75% in Q4 2025?
+    Side: YES
+    Consensus: 4/4 models
+    Edge: 12.5%
+    Confidence: 7.0/10
+    True Prob: 0.74
+    Market Price: $0.70
+    Link: https://kalshi.com/markets/KXGDP-26JAN30-T1.75
+
+#11: KXGDP-26JAN30-T0
+    Title: Will **real GDP** increase by more than 0% in Q4 2025?
+    Side: YES
+    Consensus: 3/4 models
+    Edge: 9.8%
+    Confidence: 7.3/10
+    True Prob: 0.88
+    Market Price: $0.96
+    Link: https://kalshi.com/markets/KXGDP-26JAN30-T0
+
+#12: KXCPICOMBO-25DEC-0332
+    Title: Will CPI be Above 0.3% AND YOYCPI be Above 3.2% for Dec 2025?
+    Side: YES
+    Consensus: 3/4 models
+    Edge: 280.0%
+    Confidence: 6.3/10
+    True Prob: 0.19
+    Market Price: $0.05
+    Link: https://kalshi.com/markets/KXCPICOMBO-25DEC-0332
+
+#13: KXHIGHCHI-25DEC24-B40.5
+    Title: Will the high temp in Chicago be 40-41° on Dec 24, 2025?
+    Side: NO
+    Consensus: 4/4 models
+    Edge: 44.7%
+    Confidence: 8.2/10
+    True Prob: 0.30
+    Market Price: $0.98
+    Link: https://kalshi.com/markets/KXHIGHCHI-25DEC24-B40.5
+
+======================================================================
+CURRENT PORTFOLIO
+======================================================================
+
+  KXCPICOMBO-25DEC-027: YES @ $0.35 (681 contracts, $238.35)
+  KXCPI-25DEC-T0.2: YES @ $0.45 (525 contracts, $236.25)
+  KXGDP-26JAN30-T2.5: YES @ $0.41 (630 contracts, $258.30)
