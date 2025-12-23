@@ -1,0 +1,164 @@
+======================================================================
+KALSHI VALUE AGENT - RUN LOG
+======================================================================
+
+Timestamp: 2025-12-23 11:54:39
+Mode: PAPER
+Bankroll: $5,000
+
+MARKETS ANALYZED: 38
+QUALIFIED TRADES: 14
+EXECUTED TRADES: 0
+
+======================================================================
+QUALIFIED TRADES DETAILS
+======================================================================
+
+#1: KXGDP-26JAN30-T1.0
+    Title: Will **real GDP** increase by more than 1.0% in Q4 2025?
+    Side: YES
+    Consensus: 3/4 models
+    Edge: 10.9%
+    Confidence: 7.3/10
+    True Prob: 0.81
+    Market Price: $0.86
+    Link: https://kalshi.com/markets/KXGDP-26JAN30-T1.0
+
+#2: KXCPICOMBO-25DEC-0129
+    Title: Will CPI be Above 0.1% AND YOYCPI be Above 2.9% for Dec 2025?
+    Side: YES
+    Consensus: 3/3 models
+    Edge: 18.9%
+    Confidence: 6.3/10
+    True Prob: 0.33
+    Market Price: $0.09
+    Link: https://kalshi.com/markets/KXCPICOMBO-25DEC-0129
+
+#3: KXCPI-25DEC-T0.3
+    Title: Will CPI rise more than 0.3% in December 2025?
+    Side: YES
+    Consensus: 3/4 models
+    Edge: 89.4%
+    Confidence: 6.3/10
+    True Prob: 0.25
+    Market Price: $0.11
+    Link: https://kalshi.com/markets/KXCPI-25DEC-T0.3
+
+#4: KXGDP-26JAN30-T1.5
+    Title: Will **real GDP** increase by more than 1.5% in Q4 2025?
+    Side: YES
+    Consensus: 3/4 models
+    Edge: 11.8%
+    Confidence: 7.0/10
+    True Prob: 0.71
+    Market Price: $0.75
+    Link: https://kalshi.com/markets/KXGDP-26JAN30-T1.5
+
+#5: KXCPI-25DEC-T0.2
+    Title: Will CPI rise more than 0.2% in December 2025?
+    Side: YES
+    Consensus: 3/3 models
+    Edge: 33.3%
+    Confidence: 6.7/10
+    True Prob: 0.60
+    Market Price: $0.45
+    Link: https://kalshi.com/markets/KXCPI-25DEC-T0.2
+
+#6: KXGDP-26JAN30-T2.5
+    Title: Will **real GDP** increase by more than 2.5% in Q4 2025?
+    Side: YES
+    Consensus: 4/4 models
+    Edge: 44.7%
+    Confidence: 6.0/10
+    True Prob: 0.47
+    Market Price: $0.31
+    Link: https://kalshi.com/markets/KXGDP-26JAN30-T2.5
+
+#7: KXGDP-26JAN30-T1.75
+    Title: Will **real GDP** increase by more than 1.75% in Q4 2025?
+    Side: YES
+    Consensus: 4/5 models
+    Edge: 10.3%
+    Confidence: 7.0/10
+    True Prob: 0.71
+    Market Price: $0.63
+    Link: https://kalshi.com/markets/KXGDP-26JAN30-T1.75
+
+#8: KXGDP-26JAN30-T0
+    Title: Will **real GDP** increase by more than 0% in Q4 2025?
+    Side: YES
+    Consensus: 3/4 models
+    Edge: 9.6%
+    Confidence: 7.7/10
+    True Prob: 0.88
+    Market Price: $0.92
+    Link: https://kalshi.com/markets/KXGDP-26JAN30-T0
+
+#9: KXCPICOMBO-25DEC-0231
+    Title: Will CPI be Above 0.2% AND YOYCPI be Above 3.1% for Dec 2025?
+    Side: YES
+    Consensus: 3/4 models
+    Edge: 335.6%
+    Confidence: 6.3/10
+    True Prob: 0.13
+    Market Price: $0.03
+    Link: https://kalshi.com/markets/KXCPICOMBO-25DEC-0231
+
+#10: KXHIGHCHI-25DEC23-T52
+    Title: Will the high temp in Chicago be >52° on Dec 23, 2025?
+    Side: YES
+    Consensus: 3/4 models
+    Edge: 202.1%
+    Confidence: 6.0/10
+    True Prob: 0.42
+    Market Price: $0.13
+    Link: https://kalshi.com/markets/KXHIGHCHI-25DEC23-T52
+
+#11: KXJOBLESSCLAIMS-25DEC24-250000
+    Title: How many initial jobless claims will there be the week ending Dec 20, 2025?
+    Side: NO
+    Consensus: 3/3 models
+    Edge: 54.4%
+    Confidence: 7.3/10
+    True Prob: 0.42
+    Market Price: $0.85
+    Link: https://kalshi.com/markets/KXJOBLESSCLAIMS-25DEC24-250000
+
+#12: KXGDP-26JAN30-T1.25
+    Title: Will **real GDP** increase by more than 1.25% in Q4 2025?
+    Side: YES
+    Consensus: 3/3 models
+    Edge: 8.8%
+    Confidence: 7.7/10
+    True Prob: 0.80
+    Market Price: $0.79
+    Link: https://kalshi.com/markets/KXGDP-26JAN30-T1.25
+
+#13: KXCPICOMBO-25DEC-0332
+    Title: Will CPI be Above 0.3% AND YOYCPI be Above 3.2% for Dec 2025?
+    Side: YES
+    Consensus: 3/4 models
+    Edge: 280.0%
+    Confidence: 6.3/10
+    True Prob: 0.19
+    Market Price: $0.05
+    Link: https://kalshi.com/markets/KXCPICOMBO-25DEC-0332
+
+#14: KXJOBLESSCLAIMS-25DEC24-270000
+    Title: How many initial jobless claims will there be the week ending Dec 20, 2025?
+    Side: NO
+    Consensus: 4/4 models
+    Edge: 70.0%
+    Confidence: 8.2/10
+    True Prob: 0.29
+    Market Price: $0.98
+    Link: https://kalshi.com/markets/KXJOBLESSCLAIMS-25DEC24-270000
+
+======================================================================
+CURRENT PORTFOLIO
+======================================================================
+
+  KXGDP-26JAN30-T2.5: YES @ $0.29 (679 contracts, $196.91)
+  KXCPICOMBO-25DEC-027: YES @ $0.35 (681 contracts, $238.35)
+  KXGDP-26JAN30-T1.75: YES @ $0.62 (445 contracts, $275.90)
+  KXCPI-25DEC-T0.2: YES @ $0.45 (525 contracts, $236.25)
