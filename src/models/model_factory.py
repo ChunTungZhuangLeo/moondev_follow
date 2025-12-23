@@ -41,7 +41,7 @@ class ModelFactory:
         "claude": "claude-3-5-haiku-latest",  # Latest fast Claude model
         "groq": "mixtral-8x7b-32768",        # Fast Mixtral model
         "openai": "gpt-4o",                  # Latest GPT-4 Optimized
-        "gemini": "gemini-2.0-flash",        # Fast Gemini 2.0 model (stable)
+        "gemini": "gemini-2.5-flash",        # Fast Gemini 2.5 model
         "deepseek": "deepseek-reasoner",     # Enhanced reasoning model
         "ollama": "llama3.2",                # Meta's Llama 3.2 - balanced performance
         "xai": "grok-4-fast-reasoning",      # xAI's Grok 4 Fast with reasoning (best value: 2M context, cheap!)
