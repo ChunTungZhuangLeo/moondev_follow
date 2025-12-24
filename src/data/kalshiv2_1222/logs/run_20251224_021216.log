@@ -1,0 +1,123 @@
+======================================================================
+KALSHI VALUE AGENT - RUN LOG
+======================================================================
+
+Timestamp: 2025-12-24 02:12:16
+Mode: PAPER
+Bankroll: $5,000
+
+MARKETS ANALYZED: 74
+QUALIFIED TRADES: 10
+EXECUTED TRADES: 0
+
+======================================================================
+QUALIFIED TRADES DETAILS
+======================================================================
+
+#1: KXGDP-26JAN30-T2.0
+    Title: Will **real GDP** increase by more than 2.0% in Q4 2025?
+    Side: YES
+    Consensus: 3/4 models
+    Edge: 14.0%
+    Confidence: 7.0/10
+    True Prob: 0.73
+    Market Price: $0.63
+    Link: https://kalshi.com/markets/KXGDP-26JAN30-T2.0
+
+#2: KXHIGHCHI-25DEC23-B51.5
+    Title: Will the high temp in Chicago be 51-52° on Dec 23, 2025?
+    Side: NO
+    Consensus: 3/4 models
+    Edge: 61.0%
+    Confidence: 9.0/10
+    True Prob: 0.38
+    Market Price: $0.99
+    Link: https://kalshi.com/markets/KXHIGHCHI-25DEC23-B51.5
+
+#3: KXCPICOMBO-25DEC-027
+    Title: Will CPI be Above 0% AND YOYCPI be Above 2.7% for Dec 2025?
+    Side: YES
+    Consensus: 4/4 models
+    Edge: 40.7%
+    Confidence: 6.5/10
+    True Prob: 0.49
+    Market Price: $0.35
+    Link: https://kalshi.com/markets/KXCPICOMBO-25DEC-027
+
+#4: KXCPI-25DEC-T0.2
+    Title: Will CPI rise more than 0.2% in December 2025?
+    Side: YES
+    Consensus: 3/3 models
+    Edge: 30.4%
+    Confidence: 7.0/10
+    True Prob: 0.60
+    Market Price: $0.46
+    Link: https://kalshi.com/markets/KXCPI-25DEC-T0.2
+
+#5: KXGDP-26JAN30-T2.5
+    Title: Will **real GDP** increase by more than 2.5% in Q4 2025?
+    Side: YES
+    Consensus: 3/3 models
+    Edge: 33.3%
+    Confidence: 6.7/10
+    True Prob: 0.60
+    Market Price: $0.45
+    Link: https://kalshi.com/markets/KXGDP-26JAN30-T2.5
+
+#6: KXHIGHCHI-25DEC23-T52
+    Title: Will the high temp in Chicago be >52° on Dec 23, 2025?
+    Side: NO
+    Consensus: 3/4 models
+    Edge: 168.0%
+    Confidence: 7.7/10
+    True Prob: 0.33
+    Market Price: $0.01
+    Link: https://kalshi.com/markets/KXHIGHCHI-25DEC23-T52
+
+#7: KXGDP-26JAN30-T0
+    Title: Will **real GDP** increase by more than 0% in Q4 2025?
+    Side: YES
+    Consensus: 3/4 models
+    Edge: 9.8%
+    Confidence: 7.7/10
+    True Prob: 0.86
+    Market Price: $0.95
+    Link: https://kalshi.com/markets/KXGDP-26JAN30-T0
+
+#8: KXHIGHCHI-25DEC24-B42.5
+    Title: Will the high temp in Chicago be 42-43° on Dec 24, 2025?
+    Side: NO
+    Consensus: 3/3 models
+    Edge: 56.3%
+    Confidence: 8.0/10
+    True Prob: 0.40
+    Market Price: $0.93
+    Link: https://kalshi.com/markets/KXHIGHCHI-25DEC24-B42.5
+
+#9: KXGDP-26JAN30-T1.25
+    Title: Will **real GDP** increase by more than 1.25% in Q4 2025?
+    Side: YES
+    Consensus: 3/4 models
+    Edge: 10.0%
+    Confidence: 7.3/10
+    True Prob: 0.75
+    Market Price: $0.80
+    Link: https://kalshi.com/markets/KXGDP-26JAN30-T1.25
+
+#10: KXINX-25DEC26H1600-B6837
+    Title: Will the S&P 500 be between 6825 and 6849.9999 on Dec 26, 2025 at 4pm EST?
+    Side: NO
+    Consensus: 3/3 models
+    Edge: 61.0%
+    Confidence: 8.7/10
+    True Prob: 0.39
+    Market Price: $0.98
+    Link: https://kalshi.com/markets/KXINX-25DEC26H1600-B6837
+
+======================================================================
+CURRENT PORTFOLIO
+======================================================================
+
+  KXCPICOMBO-25DEC-027: YES @ $0.35 (681 contracts, $238.35)
+  KXCPI-25DEC-T0.2: YES @ $0.45 (525 contracts, $236.25)
+  KXGDP-26JAN30-T2.5: YES @ $0.41 (630 contracts, $258.30)
