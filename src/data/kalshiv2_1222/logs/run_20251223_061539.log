@@ -16677,3 +16677,347 @@ Starting Per-Market Analysis (28 markets, 6 models)...
 ✨ Initialized Claude model: claude-sonnet-4-5
   ✅ KXGDP-26JAN30-T0: YES (3/4 agree, 8.1% edge vs 8% req, 35d)
     ⏭️  Skipped: Insufficient consensus: 3/4
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+  ✅ KXGDP-26JAN30-T1.25: YES (3/4 agree, 10.0% edge vs 8% req, 35d)
+    ⏭️  Skipped: Insufficient consensus: 3/4
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+
+📊 Analysis Complete:
+  Markets analyzed: 28
+  Qualified trades: 9
+  Executed trades: 0
+
+🎯 Found 9 qualified trades, executed 0!
+
+📝 Run log exported: run_20251225_141237.log
+
+📈 Final snapshot: 4 positions saved to price_history.csv
+
+======================================================================
+OPEN POSITIONS (4)
+======================================================================
+
+  📈 KXCPICOMBO-25DEC-027: YES @ $0.35 [TAKE_PROFIT]
+    Contracts: 681 | Cost: $238.35
+    Entry Edge: 15.5% | Consensus: 4/6
+    Expected Edge: 15¢ | Achieved: -3¢ (-20% captured)
+
+  📈 KXGDP-26JAN30-T2.5: YES @ $0.41 [TAKE_PROFIT]
+    Contracts: 630 | Cost: $258.30
+    Entry Edge: 15.3% | Consensus: 4/6
+    Expected Edge: 15¢ | Achieved: 3¢ (20% captured)
+
+  📈 KXGDP-26JAN30-T3.0: YES @ $0.21 [TAKE_PROFIT]
+    Contracts: 874 | Cost: $183.54
+    Entry Edge: 14.5% | Consensus: 4/6
+    Expected Edge: 14¢ | Achieved: 0¢ (0% captured)
+
+  📈 KXCPI-25DEC-T0.2: YES @ $0.14 [TAKE_PROFIT]
+    Contracts: 1328 | Cost: $185.92
+    Entry Edge: 16.0% | Consensus: 4/6
+    Expected Edge: 15¢ | Achieved: 0¢ (0% captured)
+
+============================================================
+PERFORMANCE SUMMARY
+============================================================
+
+  Total Trades: 3
+  Win Rate: 100.0% (3W / 0L)
+  Total P&L: $141.85
+  Avg Win: $47.28
+  Avg Loss: $0.00
+
+  Current Balance: $4275.74
+
+📤 Syncing data to GitHub...
+✅ GitHub sync complete
+
+Next run at 15:17:58
+
+######################################################################
+  RUN #50
+######################################################################
+
+======================================================================
+  Analysis Run - 2025-12-25 15:18:01
+======================================================================
+
+
+📊 Monitoring 4 open positions...
+  KXCPICOMBO-25DEC-027: YES @ $0.35 → $0.32 (-8.6%) | -19% to target
+  KXGDP-26JAN30-T2.5: YES @ $0.41 → $0.44 (+7.3%) | +20% to target
+  KXGDP-26JAN30-T3.0: YES @ $0.21 → $0.21 (+0.0%) | +0% to target
+
+  🔄 RE-EVALUATING: KXCPI-25DEC-T0.2
+    Reason: Price moved 21% up from entry
+    🔍 Searching: Will CPI rise more than 0.2% in December 2025 late...
+    ✅ AI RECOMMENDS HOLD: NO NEW INFORMATION HAS EMERGED TO CHANGE THE FUNDAMENTAL THESIS. THE MARKET HAS MOVED FROM $0.14 TO $0.17, BUT THIS STILL REPRESENTS SIGNIFICANT UNDERPRICING RELATIVE TO OUR 30-32% PROBABILITY ESTIMATE, MAINTAINING OUR EDGE. HISTORICAL DATA SHOWS MONTHLY CPI INCREASES >0.2% OCCUR ROUGHLY 30-40% OF THE TIME IN NORMAL ECONOMIC CONDITIONS, SO OUR POSITION REMAINS JUSTIFIED DESPITE THE LACK OF NEW CATALYSTS.
+  KXCPI-25DEC-T0.2: YES @ $0.14 → $0.17 (+21.4%) | +19% to target
+
+  ────────────────────────────────────────────────────────────────────
+  TICKER                    SIDE     ENTRY  CASHOUT        P&L        %
+  ────────────────────────────────────────────────────────────────────
+  KXCPICOMBO-25DEC-027      YES   $  0.35 $  0.32 $  -20.43    -8.6%
+  KXGDP-26JAN30-T2.5        YES   $  0.41 $  0.44 $  +18.90    +7.3%
+  KXGDP-26JAN30-T3.0        YES   $  0.21 $  0.21 $   +0.00    +0.0%
+  KXCPI-25DEC-T0.2          YES   $  0.14 $  0.17 $  +39.84   +21.4%
+  ────────────────────────────────────────────────────────────────────
+  TOTAL UNREALIZED P&L:                    $  +38.31    +4.4%
+  TOTAL INVESTED:                          $  866.11
+
+📈 Saved 4 position snapshots to price_history.csv
+
+Fetching Kalshi markets...
+Querying 54 market series...
+  KXHIGHCHI: 12 markets
+  KXCPICOMBO: 5 markets
+  KXCPI: 6 markets
+  KXGDP: 11 markets
+  KXGDPUSMAX: 1 markets
+  KXFED: 50 markets
+  KXGTAPRICE: 5 markets
+  KXGPT: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXGPT&status=open&limit=50
+  KXQUANTUM: 4 markets
+  KXNGASW: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXNGASW&status=open&limit=50
+  KXMETEOR: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXMETEOR&status=open&limit=50
+  KXALIEN: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXALIEN&status=open&limit=50
+  KXNUCLEAR: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXNUCLEAR&status=open&limit=50
+  INXD: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=INXD&status=open&limit=50
+  KXINXW: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXINXW&status=open&limit=50
+  KXINX: 30 markets
+Fetching general markets...
+Found 715 unique markets
+
+Filtering Stats:
+  Time-filtered: 649
+  Volume-filtered: 0
+  Sports-filtered: 2
+  Imminent (sweet spot): 58
+  New markets (<48h): 12
+
+Selected 64 markets for analysis
+
+Starting Per-Market Analysis (64 markets, 6 models)...
+  Using early-exit strategy: skip market if first 2 models disagree
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+  ✅ KXGDP-26JAN30-T1.0: YES (3/4 agree, 10.9% edge vs 8% req, 35d)
+    ⏭️  Skipped: Insufficient consensus: 3/4
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+  ✅ KXGDP-26JAN30-T2.0: YES (4/5 agree, 12.8% edge vs 8% req, 35d)
+    ⏭️  Skipped: Edge too small: 7.8% < 11.5% required
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+  ✅ KXCPICOMBO-25DEC-027: YES (3/4 agree, 48.0% edge vs 8% req, 18d)
+    ⏭️  Skipped: Insufficient consensus: 3/4
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+  ✅ KXGDP-26JAN30-T1.5: YES (3/4 agree, 9.4% edge vs 8% req, 35d)
+    ⏭️  Skipped: Insufficient consensus: 3/4
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+  ✅ KXGDP-26JAN30-T2.5: YES (4/4 agree, 29.0% edge vs 8% req, 35d)
+    ⏭️  Skipped: Already have position in KXGDP-26JAN30-T2.5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+  ✅ KXHIGHCHI-25DEC25-B44.5: NO (3/4 agree, 61.1% edge vs 8% req, ?)
+    ⏭️  Skipped: Insufficient consensus: 3/4
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+  ✅ KXGDP-26JAN30-T1.25: YES (3/4 agree, 9.6% edge vs 8% req, 35d)
+    ⏭️  Skipped: Insufficient consensus: 3/4
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+  ✅ KXINX-25DEC26H1600-B7012: NO (3/3 agree, 57.8% edge vs 8% req, 1d)
+    ⏭️  Skipped: Insufficient consensus: 3/4
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+  ✅ KXHIGHCHI-25DEC26-B51.5: NO (3/3 agree, 62.3% edge vs 8% req, 1d)
+    ⏭️  Skipped: Insufficient consensus: 3/4
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
