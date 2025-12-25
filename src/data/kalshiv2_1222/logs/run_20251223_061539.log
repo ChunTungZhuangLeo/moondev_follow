@@ -17817,3 +17817,148 @@ Starting Per-Market Analysis (34 markets, 6 models)...
 ✨ Initialized Claude model: claude-sonnet-4-5
 🤔 Moon Dev's gpt-4o-mini is thinking...
 🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+
+📊 Analysis Complete:
+  Markets analyzed: 34
+  Qualified trades: 14
+  Executed trades: 0
+
+🎯 Found 14 qualified trades, executed 0!
+
+📝 Run log exported: run_20251225_174436.log
+
+📈 Final snapshot: 3 positions saved to price_history.csv
+
+======================================================================
+OPEN POSITIONS (3)
+======================================================================
+
+  📈 KXCPICOMBO-25DEC-027: YES @ $0.35 [TAKE_PROFIT]
+    Contracts: 681 | Cost: $238.35
+    Entry Edge: 15.5% | Consensus: 4/6
+    Expected Edge: 15¢ | Achieved: -3¢ (-20% captured)
+
+  📈 KXGDP-26JAN30-T2.5: YES @ $0.41 [TAKE_PROFIT]
+    Contracts: 630 | Cost: $258.30
+    Entry Edge: 15.3% | Consensus: 4/6
+    Expected Edge: 15¢ | Achieved: 3¢ (20% captured)
+
+  📈 KXGDP-26JAN30-T3.0: YES @ $0.21 [TAKE_PROFIT]
+    Contracts: 874 | Cost: $183.54
+    Entry Edge: 14.5% | Consensus: 4/6
+    Expected Edge: 14¢ | Achieved: 0¢ (0% captured)
+
+============================================================
+PERFORMANCE SUMMARY
+============================================================
+
+  Total Trades: 4
+  Win Rate: 100.0% (4W / 0L)
+  Total P&L: $673.05
+  Avg Win: $168.26
+  Avg Loss: $0.00
+
+  Current Balance: $4992.86
+
+📤 Syncing data to GitHub...
+✅ GitHub sync complete
+
+Next run at 18:50:53
+
+######################################################################
+  RUN #53
+######################################################################
+
+======================================================================
+  Analysis Run - 2025-12-25 18:50:55
+======================================================================
+
+
+📊 Monitoring 3 open positions...
+  KXCPICOMBO-25DEC-027: YES @ $0.35 → $0.32 (-8.6%) | -19% to target
+  KXGDP-26JAN30-T2.5: YES @ $0.41 → $0.39 (-4.9%) | -13% to target
+  KXGDP-26JAN30-T3.0: YES @ $0.21 → $0.21 (+0.0%) | +0% to target
+
+  ────────────────────────────────────────────────────────────────────
+  TICKER                    SIDE     ENTRY  CASHOUT        P&L        %
+  ────────────────────────────────────────────────────────────────────
+  KXCPICOMBO-25DEC-027      YES   $  0.35 $  0.32 $  -20.43    -8.6%
+  KXGDP-26JAN30-T2.5        YES   $  0.41 $  0.39 $  -12.60    -4.9%
+  KXGDP-26JAN30-T3.0        YES   $  0.21 $  0.21 $   +0.00    +0.0%
+  ────────────────────────────────────────────────────────────────────
+  TOTAL UNREALIZED P&L:                    $  -33.03    -4.9%
+  TOTAL INVESTED:                          $  680.19
+
+📈 Saved 3 position snapshots to price_history.csv
+
+Fetching Kalshi markets...
+Querying 54 market series...
+  KXHIGHCHI: 12 markets
+  KXCPICOMBO: 5 markets
+  KXCPI: 6 markets
+  KXGDP: 11 markets
+  KXGDPUSMAX: 1 markets
+  KXFED: 50 markets
+  KXGTAPRICE: 5 markets
+  KXOSCARS: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXOSCARS&status=open&limit=50
+  KXGRAMMYS: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXGRAMMYS&status=open&limit=50
+  KXGOLDENGLOBES: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXGOLDENGLOBES&status=open&limit=50
+  KXBOXOFFICE: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXBOXOFFICE&status=open&limit=50
+  KXSPOTIFY: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXSPOTIFY&status=open&limit=50
+  KXGAMEAWARDS: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXGAMEAWARDS&status=open&limit=50
+  OAIAGI: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=OAIAGI&status=open&limit=50
+  KXAI: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXAI&status=open&limit=50
+  KXGPT: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXGPT&status=open&limit=50
+  KXQUANTUM: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXQUANTUM&status=open&limit=50
+  KXNGASW: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXNGASW&status=open&limit=50
+  KXGOLD: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXGOLD&status=open&limit=50
+  KXMETEOR: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXMETEOR&status=open&limit=50
+  KXALIEN: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXALIEN&status=open&limit=50
+  KXNUCLEAR: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXNUCLEAR&status=open&limit=50
+  NASDAQ100U: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=NASDAQ100U&status=open&limit=50
+  INXD: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=INXD&status=open&limit=50
+  KXINX: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXINX&status=open&limit=50
+  KXDOW: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXDOW&status=open&limit=50
+  KXVIX: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXVIX&status=open&limit=50
+Fetching general markets...
+Found 684 unique markets
+
+Filtering Stats:
+  Time-filtered: 648
+  Volume-filtered: 0
+  Sports-filtered: 2
+  Imminent (sweet spot): 28
+  New markets (<48h): 12
+
+Selected 34 markets for analysis
+
+Starting Per-Market Analysis (34 markets, 6 models)...
+  Using early-exit strategy: skip market if first 2 models disagree
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+  ✅ KXGDP-26JAN30-T1.0: YES (3/4 agree, 11.3% edge vs 8% req, 35d)
+    ⏭️  Skipped: Insufficient consensus: 3/4
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+  ✅ KXGDP-26JAN30-T2.0: YES (4/5 agree, 12.9% edge vs 8% req, 35d)
+    ⏭️  Skipped: Edge too small: 8.0% < 11.5% required
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+  ✅ KXCPICOMBO-25DEC-0129: YES (4/4 agree, 230.0% edge vs 8% req, 18d)
+    ⏭️  Skipped: Price too low: $0.10 < $0.12
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
