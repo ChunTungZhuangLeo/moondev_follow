@@ -1,0 +1,83 @@
+======================================================================
+KALSHI VALUE AGENT - RUN LOG
+======================================================================
+
+Timestamp: 2025-12-25 08:31:16
+Mode: PAPER
+Bankroll: $5,000
+
+MARKETS ANALYZED: 28
+QUALIFIED TRADES: 6
+EXECUTED TRADES: 0
+
+======================================================================
+QUALIFIED TRADES DETAILS
+======================================================================
+
+#1: KXGDP-26JAN30-T1.0
+    Title: Will **real GDP** increase by more than 1.0% in Q4 2025?
+    Side: YES
+    Consensus: 3/4 models
+    Edge: 10.9%
+    Confidence: 7.3/10
+    True Prob: 0.81
+    Market Price: $0.86
+    Link: https://kalshi.com/markets/KXGDP-26JAN30-T1.0
+
+#2: KXCPICOMBO-25DEC-0129
+    Title: Will CPI be Above 0.1% AND YOYCPI be Above 2.9% for Dec 2025?
+    Side: YES
+    Consensus: 4/4 models
+    Edge: 187.6%
+    Confidence: 6.2/10
+    True Prob: 0.33
+    Market Price: $0.10
+    Link: https://kalshi.com/markets/KXCPICOMBO-25DEC-0129
+
+#3: KXCPI-25DEC-T0.2
+    Title: Will CPI rise more than 0.2% in December 2025?
+    Side: YES
+    Consensus: 4/4 models
+    Edge: 85.2%
+    Confidence: 6.2/10
+    True Prob: 0.26
+    Market Price: $0.11
+    Link: https://kalshi.com/markets/KXCPI-25DEC-T0.2
+
+#4: KXGDP-26JAN30-T1.5
+    Title: Will **real GDP** increase by more than 1.5% in Q4 2025?
+    Side: YES
+    Consensus: 3/4 models
+    Edge: 10.8%
+    Confidence: 7.3/10
+    True Prob: 0.78
+    Market Price: $0.79
+    Link: https://kalshi.com/markets/KXGDP-26JAN30-T1.5
+
+#5: KXGDP-26JAN30-T2.5
+    Title: Will **real GDP** increase by more than 2.5% in Q4 2025?
+    Side: YES
+    Consensus: 4/4 models
+    Edge: 31.8%
+    Confidence: 6.8/10
+    True Prob: 0.58
+    Market Price: $0.44
+    Link: https://kalshi.com/markets/KXGDP-26JAN30-T2.5
+
+#6: KXGDP-26JAN30-T1.25
+    Title: Will **real GDP** increase by more than 1.25% in Q4 2025?
+    Side: YES
+    Consensus: 3/4 models
+    Edge: 9.8%
+    Confidence: 7.3/10
+    True Prob: 0.80
+    Market Price: $0.84
+    Link: https://kalshi.com/markets/KXGDP-26JAN30-T1.25
+
+======================================================================
+CURRENT PORTFOLIO
+======================================================================
+
+  KXCPICOMBO-25DEC-027: YES @ $0.35 (681 contracts, $238.35)
+  KXGDP-26JAN30-T2.5: YES @ $0.41 (630 contracts, $258.30)
+  KXGDP-26JAN30-T3.0: YES @ $0.21 (874 contracts, $183.54)
