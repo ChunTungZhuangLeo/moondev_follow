@@ -1,0 +1,53 @@
+======================================================================
+KALSHI VALUE AGENT - RUN LOG
+======================================================================
+
+Timestamp: 2025-12-26 21:23:47
+Mode: PAPER
+Bankroll: $5,000
+
+MARKETS ANALYZED: 44
+QUALIFIED TRADES: 3
+EXECUTED TRADES: 0
+
+======================================================================
+QUALIFIED TRADES DETAILS
+======================================================================
+
+#1: KXGDP-26JAN30-T2.5
+    Title: Will **real GDP** increase by more than 2.5% in Q4 2025?
+    Side: YES
+    Consensus: 4/4 models
+    Edge: 20.8%
+    Confidence: 6.2/10
+    True Prob: 0.57
+    Market Price: $0.47
+    Link: https://kalshi.com/markets/KXGDP-26JAN30-T2.5
+
+#2: KXGDP-26JAN30-T1.75
+    Title: Will **real GDP** increase by more than 1.75% in Q4 2025?
+    Side: YES
+    Consensus: 3/4 models
+    Edge: 10.1%
+    Confidence: 7.7/10
+    True Prob: 0.75
+    Market Price: $0.73
+    Link: https://kalshi.com/markets/KXGDP-26JAN30-T1.75
+
+#3: KXHIGHCHI-25DEC27-B47.5
+    Title: Will the high temp in Chicago be 47-48° on Dec 27, 2025?
+    Side: NO
+    Consensus: 3/4 models
+    Edge: 37.6%
+    Confidence: 6.7/10
+    True Prob: 0.65
+    Market Price: $0.73
+    Link: https://kalshi.com/markets/KXHIGHCHI-25DEC27-B47.5
+
+======================================================================
+CURRENT PORTFOLIO
+======================================================================
+
+  KXCPICOMBO-25DEC-027: YES @ $0.35 (681 contracts, $238.35)
+  KXGDP-26JAN30-T2.5: YES @ $0.41 (630 contracts, $258.30)
+  KXCPI-25DEC-T0.2: YES @ $0.40 (677 contracts, $270.80)
