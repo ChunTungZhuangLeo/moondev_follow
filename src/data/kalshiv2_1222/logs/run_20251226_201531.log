@@ -1,0 +1,73 @@
+======================================================================
+KALSHI VALUE AGENT - RUN LOG
+======================================================================
+
+Timestamp: 2025-12-26 20:15:31
+Mode: PAPER
+Bankroll: $5,000
+
+MARKETS ANALYZED: 44
+QUALIFIED TRADES: 5
+EXECUTED TRADES: 0
+
+======================================================================
+QUALIFIED TRADES DETAILS
+======================================================================
+
+#1: KXHIGHCHI-25DEC26-T49
+    Title: Will the high temp in Chicago be <49° on Dec 26, 2025?
+    Side: YES
+    Consensus: 4/4 models
+    Edge: 2428.5%
+    Confidence: 6.2/10
+    True Prob: 0.29
+    Market Price: $0.01
+    Link: https://kalshi.com/markets/KXHIGHCHI-25DEC26-T49
+
+#2: KXGDP-26JAN30-T2.5
+    Title: Will **real GDP** increase by more than 2.5% in Q4 2025?
+    Side: YES
+    Consensus: 4/4 models
+    Edge: 20.6%
+    Confidence: 6.5/10
+    True Prob: 0.59
+    Market Price: $0.48
+    Link: https://kalshi.com/markets/KXGDP-26JAN30-T2.5
+
+#3: KXGDP-26JAN30-T3.5
+    Title: Will **real GDP** increase by more than 3.5% in Q4 2025?
+    Side: NO
+    Consensus: 3/4 models
+    Edge: 46.8%
+    Confidence: 7.0/10
+    True Prob: 0.18
+    Market Price: $0.81
+    Link: https://kalshi.com/markets/KXGDP-26JAN30-T3.5
+
+#4: KXHIGHCHI-25DEC26-B49.5
+    Title: Will the high temp in Chicago be 49-50° on Dec 26, 2025?
+    Side: NO
+    Consensus: 3/4 models
+    Edge: 118.3%
+    Confidence: 6.0/10
+    True Prob: 0.42
+    Market Price: $0.06
+    Link: https://kalshi.com/markets/KXHIGHCHI-25DEC26-B49.5
+
+#5: KXGDP-26JAN30-T1.75
+    Title: Will **real GDP** increase by more than 1.75% in Q4 2025?
+    Side: YES
+    Consensus: 3/4 models
+    Edge: 10.0%
+    Confidence: 7.3/10
+    True Prob: 0.75
+    Market Price: $0.73
+    Link: https://kalshi.com/markets/KXGDP-26JAN30-T1.75
+
+======================================================================
+CURRENT PORTFOLIO
+======================================================================
+
+  KXCPICOMBO-25DEC-027: YES @ $0.35 (681 contracts, $238.35)
+  KXGDP-26JAN30-T2.5: YES @ $0.41 (630 contracts, $258.30)
+  KXCPI-25DEC-T0.2: YES @ $0.40 (677 contracts, $270.80)
