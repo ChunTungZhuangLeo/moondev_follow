@@ -24660,3 +24660,318 @@ Starting Per-Market Analysis (44 markets, 6 models)...
 ✨ Initialized Claude model: claude-sonnet-4-5
 🤔 Moon Dev's gpt-4o-mini is thinking...
 🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+❌ Claude generation error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': None}
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+  ✅ KXCPICOMBO-25DEC-0332: YES (3/4 agree, 258.3% edge vs 8% req, 17d)
+    ⏭️  Skipped: Insufficient consensus: 3/4
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+
+📊 Analysis Complete:
+  Markets analyzed: 44
+  Qualified trades: 10
+  Executed trades: 0
+
+🎯 Found 10 qualified trades, executed 0!
+
+📝 Run log exported: run_20251226_175627.log
+
+📈 Final snapshot: 2 positions saved to price_history.csv
+
+======================================================================
+OPEN POSITIONS (2)
+======================================================================
+
+  📈 KXCPICOMBO-25DEC-027: YES @ $0.35 [TAKE_PROFIT]
+    Contracts: 681 | Cost: $238.35
+    Entry Edge: 15.5% | Consensus: 4/6
+    Expected Edge: 15¢ | Achieved: -3¢ (-20% captured)
+
+  📈 KXGDP-26JAN30-T2.5: YES @ $0.41 [TAKE_PROFIT]
+    Contracts: 630 | Cost: $258.30
+    Entry Edge: 15.3% | Consensus: 4/6
+    Expected Edge: 15¢ | Achieved: 6¢ (40% captured)
+
+============================================================
+PERFORMANCE SUMMARY
+============================================================
+
+  Total Trades: 5
+  Win Rate: 100.0% (5W / 0L)
+  Total P&L: $742.97
+  Avg Win: $148.59
+  Avg Loss: $0.00
+
+  Current Balance: $5246.32
+
+📤 Syncing data to GitHub...
+✅ GitHub sync complete
+
+Next run at 19:07:16
+
+######################################################################
+  RUN #74
+######################################################################
+
+======================================================================
+  Analysis Run - 2025-12-26 19:07:19
+======================================================================
+
+
+📊 Monitoring 2 open positions...
+  KXCPICOMBO-25DEC-027: YES @ $0.35 → $0.32 (-8.6%) | -19% to target
+  KXGDP-26JAN30-T2.5: YES @ $0.41 → $0.48 (+17.1%) | +46% to target
+
+  ────────────────────────────────────────────────────────────────────
+  TICKER                    SIDE     ENTRY  CASHOUT        P&L        %
+  ────────────────────────────────────────────────────────────────────
+  KXCPICOMBO-25DEC-027      YES   $  0.35 $  0.32 $  -20.43    -8.6%
+  KXGDP-26JAN30-T2.5        YES   $  0.41 $  0.48 $  +44.10   +17.1%
+  ────────────────────────────────────────────────────────────────────
+  TOTAL UNREALIZED P&L:                    $  +23.67    +4.8%
+  TOTAL INVESTED:                          $  496.65
+
+📈 Saved 2 position snapshots to price_history.csv
+
+Fetching Kalshi markets...
+Querying 54 market series...
+  KXHIGHCHI: 12 markets
+  KXJOBLESSCLAIMS: 10 markets
+  KXCPICOMBO: 5 markets
+  KXCPI: 6 markets
+  KXGDP: 11 markets
+  KXGDPUSMAX: 1 markets
+  KXFED: 50 markets
+  KXINFLATION: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXINFLATION&status=open&limit=50
+  KXGTAPRICE: 5 markets
+  KXOSCARS: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXOSCARS&status=open&limit=50
+  KXGRAMMYS: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXGRAMMYS&status=open&limit=50
+  KXEMMYS: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXEMMYS&status=open&limit=50
+  KXBOXOFFICE: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXBOXOFFICE&status=open&limit=50
+  KXSTREAMING: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXSTREAMING&status=open&limit=50
+  KXSPOTIFY: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXSPOTIFY&status=open&limit=50
+  KXESPORTS: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXESPORTS&status=open&limit=50
+  OAIAGI: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=OAIAGI&status=open&limit=50
+  KXAI: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXAI&status=open&limit=50
+  KXSELF: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXSELF&status=open&limit=50
+  KXQUANTUM: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXQUANTUM&status=open&limit=50
+  KXNGASW: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXNGASW&status=open&limit=50
+  KXGOLD: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXGOLD&status=open&limit=50
+  KXMETEOR: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXMETEOR&status=open&limit=50
+  KXALIEN: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXALIEN&status=open&limit=50
+  KXNUCLEAR: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXNUCLEAR&status=open&limit=50
+  NASDAQ100U: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=NASDAQ100U&status=open&limit=50
+  INXD: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=INXD&status=open&limit=50
+  KXINX: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXINX&status=open&limit=50
+  KXDOW: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXDOW&status=open&limit=50
+  KXVIX: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXVIX&status=open&limit=50
+Fetching general markets...
+Found 694 unique markets
+
+Filtering Stats:
+  Time-filtered: 648
+  Volume-filtered: 0
+  Sports-filtered: 2
+  Imminent (sweet spot): 38
+  New markets (<48h): 22
+
+Selected 44 markets for analysis
+
+Starting Per-Market Analysis (44 markets, 6 models)...
+  Using early-exit strategy: skip market if first 2 models disagree
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+  ✅ KXGDP-26JAN30-T1.0: YES (3/4 agree, 11.1% edge vs 8% req, 34d)
+    ⏭️  Skipped: Insufficient consensus: 3/4
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+  ✅ KXCPI-25DEC-T0.2: YES (4/4 agree, 34.4% edge vs 8% req, 17d)
+    📈 EXECUTING: KXCPI-25DEC-T0.2 - YES | $270.80 (677 contracts) | 34.4% edge
+
+==================================================
+TRADE SIGNAL: BUY YES
+Ticker: KXCPI-25DEC-T0.2
+Price: $0.40
+Contracts: 677
+Cost: $270.80
+Edge: 16.2%
+==================================================
+
+PAPER TRADE EXECUTED
+  Trade ID: 20251226_190845_263384
+  Cost: $270.80
+  New Balance: $4975.52
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+  ✅ KXGDP-26JAN30-T2.5: YES (4/4 agree, 18.0% edge vs 8% req, 34d)
+    ⏭️  Skipped: Edge too small: 9.5% < 11.5% required
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+  ✅ KXGDP-26JAN30-T1.5: YES (3/4 agree, 8.1% edge vs 8% req, 34d)
+    ⏭️  Skipped: Insufficient consensus: 3/4
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+  ✅ KXCPI-25DEC-T0.1: YES (3/4 agree, 13.6% edge vs 8% req, 17d)
+    ⏭️  Skipped: Insufficient consensus: 3/4
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+  ✅ KXGDP-26JAN30-T3.5: NO (3/4 agree, 59.2% edge vs 8% req, 34d)
+    ⏭️  Skipped: Insufficient consensus: 3/4
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+  ✅ KXGDP-26JAN30-T1.25: YES (3/4 agree, 11.0% edge vs 8% req, 34d)
+    ⏭️  Skipped: Insufficient consensus: 3/4
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+  ✅ KXGDP-26JAN30-T1.75: YES (3/4 agree, 10.0% edge vs 8% req, 34d)
+    ⏭️  Skipped: Insufficient consensus: 3/4
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+  ✅ KXCPICOMBO-25DEC-0231: YES (3/4 agree, 358.3% edge vs 8% req, 17d)
+    ⏭️  Skipped: Insufficient consensus: 3/4
+🤔 Moon Dev's gpt-4o-mini is thinking...
