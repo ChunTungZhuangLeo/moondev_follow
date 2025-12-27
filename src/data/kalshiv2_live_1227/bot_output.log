@@ -1,0 +1,165 @@
+
+=========================================
+  LIVE TRADING STARTED: Sat Dec 27 05:43:06 UTC 2025
+  Mode: CONTINUOUS (runs every hour)
+  Bankroll: ,400
+=========================================
+
+/home/ubuntu/moondev_follow/src/models/gemini_model.py:6: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+✨ Initialized Claude model: claude-3-haiku
+✅ claude-3-haiku ready
+✨ Initialized qwen/qwen3-32b
+✅ qwen/qwen3-32b ready
+✨ Moon Dev's magic initialized OpenAI model: o1-mini 🌟
+✅ o1-mini ready
+✨ Initialized Gemini model: gemini-2.5-flash
+✅ gemini-2.5-flash ready
+✨ Initialized DeepSeek model: deepseek-chat
+✅ deepseek-chat ready
+❌ Could not connect to Ollama API - is the server running?
+💡 Start the server with: ollama serve
+
+Value Trading Engine initialized (value mode)
+
+Strategy Parameters:
+  Min Edge: 10.0%
+  Kelly Fraction: 20%
+  Max Position: 10.0% of bankroll
+  Min Consensus: 4/6 models
+  Price Range: $0.12 - $0.85
+
+📁 V2 Data Folder: /home/ubuntu/kalshiv2_live_1227
+   Trades CSV: /home/ubuntu/kalshiv2_live_1227/trades.csv
+
+Kalshi Trade Executor initialized (live mode)
+
+Portfolio Summary (live):
+  Balance: $1400.00
+  Invested: $0.00
+  Open Positions: 0
+  Realized P&L: $0.00
+  Win Rate: 0.0% (0W/0L)
+  Today: 0 trades, $0.00 P&L
+Kalshi Auth Client initialized (prod environment)
+Kalshi authenticated client initialized
+
+======================================================================
+ KALSHI VALUE TRADING AGENT V2 (Web Re-Eval) 
+======================================================================
+  Mode: LIVE TRADING
+  Bankroll: $1,400
+  Time-Adjusted Edge Requirements:
+    <60d: 8% min edge
+    <180d: 15% min edge
+    <365d: 25% min edge
+  Min Consensus: 4/6 models
+  Kelly Fraction: 50%
+  Resolution Window: 0-365 days
+  Long-Term Volume Filter: >60d needs 100+ vol
+  Web Re-Evaluation: Enabled for underwater positions
+======================================================================
+
+
+Starting continuous trading loop...
+Analysis interval: 1 hours
+Press Ctrl+C to stop
+
+
+######################################################################
+  RUN #1
+######################################################################
+
+======================================================================
+  Analysis Run - 2025-12-27 05:43:08
+======================================================================
+
+
+Fetching Kalshi markets...
+Querying 54 market series...
+  KXHIGHCHI: 12 markets
+  KXJOBLESSCLAIMS: 10 markets
+  KXCPICOMBO: 5 markets
+  KXCPI: 6 markets
+  KXGDP: 11 markets
+  KXGDPUSMAX: 1 markets
+  KXFED: 50 markets
+  KXRECESSION: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXRECESSION&status=open&limit=50
+  KXINFLATION: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXINFLATION&status=open&limit=50
+  KXGTAPRICE: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXGTAPRICE&status=open&limit=50
+  KXGRAMMYS: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXGRAMMYS&status=open&limit=50
+  KXEMMYS: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXEMMYS&status=open&limit=50
+  KXBOXOFFICE: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXBOXOFFICE&status=open&limit=50
+  KXSTREAMING: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXSTREAMING&status=open&limit=50
+  KXSPOTIFY: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXSPOTIFY&status=open&limit=50
+  KXGAMEAWARDS: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXGAMEAWARDS&status=open&limit=50
+  OAIAGI: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=OAIAGI&status=open&limit=50
+  KXAI: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXAI&status=open&limit=50
+  KXGPT: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXGPT&status=open&limit=50
+  KXQUANTUM: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXQUANTUM&status=open&limit=50
+  KXNGASW: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXNGASW&status=open&limit=50
+  KXOIL: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXOIL&status=open&limit=50
+  KXMETEOR: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXMETEOR&status=open&limit=50
+  KXALIEN: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXALIEN&status=open&limit=50
+  KXWW3: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXWW3&status=open&limit=50
+  KXNUCLEAR: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXNUCLEAR&status=open&limit=50
+  INXD: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=INXD&status=open&limit=50
+  KXINXW: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXINXW&status=open&limit=50
+  KXINX: 50 markets
+  KXDOW: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXDOW&status=open&limit=50
+  KXVIX: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXVIX&status=open&limit=50
+Fetching general markets...
+Error fetching general markets: 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?limit=200&status=open
+Found 145 unique markets
+
+Filtering Stats:
+  Time-filtered: 51
+  Volume-filtered: 0
+  Sports-filtered: 0
+  Imminent (sweet spot): 88
+  New markets (<48h): 72
+
+Selected 94 markets for analysis
+
+Starting Per-Market Analysis (94 markets, 6 models)...
+  Using early-exit strategy: skip market if first 2 models disagree
+✨ Initialized llama-3.3-70b-versatile
+✨ Initialized Gemini model: gemini-2.0-flash
+✨ Moon Dev's magic initialized OpenAI model: gpt-4o-mini 🌟
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+  ✅ KXCPICOMBO-25DEC-0129: YES (3/4 agree, 83.3% edge vs 8% req, 17d)
+    ⏭️  Skipped: Insufficient consensus: 3/4
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+  ✅ KXGDP-26JAN30-T3.0: YES (3/4 agree, 40.6% edge vs 8% req, 34d)
+    ⏭️  Skipped: Insufficient consensus: 3/4
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+  ✅ KXCPI-25DEC-T0.2: YES (3/3 agree, 31.9% edge vs 8% req, 17d)
+    ⏭️  Skipped: Insufficient consensus: 3/4
