@@ -503,3 +503,319 @@ Starting Per-Market Analysis (94 markets, 6 models)...
 ✨ Initialized Claude model: claude-sonnet-4-5
 🤔 Moon Dev's gpt-4o-mini is thinking...
 🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+
+📊 Analysis Complete:
+  Markets analyzed: 94
+  Qualified trades: 11
+  Executed trades: 0
+
+🎯 Found 11 qualified trades, executed 0!
+
+📝 Run log exported: run_20251227_054308.log
+
+No open positions
+
+No closed trades yet
+
+Next run at 07:01:03
+
+######################################################################
+  RUN #2
+######################################################################
+
+======================================================================
+  Analysis Run - 2025-12-27 07:01:03
+======================================================================
+
+
+Fetching Kalshi markets...
+Querying 54 market series...
+  KXHIGHCHI: 6 markets
+  KXJOBLESSCLAIMS: 10 markets
+  KXCPICOMBO: 5 markets
+  KXCPI: 6 markets
+  KXGDP: 11 markets
+  KXGDPUSMAX: 1 markets
+  KXFED: 50 markets
+  KXGTAPRICE: 5 markets
+  KXOSCARS: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXOSCARS&status=open&limit=50
+  KXGRAMMYS: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXGRAMMYS&status=open&limit=50
+  KXGOLDENGLOBES: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXGOLDENGLOBES&status=open&limit=50
+  KXBOXOFFICE: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXBOXOFFICE&status=open&limit=50
+  KXSTREAMING: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXSTREAMING&status=open&limit=50
+  KXSPOTIFY: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXSPOTIFY&status=open&limit=50
+  KXESPORTS: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXESPORTS&status=open&limit=50
+  OAIAGI: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=OAIAGI&status=open&limit=50
+  KXAI: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXAI&status=open&limit=50
+  KXSELF: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXSELF&status=open&limit=50
+  KXQUANTUM: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXQUANTUM&status=open&limit=50
+  KXNGASW: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXNGASW&status=open&limit=50
+  KXOIL: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXOIL&status=open&limit=50
+  KXMETEOR: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXMETEOR&status=open&limit=50
+  KXALIEN: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXALIEN&status=open&limit=50
+  KXWW3: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXWW3&status=open&limit=50
+  NASDAQ100U: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=NASDAQ100U&status=open&limit=50
+  INXD: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=INXD&status=open&limit=50
+  KXINXW: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXINXW&status=open&limit=50
+  KXINX: 50 markets
+  KXDOW: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXDOW&status=open&limit=50
+  KXVIX: Error - 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXVIX&status=open&limit=50
+Fetching general markets...
+Error fetching general markets: 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/markets?limit=200&status=open
+Found 144 unique markets
+
+Filtering Stats:
+  Time-filtered: 56
+  Volume-filtered: 0
+  Sports-filtered: 0
+  Imminent (sweet spot): 82
+  New markets (<48h): 66
+
+Selected 88 markets for analysis
+
+Starting Per-Market Analysis (88 markets, 6 models)...
+  Using early-exit strategy: skip market if first 2 models disagree
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+  ✅ KXCPICOMBO-25DEC-0129: YES (3/3 agree, 240.0% edge vs 8% req, 17d)
+    ⏭️  Skipped: Insufficient consensus: 3/4
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+  ✅ KXCPI-25DEC-T0.2: YES (3/3 agree, 17.8% edge vs 8% req, 17d)
+    ⏭️  Skipped: Insufficient consensus: 3/4
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+  ✅ KXCPICOMBO-25DEC-027: YES (3/4 agree, 46.1% edge vs 8% req, 17d)
+    ⏭️  Skipped: Insufficient consensus: 3/4
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+  ✅ KXGDP-26JAN30-T1.5: YES (3/4 agree, 9.1% edge vs 8% req, 34d)
+    ⏭️  Skipped: Insufficient consensus: 3/4
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+  ✅ KXGDP-26JAN30-T2.5: YES (4/4 agree, 13.8% edge vs 8% req, 34d)
+    ⏭️  Skipped: Edge too small: 6.8% < 11.5% required
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+  ✅ KXGDP-26JAN30-T1.75: YES (3/4 agree, 12.1% edge vs 8% req, 34d)
+    ⏭️  Skipped: Insufficient consensus: 3/4
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+  ✅ KXHIGHCHI-25DEC27-B47.5: YES (3/3 agree, 36.0% edge vs 8% req, ?)
+    ⏭️  Skipped: Insufficient consensus: 3/4
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+  ✅ KXJOBLESSCLAIMS-25DEC31-260000: NO (3/4 agree, 61.3% edge vs 8% req, 4d)
+    ⏭️  Skipped: Insufficient consensus: 3/4
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+  ✅ KXJOBLESSCLAIMS-25DEC31-240000: NO (3/4 agree, 57.7% edge vs 8% req, 4d)
+    ⏭️  Skipped: Insufficient consensus: 3/4
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+  Progress: 50/88 markets analyzed (found 9 opportunities, executed 0)
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
+✨ Initialized Claude model: claude-sonnet-4-5
+🤔 Moon Dev's gpt-4o-mini is thinking...
+🧪 Moon Dev debug: finish_reason=stop
+✨ Initialized Claude model: claude-3-haiku-20240307
