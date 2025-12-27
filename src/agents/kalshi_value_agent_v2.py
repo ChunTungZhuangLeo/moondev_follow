@@ -232,7 +232,7 @@ def check_volume_filter(days_to_resolution: Optional[int], volume: int) -> Tuple
 
 
 # Position Sizing (moderate for paper trading)
-BANKROLL_USD = 5000.0
+BANKROLL_USD = 1400.0
 RISK_PER_TRADE_PCT = 0.05  # 5% max per trade = $250
 KELLY_FRACTION = 0.50  # Half Kelly (more aggressive)
 
@@ -388,7 +388,7 @@ REASONING: [2-3 sentences explaining why to hold or exit based on new info]
 """
 
 # Data Paths - V2 uses separate folder
-DATA_FOLDER = os.path.expanduser("~/kalshiv2_1222")
+DATA_FOLDER = os.path.expanduser("~/kalshiv2_live_1227")
 LOGS_FOLDER = os.path.join(DATA_FOLDER, "logs")
 MARKETS_CSV = os.path.join(DATA_FOLDER, "markets.csv")
 PREDICTIONS_CSV = os.path.join(DATA_FOLDER, "predictions.csv")
