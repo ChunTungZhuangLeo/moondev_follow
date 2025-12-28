@@ -71,16 +71,20 @@ class KalshiConfig:
 
 
 # API Base URLs by environment
+# Note: Signature must include /trade-api/v2 prefix
 API_BASE_URLS = {
-    KalshiEnvironment.DEMO: "https://demo-api.kalshi.com/trade-api/v2",
-    KalshiEnvironment.PROD: "https://trading-api.kalshi.com/trade-api/v2",
+    KalshiEnvironment.DEMO: "https://demo-api.kalshi.co/trade-api/v2",  # Demo may not exist
+    KalshiEnvironment.PROD: "https://api.elections.kalshi.com/trade-api/v2",
 }
 
 # WebSocket URLs by environment (for future streaming support)
 WS_BASE_URLS = {
-    KalshiEnvironment.DEMO: "wss://demo-api.kalshi.com/trade-api/ws/v2",
-    KalshiEnvironment.PROD: "wss://trading-api.kalshi.com/trade-api/ws/v2",
+    KalshiEnvironment.DEMO: "wss://demo-api.kalshi.co/trade-api/ws/v2",
+    KalshiEnvironment.PROD: "wss://api.kalshi.com/trade-api/ws/v2",
 }
+
+# API path prefix - must be included in signature
+API_PATH_PREFIX = "/trade-api/v2"
 
 
 # ==============================================================================
@@ -286,11 +290,12 @@ class KalshiAuthClient:
         """
         Build authentication headers for Kalshi API request.
 
-        The signature is computed over: timestamp_ms + method + path_without_params
+        The signature is computed over: timestamp_ms + method + full_path
+        where full_path = /trade-api/v2 + path (without query params)
 
         Args:
             method: HTTP method (GET, POST, DELETE, etc.)
-            path: API path (without base URL)
+            path: API path (e.g., "/portfolio/balance")
 
         Returns:
             Dict with KALSHI-ACCESS-* headers
@@ -303,8 +308,11 @@ class KalshiAuthClient:
         # (query params are NOT included in the signature message)
         path_without_params = path.split('?')[0]
 
-        # Build message to sign: timestamp + method + path
-        message = f"{timestamp_str}{method.upper()}{path_without_params}"
+        # Build full path including API prefix - required for signature
+        full_path = f"{API_PATH_PREFIX}{path_without_params}"
+
+        # Build message to sign: timestamp + method + full_path
+        message = f"{timestamp_str}{method.upper()}{full_path}"
 
         # Sign the message
         signature = self._sign_pss(message)
