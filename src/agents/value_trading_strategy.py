@@ -135,7 +135,7 @@ STYLE_PRESETS = {
         "min_edge_pct": 0.10,  # 10% minimum edge (lowered from 12%)
         "kelly_fraction": 0.20,  # 20% Kelly (very conservative)
         "min_consensus_models": 4,  # 4/6 models (lowered from 5)
-        "price_floor": 0.12,
+        "price_floor": 0.08,
         "price_ceiling": 0.85,  # Allow slightly higher prices
     },
     TradingStyle.BALANCED: {

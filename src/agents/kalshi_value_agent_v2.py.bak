@@ -470,7 +470,19 @@ class KalshiValueAgent:
         cprint(f"\n📁 V2 Data Folder: {DATA_FOLDER}", "cyan")
         cprint(f"   Trades CSV: {trades_csv_path}", "cyan")
 
-        # Authenticated client for live mode - MUST create BEFORE executor
+        self.executor = KalshiTradeExecutor(
+            ExecutorConfig(
+                mode=exec_mode,
+                paper_starting_balance=BANKROLL_USD,
+                max_daily_trades=20,
+                max_daily_loss_usd=500.0,
+                trades_csv_path=trades_csv_path,
+                positions_csv_path=positions_csv_path,
+                portfolio_csv_path=portfolio_csv_path
+            )
+        )
+
+        # Authenticated client for live mode
         self.auth_client = None
         if live_mode:
             try:
@@ -481,20 +493,6 @@ class KalshiValueAgent:
                 cprint(f"Warning: Could not initialize authenticated client: {e}", "yellow")
                 cprint("Falling back to paper trading mode", "yellow")
                 self.live_mode = False
-                exec_mode = ExecutionMode.PAPER  # Fall back to paper mode
-
-        self.executor = KalshiTradeExecutor(
-            ExecutorConfig(
-                mode=exec_mode,
-                paper_starting_balance=BANKROLL_USD,
-                max_daily_trades=20,
-                max_daily_loss_usd=500.0,
-                trades_csv_path=trades_csv_path,
-                positions_csv_path=positions_csv_path,
-                portfolio_csv_path=portfolio_csv_path
-            ),
-            auth_client=self.auth_client  # Pass auth_client to executor!
-        )
 
         self._print_banner()
 

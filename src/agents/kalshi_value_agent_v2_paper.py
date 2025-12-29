@@ -232,7 +232,7 @@ def check_volume_filter(days_to_resolution: Optional[int], volume: int) -> Tuple
 
 
 # Position Sizing (moderate for paper trading)
-BANKROLL_USD = 1400.0
+BANKROLL_USD = 5000.0
 RISK_PER_TRADE_PCT = 0.05  # 5% max per trade = $250
 KELLY_FRACTION = 0.50  # Half Kelly (more aggressive)
 
